@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://p8fckwgy50yx"
+path="res://.godot/imported/Ah... olá. Veio ver como a melancolia se transforma em tinta.mp3-eac8696e3eca849ac8efa382212bb1ef.mp3str"
+
+[deps]
+
+source_file="res://assets/som/Pietro/Pietro_01/Ah... olá. Veio ver como a melancolia se transforma em tinta.mp3"
+dest_files=["res://.godot/imported/Ah... olá. Veio ver como a melancolia se transforma em tinta.mp3-eac8696e3eca849ac8efa382212bb1ef.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

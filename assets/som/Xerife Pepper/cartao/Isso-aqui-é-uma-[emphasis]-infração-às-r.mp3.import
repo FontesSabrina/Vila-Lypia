@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dyuj66g2eo253"
+path="res://.godot/imported/Isso-aqui-é-uma-[emphasis]-infração-às-r.mp3-e1f46b4a154eb7ca39c34778e7ce4a56.mp3str"
+
+[deps]
+
+source_file="res://assets/som/Xerife Pepper/cartao/Isso-aqui-é-uma-[emphasis]-infração-às-r.mp3"
+dest_files=["res://.godot/imported/Isso-aqui-é-uma-[emphasis]-infração-às-r.mp3-e1f46b4a154eb7ca39c34778e7ce4a56.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://btu8svvg48j3o"
+path="res://.godot/imported/Algum-[emphasis]espertinho-deixou-ca.mp3-c5792dc6b84e9da44f51c94f0fce0186.mp3str"
+
+[deps]
+
+source_file="res://assets/som/Xerife Pepper/bolo_xerife_02/Algum-[emphasis]espertinho-deixou-ca.mp3"
+dest_files=["res://.godot/imported/Algum-[emphasis]espertinho-deixou-ca.mp3-c5792dc6b84e9da44f51c94f0fce0186.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,45 @@
+[gd_scene load_steps=7 format=3 uid="uid://cbmkrungy72dm"]
+
+[ext_resource type="Texture2D" uid="uid://dovwqdej8kn6j" path="res://assets/backgrounds/rua_das_ipes_esquerda.jpeg" id="1_ll2qm"]
+[ext_resource type="Script" path="res://scripts/rua_das_ipes_esquerda.gd" id="1_wdosu"]
+[ext_resource type="PackedScene" uid="uid://dejr6fahbfv0b" path="res://scenes/barra_La.tscn" id="2_48teu"]
+[ext_resource type="Texture2D" uid="uid://djdso25wcbq04" path="res://assets/icon/la_03.png" id="3_qef57"]
+[ext_resource type="Texture2D" uid="uid://d3sjr7o40ll52" path="res://assets/icon/cachorrinho.png" id="4_yyvki"]
+[ext_resource type="Texture2D" uid="uid://c50f71pflhnqf" path="res://assets/icon/seta.png" id="6_k7wfr"]
+
+[node name="RuaDasIpesEsquerda" type="Node2D"]
+position = Vector2(574, 322)
+scale = Vector2(0.421148, 0.426107)
+script = ExtResource("1_wdosu")
+
+[node name="RuaDasIpesEsquerda" type="Sprite2D" parent="."]
+position = Vector2(-7.12347, 9.38741)
+texture = ExtResource("1_ll2qm")
+
+[node name="barra_La" parent="." instance=ExtResource("2_48teu")]
+position = Vector2(904.669, 603.135)
+scale = Vector2(0.277476, 0.287493)
+
+[node name="la_03" type="TextureButton" parent="."]
+offset_left = -111.6
+offset_top = 326.209
+offset_right = 86.4002
+offset_bottom = 574.209
+scale = Vector2(0.550195, 0.516704)
+texture_normal = ExtResource("3_qef57")
+
+[node name="Cachorrinho" type="Sprite2D" parent="."]
+position = Vector2(-137.719, 398.961)
+texture = ExtResource("4_yyvki")
+
+[node name="voltar_Ipe" type="TextureButton" parent="."]
+offset_left = -154.34
+offset_top = 598.442
+offset_right = 585.66
+offset_bottom = 1091.44
+rotation = 1.54754
+scale = Vector2(0.233224, -0.322478)
+texture_normal = ExtResource("6_k7wfr")
+
+[connection signal="pressed" from="la_03" to="." method="_on_la_03_pressed"]
+[connection signal="pressed" from="voltar_Ipe" to="." method="_on_voltar_ipe_pressed"]

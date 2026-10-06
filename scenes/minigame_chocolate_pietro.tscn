@@ -1,0 +1,48 @@
+[gd_scene load_steps=5 format=3 uid="uid://bsv1trarfjyar"]
+
+[ext_resource type="Script" path="res://scripts/minigame_chocolate_pietro.gd" id="1_ehlp7"]
+[ext_resource type="Texture2D" uid="uid://b3v3jtpepuqkl" path="res://assets/backgrounds/casa_pietro_cozinha.jpeg" id="1_g3jva"]
+[ext_resource type="PackedScene" uid="uid://buy86lt33he7q" path="res://scenes/barra_chocolate.tscn" id="3_qu772"]
+[ext_resource type="Texture2D" uid="uid://b1yu3glqxspkl" path="res://assets/icon/lupa.png" id="4_vutof"]
+
+[node name="minigame_chocolate_pietro" type="Node2D"]
+script = ExtResource("1_ehlp7")
+
+[node name="CasaPietroCozinha" type="Sprite2D" parent="."]
+position = Vector2(576.25, 319.5)
+scale = Vector2(0.420603, 0.427734)
+texture = ExtResource("1_g3jva")
+
+[node name="barra_chocolate" parent="." instance=ExtResource("3_qu772")]
+position = Vector2(999, 581)
+
+[node name="seta_01" type="TextureButton" parent="."]
+offset_left = 393.0
+offset_top = 379.0
+offset_right = 2921.0
+offset_bottom = 2063.01
+rotation = -1.23046
+scale = Vector2(0.05, 0.05)
+texture_normal = ExtResource("4_vutof")
+
+[node name="seta_02" type="TextureButton" parent="."]
+offset_left = 578.0
+offset_top = 206.0
+offset_right = 1954.0
+offset_bottom = 974.0
+rotation = -1.494
+scale = Vector2(0.05, 0.05)
+texture_normal = ExtResource("4_vutof")
+
+[node name="seta_03" type="TextureButton" parent="."]
+offset_left = 615.0
+offset_top = 389.0
+offset_right = 3143.0
+offset_bottom = 2073.0
+rotation = -4.92183
+scale = Vector2(0.05, 0.05)
+texture_normal = ExtResource("4_vutof")
+
+[connection signal="pressed" from="seta_01" to="." method="_on_seta_01_pressed"]
+[connection signal="pressed" from="seta_02" to="." method="_on_seta_02_pressed"]
+[connection signal="pressed" from="seta_03" to="." method="_on_seta_03_pressed"]

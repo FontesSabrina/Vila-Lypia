@@ -1,0 +1,43 @@
+[gd_scene load_steps=6 format=3 uid="uid://cmw0ue0xtj3j6"]
+
+[ext_resource type="Script" path="res://scripts/painel_com_save.gd" id="1_82vtv"]
+[ext_resource type="Texture2D" uid="uid://dm3fvu421h51l" path="res://assets/icon/Continuar.png" id="1_cgd67"]
+[ext_resource type="Texture2D" uid="uid://cnfnm2ie3tth4" path="res://assets/icon/Novo Jogo.png" id="2_l2r5d"]
+[ext_resource type="Texture2D" uid="uid://c2rewftrlabon" path="res://assets/icon/Configurações.png" id="3_yvbok"]
+[ext_resource type="Texture2D" uid="uid://bpdpee1kver23" path="res://assets/icon/Sair do Jogo.png" id="4_dg4xy"]
+
+[node name="PainelComSave" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_82vtv")
+
+[node name="BotoesComSave" type="VBoxContainer" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+scale = Vector2(0.224582, 0.227591)
+
+[node name="BotaoContinuar" type="TextureButton" parent="BotoesComSave"]
+layout_mode = 2
+texture_normal = ExtResource("1_cgd67")
+
+[node name="BotaoNovoJogo" type="TextureButton" parent="BotoesComSave"]
+layout_mode = 2
+texture_normal = ExtResource("2_l2r5d")
+
+[node name="BotaoConfiguracoes" type="TextureButton" parent="BotoesComSave"]
+layout_mode = 2
+texture_normal = ExtResource("3_yvbok")
+
+[node name="BotaoSair" type="TextureButton" parent="BotoesComSave"]
+layout_mode = 2
+texture_normal = ExtResource("4_dg4xy")
+
+[connection signal="pressed" from="BotoesComSave/BotaoContinuar" to="." method="_on_botao_continuar_pressed"]
+[connection signal="pressed" from="BotoesComSave/BotaoNovoJogo" to="." method="_on_botao_novo_jogo_pressed"]
+[connection signal="pressed" from="BotoesComSave/BotaoConfiguracoes" to="." method="_on_botao_configuracoes_pressed"]
+[connection signal="pressed" from="BotoesComSave/BotaoSair" to="." method="_on_botao_sair_pressed"]

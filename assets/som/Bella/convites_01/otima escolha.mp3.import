@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bg5xr5r6f3co7"
+path="res://.godot/imported/otima escolha.mp3-b8334d2e664bcbd842afb09bba20be8b.mp3str"
+
+[deps]
+
+source_file="res://assets/som/Bella/convites_01/otima escolha.mp3"
+dest_files=["res://.godot/imported/otima escolha.mp3-b8334d2e664bcbd842afb09bba20be8b.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

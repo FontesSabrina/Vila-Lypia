@@ -1,0 +1,39 @@
+if {Amizade.Linna} <= 3:
+	[style name="cinzanovo"]
+elif {Amizade.Linna} <= 7:
+	[style name="azulnovo"]
+else:
+	[style name="verdenovo"]
+
+if {Cap4.Linna_Feita} == true:
+	[end_timeline]
+audio "res://assets/som/Caminho da Vila.mp3"
+[background arg="res://assets/backgrounds/praça_festa_IV_Linna.jpg" fade="0.0"]
+
+join linna (cartao/Linna Cartao) center
+[voice path="res://assets/som/Linna/cartao/Ah,-e-quando-você-for-na-loja,-dá-uma-olhada-com.mp3" volume="0.0"]
+
+linna (cartao/Linna Cartao): Ah, {NomeJogador}! Eu vim pintar uma coisinha para o cartão...\
+mas uma sementinha passou voando e agora eu não lembro o que era.\
+O que eu ia pintar mesmo?
+set {Cap4.Linna_Feita} = true
+
+- Linna, você precisa prestar mais atenção.
+	[voice path="res://assets/som/Linna/cartao/Ai,-você-tem-razão...-[pause]-eu-sempre-m.mp3" volume="0.0"]
+	linna (cartao/2): Ai, você tem razão... eu sempre me distraio. Vou tentar me concentrar, prometo.
+	leave linna
+- Sem pressa, Linna. A gente lembra junto.
+	[voice path="res://assets/som/Linna/cartao/Obrigada!-Acho-que-era-uma-florzinha...-ou-uma-e.mp3" volume="0.0"]
+	linna (cartao/3): Obrigada! Acho que era uma florzinha... ou uma estrela? Já vai voltar, eu sinto!
+	set {Amizade.Linna} += 1
+	leave linna
+- Às vezes o que passa voando é a melhor ideia, Linna. Aquela sementinha pode ir no cartão!
+	[voice path="res://assets/som/Linna/cartao/Uma-[emphasis]-sementinha-no-cartão!-[p.mp3" volume="0.0"]
+	linna (cartao/4): Uma sementinha no cartão! Você tem razão, até quando eu me distraio, alguma coisa bonita aparece!
+	[voice path="res://assets/som/Linna/cartao/Já-sei!-[short-pause]-Vou-pintar-um-[e.mp3" volume="0.0"]
+	linna (cartao/5): Já sei! Vou pintar um dente-de-leão bem delicado, soltando as sementes no ar.
+	[voice path="res://assets/som/Linna/cartao/Ah,-e-quando-você-for-na-loja,-dá-uma-olhada-com.mp3" volume="0.0"]
+	linna (cartao/5): Ah, e quando você for na loja, dá uma olhada com calma! Às vezes esqueço o que guardei, mas tenho coisas escondidas que nem eu lembro que são especiais.
+	set {Amizade.Linna} += 2
+	set {Cap4.Excelentes} += 1
+	leave linna

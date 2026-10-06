@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bcdacb42umw1c"
+path="res://.godot/imported/Primeiro,-precisamos decidir-a-cor-base..mp3-2078470cf5fc0a09214b4810ae800d1d.mp3str"
+
+[deps]
+
+source_file="res://assets/som/Bella/convites_01/Primeiro,-precisamos decidir-a-cor-base..mp3"
+dest_files=["res://.godot/imported/Primeiro,-precisamos decidir-a-cor-base..mp3-2078470cf5fc0a09214b4810ae800d1d.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

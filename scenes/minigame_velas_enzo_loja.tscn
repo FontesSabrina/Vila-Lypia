@@ -1,0 +1,46 @@
+[gd_scene load_steps=7 format=3 uid="uid://drdn7yqpxhsep"]
+
+[ext_resource type="Script" path="res://scripts/minigame_velas_enzo_loja.gd" id="1_eb45j"]
+[ext_resource type="Texture2D" uid="uid://dc2nygh6mvbgo" path="res://assets/backgrounds/casaLinna_calcada.jpeg" id="1_lm7wg"]
+[ext_resource type="Texture2D" uid="uid://ctqdjoas15ydr" path="res://assets/icon/vela_02.png" id="2_uk85i"]
+[ext_resource type="Texture2D" uid="uid://dxdwa7uy7hhxn" path="res://assets/icon/casaLinna_calcada-Photoroom.png" id="3_y86ph"]
+[ext_resource type="PackedScene" uid="uid://2xhnao1gxnpf" path="res://scenes/barra_vela.tscn" id="5_3ote0"]
+[ext_resource type="Texture2D" uid="uid://c50f71pflhnqf" path="res://assets/icon/seta.png" id="6_stpsv"]
+
+[node name="iniciar_minigame_velas_enzo_loja" type="Node2D"]
+script = ExtResource("1_eb45j")
+
+[node name="CasaLinnaCalcada" type="Sprite2D" parent="."]
+position = Vector2(577, 323)
+scale = Vector2(0.41915, 0.430339)
+texture = ExtResource("1_lm7wg")
+
+[node name="vela_03" type="TextureButton" parent="."]
+offset_left = 808.0
+offset_top = 635.0
+offset_right = 1169.0
+offset_bottom = 1672.0
+rotation = -1.55555
+scale = Vector2(0.0479633, 0.0432816)
+texture_normal = ExtResource("2_uk85i")
+
+[node name="CasaLinnaCalcada-photoroom" type="Sprite2D" parent="."]
+position = Vector2(858.5, 605.5)
+scale = Vector2(0.432038, 0.438596)
+texture = ExtResource("3_y86ph")
+
+[node name="barra_vela" parent="." instance=ExtResource("5_3ote0")]
+position = Vector2(1043, 594)
+scale = Vector2(0.0907883, 0.0920258)
+
+[node name="seta" type="TextureButton" parent="."]
+offset_left = 119.0
+offset_top = 495.0
+offset_right = 859.0
+offset_bottom = 988.0
+rotation = -3.16678
+scale = Vector2(0.122557, 0.114781)
+texture_normal = ExtResource("6_stpsv")
+
+[connection signal="pressed" from="vela_03" to="." method="_on_vela_03_pressed"]
+[connection signal="pressed" from="seta" to="." method="_on_seta_pressed"]

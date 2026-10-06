@@ -1,0 +1,30 @@
+[gd_scene load_steps=5 format=3 uid="uid://pjwy2knnjqvg"]
+
+[ext_resource type="Script" path="res://scripts/praca_bolo.gd" id="1_25k7g"]
+[ext_resource type="Texture2D" uid="uid://bo6ya6hvimbti" path="res://assets/backgrounds/praça_festa.jpeg_2K_202607111643.jpeg" id="2_v8n0w"]
+[ext_resource type="PackedScene" uid="uid://cd42irvj5f3nc" path="res://scenes/bella_bolo.tscn" id="3_s8mdj"]
+[ext_resource type="PackedScene" uid="uid://b4vsaogdwxkno" path="res://scenes/botao_voltar.tscn" id="4_h0byl"]
+
+[node name="praca_bolo" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_25k7g")
+
+[node name="PraçaFestaBolo1" type="Sprite2D" parent="."]
+position = Vector2(576, 323)
+scale = Vector2(0.419331, 0.420573)
+texture = ExtResource("2_v8n0w")
+
+[node name="bella_bolo" parent="." instance=ExtResource("3_s8mdj")]
+layout_mode = 1
+offset_left = 536.0
+offset_top = 281.0
+offset_right = 536.0
+offset_bottom = 281.0
+
+[node name="botao_voltar" parent="." instance=ExtResource("4_h0byl")]
+layout_mode = 1
+offset_left = -6.0
+offset_top = -7.0
+offset_right = -6.0
+offset_bottom = -7.0

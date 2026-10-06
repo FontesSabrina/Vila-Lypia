@@ -1,0 +1,57 @@
+[gd_scene load_steps=6 format=3 uid="uid://clp2ydu1kpi0p"]
+
+[ext_resource type="Script" path="res://scripts/rua_dos_ipes.gd" id="1_d8wf6"]
+[ext_resource type="Texture2D" uid="uid://c81b76ebf5smn" path="res://assets/backgrounds/rua_Ipe.jpeg" id="1_widhy"]
+[ext_resource type="PackedScene" uid="uid://dejr6fahbfv0b" path="res://scenes/barra_La.tscn" id="2_qemqq"]
+[ext_resource type="Texture2D" uid="uid://c54v8mjseyyug" path="res://assets/icon/la_02.png" id="3_0w8qo"]
+[ext_resource type="Texture2D" uid="uid://c50f71pflhnqf" path="res://assets/icon/seta.png" id="4_wi7j4"]
+
+[node name="rua_dos_ipes" type="Node2D"]
+script = ExtResource("1_d8wf6")
+
+[node name="RuaIpe" type="Sprite2D" parent="."]
+position = Vector2(576.75, 325.75)
+scale = Vector2(0.420967, 0.420898)
+texture = ExtResource("1_widhy")
+
+[node name="barra_La" parent="." instance=ExtResource("2_qemqq")]
+position = Vector2(986, 591)
+
+[node name="la_02" type="TextureButton" parent="."]
+offset_left = 951.0
+offset_top = 83.0
+offset_right = 1221.0
+offset_bottom = 305.0
+scale = Vector2(0.263464, 0.268638)
+texture_normal = ExtResource("3_0w8qo")
+
+[node name="TextureButton" type="TextureButton" parent="."]
+offset_left = 1038.0
+offset_top = 365.0
+offset_right = 1778.0
+offset_bottom = 858.0
+scale = Vector2(0.116852, 0.137895)
+texture_normal = ExtResource("4_wi7j4")
+
+[node name="TextureButton2" type="TextureButton" parent="."]
+offset_left = 575.0
+offset_top = 407.0
+offset_right = 1315.0
+offset_bottom = 900.0
+rotation = -2.76778
+scale = Vector2(0.0932762, 0.122557)
+texture_normal = ExtResource("4_wi7j4")
+
+[node name="TextureButton3" type="TextureButton" parent="."]
+offset_left = 146.0
+offset_top = 530.0
+offset_right = 886.0
+offset_bottom = 1023.0
+rotation = -3.06162
+scale = Vector2(0.0981531, 0.129206)
+texture_normal = ExtResource("4_wi7j4")
+
+[connection signal="pressed" from="la_02" to="." method="_on_la_02_pressed"]
+[connection signal="pressed" from="TextureButton" to="." method="_on_texture_button_pressed"]
+[connection signal="pressed" from="TextureButton2" to="." method="_on_texture_button_2_pressed"]
+[connection signal="pressed" from="TextureButton3" to="." method="_on_texture_button_3_pressed"]

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://yj0pgkp6tjh5"
+path="res://.godot/imported/nome lindo.mp3-107b57e5f215e27f9930de4687c1c423.mp3str"
+
+[deps]
+
+source_file="res://assets/som/Bella/cena01/nome lindo.mp3"
+dest_files=["res://.godot/imported/nome lindo.mp3-107b57e5f215e27f9930de4687c1c423.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

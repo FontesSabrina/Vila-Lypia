@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bt4rpsuccd0xv"
+path="res://.godot/imported/Aniversário! Eu amo festas! Tem balões, e bolo, e... o que estávamos falando Ah, a Anne!.mp3-0fce3ec4b224c4c0b4143b30be2c4e9e.mp3str"
+
+[deps]
+
+source_file="res://assets/som/Linna/Linna_01/Aniversário! Eu amo festas! Tem balões, e bolo, e... o que estávamos falando Ah, a Anne!.mp3"
+dest_files=["res://.godot/imported/Aniversário! Eu amo festas! Tem balões, e bolo, e... o que estávamos falando Ah, a Anne!.mp3-0fce3ec4b224c4c0b4143b30be2c4e9e.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

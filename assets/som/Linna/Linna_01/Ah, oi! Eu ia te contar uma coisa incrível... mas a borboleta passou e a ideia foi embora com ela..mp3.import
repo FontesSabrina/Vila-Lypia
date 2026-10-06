@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://rncguytcowws"
+path="res://.godot/imported/Ah, oi! Eu ia te contar uma coisa incrível... mas a borboleta passou e a ideia foi embora com ela..mp3-80e6bedf0639d20d10636b83a1b4a676.mp3str"
+
+[deps]
+
+source_file="res://assets/som/Linna/Linna_01/Ah, oi! Eu ia te contar uma coisa incrível... mas a borboleta passou e a ideia foi embora com ela..mp3"
+dest_files=["res://.godot/imported/Ah, oi! Eu ia te contar uma coisa incrível... mas a borboleta passou e a ideia foi embora com ela..mp3-80e6bedf0639d20d10636b83a1b4a676.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

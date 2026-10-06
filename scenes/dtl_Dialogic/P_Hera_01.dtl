@@ -1,0 +1,92 @@
+[signal arg="estilo:P_Hera"]
+audio "res://assets/som/Caminho da Vila.mp3" [volume="-18.0"]
+
+# === APLICAÇÃO DINÂMICA DIRETA NO DIALOGIC ===
+if {Amizade.P_Hera} <= 3:
+	[style name="cinzanovo"]
+elif {Amizade.P_Hera} <= 7:
+	[style name="azulnovo"]
+else:
+	[style name="verdenovo"]
+# ============================================
+
+[background arg="res://assets/backgrounds/casa_hera_02.jpeg" fade="0.0"]
+
+if {Convite.fase_entrega} == true and {Convite.Convite_P_Hera_entregue} == false:
+	[background arg="res://assets/backgrounds/casa_hera_perto.jpeg_2K_202608032100.jpeg" fade="0.0"]
+	join hera (P_Hera_01/10) right
+	[voice path="res://assets/som/Hera/P_Hera_01/Três segundos por livro.mp3" volume="0.0"]
+	hera (P_Hera_01/11): Três segundos por livro...\
+	Se eu mantiver o ritmo, termino às dezesseis horas, quarenta e dois minutos e... \
+	Ai, meu Deus, cronograma em risco!
+	Protagonista: Professora Hera! Calma, trouxe o seu convite para a festa surpresa!
+	[voice path="res://assets/som/Hera/P_Hera_01/Um convite.mp3" volume="0.0"]
+	hera (P_Hera_01/12): Um convite oficial?!\
+	Ai, meu Deus!\
+	Deixe-me ver... data, horário, local... \
+	Preciso verificar meu cronograma, reorganizar as leituras, \
+	calcular o tempo de caminhada até a praça...\
+	E se eu me atrasar? E se chover?
+	Protagonista: Calma, Hera. Vai dar tudo certo, sua presença é muito importante.
+	[voice path="res://assets/som/Hera/P_Hera_01/certo.mp3" volume="0.0"]
+	hera (P_Hera_01/13): Certo... certo! Você tem razão. \
+	Eu vou me planejar com antecedência exata. \
+	Eu vou! Estarei lá cinco minutos antes do previsto para garantir!
+	set {Convite.Convite_P_Hera_entregue} = true
+	set {Convite.pontos_convite} += 1
+	[signal arg="ir_para_praca"]
+
+elif {Convite.fase_entrega} == true and {Convite.Convite_P_Hera_entregue} == true:
+	[background arg="res://assets/backgrounds/casa_hera_sala.jpeg.jpeg" fade="0.0"]
+	join hera (P_Hera_01/14) center
+	[voice path="res://assets/som/Hera/P_Hera_01/Já-reorganizei-todo-o-meu-[emphasis]cronograma-t.mp3" volume="0.0"]
+	hera (P_Hera_01/14): Já reorganizei todo o meu cronograma três vezes para garantir que não haverá atrasos!\
+	Nos vemos na festa exatamente no horário combinado!
+	[signal arg="ir_para_praca"]
+
+elif {Convite.sem_ajuda} == true:
+	join hera (P_Hera_01/9) leftmost
+	[voice path="res://assets/som/Hera/P_Hera_01/Você sabe que horas sãoPreciso ir a uma reunião.mp3" volume="0.0"]
+	hera (P_Hera_01/9): Você sabe que horas são?! Preciso ir a uma reunião!
+
+else:
+	if {Amizade.P_Hera} == 0:
+		join hera (P_Hera_01/1) leftmost
+		[voice path="res://assets/som/Hera/P_Hera_01/Estamos atrasados.mp3" volume="0.0"]
+		hera (P_Hera_01/1): Estamos atrasados!
+		Protagonista: Atrasados para o que professora??
+		join hera (P_Hera_01/2) center
+		[voice path="res://assets/som/Hera/P_Hera_01/Atrasados para o chá da tarde, já são 1631h e os chás tem que ser às 1630h.mp3" volume="0.0"]
+		hera (P_Hera_01/2): Atrasados para o chá da tarde, já são 16\:31h e os chás tem que ser às 16\:30h!
+		Protagonista: A prefeita Anne costuma tomar os chás com você?
+		join hera (P_Hera_01/3) leftmost
+		[voice path="res://assets/som/Hera/P_Hera_01/Sim! Ela sempre visitava a biblioteca, pegava alguns livros sobre estrelas e astronomia..mp3" volume="0.0"]
+		hera (P_Hera_01/3): Sim! Ela sempre visitava a biblioteca, pegava alguns livros sobre estrelas e astronomia.
+		[voice path="res://assets/som/Hera/P_Hera_01/Ela diz que olhar para o céu a acalma... eu prefiro olhar para os prazos, eles nunca somem!.mp3" volume="0.0"]
+		hera (P_Hera_01/4): Ela diz que olhar para o céu a acalma... eu prefiro olhar para os prazos, eles nunca somem!
+		set {Amizade.P_Hera} += 1
+	
+	elif {Amizade.P_Hera} == 1:
+		join hera (P_Hera_01/5) leftmost
+		[voice path="res://assets/som/Hera/P_Hera_01/Eu organizei esses livros por cor, depois por autor, e agora acho que deveria ser por tamanho.mp3" volume="0.0"]
+		hera (P_Hera_01/5): Eu organizei esses livros por cor, depois por autor, e agora acho que deveria ser por tamanho... o que você acha?
+		- Respire fundo, Hera. Sua organização já é incrível! Que tal darmos uma pausa para um chá...?
+			[voice path="res://assets/som/Hera/P_Hera_01/Sabe... você está coberta de razão. Eu preciso mesmo de um chá de camomila agora..mp3" volume="0.0"]
+			hera (P_Hera_01/8): Sabe... você está coberta de razão.\
+			Eu preciso mesmo de um chá de camomila agora.
+			set {Amizade.P_Hera} += 2
+		- Tanto faz, desde que eu ache o livro.
+			[voice path="res://assets/som/Hera/P_Hera_01/Como assim tanto faz A ordem é a base do conhecimento!.mp3" volume="0.0"]
+			hera (P_Hera_01/6): Como assim 'tanto faz'?! A ordem é a base do conhecimento!
+			set {Amizade.P_Hera} += 1
+		- Por autor parece mais prático, Professora.
+			[voice path="res://assets/som/Hera/P_Hera_01/Hum, você tem razão. É um método lógico e eficiente..mp3" volume="0.0"]
+			hera (P_Hera_01/7): Hum, você tem razão.\
+			É um método lógico e eficiente.
+			set {Amizade.P_Hera} = 1
+	
+	else:
+		join hera (P_Hera_01/9) leftmost
+		[voice path="res://assets/som/Hera/P_Hera_01/Você sabe que horas sãoPreciso ir a uma reunião.mp3" volume="0.0"]
+		hera (P_Hera_01/9): Você sabe que horas são?! \
+		Preciso ir a uma reunião!

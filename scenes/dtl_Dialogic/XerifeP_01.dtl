@@ -1,0 +1,89 @@
+[signal arg="estilo:Xerife"]
+audio "res://assets/som/Caminho da Vila.mp3" [volume="-18.0"]
+
+# === APLICAÇÃO DINÂMICA DIRETA NO DIALOGIC ===
+if {Amizade.Xerife} <= 3:
+	[style name="cinzanovo"]
+elif {Amizade.Xerife} <= 7:
+	[style name="azulnovo"]
+else:
+	[style name="verdenovo"]
+# ============================================
+
+[background arg="res://assets/backgrounds/xerife5.png" fade="0.0"]
+
+if {Convite.fase_entrega} == true and {Convite.Convite_Xerife_entregue} == false:
+	[background arg="res://assets/backgrounds/xerife4.jpeg" fade="0.0"]
+	join xerife (XerifeP_01/11) rightmost
+	[voice path="res://assets/som/Xerife Pepper/XerifeP_01/Treze centímetros de desvio...mp3" volume="0.0"]
+	xerife (XerifeP_01/11): Treze centímetros de desvio... Um absurdo!\
+	Falta de civilidade total! Alto lá! Identifique-se. \
+	O que faz no meu perímetro?
+	Protagonista: Xerife Pepper, vim te entregar o convite para o aniversário da Prefeita.
+	[voice path="res://assets/som/Xerife Pepper/XerifeP_01/Um convite.mp3" volume="0.0"]
+	xerife (XerifeP_01/12): Hum... Um convite? Pelo menos vocês seguiram o protocolo de etiqueta da vila e fizeram tudo de forma oficial.
+	Protagonista: Contamos com a sua presença para comemorar.
+	[voice path="res://assets/som/Xerife Pepper/XerifeP_01/Eu estarei lá.mp3" volume="0.0"]
+	xerife (XerifeP_01/13): Eu estarei lá, com certeza. \
+	Alguém com pulso firme precisa garantir que ninguém quebre \
+	as regras da vila, cause tumulto ou coma o bolo antes da hora regulamentar!\
+	Estarei de olho em tudo!
+	set {Convite.Convite_Xerife_entregue} = true
+	set {Convite.pontos_convite} += 1
+	[signal arg="ir_para_praca"]
+
+elif {Convite.fase_entrega} == true and {Convite.Convite_Xerife_entregue} == true:
+	[background arg="res://assets/backgrounds/xerife_sala.jpeg.jpeg" fade="0.0"]
+	join xerife (XerifeP_01/14) center
+	[voice path="res://assets/som/Xerife Pepper/XerifeP_01/Já-estou-revisando-o-perímetro-da-pra.mp3" volume="0.0"]
+	xerife (XerifeP_01/14): Já estou revisando o perímetro da praça para garantir que o protocolo da festa seja seguido à risca!\
+	Nos vemos lá!
+	[signal arg="ir_para_praca"]
+
+elif {Convite.sem_ajuda} == true:
+	join xerife (XerifeP_01/10) center
+	[voice path="res://assets/som/Xerife Pepper/XerifeP_01/hamar.mp3" volume="0.0"]
+	xerife (XerifeP_01/10): Se precisar só me chamar!
+
+else:
+	if {Amizade.Xerife} == 0:
+		join xerife (XerifeP_01/1) left
+		[voice path="res://assets/som/Xerife Pepper/XerifeP_01/Tudo eu… tudo eu… se não fosse por mim essa vila estava debaixo de milhões de papéis….mp3" volume="0.0"]
+		xerife (XerifeP_01/1): Tudo eu… tudo eu… se não fosse por mim essa vila estava debaixo de milhões de papéis…
+		[voice path="res://assets/som/Xerife Pepper/XerifeP_01/Alto Lá , não me diga que alguém andou mexendo com você!.mp3" volume="0.0"]
+		xerife (XerifeP_01/2): Alto Lá , não me diga que alguém andou mexendo com você!
+		Protagonista: Não Xerife, as coisas estão tranquilas.\
+		Só queria conversar melhor sobre a prefeita Anne
+		[voice path="res://assets/som/Xerife Pepper/XerifeP_01/Estou ocupado! Mas… se quer saber, a Prefeita é muito organizada..mp3" volume="0.0"]
+		xerife (XerifeP_01/3): Estou ocupado! Mas… se quer saber, a Prefeita é muito organizada.
+		[voice path="res://assets/som/Xerife Pepper/XerifeP_01/Ela gosta de letras Clássicas e Elegantes.mp3" volume="0.0"]
+		xerife (XerifeP_01/4): Ela gosta de letras Clássicas e Elegantes. \
+		Nada de garranchos que eu não consiga ler no meu relatório!
+		set {Amizade.Xerife} += 1
+	
+	elif {Amizade.Xerife} == 1:
+		join xerife (XerifeP_01/5) left
+		[voice path="res://assets/som/Xerife Pepper/XerifeP_01/forasteiro.mp3" volume="0.0"]
+		xerife (XerifeP_01/5): hm… olá forasteiro
+		[voice path="res://assets/som/Xerife Pepper/XerifeP_01/Alguém deixou um rastro de lama na calçada principa.mp3" volume="0.0"]
+		xerife (XerifeP_01/6): Alguém deixou um rastro de lama na calçada principal. \
+		Isso é uma infração gravíssima!
+		- Foi só um pouco de lama, Xerife.
+			[voice path="res://assets/som/Xerife Pepper/XerifeP_01/Infração é infração! Não há 'só um pouco' na lei!.mp3" volume="0.0"]
+			xerife (XerifeP_01/7): Infração é infração! Não há 'só um pouco' na lei!
+			set {Amizade.Xerife} += 1
+		- Sua dedicação em manter a vila impecável é o que nos mantém seguros, Xerife. Obrigado pelo esforço!
+			[voice path="res://assets/som/Xerife Pepper/XerifeP_01/deve.mp3" volume="0.0"]
+			xerife (XerifeP_01/9): Cof, cof... Bem, é apenas o meu dever.\
+			Mas agradeço o reconhecimento
+			set {Amizade.Xerife} += 2
+		- Vou tomar cuidado para não sujar nada.
+			[voice path="res://assets/som/Xerife Pepper/XerifeP_01/excelente.mp3" volume="0.0"]
+			xerife (XerifeP_01/8): Excelente. \
+			Conto com a sua cooperação para manter a ordem.
+			set {Amizade.Xerife} = 1
+	
+	else:
+		join xerife (XerifeP_01/10) center
+		[voice path="res://assets/som/Xerife Pepper/XerifeP_01/hamar.mp3" volume="0.0"]
+		xerife (XerifeP_01/10): Se precisar só me chamar!

@@ -1,0 +1,29 @@
+[gd_scene load_steps=5 format=3 uid="uid://c3ai5upn408n1"]
+
+[ext_resource type="Texture2D" uid="uid://cr2yyt1rc7vrx" path="res://assets/backgrounds/casa_linna.jpeg" id="1_d5c3l"]
+[ext_resource type="Script" path="res://scripts/hidden_object_linna.gd" id="1_jes06"]
+[ext_resource type="Texture2D" uid="uid://b7bwh6vrn7k" path="res://assets/icon/mapa.png" id="4_cwfu0"]
+[ext_resource type="PackedScene" uid="uid://c88li7fhrkgmg" path="res://scenes/barra_loja_linna.tscn" id="5_0h02h"]
+
+[node name="HiddenObjectLinna" type="Node2D"]
+position = Vector2(-2, -2)
+scale = Vector2(1.05559, 1)
+script = ExtResource("1_jes06")
+
+[node name="CasaLinna" type="Sprite2D" parent="."]
+position = Vector2(549.457, 327)
+scale = Vector2(0.398052, 0.423783)
+texture = ExtResource("1_d5c3l")
+
+[node name="barra_loja_linna" parent="." instance=ExtResource("5_0h02h")]
+position = Vector2(154.416, 567)
+
+[node name="mapa" type="TextureButton" parent="."]
+offset_left = 668.82
+offset_top = 349.0
+offset_right = 1317.82
+offset_bottom = 635.0
+scale = Vector2(0.125491, 0.167192)
+texture_normal = ExtResource("4_cwfu0")
+
+[connection signal="pressed" from="mapa" to="." method="_on_mapa_pressed"]

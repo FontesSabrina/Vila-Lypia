@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bnkv5c77rkq8m"
+path="res://.godot/imported/Eu-tenho-o-[short-pause]-[emphasis]-Fermento-Esp.mp3-5dcc7879dd6bb18d29120a02f57b4adf.mp3str"
+
+[deps]
+
+source_file="res://assets/som/Xerife Pepper/bolo_xerife_02/Eu-tenho-o-[short-pause]-[emphasis]-Fermento-Esp.mp3"
+dest_files=["res://.godot/imported/Eu-tenho-o-[short-pause]-[emphasis]-Fermento-Esp.mp3-5dcc7879dd6bb18d29120a02f57b4adf.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cy1gb4827q6ni"
+path="res://.godot/imported/Um convite.mp3-9a557268040f7792d681c00fa07f65f0.mp3str"
+
+[deps]
+
+source_file="res://assets/som/Pietro/Pietro_01/Um convite.mp3"
+dest_files=["res://.godot/imported/Um convite.mp3-9a557268040f7792d681c00fa07f65f0.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

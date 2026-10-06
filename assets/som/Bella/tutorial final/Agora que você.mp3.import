@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://85wl8pmd3eau"
+path="res://.godot/imported/Agora que você.mp3-8fb4db7c8054f2d88f96876135fb579b.mp3str"
+
+[deps]
+
+source_file="res://assets/som/Bella/tutorial final/Agora que você.mp3"
+dest_files=["res://.godot/imported/Agora que você.mp3-8fb4db7c8054f2d88f96876135fb579b.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

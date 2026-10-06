@@ -1,0 +1,92 @@
+[signal arg="estilo:Linna"]
+audio "res://assets/som/Caminho da Vila.mp3" [volume="-18.0"]
+
+# === APLICAÇÃO DINÂMICA DIRETA NO DIALOGIC ===
+if {Amizade.Linna} <= 3:
+	[style name="cinzanovo"]
+elif {Amizade.Linna} <= 7:
+	[style name="azulnovo"]
+else:
+	[style name="verdenovo"]
+# ============================================
+
+[background arg="res://assets/backgrounds/casaLinna2.jpeg" fade="0.0"]
+
+if {Convite.fase_entrega} == true and {Convite.Convite_Linna_entregue} == false:
+	[background arg="res://assets/backgrounds/casa_linna.jpeg" fade="0.0"]
+	join linna (Linna_01/12) left
+	[voice path="res://assets/som/Linna/Linna_01/nuvem.mp3" volume="0.0"]
+	linna (Linna_01/12): ...e a nuvem faz pluft... e o balão faz...
+	[voice path="res://assets/som/Linna/Linna_01/ola.mp3" volume="0.0"]
+	linna (Linna_01/13): Oh! Olá! Que bom que chegou! Você sabia que se a gente olhar \
+	fixamente para o teto por dois minutos, parece que o chão está no teto?
+	Protagonista: Olá, Linna! Vim te entregar o convite de aniversário da Prefeita.
+	[voice path="res://assets/som/Linna/Linna_01/Que papel bonito..mp3" volume="0.0"]
+	linna (Linna_01/14): Oh! Que papel bonito... tem um cheirinho tão bom de amoras...\
+	É um desenho novo?
+	Protagonista: Na verdade, é um convite para a festa surpresa! Não vai esquecer, hein?
+	[voice path="res://assets/som/Linna/Linna_01/festa.mp3" volume="0.0"]
+	linna (Linna_01/15): Ah, uma festa! Que fofinho! Eu adoro festas!\
+	Vou colocar bem no meio da porta da geladeira com \
+	um ímã para não esquecer de jeito nenhum... Espera...\
+	onde é mesmo que fica a minha geladeira?\
+	Acho que mudei ela de lugar ontem... \
+	ou foi semana passada?
+	set {Convite.Convite_Linna_entregue} = true
+	set {Convite.pontos_convite} += 1
+	[signal arg="ir_para_praca"]
+
+elif {Convite.fase_entrega} == true and {Convite.Convite_Linna_entregue} == true:
+	[background arg="res://assets/backgrounds/cozinha_linna.jpeg.jpeg" fade="0.0"]
+	join linna (Linna_01/16) center
+	[voice path="res://assets/som/Linna/Linna_01/Olhei-no-quarto,-debaixo-da-cama-e-até-no-sótão..mp3" volume="0.0"]
+	linna (Linna_01/16): Olhei no quarto, debaixo da cama e até no sótão... mas a geladeira sumiu! \
+	Acho que ela foi passear... Mas não tem problema!\
+	Grudei o convite com o ímã direto na parede vazia onde ela costumava ficar! \
+	Nos vemos na festa!
+	[signal arg="ir_para_praca"]
+
+elif {Convite.sem_ajuda} == true:
+	join linna (Linna_01/11) leftmost
+	[voice path="res://assets/som/Linna/Linna_01/Você viu para onde aquele passarinho foi Ele parecia estar com pressa!.mp3" volume="0.0"]
+	linna (Linna_01/11): Você viu para onde aquele passarinho foi? Ele parecia estar com pressa!
+
+else:
+	if {Amizade.Linna} == 0:
+		join linna (Linna_01/1) left
+		[voice path="res://assets/som/Linna/Linna_01/Onde foi que eu... não, isso é um pente... isso é uma maçã... ué, por que eu guardei uma meia aqui.mp3" volume="0.0"]
+		linna (Linna_01/1): Onde foi que eu... não, isso é um pente... isso é uma maçã... ué, por que eu guardei uma meia aqui?
+		[voice path="res://assets/som/Linna/Linna_01/Oh! Oi! Você viu uma chave de ouro por aí Ou talvez um bilhete Eu ia anotar algo importante, mas esqueci o papel... e a caneta..mp3" volume="0.0"]
+		linna (Linna_01/2): Oh! Oi! Você viu uma chave de ouro por aí? Ou talvez um bilhete? Eu ia anotar algo importante, mas esqueci o papel... e a caneta.
+		Protagonista: Eu vim falar sobre o aniversário da Prefeita Anne. Você sabe do que ela gosta?
+		[voice path="res://assets/som/Linna/Linna_01/Aniversário! Eu amo festas! Tem balões, e bolo, e... o que estávamos falando Ah, a Anne!.mp3" volume="0.0"]
+		linna (Linna_01/3): Aniversário! Eu amo festas! Tem balões, e bolo, e... o que estávamos falando? Ah, a Anne!
+		[voice path="res://assets/som/Linna/Linna_01/Lembrei! Ela sempre para na minha barraca e suspira quando vê as frutas silvestres..mp3" volume="0.0"]
+		linna (Linna_01/4): Lembrei! Ela sempre para na minha barraca e suspira quando vê as frutas silvestres.
+		[voice path="res://assets/som/Linna/Linna_01/O doce favorito dela é Torta de Amoras. Ela diz que o azedinho lembra que a vida tem seus desafios, mas o doce compensa tudo!.mp3" volume="0.0"]
+		linna (Linna_01/5): O doce favorito dela é Torta de Amoras. Ela diz que o azedinho lembra que a vida tem seus desafios, mas o doce compensa tudo!
+		set {Amizade.Linna} += 1
+	
+	elif {Amizade.Linna} == 1:
+		join linna (Linna_01/6) left
+		[voice path="res://assets/som/Linna/Linna_01/Ah, oi! Eu ia te contar uma coisa incrível... mas a borboleta passou e a ideia foi embora com ela..mp3" volume="0.0"]
+		linna (Linna_01/6): Ah, oi! Eu ia te contar uma coisa incrível... mas a borboleta passou e a ideia foi embora com ela.
+		[voice path="res://assets/som/Linna/Linna_01/Eu tinha uma chave na mão agora pouco... ou era um pão Onde será que foi parar.mp3" volume="0.0"]
+		linna (Linna_01/7): Eu tinha uma chave na mão agora pouco... ou era um pão? Onde será que foi parar?
+		- Você é muito esquecida, Linna.
+			[voice path="res://assets/som/Linna/Linna_01/Eu não esqueci! Só guardei a memória em um lugar tão bom que nem eu sei onde está!.mp3" volume="0.0"]
+			linna (Linna_01/8): Eu não esqueci! Só guardei a memória em um lugar tão bom que nem eu sei onde está!
+			set {Amizade.Linna} += 1
+		- Quer ajuda para procurar o que você perdeu?
+			[voice path="res://assets/som/Linna/Linna_01/Eba, quero sim! Mas... o que mesmo a gente está procurando.mp3" volume="0.0"]
+			linna (Linna_01/9): Eba, quero sim! Mas... o que mesmo a gente está procurando?
+			set {Amizade.Linna} += 1
+		- Sua mente viaja por lugares incríveis! Adoro o jeito que você vê o mundo...
+			[voice path="res://assets/som/Linna/Linna_01/Puxa, ninguém nunca disse isso! Todo mundo só me chama de tonta. Você é demais!.mp3" volume="0.0"]
+			linna (Linna_01/10): Puxa, ninguém nunca disse isso! Todo mundo só me chama de tonta. Você é demais!
+			set {Amizade.Linna} += 2
+	
+	else:
+		join linna (Linna_01/11) left
+		[voice path="res://assets/som/Linna/Linna_01/Você viu para onde aquele passarinho foi Ele parecia estar com pressa!.mp3" volume="0.0"]
+		linna (Linna_01/11): Você viu para onde aquele passarinho foi? Ele parecia estar com pressa!

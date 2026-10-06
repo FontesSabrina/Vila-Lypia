@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://c8uqd7p3og11l"
+path="res://.godot/imported/Estamos atrasados.mp3-092a6337ec0531c93b3060533e2001f0.mp3str"
+
+[deps]
+
+source_file="res://assets/som/Hera/P_Hera_01/Estamos atrasados.mp3"
+dest_files=["res://.godot/imported/Estamos atrasados.mp3-092a6337ec0531c93b3060533e2001f0.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

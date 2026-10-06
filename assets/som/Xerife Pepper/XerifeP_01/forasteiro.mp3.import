@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://1kfqv5dyi60y"
+path="res://.godot/imported/forasteiro.mp3-f4bb74cfcf18bfb938e0dfd22fbbada6.mp3str"
+
+[deps]
+
+source_file="res://assets/som/Xerife Pepper/XerifeP_01/forasteiro.mp3"
+dest_files=["res://.godot/imported/forasteiro.mp3-f4bb74cfcf18bfb938e0dfd22fbbada6.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

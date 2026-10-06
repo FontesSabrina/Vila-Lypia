@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bpsv5jx4t0b8g"
+path="res://.godot/imported/Hum  já estou ate sentindo o cheiro da.mp3-72c10b36a975f7331bc194009561bef1.mp3str"
+
+[deps]
+
+source_file="res://assets/som/Bella/convites_01/Hum  já estou ate sentindo o cheiro da.mp3"
+dest_files=["res://.godot/imported/Hum  já estou ate sentindo o cheiro da.mp3-72c10b36a975f7331bc194009561bef1.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

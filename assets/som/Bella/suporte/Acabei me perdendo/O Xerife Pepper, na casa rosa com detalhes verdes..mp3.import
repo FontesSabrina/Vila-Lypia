@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://c3c3ma3shecu4"
+path="res://.godot/imported/O Xerife Pepper, na casa rosa com detalhes verdes..mp3-7e9f4fe62b095f89e0681b4401344af4.mp3str"
+
+[deps]
+
+source_file="res://assets/som/Bella/suporte/Acabei me perdendo/O Xerife Pepper, na casa rosa com detalhes verdes..mp3"
+dest_files=["res://.godot/imported/O Xerife Pepper, na casa rosa com detalhes verdes..mp3-7e9f4fe62b095f89e0681b4401344af4.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

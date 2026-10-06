@@ -1,0 +1,38 @@
+if {Amizade.Vincent} <= 3:
+	[style name="cinzanovo"]
+elif {Amizade.Vincent} <= 7:
+	[style name="azulnovo"]
+else:
+	[style name="verdenovo"]
+
+if {Cap4.Vincent_Feito} == true:
+	[end_timeline]
+audio "res://assets/som/Caminho da Vila.mp3" [volume="-18.0"]
+[background arg="res://assets/backgrounds/praça_festa_IV_vincent.jpg" fade="0.0"]
+
+join vincent (cartao/1) left
+[voice path="res://assets/som/Vincent/cartao/Eu-queria-desenhar-um-sol-bem-[emph.mp3" volume="0.0"]
+
+vincent (cartao/Vincent Cartao): Ah, {NomeJogador}! Eu queria desenhar um sol bem radiante para a Anne.\
+O sorriso dela ilumina a vila!\
+Mas... e se ficar brilhante demais e ofuscar os outros desenhos do cartão?
+set {Cap4.Vincent_Feito} = true
+
+- Acho que um sol menor resolve o problema.
+	[voice path="res://assets/som/Vincent/cartao/É...-acho-que-sim.-[short-pause]-Vou-p.mp3" volume="0.0"]
+	vincent (cartao/2): É... acho que sim. Vou pintar bem pequenininho aqui no cantinho inferior para não atrapalhar ninguém.
+	leave vincent
+- Seu sol está lindo, Vincent. Desenhe do seu jeito.
+	[voice path="res://assets/som/Vincent/cartao/Obrigado!-[short-pause]-Vou-tentar-não-exagerar.mp3" volume="0.0"]
+	vincent (cartao/3): Obrigado! Vou tentar não exagerar tanto no amarelo neon, mas vou deixar ele bem bonito!
+	set {Amizade.Vincent} += 1
+	leave vincent
+- O seu brilho não apaga o dos outros, Vincent, ele ajuda a iluminar tudo ao redor! A Anne vai amar sentir essa energia.
+	[voice path="res://assets/som/Vincent/cartao/Você-tem-toda-[emphasis]-razão!-[pause].mp3" volume="0.0"]
+	vincent (cartao/4): Você tem toda razão! A alegria é feita para ser compartilhada, não escondida!
+	[voice path="res://assets/som/Vincent/cartao/Sabe,-falando-em-compartilhar,-a-Anne-amava-dese.mp3" volume="0.0"]
+	vincent (cartao/5): Sabe, falando em compartilhar, a Anne amava desenhar novos horizontes. Mas o velho caderno dela não tem mais nenhuma folha em branco.
+	set {Amizade.Vincent} += 2
+	set {Cap4.Excelentes} += 1
+	set {Cap4.Dica_Vincent} = true
+	leave vincent

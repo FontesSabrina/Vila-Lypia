@@ -1,0 +1,55 @@
+[style name="cinzanovo"]
+join Bella (bolo/2) pos=x0.14y0.42
+update Bella size=y0.4
+
+if {Bolo.Total_Ingredientes} <= 0:
+	# FINAL A (0 ingredientes)
+	[voice path="res://assets/som/Bella/bolo/Ah...-[sighing]-a-tigela-ficou-[emphasis]-vazia.mp3" volume="0.0"]
+	Bella (bolo/8): Ah... a tigela ficou vazia desta vez. Sem problemas!\
+	Fiz um bolinho simples com um pouco de doçura mágica. \
+	É o que temos por agora!
+	[voice path="res://assets/som/Bella/bolo/-Que-tal-conversarmos-mais-com-o-pessoal-da-vila.mp3" volume="0.0"]
+	Bella (bolo/9): Que tal conversarmos mais com o pessoal da vila no próximo capítulo?\
+	Eles têm histórias incríveis! Vamos juntos?
+elif {Bolo.Total_Ingredientes} <= 3:
+	# FINAL B (1 a 3 ingredientes)
+	[voice path="res://assets/som/Bella/bolo/Olha-só,-você-[emphasis]-conseguiu-tra.mp3" volume="0.0"]
+	Bella (bolo/10): Olha só, você conseguiu trazer alguns ingredientes! \
+	O bolo saiu do forno e cheira bem. \
+	Ficou um bolo bom!
+	[voice path="res://assets/som/Bella/bolo/Talvez-falte-um-recheio-ou-a-cobertura-de-amoras.mp3" volume="0.0"]
+	Bella (bolo/11): Talvez falte um recheio ou a cobertura de amoras, mas foi feito com carinho e vai alimentar a nossa festa!\
+	Bom trabalho
+	[voice path="res://assets/som/Bella/bolo/O-bolo-está-pronto!-[short-pause]-Já-es.mp3" volume="0.0"]
+	Bella (bolo/12): O bolo está pronto! Já estamos pertinho de ver o sorriso da Prefeita Anne. Até lá!
+elif {Bolo.Total_Ingredientes} <= 5:
+	# FINAL C (4 a 5 ingredientes)
+	[voice path="res://assets/som/Bella/bolo/Puxa,-que-[emphasis]cheirinho-maravilho.mp3" volume="0.0"]
+	Bella (bolo/13): Puxa, que cheirinho maravilhoso! \
+	Com tantos ingredientes bons, você conseguiu fazer um bolo ótimo!\
+	Ele está alto, fofinho e muito bonito.
+	[voice path="res://assets/som/Bella/bolo/Os-moradores-que-ajudaram-vão-ficar-[emphasis]-s.mp3" volume="0.0"]
+	Bella (bolo/14): Os moradores que ajudaram vão ficar super orgulhosos quando virem a mesa. \
+	Você mandou muito bem na confeitaria da vila!
+	[voice path="res://assets/som/Bella/bolo/O-bolo-está-[emphasis]-pronto!-[pause].mp3" volume="0.0"]
+	Bella (bolo/15): O bolo está pronto! \
+	Já estamos pertinho de ver o sorriso da Prefeita Anne.\
+	Até lá!
+else:
+	# FINAL D (6 ingredientes, com o bônus)
+	[voice path="res://assets/som/Bella/bolo/UAU!-Que-[emphasis]-espetáculo!-Com-a.mp3" volume="0.0"]
+	Bella (bolo/16): UAU! Que espetáculo! \
+	Com a ajuda e o coração de cada morador, você fez o BOLO PERFEITO! \
+	Veja como ele brilha!
+	[voice path="res://assets/som/Bella/bolo/Por-ajudar-todo-mundo-e-coletar-cada-de.mp3" volume="0.0"]
+	Bella (bolo/17): Por ajudar todo mundo e coletar cada detalhe, você ganhou um prêmio especial!
+	[voice path="res://assets/som/Bella/bolo/Você-recebeu-o-[emphasis]-Pingente-do-C.mp3" volume="0.0"]
+	Bella (bolo/18): Você recebeu o Pingente do Coração Unido!\
+	Guarde com carinho\: ele vai deixar a Prefeita e os moradores muito felizes no capítulo final!
+	audio "res://assets/som/item_recebido.mp3"
+	[voice path="res://assets/som/Bella/bolo/O-bolo-está-[emphasis]-pronto!-[pause].mp3" volume="0.0"]
+	Bella (bolo/19): O bolo está pronto! \
+	Já estamos pertinho de ver o sorriso da Prefeita Anne.\
+	Até lá!
+
+leave Bella

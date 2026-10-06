@@ -1,0 +1,30 @@
+[gd_scene load_steps=6 format=3 uid="uid://om5peo7p386m"]
+
+[ext_resource type="Script" path="res://scripts/bolos.gd" id="1_15hvj"]
+[ext_resource type="Texture2D" uid="uid://dmmtn841rqhnb" path="res://assets/icon/BoloRuim.png" id="2_6nw6y"]
+[ext_resource type="Texture2D" uid="uid://mt2ivxly04me" path="res://assets/icon/Bolo Muito Top (Nível Excelente  Master).png" id="2_kp3de"]
+[ext_resource type="Texture2D" uid="uid://bs4hk30282pce" path="res://assets/icon/Bolo Médio (Nível Intermediário).png" id="3_jxncp"]
+[ext_resource type="Texture2D" uid="uid://ca4op6j4kngoe" path="res://assets/icon/Bolo Simples (Nível Bom).png" id="4_qyivr"]
+
+[node name="ResultadoBolo" type="Node2D"]
+script = ExtResource("1_15hvj")
+
+[node name="BoloRuim" type="Sprite2D" parent="."]
+position = Vector2(566, 364)
+scale = Vector2(0.106003, 0.10505)
+texture = ExtResource("2_6nw6y")
+
+[node name="BoloSimples" type="Sprite2D" parent="."]
+position = Vector2(564, 379)
+scale = Vector2(0.314664, 0.281127)
+texture = ExtResource("4_qyivr")
+
+[node name="BoloMedio" type="Sprite2D" parent="."]
+position = Vector2(533, 332)
+scale = Vector2(0.312836, 0.321299)
+texture = ExtResource("3_jxncp")
+
+[node name="BoloTop" type="Sprite2D" parent="."]
+position = Vector2(550, 269)
+scale = Vector2(0.459411, 0.446088)
+texture = ExtResource("2_kp3de")

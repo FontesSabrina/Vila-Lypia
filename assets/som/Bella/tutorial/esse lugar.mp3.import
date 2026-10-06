@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dc4olqsflonsv"
+path="res://.godot/imported/esse lugar.mp3-37b74095efeb8d2833263ebecdfd2de9.mp3str"
+
+[deps]
+
+source_file="res://assets/som/Bella/tutorial/esse lugar.mp3"
+dest_files=["res://.godot/imported/esse lugar.mp3-37b74095efeb8d2833263ebecdfd2de9.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

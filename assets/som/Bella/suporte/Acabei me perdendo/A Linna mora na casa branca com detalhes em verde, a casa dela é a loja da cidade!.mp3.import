@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dyirldq3p5vl0"
+path="res://.godot/imported/A Linna mora na casa branca com detalhes em verde, a casa dela é a loja da cidade!.mp3-ef6da3f41275a381ab2bec9cb3b69777.mp3str"
+
+[deps]
+
+source_file="res://assets/som/Bella/suporte/Acabei me perdendo/A Linna mora na casa branca com detalhes em verde, a casa dela é a loja da cidade!.mp3"
+dest_files=["res://.godot/imported/A Linna mora na casa branca com detalhes em verde, a casa dela é a loja da cidade!.mp3-ef6da3f41275a381ab2bec9cb3b69777.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

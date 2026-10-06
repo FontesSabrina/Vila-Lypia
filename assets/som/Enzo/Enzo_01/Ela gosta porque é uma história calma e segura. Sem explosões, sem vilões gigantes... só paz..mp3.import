@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cgwxptpeq85od"
+path="res://.godot/imported/Ela gosta porque é uma história calma e segura. Sem explosões, sem vilões gigantes... só paz..mp3-b82b8b00916834a35dc801d19511182e.mp3str"
+
+[deps]
+
+source_file="res://assets/som/Enzo/Enzo_01/Ela gosta porque é uma história calma e segura. Sem explosões, sem vilões gigantes... só paz..mp3"
+dest_files=["res://.godot/imported/Ela gosta porque é uma história calma e segura. Sem explosões, sem vilões gigantes... só paz..mp3-b82b8b00916834a35dc801d19511182e.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

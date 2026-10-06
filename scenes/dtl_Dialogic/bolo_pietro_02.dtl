@@ -1,0 +1,99 @@
+audio "res://assets/som/Caminho da Vila.mp3" [volume="-18.0"]
+
+# === APLICAÇÃO DINÂMICA DO BALÃO ===
+if {Amizade.Pietro} <= 3:
+	[style name="cinzanovo"]
+elif {Amizade.Pietro} <= 7:
+	[style name="azulnovo"]
+else:
+	[style name="verdenovo"]
+# ======================================================================================
+
+# ESTÁGIO 1: Ainda não pegou o chocolate (Ingrediente_Pietro == false)
+if {Bolo.Pietro.Ingrediente_Pietro} == false:
+	[background arg="res://assets/backgrounds/casa_pietro_sotão.jpeg" fade="0.0"]
+	join Pietro (bolo/1) center
+	Protagonista: Oi, Pietro, vim te pedir ajuda para fazer um bolo para a Prefeita Anne.
+	[voice path="res://assets/som/Pietro/bolo_pietro_02/Ah...-oi...-Fazer-um-bolo-parece-uma-tare.mp3" volume="0.0"]
+	Pietro (bolo/1): Ah... oi... Fazer um bolo parece uma tarefa tão bonita, mas às vezes... dá medo de não dar certo.
+	[voice path="res://assets/som/Pietro/bolo_pietro_02/Para-dar-profundidade-ao-sabor,-a-[emphasis]-Pre.mp3" volume="0.0"]
+	Pietro (bolo/Bolo-05): Para dar profundidade ao sabor, a Prefeita sempre usava o meu Chocolate Meio Amargo Especial.\
+	Ele guarda lembranças doces e suaves.
+	[voice path="res://assets/som/Pietro/bolo_pietro_02/Só-que-eu-o-guardei-em-uma-caixa-na-co.mp3" volume="0.0"]
+	Pietro (bolo/2): Só que eu o guardei em uma caixa na cozinha e não consigo encontrá-lo...
+	[voice path="res://assets/som/Pietro/bolo_pietro_02/Você-procura-[short-pause]-pra-[emphasis]-mim.mp3" volume="0.0"]
+	Pietro (bolo/3): Você procura por mim?
+	
+	- Claro, eu procuro para você!
+		[signal arg="iniciar_minigame_chocolate"]
+		[end_timeline]
+	- Agora não posso, Pietro.
+		[voice path="res://assets/som/Pietro/bolo_pietro_02/Tudo-bem...-eu-[emphasis]-entendo.-Se-pud.mp3" volume="0.0"]
+		Pietro (bolo/4): Tudo bem... eu entendo. \
+		Se puder voltar depois, estarei por aqui...
+		[end_timeline]
+
+# ESTÁGIO 2A: Já pegou o chocolate, mas ainda NÃO agradeceu
+elif {Bolo.Pietro.Bolo_Pietro_Chocolate_Entregue} == false:
+	set {Bolo.Pietro.Bolo_Pietro_Chocolate_Entregue} = true
+	[background arg="res://assets/backgrounds/casa_pietro_cozinha.jpeg" fade="0.0"]
+	join Pietro (bolo/Bolo 06) center
+	[voice path="res://assets/som/Pietro/bolo_pietro_02/Obrigado...-[short-pause]-fico-[emphasi.mp3" volume="0.0"]
+	Pietro (bolo/Bolo 06): Obrigado... fico feliz que o chocolate vá fazer parte de algo tão caloroso.
+	[signal arg="voltar_mapa"]
+	[end_timeline]
+
+# ESTÁGIO 2B: Pede ajuda para achar os pincéis na floresta (Nas conversas seguintes)
+elif {Bolo.Pietro.Bolo_Pietro_Em_Andamento} == false and {Bolo.Pietro.Bolo_Pietro_Pinceis_Concluido} == false and {Bolo.Pietro.Bolo_Pietro_Secundaria_Pietro} == false:
+	[background arg="res://assets/backgrounds/casa_pietro_atelie.jpeg" fade="0.0"]
+	join Pietro center
+	[voice path="res://assets/som/Pietro/bolo_pietro_02/Oi,-[emphasis]-você-voltou!.mp3" volume="0.0"]
+	Pietro (bolo/Bolo 07): Oi, você voltou!
+	[voice path="res://assets/som/Pietro/bolo_pietro_02/Sabe...-[pause]-eu-estava-pintando-um-quadro-cin.mp3" volume="0.0"]
+	Pietro (bolo/Bolo 08): Sabe... eu estava pintando um quadro cinzento ontem, \
+	mas perdi meus 3 pincéis de cerdas macias perto de uma árvore na floresta mágica.
+	[voice path="res://assets/som/Pietro/bolo_pietro_02/Sem-eles,-meus-sentimentos-ficam-[emphasis.mp3" volume="0.0"]
+	Pietro (bolo/Bolo 09): Sem eles, meus sentimentos ficam presos... Pode me ajudar?
+	
+	- Vou encontrar seus pincéis!
+		set {Bolo.Pietro.Bolo_Pietro_Em_Andamento} = true
+		[signal arg="voltar_mapa"]
+		[end_timeline]
+	- Agora não consigo, Pietro.
+		set {Bolo.Pietro.Bolo_Pietro_Em_Andamento} = false
+		[voice path="res://assets/som/Pietro/bolo_pietro_02/Sem-problemas...-[pause]-o-[emphasis]-tem.mp3" volume="0.0"]
+		Pietro (bolo/Bolo 10): Sem problemas... o tempo cuida dessas coisas.\
+		Se puder depois, eu agradeço.
+		[end_timeline]
+
+# ESTÁGIO 2C: Já coletou os 3 pincéis na floresta
+elif {Bolo.Pietro.Bolo_Pietro_Pinceis_Concluido} == true and {Bolo.Pietro.Bolo_Pietro_Secundaria_Pietro} == false:
+	[background arg="res://assets/backgrounds/casa_pietro_fundos.jpeg" fade="0.0"]
+	join Pietro (bolo/Bolo 07) center
+	[voice path="res://assets/som/Pietro/bolo_pietro_02/Você-procura-[short-pause]-pra-[emphasis]-mim.mp3" volume="0.0"]
+	Pietro (bolo/Bolo 11): Você é muito gentil... Seus olhos conseguem ver coisas que eu deixo passar. Obrigado.
+	[voice path="res://assets/som/Pietro/bolo_pietro_02/Tome,-leve-isto-com-você.-É-um-[emphasis]pequeno.mp3" volume="0.0"]
+	Pietro (bolo/Bolo 12): Tome, leve isto com você.\
+	É um pequeno símbolo da minha gratidão por ter devolvido a cor ao meu dia.
+	audio "res://assets/som/moedas.mp3"
+	
+	[signal arg="ganhar_moeda"]
+	set {Amizade.Pietro} += 1
+	set {Bolo.Pietro.Bolo_Pietro_Secundaria_Pietro} = true
+	set {Bolo.Pietro.Bolo_Pietro_Em_Andamento} = false
+	[end_timeline]
+
+# ESTÁGIO 2D: Aceitou procurar os pincéis, mas ainda não achou
+elif {Bolo.Pietro.Bolo_Pietro_Em_Andamento} == true and {Bolo.Pietro.Bolo_Pietro_Pinceis_Concluido} == false:
+	[background arg="res://assets/backgrounds/casa_pietro_atelie.jpeg" fade="0.0"]
+	join Pietro (bolo/Bolo 09) center
+	Pietro (bolo/Bolo 09): Os pincéis ainda devem estar perto daquela árvore na floresta mágica...
+	[end_timeline]
+
+# ESTÁGIO 3: Diálogo casual final
+else:
+	[background arg="res://assets/backgrounds/casa_pietro_fundos.jpeg" fade="0.0"]
+	join Pietro (bolo/Bolo 12) center
+	[voice path="res://assets/som/Pietro/bolo_pietro_02/Se-o-céu-começar-a-chorar-em-forma-de-chu.mp3" volume="0.0"]
+	Pietro (bolo/Bolo 13): Se o céu começar a chorar em forma de chuva, não se preocupe... isso só deixa a terra mais fresca.
+	[end_timeline]

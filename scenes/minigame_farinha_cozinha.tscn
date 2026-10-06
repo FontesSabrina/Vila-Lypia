@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3 uid="uid://8bk5ulq2xcxc"]
+
+[ext_resource type="Script" path="res://scripts/minigame_farinha_cozinha.gd" id="1_d0tjg"]
+[ext_resource type="Texture2D" uid="uid://cpgq5tlq7csqu" path="res://assets/backgrounds/casa_hera_cozinha.jpeg" id="1_msi2i"]
+[ext_resource type="Texture2D" uid="uid://b1yu3glqxspkl" path="res://assets/icon/lupa.png" id="2_ohvuq"]
+
+[node name="iniciar_minigame_farinha_cozinha" type="Node2D"]
+script = ExtResource("1_d0tjg")
+
+[node name="CasaHeraCozinha" type="Sprite2D" parent="."]
+position = Vector2(599, 335)
+scale = Vector2(0.426167, 0.49042)
+texture = ExtResource("1_msi2i")
+
+[node name="lupa" type="TextureButton" parent="."]
+offset_left = 876.0
+offset_top = 249.0
+offset_right = 2252.0
+offset_bottom = 1017.0
+scale = Vector2(0.100848, 0.107182)
+texture_normal = ExtResource("2_ohvuq")
+
+[connection signal="pressed" from="lupa" to="." method="_on_lupa_pressed"]

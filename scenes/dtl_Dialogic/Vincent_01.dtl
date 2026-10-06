@@ -1,0 +1,90 @@
+[signal arg="estilo:Vincent"]
+audio "res://assets/som/Caminho da Vila.mp3" [volume="-18.0"]
+
+# === APLICAÇÃO DINÂMICA DIRETA NO DIALOGIC ===
+if {Amizade.Vincent} <= 3:
+	[style name="cinzanovo"]
+elif {Amizade.Vincent} <= 7:
+	[style name="azulnovo"]
+else:
+	[style name="verdenovo"]
+# ============================================
+
+[background arg="res://assets/backgrounds/casaVincent_03.png" fade="0.0"]
+
+if {Convite.fase_entrega} == true and {Convite.Convite_vincent_entregue} == false:
+	join vincent (Vincent_01/11) left
+	[voice path="res://assets/som/Vincent/Vincent-01/Upa! Olha só quem chegou!.mp3" volume="0.0"]
+	vincent (Vincent_01/11): Upa! Olha só quem chegou! \
+	Eu estava testando uma nova técnica de jardinagem\
+	acrobática para fazer as plantas sorrirem!
+	Protagonista: Vincent, aqui está! \
+	Um convite para a festa surpresa da Prefeita Anne!
+	[voice path="res://assets/som/Vincent/Vincent-01/Uma festa.mp3" volume="0.0"]
+	vincent (Vincent_01/12): Uma festa! \
+	Que ideia absolutamente fantástica!\
+	Isso combina perfeitamente com a energia da Prefeita!
+	Protagonista: Você vai conseguir ir?
+	[voice path="res://assets/som/Vincent/Vincent-01/ate.mp3" volume="0.0"]
+	vincent (Vincent_01/13): Mas é claro! Não perderia isso por nada neste mundo!\
+	Vou colher as flores mais radiantes do meu estoque para decorar toda a praça. Vai ser um dia inesquecível! Até lá!
+	set {Convite.Convite_vincent_entregue} = true
+	set {Convite.pontos_convite} += 1
+	[signal arg="ir_para_praca"]
+
+elif {Convite.fase_entrega} == true and {Convite.Convite_vincent_entregue} == true:
+	[background arg="res://assets/backgrounds/casaVincent_jardim.jpeg_2K_202608040749.jpeg" fade="0.0"]
+	join vincent (Vincent_01/14) center
+	[voice path="res://assets/som/Vincent/Vincent-01/Já-estou-separando-as-[emphasis]-flores (1).mp3" volume="0.0"]
+	vincent (Vincent_01/14): Já estou separando as flores mais radiantes para decorar toda a praça!\
+	Nos vemos lá na festa!
+	[signal arg="ir_para_praca"]
+
+elif {Convite.sem_ajuda} == true:
+	join vincent (Vincent_01/10) center
+	[voice path="res://assets/som/Vincent/Vincent-01/O dia está lindo para brincar não acha.mp3" volume="0.0"]
+	vincent (Vincent_01/10): O dia está lindo para brincar, não acha?
+
+else:
+	if {Amizade.Vincent} == 0:
+		join vincent (Vincent_01/1) left
+		[voice path="res://assets/som/Vincent/Vincent-01/100, 101, 102, 103….mp3" volume="0.0"]
+		vincent (Vincent_01/1): 100, 101, 102, 103…
+		[voice path="res://assets/som/Vincent/Vincent-01/petúnias.mp3" volume="0.0"]
+		vincent (Vincent_01/2): Oi!\
+		Veio admirar as petúnias?
+		Protagonista: Não, eu vim conversar a respeito da prefeita Anne, sabe algo a respeito dela?
+		[voice path="res://assets/som/Vincent/Vincent-01/Anne….mp3" volume="0.0"]
+		vincent (Vincent_01/4): Anne…
+		join vincent (Vincent_01/5) center
+		[voice path="res://assets/som/Vincent/Vincent-01/cor favorita dela!.mp3" volume="0.0"]
+		vincent (Vincent_01/5): Ela sempre passa por aqui quando caminha pela cidade!\
+		Diz que as melhores flores são as lilases.\
+		Anne sempre fala que lilás é a cor favorita dela!
+		set {Amizade.Vincent} += 1
+	
+	elif {Amizade.Vincent} == 1:
+		join vincent (Vincent_01/6) left
+		[voice path="res://assets/som/Vincent/Vincent-01/As flores hoje parecem mais felizes, não acha.mp3" volume="0.0"]
+		vincent (Vincent_01/6): Olá novamente!\
+		As flores hoje parecem mais felizes, não acha?
+		- Elas parecem flores normais.
+			[voice path="res://assets/som/Vincent/Vincent-01/elas continuam sendo especiais para mi.mp3" volume="0.0"]
+			vincent (Vincent_01/7): Ah... bem, elas continuam sendo especiais para mim.
+			set {Amizade.Vincent} += 1
+		- Você cuida muito bem delas, Vincent.
+			[voice path="res://assets/som/Vincent/Vincent-01/Obrigado.mp3" volume="0.0"]
+			vincent (Vincent_01/8): Obrigado!\
+			Eu tento dar o meu melhor todos os dias.
+			set {Amizade.Vincent} += 1
+		- Dá para sentir o amor que você coloca em cada pétala! Elas estão radiantes!
+			join vincent (Vincent_01/9) center
+			[voice path="res://assets/som/Vincent/Vincent-01/Puxa, muito obrigado.mp3" volume="0.0"]
+			vincent (Vincent_01/9): Puxa, muito obrigado!\
+			Ninguém nunca tinha reparado nisso antes!
+			set {Amizade.Vincent} += 2
+	
+	else:
+		join vincent (Vincent_01/10) center
+		[voice path="res://assets/som/Vincent/Vincent-01/O dia está lindo para brincar não acha.mp3" volume="0.0"]
+		vincent (Vincent_01/10): O dia está lindo para brincar, não acha?

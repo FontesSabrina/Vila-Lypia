@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://dgfeh73lr7mwd"]
+
+[ext_resource type="Texture2D" uid="uid://cfkq32y3rabtt" path="res://assets/backgrounds/casa_hera_ gaveta_3.jpeg" id="1_elnxv"]
+[ext_resource type="PackedScene" uid="uid://d2xciyaba14pa" path="res://scenes/gavetas_hera_seta.tscn" id="2_oet71"]
+[ext_resource type="PackedScene" uid="uid://cgkw3nyjgicht" path="res://scenes/barra_fitas.tscn" id="3_ylwwd"]
+
+[node name="iniciar_minigame_marcadores_hera_Gaveta-3" type="Node2D"]
+
+[node name="CasaHeraGaveta3" type="Sprite2D" parent="."]
+position = Vector2(577.5, 321.5)
+scale = Vector2(0.418968, 0.423828)
+texture = ExtResource("1_elnxv")
+
+[node name="gavetas_hera_seta" parent="." instance=ExtResource("2_oet71")]
+position = Vector2(306, 259)
+
+[node name="barra_fitas" parent="gavetas_hera_seta" instance=ExtResource("3_ylwwd")]
+position = Vector2(-161, 292)

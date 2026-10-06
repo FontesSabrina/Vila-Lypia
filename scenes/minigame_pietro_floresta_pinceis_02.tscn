@@ -1,0 +1,51 @@
+[gd_scene load_steps=6 format=3 uid="uid://ym81xh6oyftp"]
+
+[ext_resource type="Texture2D" uid="uid://dvacs4k61ky8w" path="res://assets/backgrounds/floresta03.jpeg" id="1_6cx4e"]
+[ext_resource type="Script" path="res://scripts/minigame_pietro_floresta_pinceis_02.gd" id="2_5w52v"]
+[ext_resource type="Texture2D" uid="uid://c50f71pflhnqf" path="res://assets/icon/seta.png" id="2_hfcwp"]
+[ext_resource type="PackedScene" uid="uid://dor3bouo3pw5m" path="res://scenes/barra_pinceis.tscn" id="3_1g4iy"]
+[ext_resource type="Texture2D" uid="uid://c4bf87wqk3t5c" path="res://assets/icon/pincel02.png" id="5_onuko"]
+
+[node name="minigame_pietro_floresta_pinceis_02" type="Node2D"]
+position = Vector2(581.25, 324.875)
+scale = Vector2(0.416243, 0.425944)
+script = ExtResource("2_5w52v")
+
+[node name="Floresta03" type="Sprite2D" parent="."]
+position = Vector2(-0.300415, 0.146851)
+scale = Vector2(1.01942, 1.00287)
+texture = ExtResource("1_6cx4e")
+
+[node name="seta_03" type="TextureButton" parent="."]
+offset_left = 1099.72
+offset_top = -318.997
+offset_right = 1839.72
+offset_bottom = 174.003
+rotation = -0.678549
+scale = Vector2(0.183936, 0.163044)
+texture_normal = ExtResource("2_hfcwp")
+
+[node name="barra_pincel" parent="." instance=ExtResource("3_1g4iy")]
+position = Vector2(-992.81, 566.096)
+scale = Vector2(0.296707, 0.316962)
+
+[node name="pincel-02" type="TextureButton" parent="."]
+offset_left = 938.755
+offset_top = 30.8139
+offset_right = 1522.75
+offset_bottom = 1566.81
+scale = Vector2(0.330893, 0.135538)
+texture_normal = ExtResource("5_onuko")
+
+[node name="seta_04" type="TextureButton" parent="."]
+offset_left = -646.858
+offset_top = 326.627
+offset_right = 93.1421
+offset_bottom = 819.627
+rotation = -3.6261
+scale = Vector2(0.183936, 0.163044)
+texture_normal = ExtResource("2_hfcwp")
+
+[connection signal="pressed" from="seta_03" to="." method="_on_seta_03_pressed"]
+[connection signal="pressed" from="pincel-02" to="." method="_on_pincel_02_pressed"]
+[connection signal="pressed" from="seta_04" to="." method="_on_seta_04_pressed"]

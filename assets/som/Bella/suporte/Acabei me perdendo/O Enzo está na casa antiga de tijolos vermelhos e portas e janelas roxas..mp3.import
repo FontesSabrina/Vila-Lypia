@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://nclxxpfyyig7"
+path="res://.godot/imported/O Enzo está na casa antiga de tijolos vermelhos e portas e janelas roxas..mp3-a026d7f132207896ed1176c46a628a9c.mp3str"
+
+[deps]
+
+source_file="res://assets/som/Bella/suporte/Acabei me perdendo/O Enzo está na casa antiga de tijolos vermelhos e portas e janelas roxas..mp3"
+dest_files=["res://.godot/imported/O Enzo está na casa antiga de tijolos vermelhos e portas e janelas roxas..mp3-a026d7f132207896ed1176c46a628a9c.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

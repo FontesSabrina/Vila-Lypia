@@ -1,0 +1,401 @@
+{
+"@path": "res://addons/dialogic/Resources/character.gd",
+"@subpath": NodePath(""),
+"_translation_id": "",
+"color": Color(1, 1, 1, 1),
+"custom_info": {
+"prefix": "",
+"sound_mood_default": "",
+"sound_moods": {},
+"style": "",
+"suffix": ""
+},
+"default_portrait": "vazio",
+"description": "",
+"display_name": "{NomePietro}",
+"mirror": false,
+"nicknames": ["Pietro"],
+"offset": Vector2(0, 0),
+"portraits": {
+"Bem": {
+"export_overrides": {
+"image": "\"res://assets/characters/pietro/bem.png\""
+},
+"mirror": false,
+"offset": Vector2(-100, -90),
+"scale": 0.7,
+"scene": ""
+},
+"Desanimado": {
+"export_overrides": {
+"image": "\"res://assets/characters/pietro/desanimado.png\""
+},
+"mirror": false,
+"offset": Vector2(-100, -100),
+"scale": 0.7,
+"scene": ""
+},
+"Desanimado 2": {
+"export_overrides": {
+"image": "\"res://assets/characters/pietro/desanimado2.png\""
+},
+"mirror": false,
+"offset": Vector2(-100, -100),
+"scale": 0.7,
+"scene": ""
+},
+"Desmotivado": {
+"export_overrides": {
+"image": "\"res://assets/characters/pietro/desmotivado.png\""
+},
+"mirror": true,
+"offset": Vector2(-200, -100),
+"scale": 0.7,
+"scene": ""
+},
+"Obg": {
+"export_overrides": {
+"image": "\"res://assets/characters/pietro/obg.png\""
+},
+"mirror": false,
+"offset": Vector2(-100, -100),
+"scale": 0.7,
+"scene": ""
+},
+"Oi": {
+"export_overrides": {
+"image": "\"res://assets/characters/pietro/oi.png\""
+},
+"mirror": false,
+"offset": Vector2(-100, -90),
+"scale": 0.7,
+"scene": ""
+},
+"Pietro_01/1": {
+"export_overrides": {
+"image": "\"res://assets/characters/pietro/Pietro_01/1.png\""
+},
+"mirror": true,
+"offset": Vector2(0, 0),
+"scale": 0.8,
+"scene": ""
+},
+"Pietro_01/10": {
+"export_overrides": {
+"image": "\"res://assets/characters/pietro/Pietro_01/10.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"Pietro_01/11": {
+"export_overrides": {
+"image": "\"res://assets/characters/pietro/Pietro_01/11.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"Pietro_01/12": {
+"export_overrides": {
+"image": "\"res://assets/characters/pietro/Pietro_01/12.png\""
+},
+"mirror": false,
+"offset": Vector2(-100, -100),
+"scale": 0.7,
+"scene": ""
+},
+"Pietro_01/13": {
+"export_overrides": {
+"image": "\"res://assets/characters/pietro/Pietro_01/13.png\""
+},
+"mirror": false,
+"offset": Vector2(130, -120),
+"scale": 0.6,
+"scene": ""
+},
+"Pietro_01/14": {
+"export_overrides": {
+"image": "\"res://assets/characters/pietro/Pietro_01/14.png\""
+},
+"mirror": false,
+"offset": Vector2(130, -120),
+"scale": 0.6,
+"scene": ""
+},
+"Pietro_01/15": {
+"export_overrides": {
+"image": "\"res://assets/characters/pietro/Pietro_01/15.png\""
+},
+"mirror": false,
+"offset": Vector2(130, -120),
+"scale": 0.6,
+"scene": ""
+},
+"Pietro_01/16": {
+"export_overrides": {
+"image": "\"res://assets/characters/pietro/Pietro_01/16.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"Pietro_01/2": {
+"export_overrides": {
+"image": "\"res://assets/characters/pietro/Pietro_01/2.png\""
+},
+"mirror": true,
+"offset": Vector2(0, 0),
+"scale": 0.8,
+"scene": ""
+},
+"Pietro_01/3": {
+"export_overrides": {
+"image": "\"res://assets/characters/pietro/Pietro_01/3.png\""
+},
+"mirror": true,
+"offset": Vector2(0, 0),
+"scale": 0.8,
+"scene": ""
+},
+"Pietro_01/4": {
+"export_overrides": {
+"image": "\"res://assets/characters/pietro/Pietro_01/4.png\""
+},
+"mirror": true,
+"offset": Vector2(0, 0),
+"scale": 0.8,
+"scene": ""
+},
+"Pietro_01/5": {
+"export_overrides": {
+"image": "\"res://assets/characters/pietro/Pietro_01/5.png\""
+},
+"mirror": true,
+"offset": Vector2(0, 0),
+"scale": 0.8,
+"scene": ""
+},
+"Pietro_01/6": {
+"export_overrides": {
+"image": "\"res://assets/characters/pietro/Pietro_01/6.png\""
+},
+"mirror": true,
+"offset": Vector2(0, 0),
+"scale": 0.8,
+"scene": ""
+},
+"Pietro_01/7": {
+"export_overrides": {
+"image": "\"res://assets/characters/pietro/Pietro_01/7.png\""
+},
+"mirror": false,
+"offset": Vector2(-100, -100),
+"scale": 0.7,
+"scene": ""
+},
+"Pietro_01/8": {
+"export_overrides": {
+"image": "\"res://assets/characters/pietro/Pietro_01/8.png\""
+},
+"mirror": false,
+"offset": Vector2(-100, -100),
+"scale": 0.7,
+"scene": ""
+},
+"Pietro_01/9": {
+"export_overrides": {
+"image": "\"res://assets/characters/pietro/Pietro_01/9.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"bolo/1": {
+"export_overrides": {
+"image": "\"res://assets/characters/pietro/bolo_pietro_02/bolo_01.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"bolo/2": {
+"export_overrides": {
+"image": "\"res://assets/characters/pietro/bolo_pietro_02/bolo_02.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"bolo/3": {
+"export_overrides": {
+"image": "\"res://assets/characters/pietro/bolo_pietro_02/bolo_03.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"bolo/4": {
+"export_overrides": {
+"image": "\"res://assets/characters/pietro/bolo_pietro_02/bolo_04.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"bolo/Bolo 06": {
+"export_overrides": {
+"image": "\"res://assets/characters/pietro/bolo_pietro_02/bolo_06.png\""
+},
+"ignore_char_scale": true,
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 0.9,
+"scene": ""
+},
+"bolo/Bolo 07": {
+"export_overrides": {
+"image": "\"res://assets/characters/pietro/bolo_pietro_02/bolo_07.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 0.9,
+"scene": ""
+},
+"bolo/Bolo 08": {
+"export_overrides": {
+"image": "\"res://assets/characters/pietro/bolo_pietro_02/bolo_08.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 0.9,
+"scene": ""
+},
+"bolo/Bolo 09": {
+"export_overrides": {
+"image": "\"res://assets/characters/pietro/bolo_pietro_02/bolo_09.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 0.9,
+"scene": ""
+},
+"bolo/Bolo 10": {
+"export_overrides": {
+"image": "\"res://assets/characters/pietro/bolo_pietro_02/bolo_10.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 0.9,
+"scene": ""
+},
+"bolo/Bolo 11": {
+"export_overrides": {
+"image": "\"res://assets/characters/pietro/bolo_pietro_02/bolo_11.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 0.9,
+"scene": ""
+},
+"bolo/Bolo 12": {
+"export_overrides": {
+"image": "\"res://assets/characters/pietro/bolo_pietro_02/bolo_12.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 0.9,
+"scene": ""
+},
+"bolo/Bolo 13": {
+"export_overrides": {
+"image": "\"res://assets/characters/pietro/bolo_pietro_02/bolo_13.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 0.9,
+"scene": ""
+},
+"bolo/Bolo-05": {
+"export_overrides": {
+"image": "\"res://assets/characters/pietro/bolo_pietro_02/bolo-05.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"cartao/1": {
+"export_overrides": {
+"image": "\"res://assets/characters/pietro/cartao/1.png\""
+},
+"mirror": false,
+"offset": Vector2(170, -140),
+"scale": 0.5,
+"scene": ""
+},
+"cartao/2": {
+"export_overrides": {
+"image": "\"res://assets/characters/pietro/cartao/2.png\""
+},
+"mirror": false,
+"offset": Vector2(170, -140),
+"scale": 0.5,
+"scene": ""
+},
+"cartao/3": {
+"export_overrides": {
+"image": "\"res://assets/characters/pietro/cartao/3.png\""
+},
+"mirror": false,
+"offset": Vector2(170, -140),
+"scale": 0.5,
+"scene": ""
+},
+"cartao/4": {
+"export_overrides": {
+"image": "\"res://assets/characters/pietro/cartao/4.png\""
+},
+"mirror": false,
+"offset": Vector2(170, -140),
+"scale": 0.5,
+"scene": ""
+},
+"cartao/5": {
+"export_overrides": {
+"image": "\"res://assets/characters/pietro/cartao/5.png\""
+},
+"mirror": false,
+"offset": Vector2(170, -140),
+"scale": 0.5,
+"scene": ""
+},
+"cartao/Pietro Cartao": {
+"export_overrides": {
+"image": "\"res://assets/characters/pietro/cartao/Pietro_cartao.png\""
+},
+"mirror": false,
+"offset": Vector2(100, 100),
+"scale": 0.8,
+"scene": ""
+},
+"vazio": {
+"export_overrides": {
+"image": ""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+}
+},
+"scale": 1.0
+}

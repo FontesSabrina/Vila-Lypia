@@ -1,0 +1,79 @@
+[gd_scene load_steps=6 format=3 uid="uid://bmdaaobh615tl"]
+
+[ext_resource type="Script" path="res://scripts/barra_distintivos.gd" id="1_siy10"]
+[ext_resource type="Texture2D" uid="uid://cyaikmkq0207s" path="res://assets/icon/barra2.png" id="2_62f44"]
+[ext_resource type="Texture2D" uid="uid://w3yawdch426h" path="res://assets/icon/distintivo2.png" id="3_dhdem"]
+[ext_resource type="Texture2D" uid="uid://tqlmylv45it1" path="res://assets/icon/distintivo1.png" id="4_lne6b"]
+[ext_resource type="Texture2D" uid="uid://cxoqyb8tn5jg1" path="res://assets/icon/distintivo3.png" id="5_hl3tu"]
+
+[node name="barra_distintivos" type="Sprite2D"]
+position = Vector2(1002, 561)
+scale = Vector2(0.106105, 0.112793)
+texture = ExtResource("2_62f44")
+script = ExtResource("1_siy10")
+
+[node name="distintivo2" type="TextureRect" parent="."]
+custom_minimum_size = Vector2(100, 60)
+offset_left = -226.0
+offset_top = -434.0
+offset_right = 952.0
+offset_bottom = 510.0
+scale = Vector2(0.4, 0.432)
+texture = ExtResource("3_dhdem")
+expand_mode = 1
+
+[node name="Sombra_Distintivo2" type="TextureRect" parent="."]
+modulate = Color(0.473976, 0.473976, 0.473976, 1)
+self_modulate = Color(0.796243, 0.796243, 0.796243, 1)
+custom_minimum_size = Vector2(100, 60)
+offset_left = -226.0
+offset_top = -470.0
+offset_right = 952.0
+offset_bottom = 579.0
+scale = Vector2(0.4, 0.431)
+texture = ExtResource("3_dhdem")
+expand_mode = 1
+
+[node name="distintivo1" type="TextureRect" parent="."]
+custom_minimum_size = Vector2(100, 60)
+offset_left = -866.806
+offset_top = -443.29
+offset_right = 217.194
+offset_bottom = 438.71
+scale = Vector2(0.4, 0.432)
+texture = ExtResource("4_lne6b")
+expand_mode = 1
+
+[node name="Sombra_Distintivo1" type="TextureRect" parent="."]
+modulate = Color(0.473976, 0.473976, 0.473976, 1)
+self_modulate = Color(0.796243, 0.796243, 0.796243, 1)
+custom_minimum_size = Vector2(100, 60)
+offset_left = -867.066
+offset_top = -442.866
+offset_right = 242.934
+offset_bottom = 462.134
+scale = Vector2(0.4, 0.431)
+texture = ExtResource("4_lne6b")
+expand_mode = 1
+
+[node name="distintivo3" type="TextureRect" parent="."]
+custom_minimum_size = Vector2(100, 60)
+offset_left = 395.835
+offset_top = -452.155
+offset_right = 1592.83
+offset_bottom = 471.845
+scale = Vector2(0.4, 0.432)
+texture = ExtResource("5_hl3tu")
+expand_mode = 1
+
+[node name="Sombra_Distintivo3" type="TextureRect" parent="."]
+modulate = Color(0.473976, 0.473976, 0.473976, 1)
+self_modulate = Color(0.796243, 0.796243, 0.796243, 1)
+custom_minimum_size = Vector2(100, 60)
+offset_left = 395.835
+offset_top = -469.887
+offset_right = 1620.83
+offset_bottom = 538.113
+scale = Vector2(0.4, 0.431)
+texture = ExtResource("5_hl3tu")
+expand_mode = 1

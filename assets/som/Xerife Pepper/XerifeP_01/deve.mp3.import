@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dcy7btkyrgd4w"
+path="res://.godot/imported/deve.mp3-7dac9381e461b970f9008a05e49575df.mp3str"
+
+[deps]
+
+source_file="res://assets/som/Xerife Pepper/XerifeP_01/deve.mp3"
+dest_files=["res://.godot/imported/deve.mp3-7dac9381e461b970f9008a05e49575df.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

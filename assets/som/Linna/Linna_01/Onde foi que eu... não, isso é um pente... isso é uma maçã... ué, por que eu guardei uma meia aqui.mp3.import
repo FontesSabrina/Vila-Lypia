@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://d4hamsyfimtin"
+path="res://.godot/imported/Onde foi que eu... não, isso é um pente... isso é uma maçã... ué, por que eu guardei uma meia aqui.mp3-0fff4ed9401357c5d6f73ec8cf100783.mp3str"
+
+[deps]
+
+source_file="res://assets/som/Linna/Linna_01/Onde foi que eu... não, isso é um pente... isso é uma maçã... ué, por que eu guardei uma meia aqui.mp3"
+dest_files=["res://.godot/imported/Onde foi que eu... não, isso é um pente... isso é uma maçã... ué, por que eu guardei uma meia aqui.mp3-0fff4ed9401357c5d6f73ec8cf100783.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

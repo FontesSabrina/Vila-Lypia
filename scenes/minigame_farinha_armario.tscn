@@ -1,0 +1,27 @@
+[gd_scene load_steps=5 format=3 uid="uid://bfw53f0dydcf0"]
+
+[ext_resource type="Script" path="res://scripts/minigame_farinha_armario.gd" id="1_itjac"]
+[ext_resource type="Texture2D" uid="uid://bc1xrhwgrf8xn" path="res://assets/backgrounds/casa_hera_armario.jpeg" id="1_pweml"]
+[ext_resource type="Texture2D" uid="uid://fw23dlkujac" path="res://assets/icon/farinha_peneirada.png" id="3_nk260"]
+[ext_resource type="PackedScene" uid="uid://dblln4vfef4hc" path="res://scenes/barra_farinha.tscn" id="4_84a6n"]
+
+[node name="minigame_farinha_armario" type="Node2D"]
+script = ExtResource("1_itjac")
+
+[node name="CasaHeraArmario" type="Sprite2D" parent="."]
+position = Vector2(592, 328)
+scale = Vector2(0.431868, 0.433268)
+texture = ExtResource("1_pweml")
+
+[node name="Farinha" type="TextureButton" parent="."]
+offset_left = 446.0
+offset_top = 99.0
+offset_right = 708.0
+offset_bottom = 337.0
+scale = Vector2(0.429124, 0.423573)
+texture_normal = ExtResource("3_nk260")
+
+[node name="barra_farinha" parent="." instance=ExtResource("4_84a6n")]
+position = Vector2(153, 565)
+
+[connection signal="pressed" from="Farinha" to="." method="_on_farinha_pressed"]

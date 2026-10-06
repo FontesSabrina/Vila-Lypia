@@ -1,0 +1,50 @@
+audio "res://assets/som/Caminho da Vila.mp3" [volume="-18.0"]
+[style name="cinzanovo"]
+
+if {Cap4.Intro_Feita} == true:
+	if {Cap4.Cartao_Feito} == true:
+		join Bella (cartao /7) left
+		[voice path="res://assets/som/Bella/cartao/Ficou-espetacular!nEles-[emp.mp3" volume="0.0"]
+		
+		Bella (cartao /7): Ficou espetacular!\
+		Eles nunca conseguiram trabalhar juntos assim antes.\
+		Agora só falta o presente principal. \
+		Vamos à loja da Linna!
+		
+		leave Bella
+		[signal arg="ir_para_loja"]
+	elif {Cap4.Cartao_Liberado} == true:
+		join Bella (cartao /7) left
+		[voice path="res://assets/som/Bella/cartao/Agora-que-todos-colocaram-o-coração-no.mp3" volume="0.0"]
+		
+		Bella (cartao /8): Agora que todos colocaram o coração no papel, precisamos organizar esses pedaços no Cartão Gigante!\
+		{NomeJogador}, você pode encaixar cada sentimento no lugar certo?
+		
+		leave Bella
+		[signal arg="iniciar_minigame_cartao"]
+	else:
+		[signal arg="ir_para_mesa"]
+	[end_timeline]
+
+join Bella (cartao /0) left
+[voice path="res://assets/som/Bella/cartao/O-[emphasis]-bolo-está-pronto-e-os-con.mp3" volume="0.0"]
+
+Bella (cartao /1): O bolo está pronto e os convites foram entregues! Você está indo muito bem, {NomeJogador}.
+[voice path="res://assets/som/Bella/cartao/Mas-ainda-falta-uma-[emphasis]última-tarefa,-[pa.mp3" volume="0.0"]
+Bella (cartao /2): Mas ainda falta uma última tarefa, talvez a mais importante de todas\: escolher o presente da Prefeita Anne.
+[voice path="res://assets/som/Bella/cartao/-O-presente-[emphasis]-ideal-precisa-mostrar-que.mp3" volume="0.0"]
+Bella (cartao /3): O presente ideal precisa mostrar que nós a conhecemos e nos importamos com ela.\
+Lembra das moedas que você ganhou ajudando o pessoal da vila? \
+É hora de usá-las na loja da Linna!
+[voice path="res://assets/som/Bella/cartao/-Porém,-eu-vi-que-os-moradores-estão-tentando-faz.mp3" volume="0.0"]
+Bella (cartao /4): Porém, eu vi que os moradores estão tentando fazer um\
+Cartão Gigante para entregar junto com o presente. \
+Eles querem colocar um pedacinho de cada um nele, mas estão com\
+muita dificuldade para expressar o que sentem.
+[voice path="res://assets/som/Bella/cartao/Que-tal-darmos-uma-volta-na-praça-para-ajudá-los.mp3" volume="0.0"]
+Bella (cartao /4): Que tal darmos uma volta na praça para ajudá-los com o cartão? \
+Se eles conseguirem se expressar, com certeza vão te dar as melhores \
+dicas sobre o que a Prefeita mais amaria ganhar na loja!
+
+set {Cap4.Intro_Feita} = true
+leave Bella

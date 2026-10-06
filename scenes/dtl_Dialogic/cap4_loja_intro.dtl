@@ -1,0 +1,20 @@
+audio "res://assets/som/Caminho da Vila.mp3" [volume="-18.0"]
+
+if {Amizade.Linna} <= 3:
+	[style name="cinzanovo"]
+elif {Amizade.Linna} <= 7:
+	[style name="azulnovo"]
+else:
+	[style name="verdenovo"]
+
+[background arg="res://assets/backgrounds/loja_blação.jpg" fade="0.0"]
+join linna (loja/1) center
+linna (loja/1): Oh! Olá! Você veio comprar um globo de neve?
+linna (loja/2): Não, espere... você está com aquela carinha de quem procura um presente de aniversário!
+Protagonista: Sim, Linna! É para a Prefeita Anne. \
+Nós já temos o cartão, agora precisamos do presente. \
+O que você tem na loja?
+linna (loja/3): Ah, a Anne! Eu tenho várias coisas lindas... só preciso lembrar onde coloquei.\
+Veja o meu catálogo mágico!
+leave linna
+[signal arg="abrir_catalogo"]

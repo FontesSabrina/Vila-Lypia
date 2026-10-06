@@ -1,0 +1,46 @@
+[gd_scene load_steps=6 format=3 uid="uid://nug86jdamvjb"]
+
+[ext_resource type="Script" path="res://scripts/menu.gd" id="1_337nk"]
+[ext_resource type="Texture2D" uid="uid://b7i1lpbcmdt75" path="res://assets/backgrounds/menu.png" id="2_73gwl"]
+[ext_resource type="Texture2D" uid="uid://bn4bc7nyfu7yr" path="res://assets/icon/logo (2).png" id="3_knycb"]
+[ext_resource type="PackedScene" uid="uid://gcdn3uq7o8i6" path="res://scenes/painel_primeira_vez.tscn" id="4_50bpr"]
+[ext_resource type="PackedScene" uid="uid://cmw0ue0xtj3j6" path="res://scenes/painel_com_save.tscn" id="5_jxd3s"]
+
+[node name="menu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 6.0
+offset_top = 5.0
+offset_right = 6.0
+offset_bottom = 5.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_337nk")
+
+[node name="Menu" type="Sprite2D" parent="."]
+position = Vector2(571, 317)
+scale = Vector2(0.420058, 0.422852)
+texture = ExtResource("2_73gwl")
+
+[node name="Logo(2)" type="Sprite2D" parent="."]
+position = Vector2(571, 177)
+scale = Vector2(0.292722, 0.289852)
+texture = ExtResource("3_knycb")
+
+[node name="PainelPrimeiraVez" parent="." instance=ExtResource("4_50bpr")]
+layout_mode = 1
+offset_left = 329.0
+offset_top = 278.0
+offset_right = 329.0
+offset_bottom = 278.0
+scale = Vector2(1.39409, 1.6885)
+
+[node name="PainelComSave" parent="." instance=ExtResource("5_jxd3s")]
+layout_mode = 1
+offset_left = 306.0
+offset_top = 413.0
+offset_right = 306.0
+offset_bottom = 413.0
+scale = Vector2(1.06244, 1.20213)

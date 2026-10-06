@@ -1,0 +1,400 @@
+{
+"@path": "res://addons/dialogic/Resources/character.gd",
+"@subpath": NodePath(""),
+"_translation_id": "",
+"color": Color(1, 1, 1, 1),
+"custom_info": {
+"prefix": "",
+"sound_mood_default": "",
+"sound_moods": {},
+"style": "",
+"suffix": ""
+},
+"default_portrait": "Obs",
+"description": "",
+"display_name": "{NomeXerife}",
+"mirror": false,
+"nicknames": [""],
+"offset": Vector2(0, 0),
+"portraits": {
+"Bolo/09": {
+"export_overrides": {
+"image": "\"res://assets/characters/xerife/bolo_xerife/bolo_09.png\""
+},
+"mirror": false,
+"offset": Vector2(-10, 0),
+"scale": 1,
+"scene": ""
+},
+"Bolo/1": {
+"export_overrides": {
+"image": "\"res://assets/characters/xerife/bolo_xerife/bolo_01.png\""
+},
+"mirror": false,
+"offset": Vector2(100, 0),
+"scale": 0.75,
+"scene": ""
+},
+"Bolo/10": {
+"export_overrides": {
+"image": "\"res://assets/characters/xerife/bolo_xerife/bolo_10.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"Bolo/11": {
+"export_overrides": {
+"image": "\"res://assets/characters/xerife/bolo_xerife/bolo_11.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"Bolo/12": {
+"export_overrides": {
+"image": "\"res://assets/characters/xerife/bolo_xerife/bolo_12.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"Bolo/13": {
+"export_overrides": {
+"image": "\"res://assets/characters/xerife/bolo_xerife/bolo_13.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"Bolo/14": {
+"export_overrides": {
+"image": "\"res://assets/characters/xerife/bolo_xerife/bolo_14.png\""
+},
+"mirror": false,
+"offset": Vector2(-10, 0),
+"scale": 1,
+"scene": ""
+},
+"Bolo/15": {
+"export_overrides": {
+"image": "\"res://assets/characters/xerife/bolo_xerife/bolo_15.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"Bolo/2": {
+"export_overrides": {
+"image": "\"res://assets/characters/xerife/bolo_xerife/bolo_02.png\""
+},
+"mirror": false,
+"offset": Vector2(100, 0),
+"scale": 0.75,
+"scene": ""
+},
+"Bolo/3": {
+"export_overrides": {
+"image": "\"res://assets/characters/xerife/bolo_xerife/bolo_03.png\""
+},
+"mirror": false,
+"offset": Vector2(100, 0),
+"scale": 0.75,
+"scene": ""
+},
+"Bolo/4": {
+"export_overrides": {
+"image": "\"res://assets/characters/xerife/bolo_xerife/bolo_04.png\""
+},
+"mirror": false,
+"offset": Vector2(100, 0),
+"scale": 0.75,
+"scene": ""
+},
+"Bolo/5": {
+"export_overrides": {
+"image": "\"res://assets/characters/xerife/bolo_xerife/bolo_05.png\""
+},
+"mirror": false,
+"offset": Vector2(100, 0),
+"scale": 0.75,
+"scene": ""
+},
+"Bolo/6": {
+"export_overrides": {
+"image": "\"res://assets/characters/xerife/bolo_xerife/bolo_06.png\""
+},
+"mirror": false,
+"offset": Vector2(100, 0),
+"scale": 0.75,
+"scene": ""
+},
+"Bolo/Bolo 07": {
+"export_overrides": {
+"image": "\"res://assets/characters/xerife/bolo_xerife/bolo_07.png\""
+},
+"mirror": false,
+"offset": Vector2(100, 0),
+"scale": 0.75,
+"scene": ""
+},
+"Bolo/Bolo 08": {
+"export_overrides": {
+"image": "\"res://assets/characters/xerife/bolo_xerife/bolo_08.png\""
+},
+"mirror": false,
+"offset": Vector2(10, 10),
+"scale": 0.75,
+"scene": ""
+},
+"Bolo/Bolo 16": {
+"export_overrides": {
+"image": "\"res://assets/characters/xerife/bolo_xerife/bolo_16.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"Cadeira 1": {
+"export_overrides": {
+"image": "\"res://assets/characters/xerife/cadeira1.png\""
+},
+"mirror": true,
+"offset": Vector2(-1, -80),
+"scale": 0.6,
+"scene": ""
+},
+"Cadeira 2": {
+"export_overrides": {
+"image": "\"res://assets/characters/xerife/cadeira2.png\""
+},
+"mirror": true,
+"offset": Vector2(-1, -80),
+"scale": 0.6,
+"scene": ""
+},
+"Duraoporfora": {
+"export_overrides": {
+"image": "\"res://assets/characters/xerife/duraoporfora.png\""
+},
+"mirror": true,
+"offset": Vector2(60, 60),
+"scale": 0.8,
+"scene": ""
+},
+"Obs": {
+"export_overrides": {
+"image": "\"res://assets/characters/xerife/obs.png\""
+},
+"mirror": true,
+"offset": Vector2(60, 60),
+"scale": 0.8,
+"scene": ""
+},
+"Vermelho": {
+"export_overrides": {
+"image": "\"res://assets/characters/xerife/vermelho.png\""
+},
+"mirror": true,
+"offset": Vector2(60, 60),
+"scale": 0.8,
+"scene": ""
+},
+"XerifeP_01/1": {
+"export_overrides": {
+"image": "\"res://assets/characters/xerife/XerifeP_01/1.png\""
+},
+"mirror": false,
+"offset": Vector2(-200, 80),
+"scale": 0.8,
+"scene": ""
+},
+"XerifeP_01/10": {
+"export_overrides": {
+"image": "\"res://assets/characters/xerife/XerifeP_01/10.png\""
+},
+"mirror": false,
+"offset": Vector2(-200, 80),
+"scale": 0.9,
+"scene": ""
+},
+"XerifeP_01/11": {
+"export_overrides": {
+"image": "\"res://assets/characters/xerife/XerifeP_01/11.png\""
+},
+"mirror": false,
+"offset": Vector2(-100, -1),
+"scale": 0.7,
+"scene": ""
+},
+"XerifeP_01/12": {
+"export_overrides": {
+"image": "\"res://assets/characters/xerife/XerifeP_01/12.png\""
+},
+"mirror": false,
+"offset": Vector2(-190, 50),
+"scale": 1,
+"scene": ""
+},
+"XerifeP_01/13": {
+"export_overrides": {
+"image": "\"res://assets/characters/xerife/XerifeP_01/13.png\""
+},
+"mirror": false,
+"offset": Vector2(-190, 50),
+"scale": 0.95,
+"scene": ""
+},
+"XerifeP_01/14": {
+"export_overrides": {
+"image": "\"res://assets/characters/xerife/XerifeP_01/14.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 0.9,
+"scene": ""
+},
+"XerifeP_01/2": {
+"export_overrides": {
+"image": "\"res://assets/characters/xerife/XerifeP_01/2.png\""
+},
+"mirror": false,
+"offset": Vector2(-80, 80),
+"scale": 0.8,
+"scene": ""
+},
+"XerifeP_01/3": {
+"export_overrides": {
+"image": "\"res://assets/characters/xerife/XerifeP_01/3.png\""
+},
+"mirror": false,
+"offset": Vector2(-200, 80),
+"scale": 0.8,
+"scene": ""
+},
+"XerifeP_01/4": {
+"export_overrides": {
+"image": "\"res://assets/characters/xerife/XerifeP_01/4.png\""
+},
+"mirror": false,
+"offset": Vector2(-200, 80),
+"scale": 0.8,
+"scene": ""
+},
+"XerifeP_01/5": {
+"export_overrides": {
+"image": "\"res://assets/characters/xerife/XerifeP_01/5.png\""
+},
+"mirror": false,
+"offset": Vector2(-200, 80),
+"scale": 0.8,
+"scene": ""
+},
+"XerifeP_01/6": {
+"export_overrides": {
+"image": "\"res://assets/characters/xerife/XerifeP_01/6.png\""
+},
+"mirror": false,
+"offset": Vector2(-200, 80),
+"scale": 0.8,
+"scene": ""
+},
+"XerifeP_01/7": {
+"export_overrides": {
+"image": "\"res://assets/characters/xerife/XerifeP_01/7.png\""
+},
+"mirror": false,
+"offset": Vector2(-200, 80),
+"scale": 0.8,
+"scene": ""
+},
+"XerifeP_01/8": {
+"export_overrides": {
+"image": "\"res://assets/characters/xerife/XerifeP_01/8.png\""
+},
+"mirror": false,
+"offset": Vector2(-200, 80),
+"scale": 0.8,
+"scene": ""
+},
+"XerifeP_01/9": {
+"export_overrides": {
+"image": "\"res://assets/characters/xerife/XerifeP_01/9.png\""
+},
+"mirror": false,
+"offset": Vector2(-200, 80),
+"scale": 0.8,
+"scene": ""
+},
+"XerifeP_01/Group/New portrait": {
+"export_overrides": {
+"image": ""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"cartao/1": {
+"export_overrides": {
+"image": "\"res://assets/characters/xerife/cartao/1.png\""
+},
+"mirror": false,
+"offset": Vector2(-150, -150),
+"scale": 0.5,
+"scene": ""
+},
+"cartao/2": {
+"export_overrides": {
+"image": "\"res://assets/characters/xerife/cartao/2.png\""
+},
+"mirror": false,
+"offset": Vector2(-150, -150),
+"scale": 0.5,
+"scene": ""
+},
+"cartao/3": {
+"export_overrides": {
+"image": "\"res://assets/characters/xerife/cartao/3.png\""
+},
+"mirror": false,
+"offset": Vector2(-150, -150),
+"scale": 0.5,
+"scene": ""
+},
+"cartao/4": {
+"export_overrides": {
+"image": "\"res://assets/characters/xerife/cartao/4.png\""
+},
+"mirror": false,
+"offset": Vector2(-150, -150),
+"scale": 0.5,
+"scene": ""
+},
+"cartao/5": {
+"export_overrides": {
+"image": "\"res://assets/characters/xerife/cartao/5.png\""
+},
+"mirror": false,
+"offset": Vector2(-150, -150),
+"scale": 0.5,
+"scene": ""
+},
+"cartao/Xerife Cartao": {
+"export_overrides": {
+"image": "\"res://assets/characters/xerife/cartao/Xerife_cartao.png\""
+},
+"mirror": false,
+"offset": Vector2(-150, -150),
+"scale": 0.5,
+"scene": ""
+}
+},
+"scale": 1.0
+}

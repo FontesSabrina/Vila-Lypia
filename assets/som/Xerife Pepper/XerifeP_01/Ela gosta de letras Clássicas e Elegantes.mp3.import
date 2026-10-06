@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://c3cxpcdn87r4a"
+path="res://.godot/imported/Ela gosta de letras Clássicas e Elegantes.mp3-d85576c41dd5db9f0e2ffa9b7c5caa20.mp3str"
+
+[deps]
+
+source_file="res://assets/som/Xerife Pepper/XerifeP_01/Ela gosta de letras Clássicas e Elegantes.mp3"
+dest_files=["res://.godot/imported/Ela gosta de letras Clássicas e Elegantes.mp3-d85576c41dd5db9f0e2ffa9b7c5caa20.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

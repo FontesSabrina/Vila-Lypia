@@ -1,0 +1,50 @@
+[gd_scene load_steps=7 format=3 uid="uid://cmtbf5jeumetc"]
+
+[ext_resource type="Script" path="res://scripts/minigame_acucar_linna_03.gd" id="1_f5ot2"]
+[ext_resource type="Texture2D" uid="uid://mrq8ufh25r4x" path="res://assets/backgrounds/casa_linna_baixa.jpeg" id="1_sr6c0"]
+[ext_resource type="Texture2D" uid="uid://40ekdq72qus4" path="res://assets/icon/caixa_01.png" id="2_gpgre"]
+[ext_resource type="Texture2D" uid="uid://c43k0yj7kn7yf" path="res://assets/icon/pote.png" id="3_m8uih"]
+[ext_resource type="PackedScene" uid="uid://dtffm271bhv2m" path="res://scenes/barra_acuçar.tscn" id="4_tgc55"]
+[ext_resource type="Texture2D" uid="uid://c50f71pflhnqf" path="res://assets/icon/seta.png" id="5_3dg5a"]
+
+[node name="minigame_acucar_linna_03" type="Node2D"]
+script = ExtResource("1_f5ot2")
+
+[node name="CasaLinnaBaixa" type="Sprite2D" parent="."]
+position = Vector2(572.625, 321.875)
+scale = Vector2(2.48753, 2.46483)
+texture = ExtResource("1_sr6c0")
+
+[node name="Caixa01" type="Sprite2D" parent="."]
+position = Vector2(405, 538)
+texture = ExtResource("2_gpgre")
+
+[node name="Caixa02" type="Sprite2D" parent="."]
+position = Vector2(400, 486)
+scale = Vector2(0.77451, 0.75641)
+texture = ExtResource("2_gpgre")
+
+[node name="Caixa03" type="Sprite2D" parent="."]
+position = Vector2(399, 446)
+scale = Vector2(0.599865, 0.572156)
+texture = ExtResource("2_gpgre")
+
+[node name="Pote" type="Sprite2D" parent="."]
+position = Vector2(1106, 587)
+scale = Vector2(0.525974, 0.407143)
+texture = ExtResource("3_m8uih")
+
+[node name="barra_acuçar" parent="." instance=ExtResource("4_tgc55")]
+position = Vector2(181, 560)
+scale = Vector2(0.135603, 0.150075)
+
+[node name="seta_voltar" type="TextureButton" parent="."]
+offset_left = 132.0
+offset_top = 96.0
+offset_right = 872.0
+offset_bottom = 589.0
+rotation = -3.13759
+scale = Vector2(0.178884, 0.190785)
+texture_normal = ExtResource("5_3dg5a")
+
+[connection signal="pressed" from="seta_voltar" to="." method="_on_seta_voltar_pressed"]

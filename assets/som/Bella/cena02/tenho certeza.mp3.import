@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://syqvk7hbmvim"
+path="res://.godot/imported/tenho certeza.mp3-b38b81f86709ed3577e622046b09dc59.mp3str"
+
+[deps]
+
+source_file="res://assets/som/Bella/cena02/tenho certeza.mp3"
+dest_files=["res://.godot/imported/tenho certeza.mp3-b38b81f86709ed3577e622046b09dc59.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

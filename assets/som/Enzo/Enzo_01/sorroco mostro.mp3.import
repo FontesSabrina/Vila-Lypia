@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dpcepf3w7ojxj"
+path="res://.godot/imported/sorroco mostro.mp3-671743f382c74b41434048a5671c81e3.mp3str"
+
+[deps]
+
+source_file="res://assets/som/Enzo/Enzo_01/sorroco mostro.mp3"
+dest_files=["res://.godot/imported/sorroco mostro.mp3-671743f382c74b41434048a5671c81e3.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

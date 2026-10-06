@@ -1,0 +1,26 @@
+[gd_scene load_steps=3 format=3 uid="uid://b4vsaogdwxkno"]
+
+[ext_resource type="Script" path="res://scripts/botao_voltar.gd" id="1_w2t35"]
+[ext_resource type="Texture2D" uid="uid://c50f71pflhnqf" path="res://assets/icon/seta.png" id="2_57kbi"]
+
+[node name="botao_voltar" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_w2t35")
+
+[node name="Seta" type="Button" parent="."]
+layout_mode = 0
+offset_left = 88.0
+offset_top = 65.0
+offset_right = 961.0
+offset_bottom = 717.0
+rotation = -3.13822
+scale = Vector2(0.1, 0.1)
+icon = ExtResource("2_57kbi")
+flat = true
+
+[connection signal="pressed" from="Seta" to="." method="_on_seta_pressed"]

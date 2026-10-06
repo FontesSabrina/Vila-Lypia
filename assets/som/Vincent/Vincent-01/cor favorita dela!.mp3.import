@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://46yk7f7eehm1"
+path="res://.godot/imported/cor favorita dela!.mp3-842d3655e98c727cfe7fdd32e2b46e79.mp3str"
+
+[deps]
+
+source_file="res://assets/som/Vincent/Vincent-01/cor favorita dela!.mp3"
+dest_files=["res://.godot/imported/cor favorita dela!.mp3-842d3655e98c727cfe7fdd32e2b46e79.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

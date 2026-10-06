@@ -1,0 +1,428 @@
+{
+"@path": "res://addons/dialogic/Resources/character.gd",
+"@subpath": NodePath(""),
+"_translation_id": "",
+"color": Color(1, 1, 1, 1),
+"custom_info": {
+"prefix": "",
+"sound_mood_default": "",
+"sound_moods": {},
+"style": "",
+"suffix": ""
+},
+"default_portrait": "Coragem",
+"description": "",
+"display_name": "Enzo",
+"mirror": false,
+"nicknames": [""],
+"offset": Vector2(0, 0),
+"portraits": {
+"Aliviado": {
+"export_overrides": {
+"image": "\"res://assets/characters/enzo/Aliviado.png\""
+},
+"mirror": false,
+"offset": Vector2(100, 90),
+"scale": 0.5,
+"scene": ""
+},
+"Coragem": {
+"export_overrides": {
+"image": "\"res://assets/characters/enzo/coragem.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"Dramático": {
+"export_overrides": {
+"image": "\"res://assets/characters/enzo/dramático.png\""
+},
+"mirror": false,
+"offset": Vector2(100, 90),
+"scale": 0.5,
+"scene": ""
+},
+"Enzo_01/1": {
+"export_overrides": {
+"image": "\"res://assets/characters/enzo/Enzo_01/1.png\""
+},
+"mirror": false,
+"offset": Vector2(-160, -60),
+"scale": 0.45,
+"scene": ""
+},
+"Enzo_01/10": {
+"export_overrides": {
+"image": "\"res://assets/characters/enzo/Enzo_01/10.png\""
+},
+"mirror": false,
+"offset": Vector2(-100, 0),
+"scale": 0.45,
+"scene": ""
+},
+"Enzo_01/11": {
+"export_overrides": {
+"image": "\"res://assets/characters/enzo/Enzo_01/11.png\""
+},
+"mirror": false,
+"offset": Vector2(-100, 0),
+"scale": 0.5,
+"scene": ""
+},
+"Enzo_01/12": {
+"export_overrides": {
+"image": "\"res://assets/characters/enzo/Enzo_01/12.png\""
+},
+"mirror": false,
+"offset": Vector2(-100, 0),
+"scale": 0.5,
+"scene": ""
+},
+"Enzo_01/13": {
+"export_overrides": {
+"image": "\"res://assets/characters/enzo/Enzo_01/13.png\""
+},
+"mirror": false,
+"offset": Vector2(-100, 0),
+"scale": 0.5,
+"scene": ""
+},
+"Enzo_01/14": {
+"export_overrides": {
+"image": "\"res://assets/characters/enzo/Enzo_01/14.png\""
+},
+"mirror": true,
+"offset": Vector2(-5, 1),
+"scale": 0.6,
+"scene": ""
+},
+"Enzo_01/15": {
+"export_overrides": {
+"image": "\"res://assets/characters/enzo/Enzo_01/15.png\""
+},
+"mirror": true,
+"offset": Vector2(-5, 1),
+"scale": 0.6,
+"scene": ""
+},
+"Enzo_01/16": {
+"export_overrides": {
+"image": "\"res://assets/characters/enzo/Enzo_01/16.png\""
+},
+"mirror": true,
+"offset": Vector2(0, 0),
+"scale": 0.6,
+"scene": ""
+},
+"Enzo_01/17": {
+"export_overrides": {
+"image": "\"res://assets/characters/enzo/Enzo_01/17.png\""
+},
+"mirror": true,
+"offset": Vector2(-5, 1),
+"scale": 0.6,
+"scene": ""
+},
+"Enzo_01/18": {
+"export_overrides": {
+"image": "\"res://assets/characters/enzo/Enzo_01/18.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"Enzo_01/2": {
+"export_overrides": {
+"image": "\"res://assets/characters/enzo/Enzo_01/2.png\""
+},
+"mirror": false,
+"offset": Vector2(-160, -60),
+"scale": 0.45,
+"scene": ""
+},
+"Enzo_01/3": {
+"export_overrides": {
+"image": "\"res://assets/characters/enzo/Enzo_01/3.png\""
+},
+"mirror": true,
+"offset": Vector2(-160, -60),
+"scale": 0.45,
+"scene": ""
+},
+"Enzo_01/4": {
+"export_overrides": {
+"image": "\"res://assets/characters/enzo/Enzo_01/4.png\""
+},
+"mirror": true,
+"offset": Vector2(-160, -60),
+"scale": 0.45,
+"scene": ""
+},
+"Enzo_01/5": {
+"export_overrides": {
+"image": "\"res://assets/characters/enzo/Enzo_01/5.png\""
+},
+"mirror": true,
+"offset": Vector2(-160, -60),
+"scale": 0.45,
+"scene": ""
+},
+"Enzo_01/6": {
+"export_overrides": {
+"image": "\"res://assets/characters/enzo/Enzo_01/6.png\""
+},
+"mirror": false,
+"offset": Vector2(-100, 0),
+"scale": 0.5,
+"scene": ""
+},
+"Enzo_01/7": {
+"export_overrides": {
+"image": "\"res://assets/characters/enzo/Enzo_01/7.png\""
+},
+"mirror": false,
+"offset": Vector2(-100, 0),
+"scale": 0.5,
+"scene": ""
+},
+"Enzo_01/8": {
+"export_overrides": {
+"image": "\"res://assets/characters/enzo/Enzo_01/8.png\""
+},
+"mirror": false,
+"offset": Vector2(-100, 0),
+"scale": 0.5,
+"scene": ""
+},
+"Enzo_01/9": {
+"export_overrides": {
+"image": "\"res://assets/characters/enzo/Enzo_01/9.png\""
+},
+"mirror": false,
+"offset": Vector2(-100, 0),
+"scale": 0.5,
+"scene": ""
+},
+"Medo": {
+"export_overrides": {
+"image": "\"res://assets/characters/enzo/medo.png\""
+},
+"mirror": false,
+"offset": Vector2(100, 90),
+"scale": 0.5,
+"scene": ""
+},
+"Panico": {
+"export_overrides": {
+"image": "\"res://assets/characters/enzo/Panico.png\""
+},
+"mirror": false,
+"offset": Vector2(100, 90),
+"scale": 0.5,
+"scene": ""
+},
+"bolo_enzo_02/1": {
+"export_overrides": {
+"image": "\"res://assets/characters/enzo/bolo_enzo_02/bolo_01.png\""
+},
+"mirror": false,
+"offset": Vector2(100, 20),
+"scale": 0.5,
+"scene": ""
+},
+"bolo_enzo_02/10": {
+"export_overrides": {
+"image": "\"res://assets/characters/enzo/bolo_enzo_02/bolo_10.png\""
+},
+"mirror": true,
+"offset": Vector2(100, 20),
+"scale": 0.5,
+"scene": ""
+},
+"bolo_enzo_02/11": {
+"export_overrides": {
+"image": "\"res://assets/characters/enzo/bolo_enzo_02/bolo_11.png\""
+},
+"mirror": true,
+"offset": Vector2(100, 20),
+"scale": 0.5,
+"scene": ""
+},
+"bolo_enzo_02/12": {
+"export_overrides": {
+"image": "\"res://assets/characters/enzo/bolo_enzo_02/bolo_12.png\""
+},
+"mirror": true,
+"offset": Vector2(100, 20),
+"scale": 0.5,
+"scene": ""
+},
+"bolo_enzo_02/13": {
+"export_overrides": {
+"image": "\"res://assets/characters/enzo/bolo_enzo_02/bolo_13.png\""
+},
+"mirror": true,
+"offset": Vector2(100, 20),
+"scale": 0.5,
+"scene": ""
+},
+"bolo_enzo_02/14": {
+"export_overrides": {
+"image": "\"res://assets/characters/enzo/bolo_enzo_02/bolo_14.png\""
+},
+"mirror": true,
+"offset": Vector2(0, 0),
+"scale": 0.5,
+"scene": ""
+},
+"bolo_enzo_02/15": {
+"export_overrides": {
+"image": "\"res://assets/characters/enzo/bolo_enzo_02/bolo_15.png\""
+},
+"mirror": true,
+"offset": Vector2(0, 0),
+"scale": 0.5,
+"scene": ""
+},
+"bolo_enzo_02/16": {
+"export_overrides": {
+"image": "\"res://assets/characters/enzo/bolo_enzo_02/bolo_16.png\""
+},
+"mirror": true,
+"offset": Vector2(0, 20),
+"scale": 0.5,
+"scene": ""
+},
+"bolo_enzo_02/2": {
+"export_overrides": {
+"image": "\"res://assets/characters/enzo/bolo_enzo_02/bolo_02.png\""
+},
+"mirror": false,
+"offset": Vector2(100, 20),
+"scale": 0.5,
+"scene": ""
+},
+"bolo_enzo_02/3": {
+"export_overrides": {
+"image": "\"res://assets/characters/enzo/bolo_enzo_02/bolo_03.png\""
+},
+"mirror": false,
+"offset": Vector2(100, 20),
+"scale": 0.5,
+"scene": ""
+},
+"bolo_enzo_02/4": {
+"export_overrides": {
+"image": "\"res://assets/characters/enzo/bolo_enzo_02/bolo_04.png\""
+},
+"mirror": false,
+"offset": Vector2(100, 20),
+"scale": 0.5,
+"scene": ""
+},
+"bolo_enzo_02/5": {
+"export_overrides": {
+"image": "\"res://assets/characters/enzo/bolo_enzo_02/bolo_05.png\""
+},
+"mirror": false,
+"offset": Vector2(100, 20),
+"scale": 0.5,
+"scene": ""
+},
+"bolo_enzo_02/6": {
+"export_overrides": {
+"image": "\"res://assets/characters/enzo/bolo_enzo_02/bolo_06.png\""
+},
+"mirror": false,
+"offset": Vector2(100, 20),
+"scale": 0.5,
+"scene": ""
+},
+"bolo_enzo_02/8": {
+"export_overrides": {
+"image": "\"res://assets/characters/enzo/bolo_enzo_02/bolo_08.png\""
+},
+"mirror": false,
+"offset": Vector2(60, 20),
+"scale": 0.6,
+"scene": ""
+},
+"bolo_enzo_02/9": {
+"export_overrides": {
+"image": "\"res://assets/characters/enzo/bolo_enzo_02/bolo_09.png\""
+},
+"ignore_char_scale": false,
+"mirror": true,
+"offset": Vector2(100, 20),
+"scale": 0.5,
+"scene": ""
+},
+"cartao/1": {
+"export_overrides": {
+"image": "\"res://assets/characters/enzo/cartao/1.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 0.4,
+"scene": ""
+},
+"cartao/2": {
+"export_overrides": {
+"image": "\"res://assets/characters/enzo/cartao/2.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 0.4,
+"scene": ""
+},
+"cartao/3": {
+"export_overrides": {
+"image": "\"res://assets/characters/enzo/cartao/3.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 0.4,
+"scene": ""
+},
+"cartao/4": {
+"export_overrides": {
+"image": "\"res://assets/characters/enzo/cartao/4.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 0.4,
+"scene": ""
+},
+"cartao/5": {
+"export_overrides": {
+"image": "\"res://assets/characters/enzo/cartao/5.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 0.4,
+"scene": ""
+},
+"cartao/Enzo Carto": {
+"export_overrides": {
+"image": "\"res://assets/characters/enzo/cartao/Enzo_carto.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 0.4,
+"scene": ""
+},
+"vazio": {
+"export_overrides": {
+"image": ""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+}
+},
+"scale": 1.0
+}

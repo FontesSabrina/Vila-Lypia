@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cfvmcny0d1h3e"
+path="res://.godot/imported/Com certeza!.mp3-c342efc5e15f3dad8873f4c5777d71c5.mp3str"
+
+[deps]
+
+source_file="res://assets/som/Bella/suporte/Pode me explicar/Com certeza!.mp3"
+dest_files=["res://.godot/imported/Com certeza!.mp3-c342efc5e15f3dad8873f4c5777d71c5.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

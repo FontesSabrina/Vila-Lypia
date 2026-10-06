@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="ItemData" load_steps=3 format=3 uid="uid://cik80yftjtg5g"]
+
+[ext_resource type="Texture2D" uid="uid://dsurh6qntft7v" path="res://assets/icon/Gemini_Generated_Image_hkqlbahkqlbahkql (1).png" id="1_njtop"]
+[ext_resource type="Script" path="res://scripts/ItemData.gd" id="2_15sr0"]
+
+[resource]
+script = ExtResource("2_15sr0")
+id = "2"
+nome = "moeda"
+icone = ExtResource("1_njtop")

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dlwm56oa6l4ho"
+path="res://.godot/imported/Atrasados para o chá da tarde, já são 1631h e os chás tem que ser às 1630h.mp3-f620a8c308791940bb887f790b8295ff.mp3str"
+
+[deps]
+
+source_file="res://assets/som/Hera/P_Hera_01/Atrasados para o chá da tarde, já são 1631h e os chás tem que ser às 1630h.mp3"
+dest_files=["res://.godot/imported/Atrasados para o chá da tarde, já são 1631h e os chás tem que ser às 1630h.mp3-f620a8c308791940bb887f790b8295ff.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

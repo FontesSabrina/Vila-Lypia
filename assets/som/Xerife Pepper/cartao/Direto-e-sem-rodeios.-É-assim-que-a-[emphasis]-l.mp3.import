@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bcvlitubkg6k1"
+path="res://.godot/imported/Direto-e-sem-rodeios.-É-assim-que-a-[emphasis]-l.mp3-fe847ffaa83d933cbe084a186f2a17a2.mp3str"
+
+[deps]
+
+source_file="res://assets/som/Xerife Pepper/cartao/Direto-e-sem-rodeios.-É-assim-que-a-[emphasis]-l.mp3"
+dest_files=["res://.godot/imported/Direto-e-sem-rodeios.-É-assim-que-a-[emphasis]-l.mp3-fe847ffaa83d933cbe084a186f2a17a2.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

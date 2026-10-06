@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://bmjpfvocv4bl1"]
+
+[ext_resource type="Texture2D" uid="uid://27nqkrkxeppf" path="res://assets/backgrounds/Ipe.jpeg" id="1_140r3"]
+[ext_resource type="PackedScene" uid="uid://b4vsaogdwxkno" path="res://scenes/botao_voltar.tscn" id="2_ojruj"]
+
+[node name="Rua_das_Ipes_principal" type="Node2D"]
+
+[node name="Ipe" type="Sprite2D" parent="."]
+position = Vector2(573, 326)
+scale = Vector2(0.42133, 0.427734)
+texture = ExtResource("1_140r3")
+
+[node name="botao_voltar" parent="." instance=ExtResource("2_ojruj")]
+offset_left = 2.0
+offset_top = 1.0
+offset_right = -1.0
+offset_bottom = -14.0

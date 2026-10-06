@@ -1,0 +1,90 @@
+[style name="cinzanovo"]
+# Criamos um ponto de retorno (label) para o menu principal da Bella nesta cena
+label menu_bolo_principal
+
+- Fazer o bolo / Montar na mesa
+	# Conta os ingredientes que o jogador realmente tem (cada um vale 1).
+	set {Bolo.Total_Ingredientes} = 0
+	if {Bolo.Enzo.Ovos_Entregue} == true:
+		set {Bolo.Total_Ingredientes} += 1
+	if {Bolo.Pietro.Bolo_Pietro_Chocolate_Entregue} == true:
+		set {Bolo.Total_Ingredientes} += 1
+	if {Bolo.Hera.Farinha_Concluido} == true:
+		set {Bolo.Total_Ingredientes} += 1
+	if {Bolo.Linna.Bolo_Linna_Acucar_Entregue} == true:
+		set {Bolo.Total_Ingredientes} += 1
+	if {Bolo.Vincent.Bolo_Vincent_Geleia_Entregue} == true:
+		set {Bolo.Total_Ingredientes} += 1
+	if {Bolo.Xerife.Ingrediente_Pepper} == true:
+		set {Bolo.Total_Ingredientes} += 1
+	
+	if {Bolo.Total_Ingredientes} < 3:
+		join Bella (bolo/6) left
+		[voice path="res://assets/som/Bella/bolo/Deixe-me-ver...[pause]-Você-trouxe-apenas[pause].mp3" volume="0.0"]
+		Bella (bolo/6): Deixe-me ver... Você trouxe apenas {Bolo.Total_Ingredientes} ingredientes. \
+		Ainda é pouco para começarmos! \
+		Tente visitar mais moradores para conseguir o que precisamos.
+		- Vou procurar mais ingredientes.
+			leave Bella
+			[signal arg="voltar_mapa"]
+			[end_timeline]
+		- Quero fazer o bolo assim mesmo.
+			leave Bella
+			[signal arg="mudar_para_minigame_bolo"]
+			[end_timeline]
+	else:
+		join Bella (bolo/7) left
+		[voice path="res://assets/som/Bella/bolo/Deixe-me-ver...-[pause]-Você-trouxe-[emphasis]-i.mp3" volume="0.0"]
+		Bella (bolo/7): Deixe-me ver... Você trouxe {Bolo.Total_Ingredientes} ingredientes para a nossa receita!\
+		Vamos organizar tudo na mesa e preparar o bolo.
+		leave Bella
+		[signal arg="mudar_para_minigame_bolo"]
+		[end_timeline]
+
+- Com certeza! Por onde começamos?
+	join Bella (bolo/3) left
+	[voice path="res://assets/som/Bella/bolo/Para-assar-o-[emphasis]-bolo-perfeito-da-Prefeit.mp3" volume="0.0"]
+	Bella (bolo/3): Para assar o bolo perfeito da Prefeita Anne, precisamos dos ingredientes especiais que cada morador guarda em casa.
+	[voice path="res://assets/som/Bella/bolo/Você-pode-visitar-os-moradores-na-ordem-que-pref.mp3" volume="0.0"]
+	Bella (bolo/4): Você pode visitar os moradores na ordem que preferir no mapa. Cada um deles pode te dar um ingrediente essencial. Você precisará interagir com eles para conseguir!
+	[voice path="res://assets/som/Bella/bolo/Quando-tiver-coletado-[emphasis]-tudo-o-que-cons.mp3" volume="0.0"]
+	Bella (bolo/5): Quando tiver coletado tudo o que conseguir, volte aqui na mesa para prepararmos a receita! Boa sorte!
+	
+	set {Bolo.Estado} = 1
+	set {Cena.Praca_Estado} = true
+	leave Bella
+	[end_timeline]
+
+- Acabei me perdendo… consegue me dizer onde cada morador está?
+	join Bella (sup/2 (resposta Geral Sobre Moradores) left
+	[voice path="res://assets/som/Bella/suporte/Acabei me perdendo/Claro! Qual morador você está procurando.mp3" volume="0.0"]
+	Bella (sup/2 (resposta Geral Sobre Moradores)): Claro! Qual morador você está procurando?
+	
+	label menu_moradores_bolo
+	- Onde fica a casa do Vincent?
+		[voice path="res://assets/som/Bella/suporte/Acabei me perdendo/Ah! O Vincent mora na casa amarela do mapa..mp3" volume="0.0"]
+		Bella (sup/3 (sobre O Vincent)): Ah! O Vincent mora na casa amarela do mapa.
+		jump menu_moradores_bolo
+	- Estou procurando o Xerife Pepper!
+		[voice path="res://assets/som/Bella/suporte/Acabei me perdendo/O Xerife Pepper, na casa rosa com detalhes verdes..mp3" volume="0.0"]
+		Bella (sup/4 (sobre O Xerife Pepper)): O Xerife Pepper, na casa rosa com detalhes verdes.
+		jump menu_moradores_bolo
+	- Pietro.
+		[voice path="res://assets/som/Bella/suporte/Acabei me perdendo/O Pietro mora na casa azul com janelas redondas..mp3" volume="0.0"]
+		Bella (sup/5 (sobre O Pietro)): O Pietro mora na casa azul com janelas redondas.
+		jump menu_moradores_bolo
+	- Onde fica a casa da Linna?
+		[voice path="res://assets/som/Bella/suporte/Acabei me perdendo/A Linna mora na casa branca com detalhes em verde, a casa dela é a loja da cidade!.mp3" volume="0.0"]
+		Bella (sup/6 (sobre A Linna)): A Linna mora na casa branca com detalhes em verde, a casa dela é a loja da cidade!
+		jump menu_moradores_bolo
+	- Enzo.
+		[voice path="res://assets/som/Bella/suporte/Acabei me perdendo/O Enzo está na casa antiga de tijolos vermelhos e portas e janelas roxas..mp3" volume="0.0"]
+		Bella (sup/7 (sobre O Enzo)): O Enzo está na casa antiga de tijolos vermelhos e portas e janelas roxas.
+		jump menu_moradores_bolo
+	- E a Profª Hera?
+		[voice path="res://assets/som/Bella/suporte/Acabei me perdendo/Ela se encontra  uma casa branca com detalhes em marrom, tem um letreiro escrito “Biblioteca”..mp3" volume="0.0"]
+		Bella (sup/8 (sobre A Profª Hera)): Ela se encontra uma casa branca com detalhes em marrom, tem um letreiro escrito “Biblioteca”.
+		jump menu_moradores_bolo
+	- Voltar ao menu principal
+		leave Bella
+		jump menu_bolo_principal

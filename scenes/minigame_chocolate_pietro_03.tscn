@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://bqywpctyda5cl"]
+
+[ext_resource type="Texture2D" uid="uid://c2lljpnphba6o" path="res://assets/backgrounds/casa_pietro_cozinha_03.jpeg" id="1_avw15"]
+[ext_resource type="PackedScene" uid="uid://b6f07fnayudt1" path="res://scenes/cozinha_pietro_seta.tscn" id="2_2t24k"]
+[ext_resource type="PackedScene" uid="uid://buy86lt33he7q" path="res://scenes/barra_chocolate.tscn" id="3_ugb3f"]
+
+[node name="minigame_chocolate_pietro_03" type="Node2D"]
+
+[node name="CasaPietroCozinha03" type="Sprite2D" parent="."]
+position = Vector2(580, 328)
+scale = Vector2(0.425872, 0.429688)
+texture = ExtResource("1_avw15")
+
+[node name="cozinha_pietro_seta" parent="." instance=ExtResource("2_2t24k")]
+position = Vector2(268, 381)
+
+[node name="barra_chocolate" parent="." instance=ExtResource("3_ugb3f")]
+position = Vector2(165, 578)

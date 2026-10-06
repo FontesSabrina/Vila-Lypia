@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://c0bp20v8fjfcr"
+path="res://.godot/imported/Às vezes, a chuva parece o jeito do céu desabafar..mp3-65205a456ef13d94c5d64ae46d79c500.mp3str"
+
+[deps]
+
+source_file="res://assets/som/Pietro/Pietro_01/Às vezes, a chuva parece o jeito do céu desabafar..mp3"
+dest_files=["res://.godot/imported/Às vezes, a chuva parece o jeito do céu desabafar..mp3-65205a456ef13d94c5d64ae46d79c500.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

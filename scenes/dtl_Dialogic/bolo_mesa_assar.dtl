@@ -1,0 +1,8 @@
+[style name="cinzanovo"]
+join Bella (bolo/2) pos=x0.14y0.42
+update Bella size=y0.4
+[voice path="res://assets/som/Bella/bolo/Muito-bem!-[pause]-Agora-é-a-hora-de-[e.mp3" volume="0.0"]
+Bella (bolo/20): Muito bem! Agora é a hora de assar o bolo.
+[voice path="res://assets/som/Bella/bolo/Arraste-a-forma-com-a-massa-[short-pause]-para-d.mp3" volume="0.0"]
+Bella (bolo/21): Arraste a forma com a massa para dentro do forno.
+leave Bella

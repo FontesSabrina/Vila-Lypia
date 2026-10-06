@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cg0uwxvp4shic"
+path="res://.godot/imported/A Prefeita Ela é legal... ela nunca faz barulhos repentinos perto de mim..mp3-571263c3118ba71d6971dcae39cb777d.mp3str"
+
+[deps]
+
+source_file="res://assets/som/Enzo/Enzo_01/A Prefeita Ela é legal... ela nunca faz barulhos repentinos perto de mim..mp3"
+dest_files=["res://.godot/imported/A Prefeita Ela é legal... ela nunca faz barulhos repentinos perto de mim..mp3-571263c3118ba71d6971dcae39cb777d.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

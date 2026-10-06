@@ -1,0 +1,100 @@
+audio "res://assets/som/Caminho da Vila.mp3" [volume="-18.0"]
+[style name="cinzanovo"]
+
+[background arg="res://assets/backgrounds/festa2.jpeg" fade="0.0"]
+
+if {Bella.Estado_Bella} == 0:
+	join Bella (sup/1) center
+	[voice path="res://assets/som/Bella/suporte/Acabei me perdendo/Olá, precisa de algo.mp3" volume="0.0"]
+	Bella (sup/1): Olá, precisa de algo?
+	label menu_principal
+	- Acabei me perdendo… consegue me dizer onde cada morador está?
+		[voice path="res://assets/som/Bella/suporte/Acabei me perdendo/Claro! Qual morador você está procurando.mp3" volume="0.0"]
+		Bella (sup/2 (resposta Geral Sobre Moradores)): Claro! Qual morador você está procurando?
+		label menu_moradores
+		- Onde fica a casa do Vincent?
+			[voice path="res://assets/som/Bella/suporte/Acabei me perdendo/Ah! O Vincent mora na casa amarela do mapa..mp3" volume="0.0"]
+			Bella (sup/3 (sobre O Vincent)): Ah! O Vincent mora na casa amarela do mapa.
+			jump menu_moradores
+		- Estou procurando o Xerife Pepper!
+			[voice path="res://assets/som/Bella/suporte/Acabei me perdendo/O Xerife Pepper, na casa rosa com detalhes verdes..mp3" volume="0.0"]
+			Bella (sup/4 (sobre O Xerife Pepper)): O Xerife Pepper, na casa rosa com detalhes verdes.
+			jump menu_moradores
+		- Pietro.
+			[voice path="res://assets/som/Bella/suporte/Acabei me perdendo/O Pietro mora na casa azul com janelas redondas..mp3" volume="0.0"]
+			Bella (sup/5 (sobre O Pietro)): O Pietro mora na casa azul com janelas redondas.
+			jump menu_moradores
+		- Onde fica a casa da Linna?
+			[voice path="res://assets/som/Bella/suporte/Acabei me perdendo/A Linna mora na casa branca com detalhes em verde, a casa dela é a loja da cidade!.mp3" volume="0.0"]
+			Bella (sup/6 (sobre A Linna)): A Linna mora na casa branca com detalhes em verde, a casa dela é a loja da cidade!
+			jump menu_moradores
+		- Enzo.
+			[voice path="res://assets/som/Bella/suporte/Acabei me perdendo/O Enzo está na casa antiga de tijolos vermelhos e portas e janelas roxas..mp3" volume="0.0"]
+			Bella (sup/7 (sobre O Enzo)): O Enzo está na casa antiga de tijolos vermelhos e portas e janelas roxas.
+			jump menu_moradores
+		- E a Profª Hera?
+			[voice path="res://assets/som/Bella/suporte/Acabei me perdendo/Ela se encontra  uma casa branca com detalhes em marrom, tem um letreiro escrito “Biblioteca”..mp3" volume="0.0"]
+			Bella (sup/8 (sobre A Profª Hera)): Ela se encontra  uma casa branca com detalhes em marrom, tem um letreiro escrito “Biblioteca”.
+			jump menu_moradores
+		- Voltar
+			jump menu_principal
+	- Pode me explicar novamente o que tenho que fazer?
+		[voice path="res://assets/som/Bella/suporte/Pode me explicar/Com certeza!.mp3" volume="0.0"]
+		Bella (sup/9 (explicação Das Tarefas - Parte 1)): Com certeza!
+		[voice path="res://assets/som/Bella/suporte/Pode me explicar/Precisamos fazer os convites para o aniversário da Prefeita Anne..mp3" volume="0.0"]
+		Bella (sup/10 (explicação Das Tarefas - Parte 2)): Precisamos fazer os convites para o aniversário da Prefeita Anne.
+		[voice path="res://assets/som/Bella/suporte/Pode me explicar/Eu aconselho você a conversar com os moradores, eles conhecem ela como ninguém..mp3" volume="0.0"]
+		Bella (sup/11 (explicação Das Tarefas - Parte 3)): Eu aconselho você a conversar com os moradores, eles conhecem ela como ninguém.
+		[voice path="res://assets/som/Bella/suporte/Pode me explicar/Quando tiver pronto(a) converse comigo de novo e vamos partir para a criação do convite!.mp3" volume="0.0"]
+		Bella (sup/12 (explicação Das Tarefas - Parte 4)): Quando tiver pronto(a) converse comigo de novo e vamos partir para a criação do convite!
+		jump menu_principal
+	- Já estou pronto, quero começar a fazer os convites.
+		[voice path="res://assets/som/Bella/suporte/Já estou pronto,/Certo! Vamos lá!.mp3" volume="0.0"]
+		Bella (sup/13 (início Da Criação)): Certo! Vamos lá!
+		set {Convite.fase_entrega} = false
+		set {Bella.Estado_Bella} = 1
+		jump convites_01/
+	- Por enquanto é só, Bella. Preciso voltar para a praça.
+		[signal arg="bella_praca"]
+
+elif {Bella.Estado_Bella} == 1:
+	join Bella (convite/Amigável) center
+	[voice path="res://assets/som/Bella/suporte/convite/-Como-vão-as-entregas-dos-convites.mp3" volume="0.0"]
+	Bella (convite/Visionária): Como vão as entregas dos convites?
+	- Não quero entregar os convites, vamos para o próximo capítulo.
+		[voice path="res://assets/som/Bella/suporte/convite/Tudo-bem,-vamos-seguir-em-frente!.mp3" volume="0.0"]
+		Bella (convite/Confiante): Tudo bem, vamos seguir em frente!\
+		Só lembre-se de que cada convite entregue faz a diferença.\
+		Quanto mais gente você convidar, mais cheia e animada a festa na praça vai ficar.
+		set {Bella.Estado_Bella} = 3
+		set {Cena.Praca_Estado} = true
+		[voice path="res://assets/som/Bella/suporte/convite/-Vamos-organizar-as-comidas-da-festa-Va.mp3" volume="0.0"]
+		Bella (convite/Vamos): Vamos organizar as comidas da festa? Vamos lá!
+		[signal arg="ir_para_praca_bolo"]
+		[end_timeline]
+	
+	- Acho que Já entreguei todos!
+		# Confere os 6 convites entregues (e não os pontos, que também
+		# contam as escolhas certas da oficina de convites).
+		if {Convite.Convite_vincent_entregue} == true and {Convite.Convite_Xerife_entregue} == true and {Convite.Convite_pietro_entregue} == true and {Convite.Convite_Linna_entregue} == true and {Convite.Convite_enzo_entregue} == true and {Convite.Convite_P_Hera_entregue} == true:
+			[voice path="res://assets/som/Bella/suporte/convite/Incrível!-Você-conseguiu!-Com-tanta-ge.mp3" volume="0.0"]
+			Bella (convite/Incrível): Incrível! Você conseguiu! \
+			Com tanta gente que você convidou, a festa vai ficar superanimada!
+			set {Bella.Estado_Bella} = 3
+			set {Cena.Praca_Estado} = true
+			[voice path="res://assets/som/Bella/suporte/convite/-Vamos-organizar-as-comidas-da-festa-Va.mp3" volume="0.0"]
+			Bella (convite/Vamos): Vamos organizar as comidas da festa?\
+			Vamos lá!
+			[signal arg="ir_para_praca_bolo"]
+			[end_timeline]
+		else:
+			[voice path="res://assets/som/Bella/suporte/convite/-Você-ainda-não-entregou-todos,-[irritado]continu.mp3" volume="0.0"]
+			Bella (convite/Vamos): Você ainda não entregou todos; continue procurando pelos moradores.
+			- Voltar para a praça por enquanto.
+				[signal arg="bella_praca"]
+
+elif {Bella.Estado_Bella} >= 2:
+	join Bella (sup/1) center
+	Bella: A festa já está em outra fase!
+	- Voltar para a praça.
+		[signal arg="bella_praca"]

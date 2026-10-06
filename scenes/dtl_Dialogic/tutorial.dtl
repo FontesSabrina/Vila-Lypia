@@ -1,0 +1,232 @@
+[style name="cinzanovo"]
+audio "res://assets/som/floresta.mp3" [bus=""]
+[background arg="res://assets/backgrounds/casaVincent_02.jpeg" fade="0.0"]
+set {NomeBella} = "Bella"
+join Bella (Explicativa) left
+[voice path="res://assets/som/Bella/tutorial/Para se enturmar.mp3" volume="0.0"]
+Bella (Explicativa): Para se enturmar, escolha bem suas palavras.\
+Cada morador reage de um jeito!
+update Bella (Demostrativa)
+[voice path="res://assets/som/Bella/tutorial/Fique de olho no balão de fala.mp3" volume="0.0"]
+Bella (Demostrativa): Fique de olho no balão de fala!\
+Se ele mudar de cor, sua amizade está crescendo.
+[voice path="res://assets/som/Bella/tutorial/cinza.mp3" volume="0.0"]
+Bella (Explicativa): Cinza\: Estamos no nível Neutro.\
+É aquele começo, onde ainda estamos nos conhecendo.
+[style name="verdenovo"]
+[voice path="res://assets/som/Bella/tutorial/Verde.mp3" volume="0.0"]
+Bella (Demostrativa): Verde\: Olha só, subimos para o nível Amigo! \
+Que demais! Já sinto que a nossa conversa flui super bem e que temos muuuita história boa para compartilhar!
+[style name="azulnovo"]
+[voice path="res://assets/som/Bella/tutorial/Azul.mp3" volume="0.0"]
+Bella (Engraçada): Azul\: Melhor Amigo! Ah, que felicidade! \
+Esse azul mostra que você se tornou alguém essencial no meu dia a dia.
+[style name="cinzanovo"]
+[voice path="res://assets/som/Bella/tutorial/Voz-Rarity-2026-05-26-09-46-Mas-lembre-se-tenha-[ênfase]paciência.-[suave]-U.mp3" volume="0.0"]
+Bella (Pensativa): Mas lembre-se\: tenha paciência.\
+Uma boa amizade leva tempo para ser construída!
+leave Bella
+# ESCOLHA DE DIÁLOGO COM VINCENT
+[background arg="res://assets/backgrounds/casaVincent_04.png" fade="0.0"]
+join vincent (Satisfação) leftmost
+- Uau! Que pulo! Você deve ser o campeão de sustos por aqui
+	set {NomeVincent} = "Vincent"
+	[voice path="res://assets/som/Vincent/turorial/E de jardinagem também!.mp3" volume="0.0"]
+	vincent (Alegria): E de jardinagem também!\
+	Gostei de você, tem cores vivas!
+- Poderia não fazer isso? Quase molhou a minha roupa.
+	set {NomeVincent} = "Vincent"
+	[voice path="res://assets/som/Vincent/turorial/Ah... desculpe..mp3" volume="0.0"]
+	vincent (Tristeza): Ah... desculpe. \
+	Só queria animar o ambiente. \
+	O dia anda meio cinza...
+join Bella (Tchau) left
+update vincent (Tchau) right
+[voice path="res://assets/som/Bella/tutorial/ate.mp3" volume="0.0"]
+Bella: O dia ficou até mais ensolarado depois dessa conversa, Vincent! \
+Foi ótimo te ver.\
+Cuida bem de tudo por aí e até mais!
+Protagonista: Até mais Vincent!
+set {NomeVincent} = "Vincent"
+[voice path="res://assets/som/Vincent/turorial/Até logo, pessoal!.mp3" volume="0.0"]
+vincent: As portas da minha casa estão sempre abertas para quem quiser brincar!\
+Até logo, pessoal!
+leave vincent
+leave Bella
+# ESCOLHA DE DIÁLOGO COM XERIFE
+[background arg="res://assets/backgrounds/xerife1.png" fade="0.0"]
+set {NomeBella} = "Bella"
+join Bella (Seguir Alt) rightmost [animation="Bounce In" length="0.0"]
+[voice path="res://assets/som/Bella/tutorial/Voz-Rarity-2026-05-26-08-58-[gritando]-Vem-logo!-[animado]-Eu-[ênfase]mal-po.mp3" volume="0.0"]
+Bella: Vem logo!\
+Eu mal posso esperar para te apresentar para toda a turma! \
+Você vai adorar cada um deles!
+[wait time="2.0"]
+leave Bella
+[background arg="res://assets/backgrounds/xerife2.png" fade="0.0"]
+join xerife (Cadeira 1) left
+[voice path="res://assets/som/Xerife Pepper/tutorial/parados.mp3" volume="0.0"]
+xerife: PARADOS!\
+Nem mais um passo!\
+Quem são vocês e o que pensam que estão fazendo?
+join Bella (Oi) right
+[voice path="res://assets/som/Bella/tutorial/Voz-Rarity-2026-05-26-08-58-[gritando]-Xerife-Pepper!-Que-[ênfase]-susto-o-s.mp3" volume="0.0"]
+Bella: Xerife Pepper! \
+Que susto o senhor me deu!\
+Calma, sou eu, a Bella!
+set {NomeXerife} = "Xerife Pepper"
+[voice path="res://assets/som/Xerife Pepper/tutorial/bagunça.mp3" volume="0.0"]
+xerife (Cadeira 2): Eu sei quem você é, menina Bella...\
+Mas e esse forasteiro aí? \
+Pessoas chegando assim, sem mais nem menos... \
+É assim que a desordem começa!\
+Daqui a pouco a vila vira uma bagunça completa!
+update Bella (Apresenta 2) center
+[voice path="res://assets/som/Bella/tutorial/Voz-Rarity-2026-05-26-09-01-Ah,-[risada-abafada]-relaxa,-Xerife!-Quem-está-c.mp3" volume="0.0"]
+Bella (Apresenta 2): Ah, relaxa, Xerife! \
+Quem está comigo é esse alguém especial. \
+Alguém que acabou se perdendo e que eu fiz questão de ajudar a encontrar o caminho de casa. \
+É uma pessoa nota dez, eu garanto!
+[background arg="res://assets/backgrounds/xerife5.png" fade="0.0"]
+update xerife (Obs) leftmost [z_index="-6"]
+- Perdão, Xerife. Só estou de passagem com a Bella.
+	set {NomeXerife} = "Xerife Pepper"
+	[voice path="res://assets/som/Xerife Pepper/tutorial/linha.mp3" volume="0.0"]
+	xerife (Obs): Hum... Pelo menos vejo que tem educação. \
+	Isso é raridade hoje em dia. \
+	Prazer em conhecê-lo, forasteiro.\
+	Mantenha-se na linha e não teremos problemas.
+- Calma! Um sorriso não dói nada, Xerife
+	set {NomeXerife} = "Xerife Pepper"
+	[voice path="res://assets/som/Xerife Pepper/tutorial/escute aqui.mp3" volume="0.0"]
+	xerife (Vermelho): Escute aqui, engraçadinho\: sorrisos não mantêm a ordem e nem prendem bandidos! \
+	Eu não estou aqui para fazer amizades.
+[voice path="res://assets/som/Xerife Pepper/tutorial/bom.mp3" volume="0.0"]
+xerife (Duraoporfora): Bom... se precisar de qualquer coisa — de verdade — você sabe onde me encontrar. \
+Estarei de olho.
+leave xerife
+leave Bella
+# Casa Pietro
+[background arg="res://assets/backgrounds/casa_pietro1.png" fade="0.0"]
+join Bella (Seguir) left
+set {NomeBella} = "Bella"
+[voice path="res://assets/som/Bella/tutorial/Vem comigo.mp3" volume="0.0"]
+Bella (Seguir): Vem comigo! \
+Está vendo aquela casa ali? \
+É a casa do Pietro.\
+É um cantinho tão, tão calmo.
+[background arg="res://assets/backgrounds/casa_pietro3.jpeg" fade="0.0"]
+update Bella (Apresentar 4) right
+join Pietro (Desanimado 2) center
+set {NomeBella} = "Bella"
+[voice path="res://assets/som/Bella/tutorial/Oi, Pietro!.mp3" volume="0.0"]
+Bella (Apresentar 4): Oi, Pietro!  Trouxe alguém especial... para te conhecer. O nome é {NomeJogador}.
+set {NomePietro} = "Pietro"
+[voice path="res://assets/som/Pietro/Ola.mp3" volume="0.0"]
+Pietro (Oi): Olá... Desculpe por não levantar.\
+Eu estou me sentindo um pouco triste hoje.
+update Bella (Pena)
+[voice path="res://assets/som/Pietro/Sabe quando.mp3" volume="0.0"]
+Pietro: Sabe quando a gente sente o corpo pesado e sem vontade de brincar? \
+Você também se sente assim às vezes?
+- Tudo bem descansar, Pietro.
+	[voice path="res://assets/som/Pietro/Obg.mp3" volume="-6.0"]
+	Pietro (Bem): Obrigado por entender.\
+	É bom saber que não preciso fingir um sorriso. \
+	Vou descansar um pouco agora.
+- Não fique triste! Logo você melhora.
+	[voice path="res://assets/som/Pietro/sozinho.mp3" volume="0.0"]
+	Pietro (Desmotivado): Obrigado, mas hoje eu só preciso de silêncio. Ficar sozinho me ajuda a me sentir melhor.
+[voice path="res://assets/som/Pietro/ate logo.mp3" volume="0.0"]
+Pietro (Obg): Bom, agora eu vou ficar aqui quietinho no meu canto. Foi muito bom conhecer você, {NomeJogador}.\
+Tchau, Bella. Obrigado pela visita. A gente se vê logo, tá?
+Protagonista: Tchau, Pietro! Descanse bastante.
+[voice path="res://assets/som/Bella/tutorial/vamos.mp3" volume="0.0"]
+Bella (Tchau): Tchauzinho, Pietro! Melhoras para você, viu?\
+Vamos, Ainda temos muito o que ver na vila!
+leave Pietro
+# Hera e Enzo
+[background arg="res://assets/backgrounds/Ipe.jpeg" fade="0.0"]
+set {NomeBella} = "Bella"
+update Bella center
+[voice path="res://assets/som/Bella/tutorial/esse lugar.mp3" volume="0.0"]
+Bella (Seguir): Eu amo esse lugar , vamos .
+[wait time="2.0"]
+[background arg="res://assets/backgrounds/casa_hera_01.jpeg" fade="0.0"]
+update Bella (Seguir 02) center
+[wait time="2.0"]
+[background arg="res://assets/backgrounds/casa_hera_02.jpeg" fade="0.0"]
+leave Bella
+join enzo (Medo) leftmost
+join hera right
+[wait time="2.0"]
+set {NomeBella} = "Bella"
+join Bella (Amigável.) center
+[voice path="res://assets/som/Bella/tutorial/enzo e hera.mp3" volume="0.0"]
+Bella (Amigável.): Bom, esses são a Profª Hera e o Enzo. \
+A professora mora nesta biblioteca, e o Enzo, na próxima casa por que vamos passar — aquela de cor roxa.
+[voice path="res://assets/som/Hera/tutorial/sem tempo.mp3" volume="0.0"]
+hera (Hiperfoco): Sem tempo Bella! \
+O cronograma está atrasado, as chances de chuva subiram de 4% para 6% em menos de 2 dias!
+[voice path="res://assets/som/Enzo/tutorial/minha santa.mp3" volume="0.0"]
+enzo (Dramático): Mi-minha santa mãezinha! \
+Eu estou com poucas velas, e se acabar a energia? \
+Eu morro de medo do escuro!!
+- Não se preocupe, Enzo. E Profª Hera, posso ajudar você a conferir essa lista depois.
+	update enzo (Aliviado) leftmost
+	[voice path="res://assets/som/Hera/tutorial/ajudante.mp3" volume="0.0"]
+	hera (Surpresa): Um ajudante? Isso reduziria o estresse em 40%!
+- Vocês estão se preocupando por nada. Relaxem!
+	update enzo (Panico) leftmost
+	[voice path="res://assets/som/Hera/tutorial/relaxa.mp3" volume="0.0"]
+	hera (Indignada): Relaxar é um luxo que o meu cronograma não permite!
+[voice path="res://assets/som/Bella/tutorial/nao ligue.mp3" volume="0.0"]
+Bella (Apaziguadora): Não ligue para eles, são pessoas boas apesar de diferentes.
+leave enzo
+leave hera
+# Linna
+[background arg="res://assets/backgrounds/casa_enzo_linna.jpeg" fade="0.0"]
+set {NomeBella} = "Bella"
+update Bella (Caminhando) left
+[voice path="res://assets/som/Bella/tutorial/casa enzo.mp3" volume="0.0"]
+Bella (Caminhando): Olha, passamos pela biblioteca e agora estamos cruzando a frente da casa do Enzo — veja como aquela porta roxa combina com o estilo dele
+[background arg="res://assets/backgrounds/casa_linna.jpeg" fade="0.0"]
+join linna (Nuvem) rightmost [animation="Fade In Down"]
+[voice path="res://assets/som/Bella/tutorial/Voz-Rarity-2026-05-26-09-10-Linna-[pausa-breve]-[gritando]-Terra-chamando-[ê.mp3" volume="0.0"]
+Bella (Realidade): Linna? Terra chamando Linna!
+[voice path="res://assets/som/Bella/tutorial/Voz-Rarity-2026-05-26-09-13-[grito-longo]LINNAAAAAAAAA![gritando].mp3" volume="0.0"]
+Bella (Grito): Linnaaaaaaaaa!
+update linna (Despertar) rightmost
+[voice path="res://assets/som/Linna/tutorial/borboleta.mp3" volume="0.0"]
+linna (Despertar): Oh! Oh uma borboleta? Não… é uma pessoa, uma não, duas… Oi!
+[voice path="res://assets/som/Bella/tutorial/Voz-Rarity-2026-05-26-09-15-Bom-[pausa-curta],-essa-é-Linna-sempre-anda-com.mp3" volume="0.0"]
+Bella (Apresenta 5): {NomeJogador}, essa é Linna sempre anda com a cabeça nas nuvens.
+update linna (Avoada)
+[voice path="res://assets/som/Bella/tutorial/Voz-Rarity-2026-05-26-09-14-Linna,-[pausa-curta]-esse-é.mp3" volume="0.0"]
+Bella (Engraçada): Linna, esse(a) é  {NomeJogador}.
+update linna (Pouso)
+[voice path="res://assets/som/Linna/tutorial/oi.mp3" volume="0.0"]
+linna (Pouso): Ah oi, adorei seu nome!
+update linna (Ajuste)
+[voice path="res://assets/som/Linna/tutorial/eu ia fazer.mp3" volume="0.0"]
+linna (Ajuste): Eu ia fazer algo importante agora… o que era mesmo?
+update linna (Oi)
+leave Bella
+- Não tem pressa, Linna. Eu também costumo me perder nos meus pensamentos.
+	[voice path="res://assets/som/Linna/tutorial/bom saber.mp3" volume="0.0"]
+	linna (Flutuando): É bom saber que não estou sozinha nas nuvens!
+- Você estava falando com a Bella. Tente focar um pouco!
+	[voice path="res://assets/som/Linna/tutorial/focar.mp3" volume="0.0"]
+	linna (Confusa): Focar? \
+	Ah, sim... hã... o que você disse?
+leave linna
+[background arg="res://assets/backgrounds/praça2.jpeg" fade="0.0"]
+join Bella (Esqueci) center
+[voice path="res://assets/som/Bella/tutorial/Voz-Rarity-2026-05-26-09-23-[gemido]-Ah,-[ênfase]-não!-Eu-ia-te-dar-um-mapa,.mp3" volume="0.0"]
+Bella (Esqueci): Ah, não! \
+Eu ia te dar um mapa, mas acho que deixei cair perto daquela pilha de caixas da Linna.
+[voice path="res://assets/som/Bella/tutorial/Voz-Rarity-2026-05-26-09-24-Sabe,-[pausa],-aqui-em-Lypia,-se-você-for-amigo.mp3" volume="0.0"]
+Bella (Amigos): Sabe, {NomeJogador}, aqui em Lypia, se você for amigo de alguém, essa pessoa sempre terá uma tarefa ou um pedido para você.\
+Como estamos ficando amigos, você me ajuda?
+[wait time="0.3"]
+[signal arg="iniciar_gameplay"]

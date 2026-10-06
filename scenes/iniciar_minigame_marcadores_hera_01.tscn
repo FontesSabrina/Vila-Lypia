@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3 uid="uid://dyyvqlvcqowy4"]
+
+[ext_resource type="Texture2D" uid="uid://1qcn81mp0t07" path="res://assets/backgrounds/casa_hera_armário de suprimentos-fechado.jpeg" id="1_68kj2"]
+[ext_resource type="Script" path="res://scripts/iniciar_minigame_marcadores_hera_01.gd" id="1_uhow6"]
+[ext_resource type="Texture2D" uid="uid://b1yu3glqxspkl" path="res://assets/icon/lupa.png" id="3_j2x8i"]
+
+[node name="iniciar_minigame_marcadores_hera_01" type="Node2D"]
+script = ExtResource("1_uhow6")
+
+[node name="CasaHeraArmárioDeSuprimentos-fechado" type="Sprite2D" parent="."]
+position = Vector2(573.5, 325.5)
+scale = Vector2(0.424055, 0.426432)
+texture = ExtResource("1_68kj2")
+
+[node name="lupa" type="TextureButton" parent="."]
+offset_left = 497.0
+offset_top = 237.0
+offset_right = 1873.0
+offset_bottom = 1005.0
+scale = Vector2(0.108204, 0.103201)
+texture_normal = ExtResource("3_j2x8i")
+
+[connection signal="pressed" from="lupa" to="." method="_on_lupa_pressed"]

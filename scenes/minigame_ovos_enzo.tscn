@@ -1,0 +1,37 @@
+[gd_scene load_steps=5 format=3 uid="uid://cxbxkgo8t33d2"]
+
+[ext_resource type="Texture2D" uid="uid://dv4y0r2bj62pm" path="res://assets/backgrounds/cozinha_enzo.jpeg" id="1_i51eg"]
+[ext_resource type="Script" path="res://scripts/minigame_ovos_enzo.gd" id="1_o8kii"]
+[ext_resource type="Texture2D" uid="uid://b1yu3glqxspkl" path="res://assets/icon/lupa.png" id="2_fyfur"]
+[ext_resource type="PackedScene" uid="uid://bytn6nfve2q2f" path="res://scenes/barra_ovos.tscn" id="4_e4heu"]
+
+[node name="minigame_ovos_enzo" type="Node2D"]
+script = ExtResource("1_o8kii")
+
+[node name="CozinhaEnzo" type="Sprite2D" parent="."]
+position = Vector2(572, 323)
+scale = Vector2(0.419331, 0.421875)
+texture = ExtResource("1_i51eg")
+
+[node name="lupa_01" type="TextureButton" parent="."]
+offset_left = 437.0
+offset_top = 334.0
+offset_right = 1813.0
+offset_bottom = 1102.0
+rotation = -0.751895
+scale = Vector2(0.0985188, 0.094452)
+texture_normal = ExtResource("2_fyfur")
+
+[node name="lupa_02" type="TextureButton" parent="."]
+offset_left = 783.0
+offset_top = 258.0
+offset_right = 2159.0
+offset_bottom = 1026.0
+scale = Vector2(0.0669827, 0.0602995)
+texture_normal = ExtResource("2_fyfur")
+
+[node name="barra_ovos" parent="." instance=ExtResource("4_e4heu")]
+position = Vector2(162, 562)
+
+[connection signal="pressed" from="lupa_01" to="." method="_on_lupa_01_pressed"]
+[connection signal="pressed" from="lupa_02" to="." method="_on_lupa_02_pressed"]

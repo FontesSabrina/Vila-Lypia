@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://d0s0tf133x8w7"
+path="res://.godot/imported/... falta um pouco mais de sombra aqui... ou talvez a sombra já esteja em todo lugar..mp3-a778bd5cc106b947bdc2897cbc8aa088.mp3str"
+
+[deps]
+
+source_file="res://assets/som/Pietro/Pietro_01/... falta um pouco mais de sombra aqui... ou talvez a sombra já esteja em todo lugar..mp3"
+dest_files=["res://.godot/imported/... falta um pouco mais de sombra aqui... ou talvez a sombra já esteja em todo lugar..mp3-a778bd5cc106b947bdc2897cbc8aa088.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

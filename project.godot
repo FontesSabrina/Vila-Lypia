@@ -1,0 +1,243 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="Vila Lypia (beta)"
+run/main_scene="res://scenes/main.tscn"
+config/features=PackedStringArray("4.3", "Forward Plus")
+
+[autoload]
+
+GameState="*res://scripts/GameState.gd"
+Salvamento="*res://scripts/Salvamento.gd"
+Dialogic="*res://addons/dialogic/Core/DialogicGameHandler.gd"
+
+[dialogic]
+
+directories/dch_directory={
+"Bella": "res://assets/characters/bella/Bella.dch",
+"Pietro": "res://assets/characters/pietro/Pietro.dch",
+"Protagonista": "res://assets/characters/Protagonista/Protagonista.dch",
+"enzo": "res://assets/characters/enzo/enzo.dch",
+"hera": "res://assets/characters/prof. Hera/hera.dch",
+"linna": "res://assets/characters/linna/linna.dch",
+"vincent": "res://assets/characters/vincent/vincent.dch",
+"xerife": "res://assets/characters/xerife/xerife.dch"
+}
+directories/dtl_directory={
+"Linna_01": "res://scenes/dtl_Dialogic/Linna_01.dtl",
+"P_Hera_01": "res://scenes/dtl_Dialogic/P_Hera_01.dtl",
+"Pietro_01": "res://scenes/dtl_Dialogic/Pietro_01.dtl",
+"Vincent_01": "res://scenes/dtl_Dialogic/Vincent_01.dtl",
+"XerifeP_01": "res://scenes/dtl_Dialogic/XerifeP_01.dtl",
+"aviso_hera": "res://scenes/dtl_Dialogic/aviso_hera.dtl",
+"aviso_pincel_pietro": "res://scenes/dtl_Dialogic/aviso_pincel_pietro.dtl",
+"aviso_retorno_linna": "res://scenes/dtl_Dialogic/aviso_retorno_linna.dtl",
+"aviso_retorno_vela": "res://scenes/dtl_Dialogic/aviso_retorno_vela.dtl",
+"aviso_retorno_vincent": "res://scenes/dtl_Dialogic/aviso_retorno_vincent.dtl",
+"aviso_retorno_xerife": "res://scenes/dtl_Dialogic/aviso_retorno_xerife.dtl",
+"bella_presente": "res://scenes/dtl_Dialogic/bella_presente.dtl",
+"bolo": "res://scenes/dtl_Dialogic/bolo.dtl",
+"bolo_enzo_02": "res://scenes/dtl_Dialogic/bolo_enzo_02.dtl",
+"bolo_final": "res://scenes/dtl_Dialogic/bolo_final.dtl",
+"bolo_hera_02": "res://scenes/dtl_Dialogic/bolo_hera_02.dtl",
+"bolo_linna_02": "res://scenes/dtl_Dialogic/bolo_linna_02.dtl",
+"bolo_mesa_assar": "res://scenes/dtl_Dialogic/bolo_mesa_assar.dtl",
+"bolo_mesa_inicio": "res://scenes/dtl_Dialogic/bolo_mesa_inicio.dtl",
+"bolo_mesa_pronto": "res://scenes/dtl_Dialogic/bolo_mesa_pronto.dtl",
+"bolo_pietro_02": "res://scenes/dtl_Dialogic/bolo_pietro_02.dtl",
+"bolo_vincent_02": "res://scenes/dtl_Dialogic/bolo_vincent_02.dtl",
+"bolo_xerife_02": "res://scenes/dtl_Dialogic/bolo_xerife_02.dtl",
+"cap4_enzo": "res://scenes/dtl_Dialogic/cap4_enzo.dtl",
+"cap4_hera": "res://scenes/dtl_Dialogic/cap4_hera.dtl",
+"cap4_linna": "res://scenes/dtl_Dialogic/cap4_linna.dtl",
+"cap4_loja_intro": "res://scenes/dtl_Dialogic/cap4_loja_intro.dtl",
+"cap4_pepper": "res://scenes/dtl_Dialogic/cap4_pepper.dtl",
+"cap4_pietro": "res://scenes/dtl_Dialogic/cap4_pietro.dtl",
+"cap4_vincent": "res://scenes/dtl_Dialogic/cap4_vincent.dtl",
+"capitulo_2": "res://scenes/dtl_Dialogic/capitulo_2.dtl",
+"cena_01": "res://scenes/dtl_Dialogic/cena_01.dtl",
+"cena_02": "res://scenes/dtl_Dialogic/cena_02.dtl",
+"cena_03": "res://scenes/dtl_Dialogic/cena_03.dtl",
+"characters/Enzo_01": "res://scenes/dtl_Dialogic/Enzo_01.dtl",
+"conversa_bella_dicas": "res://scenes/dtl_Dialogic/conversa_bella_dicas.dtl",
+"convites_01": "res://scenes/dtl_Dialogic/convites_01.dtl",
+"final_tutorial": "res://scenes/dtl_Dialogic/final_tutorial.dtl",
+"tutorial": "res://scenes/dtl_Dialogic/tutorial.dtl"
+}
+layout/style_directory={
+"azulnovo": "res://assets/resources/azulnovo.tres",
+"cinzanovo": "res://assets/resources/cinzanovo.tres",
+"verdenovo": "res://assets/resources/verdenovo.tres"
+}
+variables={
+"Amizade": {
+"Enzo": 0,
+"Linna": 0,
+"P_Hera": 0,
+"Pietro": 0,
+"Vincent": 0,
+"Xerife": 0
+},
+"Bella": {
+"Estado_Bella": 0
+},
+"Bolo": {
+"Enzo": {
+"Em_Andamento": false,
+"Ovos_Concluido": false,
+"Ovos_Entregue": false,
+"Secundaria": false,
+"Velas_Concluido": false,
+"Velas_Em_Andamento": false
+},
+"Estado": 0,
+"Hera": {
+"Bolo_Hera_Marcadores_Concluido": false,
+"Bolo_Hera_Marcadores_Em_Andamento": false,
+"Bolo_Hera_Secundaria_Hera": false,
+"Em_Andamento": false,
+"Excelente_Mostrado": false,
+"Farinha_Concluido": false
+},
+"Linna": {
+"Bolo_Linna_Acucar_Concluido": false,
+"Bolo_Linna_Acucar_Entregue": false,
+"Bolo_Linna_Em_Andamento": false,
+"Bolo_Linna_Novelos_Concluido": false,
+"Bolo_Linna_Novelos_Em_Andamento": false,
+"Bolo_Linna_Secundaria_Linna": false
+},
+"Pietro": {
+"Bolo_Pietro_Chocolate_Entregue": false,
+"Bolo_Pietro_Chocolate_Entregue2": false,
+"Bolo_Pietro_Em_Andamento": false,
+"Bolo_Pietro_Pinceis_Concluido": false,
+"Bolo_Pietro_Secundaria_Pietro": false,
+"Ingrediente_Pietro": false
+},
+"Total_Ingredientes": 0,
+"Vincent": {
+"Bolo_Secundaria_Vincent": false,
+"Bolo_Vincent_Em_Andamento": false,
+"Bolo_Vincent_Geleia_Entregue": false,
+"Bolo_Vincent_Luvas_Concluido": false,
+"Ingrediente_Vincent": false
+},
+"Xerife": {
+"Ingrediente_Pepper": false,
+"Xerife_Fase": 0,
+"Xerife_Secundaria": false
+}
+},
+"Cap4": {
+"Cartao_Feito": false,
+"Cartao_Liberado": false,
+"Dica_Enzo": false,
+"Dica_Hera": false,
+"Dica_Pepper": false,
+"Dica_Pietro": false,
+"Dica_Vincent": false,
+"Enzo_Feito": false,
+"Excelentes": 0,
+"Hera_Feito": false,
+"Intro_Feita": false,
+"Linna_Feita": false,
+"Pepper_Feito": false,
+"Pietro_Feito": false,
+"Vincent_Feito": false
+},
+"Cena": {
+"Praca_Estado": false,
+"Praca_IV": false
+},
+"Convite": {
+"Convite_Linna_entregue": false,
+"Convite_P_Hera_entregue": false,
+"Convite_Xerife_entregue": false,
+"Convite_enzo_entregue": false,
+"Convite_pietro_entregue": false,
+"Convite_vincent_entregue": false,
+"fase_entrega": false,
+"pontos_convite": 0,
+"sem_ajuda": false
+},
+"NomeBella": "????",
+"NomeJogador": "????",
+"NomePietro": "????",
+"NomeVincent": "????",
+"NomeXerife": "????"
+}
+glossary/default_case_sensitive=true
+layout/style_list=["res://assets/resources/cinzanovo.tres", "res://assets/resources/azulnovo.tres", "res://assets/resources/verdenovo.tres"]
+layout/default_style="res://assets/icon/cinzanovo.tres"
+extensions_folder="res://addons/dialogic_additions"
+text/letter_speed=0.01
+text/initial_text_reveal_skippable=true
+text/text_reveal_skip_delay=0.1
+text/advance_delay=0.1
+text/autoadvance_per_character_delay=0.1
+text/autoadvance_ignored_characters_enabled=true
+animations/join_default_length=0.5
+animations/join_default_wait=true
+animations/leave_default_length=0.5
+animations/leave_default_wait=true
+animations/cross_fade_default_length=0.5
+choices/autofocus_first=true
+choices/delay=0.2
+choices/reveal_delay=0
+choices/reveal_by_input=false
+save/autosave_delay=60.0
+save/encryption_on_exports_only=true
+text/autopauses={}
+audio/channel_defaults={
+"": {
+"audio_bus": "",
+"fade_length": 0.0,
+"loop": false,
+"volume": 0.0
+},
+"music": {
+"audio_bus": "",
+"fade_length": -0.3,
+"loop": true,
+"volume": 0.0
+}
+}
+
+[display]
+
+window/stretch/mode="canvas_items"
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/dialogic/plugin.cfg")
+
+[file_customization]
+
+folder_colors={
+"res://addons/": "yellow",
+"res://assets/": "green",
+"res://scenes/": "teal",
+"res://scripts/": "blue"
+}
+
+[input]
+
+dialogic_default_action={
+"deadzone": 0.5,
+"events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":4194309,"physical_keycode":0,"key_label":0,"unicode":0,"location":0,"echo":false,"script":null)
+, Object(InputEventMouseButton,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"button_mask":0,"position":Vector2(0, 0),"global_position":Vector2(0, 0),"factor":1.0,"button_index":1,"canceled":false,"pressed":true,"double_click":false,"script":null)
+, Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":32,"physical_keycode":0,"key_label":0,"unicode":0,"location":0,"echo":false,"script":null)
+, Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":88,"physical_keycode":0,"key_label":0,"unicode":0,"location":0,"echo":false,"script":null)
+, Object(InputEventJoypadButton,"resource_local_to_scene":false,"resource_name":"","device":0,"button_index":0,"pressure":0.0,"pressed":false,"script":null)
+]
+}

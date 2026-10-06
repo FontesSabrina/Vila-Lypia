@@ -1,0 +1,50 @@
+[gd_scene load_steps=4 format=3 uid="uid://dd6s4ykmpxp6u"]
+
+[ext_resource type="Script" path="res://scripts/iniciar_minigame_marcadores_hera_03.gd" id="1_gnve3"]
+[ext_resource type="Texture2D" uid="uid://ci6y7buk77lbh" path="res://assets/backgrounds/casa_hera_armário de suprimentos _gavetas.jpeg" id="1_o5dxy"]
+[ext_resource type="Texture2D" uid="uid://b1yu3glqxspkl" path="res://assets/icon/lupa.png" id="3_71qay"]
+
+[node name="iniciar_minigame_marcadores_hera_03" type="Node2D"]
+script = ExtResource("1_gnve3")
+
+[node name="CasaHeraArmárioDeSuprimentosGavetas" type="Sprite2D" parent="."]
+position = Vector2(568.25, 332)
+scale = Vector2(0.443859, 0.432292)
+texture = ExtResource("1_o5dxy")
+
+[node name="lupa_4" type="TextureButton" parent="."]
+offset_left = 729.0
+offset_top = 134.0
+offset_right = 2105.0
+offset_bottom = 902.0
+scale = Vector2(0.173, 0.173)
+texture_normal = ExtResource("3_71qay")
+
+[node name="lupa_5" type="TextureButton" parent="."]
+offset_left = 723.0
+offset_top = 427.0
+offset_right = 2099.0
+offset_bottom = 1195.0
+scale = Vector2(0.173, 0.173)
+texture_normal = ExtResource("3_71qay")
+
+[node name="lupa_6" type="TextureButton" parent="."]
+offset_left = 188.0
+offset_top = 447.0
+offset_right = 1564.0
+offset_bottom = 1215.0
+scale = Vector2(0.173, 0.173)
+texture_normal = ExtResource("3_71qay")
+
+[node name="lupa_7" type="TextureButton" parent="."]
+offset_left = 183.0
+offset_top = 146.0
+offset_right = 1559.0
+offset_bottom = 914.0
+scale = Vector2(0.172739, 0.175569)
+texture_normal = ExtResource("3_71qay")
+
+[connection signal="pressed" from="lupa_4" to="." method="_on_lupa_4_pressed"]
+[connection signal="pressed" from="lupa_5" to="." method="_on_lupa_5_pressed"]
+[connection signal="pressed" from="lupa_6" to="." method="_on_lupa_6_pressed"]
+[connection signal="pressed" from="lupa_7" to="." method="_on_lupa_7_pressed"]

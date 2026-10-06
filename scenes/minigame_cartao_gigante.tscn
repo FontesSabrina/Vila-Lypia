@@ -1,0 +1,70 @@
+[gd_scene load_steps=12 format=3 uid="uid://m4kbcc3fwp7w"]
+
+[ext_resource type="Script" path="res://scripts/minigame_cartao_gigante.gd" id="1_t04sr"]
+[ext_resource type="Texture2D" uid="uid://dktbpa7dhsrmw" path="res://assets/backgrounds/mesa_artes.jpg" id="1_x4l3j"]
+[ext_resource type="Texture2D" uid="uid://bsstesq55hn0e" path="res://assets/icon/Sol Radiante.png" id="3_a5x4n"]
+[ext_resource type="Texture2D" uid="uid://cjksdabc5n1sf" path="res://assets/icon/Vila Lipya catao.jpg" id="3_ql4bh"]
+[ext_resource type="Texture2D" uid="uid://dy1mnou4865lw" path="res://assets/icon/Poema em Gota.png" id="4_68awu"]
+[ext_resource type="Texture2D" uid="uid://p88y2mc8qrut" path="res://assets/icon/Escudo Torto.png" id="5_yrcc3"]
+[ext_resource type="Texture2D" uid="uid://cdl60rb22cfkh" path="res://assets/icon/Selo de Cera Vermelho.png" id="6_k8n27"]
+[ext_resource type="Texture2D" uid="uid://ddxqpswb6gmh4" path="res://assets/icon/Dente-de-leão.png" id="7_urq73"]
+[ext_resource type="Texture2D" uid="uid://dggno1mnvp73q" path="res://assets/icon/Moldura Geométrica.png" id="8_wsb85"]
+[ext_resource type="Texture2D" uid="uid://b7gp1kc0ktntg" path="res://assets/icon/fa.png" id="9_ow301"]
+[ext_resource type="PackedScene" uid="uid://qgknhrb2io50" path="res://scenes/barra_cartao.tscn" id="10_miwgi"]
+
+[node name="minigame_cartao_gigante" type="Node2D"]
+script = ExtResource("1_t04sr")
+
+[node name="MesaArtes" type="Sprite2D" parent="."]
+position = Vector2(674, 361)
+scale = Vector2(0.79692, 1.07943)
+texture = ExtResource("1_x4l3j")
+
+[node name="Cartao" type="Sprite2D" parent="."]
+position = Vector2(561.215, 242.571)
+scale = Vector2(0.291924, 0.296318)
+texture = ExtResource("3_ql4bh")
+
+[node name="Fa" type="Sprite2D" parent="."]
+position = Vector2(561.215, 116.571)
+scale = Vector2(0.179501, 0.179397)
+texture = ExtResource("9_ow301")
+
+[node name="PoemaEmGotaSobra" type="Sprite2D" parent="."]
+modulate = Color(1, 1, 1, 0.137255)
+position = Vector2(442.215, 316.571)
+scale = Vector2(0.143125, 0.123507)
+texture = ExtResource("4_68awu")
+
+[node name="EscudoTortoSobra" type="Sprite2D" parent="."]
+modulate = Color(1, 1, 1, 0.188235)
+position = Vector2(612.857, 264.571)
+scale = Vector2(0.158452, 0.138433)
+texture = ExtResource("5_yrcc3")
+
+[node name="SeloDeCeraVermelhoSobra" type="Sprite2D" parent="."]
+modulate = Color(1, 1, 1, 0.243137)
+position = Vector2(736.215, 361.571)
+scale = Vector2(0.0828646, 0.08125)
+texture = ExtResource("6_k8n27")
+
+[node name="Dente-de-leãoSobra" type="Sprite2D" parent="."]
+self_modulate = Color(1, 1, 1, 0.313726)
+position = Vector2(337.215, 289.571)
+scale = Vector2(0.230179, 0.226429)
+texture = ExtResource("7_urq73")
+
+[node name="MolduraGeométricaSobra" type="Sprite2D" parent="."]
+modulate = Color(1, 1, 1, 0.180392)
+position = Vector2(564.215, 243.571)
+scale = Vector2(0.32047, 0.318613)
+texture = ExtResource("8_wsb85")
+
+[node name="SolRadianteSobra" type="Sprite2D" parent="."]
+self_modulate = Color(1, 1, 1, 0.231373)
+position = Vector2(799, 228)
+scale = Vector2(0.1789, 0.159305)
+texture = ExtResource("3_a5x4n")
+
+[node name="barra_cartao" parent="." instance=ExtResource("10_miwgi")]
+position = Vector2(314, -1)

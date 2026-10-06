@@ -1,0 +1,39 @@
+if {Amizade.P_Hera} <= 3:
+	[style name="cinzanovo"]
+elif {Amizade.P_Hera} <= 7:
+	[style name="azulnovo"]
+else:
+	[style name="verdenovo"]
+
+if {Cap4.Hera_Feito} == true:
+	[end_timeline]
+[background arg="res://assets/backgrounds/praça_festa_IV_Hera.jpg" fade="0.0"]
+
+join hera (cartao/1) center
+audio "res://assets/som/Caminho da Vila.mp3" [volume="-18.0"]
+[voice path="res://assets/som/Hera/cartao/Se-o-Vincent-desenhar-ali,-e-o-Pietro.mp3" volume="0.0"]
+
+hera (cartao/1): Se o Vincent desenhar ali, e o Pietro escrever aqui, a margem de respiro visual cai para menos de 12%!\
+Isso vai gerar uma poluição estética!\
+O cartão vai ser um desastre desorganizado!
+set {Cap4.Hera_Feito} = true
+
+- É só um cartão, Hera. Não precisa de régua.
+	[voice path="res://assets/som/Hera/cartao/-Tudo-precisa-de-[emphasis]-régua!-[pause].mp3" volume="0.0"]
+	hera (cartao/2): Tudo precisa de régua! O caos visual é o primeiro passo para o caos total da vila!
+	leave hera
+- Nós podemos arrumar um espacinho extra para você, não se preocupe.
+	[voice path="res://assets/som/Hera/cartao/-Isso-seria-[emphasis]-ótimo.-[short-pau.mp3" volume="0.0"]
+	hera (cartao/3): Isso seria ótimo. Vou recalcular as novas margens imediatamente para garantir que caiba.
+	set {Amizade.P_Hera} += 1
+	leave hera
+- Calma, Hera. O cartão é legal justamente por ser diferente. A Anne vai amar essa nossa mistura!
+	[voice path="res://assets/som/Hera/cartao/Você...-você-está-sugerindo-que-o-caos-controlad.mp3" volume="0.0"]
+	hera (cartao/4): Você... você está sugerindo que o caos controlado pode ter um alto valor afetivo? \
+	Fascinante. Você tem razão.
+	[voice path="res://assets/som/Hera/cartao/Pensando-em-[emphasis]-organização,-a-Prefeita-é.mp3" volume="0.0"]
+	hera (cartao/5): Pensando em organização, a Prefeita é muito cuidadosa com o Lápis Mágico dela. Uma caixa protetora, resistente ao tempo, diminuiria muito o estresse dela!
+	set {Amizade.P_Hera} += 2
+	set {Cap4.Excelentes} += 1
+	set {Cap4.Dica_Hera} = true
+	leave hera

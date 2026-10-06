@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="ItemData" load_steps=3 format=3 uid="uid://le03glth26fn"]
+
+[ext_resource type="Texture2D" uid="uid://b7bwh6vrn7k" path="res://assets/icon/mapa.png" id="1_ny12n"]
+[ext_resource type="Script" path="res://scripts/ItemData.gd" id="1_wqnyj"]
+
+[resource]
+script = ExtResource("1_wqnyj")
+id = "1"
+nome = "mapa"
+icone = ExtResource("1_ny12n")

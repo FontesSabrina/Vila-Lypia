@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bxntaygpb6drn"
+path="res://.godot/imported/Sabe quando.mp3-516ea2571fea4c3053a3689afe728575.mp3str"
+
+[deps]
+
+source_file="res://assets/som/Pietro/Sabe quando.mp3"
+dest_files=["res://.godot/imported/Sabe quando.mp3-516ea2571fea4c3053a3689afe728575.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,34 @@
+[gd_scene load_steps=5 format=3 uid="uid://bb4xgtkjowyd4"]
+
+[ext_resource type="Script" path="res://scripts/praca_bela.gd" id="1_bk6fn"]
+[ext_resource type="Texture2D" uid="uid://ckide8ssda455" path="res://assets/backgrounds/festa2.jpeg" id="1_qgyqe"]
+[ext_resource type="Texture2D" uid="uid://bq2w5wtshv81k" path="res://assets/characters/bella/amigos.png" id="2_v0b8k"]
+[ext_resource type="PackedScene" uid="uid://b4vsaogdwxkno" path="res://scenes/botao_voltar.tscn" id="4_h4u10"]
+
+[node name="praça_bela" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_bk6fn")
+
+[node name="Festa2" type="Sprite2D" parent="."]
+position = Vector2(590, 324)
+scale = Vector2(0.42918, 0.422688)
+texture = ExtResource("1_qgyqe")
+
+[node name="Amigos" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 423.0
+offset_top = 55.0
+offset_right = 2471.0
+offset_bottom = 2103.0
+scale = Vector2(0.182346, 0.182515)
+texture_normal = ExtResource("2_v0b8k")
+
+[node name="botao_voltar" parent="." instance=ExtResource("4_h4u10")]
+layout_mode = 1
+offset_left = -6.0
+offset_top = -5.0
+offset_right = -6.0
+offset_bottom = -5.0
+
+[connection signal="pressed" from="Amigos" to="." method="_on_amigos_pressed"]

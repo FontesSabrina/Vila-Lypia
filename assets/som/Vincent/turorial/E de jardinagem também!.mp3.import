@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dja2cmsrp3ica"
+path="res://.godot/imported/E de jardinagem também!.mp3-52cb8fd045b517c2ef1d10c69c2fab44.mp3str"
+
+[deps]
+
+source_file="res://assets/som/Vincent/turorial/E de jardinagem também!.mp3"
+dest_files=["res://.godot/imported/E de jardinagem também!.mp3-52cb8fd045b517c2ef1d10c69c2fab44.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

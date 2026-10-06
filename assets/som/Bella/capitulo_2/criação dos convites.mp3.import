@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dewq2u2p2xos1"
+path="res://.godot/imported/criação dos convites.mp3-38ce5fe859d00f99a0c80647b1236bd1.mp3str"
+
+[deps]
+
+source_file="res://assets/som/Bella/capitulo_2/criação dos convites.mp3"
+dest_files=["res://.godot/imported/criação dos convites.mp3-38ce5fe859d00f99a0c80647b1236bd1.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://nn5ahh2n2dto"
+path="res://.godot/imported/Você viu para onde aquele passarinho foi Ele parecia estar com pressa!.mp3-7e2d359a7fcd16c0c6c4c70e9d22e907.mp3str"
+
+[deps]
+
+source_file="res://assets/som/Linna/Linna_01/Você viu para onde aquele passarinho foi Ele parecia estar com pressa!.mp3"
+dest_files=["res://.godot/imported/Você viu para onde aquele passarinho foi Ele parecia estar com pressa!.mp3-7e2d359a7fcd16c0c6c4c70e9d22e907.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://mvx3scc7iayf"
+path="res://.godot/imported/Ela sempre me diz que, quando o mundo parece pesado demais, gosta de brincar de Mímica..mp3-67edc97c328c1e8b573b9b2e2ecbec4e.mp3str"
+
+[deps]
+
+source_file="res://assets/som/Pietro/Pietro_01/Ela sempre me diz que, quando o mundo parece pesado demais, gosta de brincar de Mímica..mp3"
+dest_files=["res://.godot/imported/Ela sempre me diz que, quando o mundo parece pesado demais, gosta de brincar de Mímica..mp3-67edc97c328c1e8b573b9b2e2ecbec4e.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

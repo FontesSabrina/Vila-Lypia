@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dexqh6nsy8r0j"
+path="res://.godot/imported/Oh! Oi! Você viu uma chave de ouro por aí Ou talvez um bilhete Eu ia anotar algo importante, mas esqueci o papel... e a caneta..mp3-5e843861c8fa24bb467f1dbaacb0e0a3.mp3str"
+
+[deps]
+
+source_file="res://assets/som/Linna/Linna_01/Oh! Oi! Você viu uma chave de ouro por aí Ou talvez um bilhete Eu ia anotar algo importante, mas esqueci o papel... e a caneta..mp3"
+dest_files=["res://.godot/imported/Oh! Oi! Você viu uma chave de ouro por aí Ou talvez um bilhete Eu ia anotar algo importante, mas esqueci o papel... e a caneta..mp3-5e843861c8fa24bb467f1dbaacb0e0a3.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

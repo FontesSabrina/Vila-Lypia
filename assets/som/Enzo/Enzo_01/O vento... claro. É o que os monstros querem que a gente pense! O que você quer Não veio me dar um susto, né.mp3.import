@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://jju227h8vbp4"
+path="res://.godot/imported/O vento... claro. É o que os monstros querem que a gente pense! O que você quer Não veio me dar um susto, né.mp3-5800e1ed8c7c89f971ea04b6b5c47c21.mp3str"
+
+[deps]
+
+source_file="res://assets/som/Enzo/Enzo_01/O vento... claro. É o que os monstros querem que a gente pense! O que você quer Não veio me dar um susto, né.mp3"
+dest_files=["res://.godot/imported/O vento... claro. É o que os monstros querem que a gente pense! O que você quer Não veio me dar um susto, né.mp3-5800e1ed8c7c89f971ea04b6b5c47c21.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

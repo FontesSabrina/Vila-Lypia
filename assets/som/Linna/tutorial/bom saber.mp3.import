@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://l5hg7or8o20v"
+path="res://.godot/imported/bom saber.mp3-0613f5a5467b5be6a931353795a10986.mp3str"
+
+[deps]
+
+source_file="res://assets/som/Linna/tutorial/bom saber.mp3"
+dest_files=["res://.godot/imported/bom saber.mp3-0613f5a5467b5be6a931353795a10986.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

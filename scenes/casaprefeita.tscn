@@ -1,0 +1,25 @@
+[gd_scene load_steps=3 format=3 uid="uid://c2pf7j1qdno4e"]
+
+[ext_resource type="Texture2D" uid="uid://bkwy1833obefj" path="res://assets/backgrounds/casaPrefeita.jpeg" id="1_mjq4x"]
+[ext_resource type="PackedScene" uid="uid://b4vsaogdwxkno" path="res://scenes_2/botao_voltar.tscn" id="2_qtjue"]
+
+[node name="casaprefeita" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="CasaPrefeita" type="Sprite2D" parent="."]
+position = Vector2(576, 323)
+scale = Vector2(0.419508, 0.422971)
+texture = ExtResource("1_mjq4x")
+
+[node name="botao_voltar" parent="." instance=ExtResource("2_qtjue")]
+layout_mode = 1
+offset_left = 1.0
+offset_top = 3.0
+offset_right = 1.0
+offset_bottom = 3.0
+scale = Vector2(1, 1.00372)

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://d1fftm8gy3u22"
+path="res://.godot/imported/Muito-bem.-Pelo-menos-alguém-aqui-sa.mp3-6ee6be86e8c20e8e544d9a763c9f24a5.mp3str"
+
+[deps]
+
+source_file="res://assets/som/Xerife Pepper/bolo_xerife_02/Muito-bem.-Pelo-menos-alguém-aqui-sa.mp3"
+dest_files=["res://.godot/imported/Muito-bem.-Pelo-menos-alguém-aqui-sa.mp3-6ee6be86e8c20e8e544d9a763c9f24a5.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

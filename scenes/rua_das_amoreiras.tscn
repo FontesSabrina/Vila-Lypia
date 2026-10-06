@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=3 uid="uid://df8l4opffmgtc"]
+
+[ext_resource type="Texture2D" uid="uid://d17kbmlebk0xk" path="res://assets/backgrounds/rua_das_amoreiras_01.jpeg_202608172200.jpeg" id="1_k8dru"]
+[ext_resource type="PackedScene" uid="uid://b4vsaogdwxkno" path="res://scenes/botao_voltar.tscn" id="2_2mhwq"]
+
+[node name="rua das amoreiras" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+
+[node name="RuaDasAmoreiras01_jpeg202608172200" type="Sprite2D" parent="."]
+position = Vector2(573.5, 322.5)
+scale = Vector2(0.417515, 0.421224)
+texture = ExtResource("1_k8dru")
+
+[node name="botao_voltar" parent="." instance=ExtResource("2_2mhwq")]
+layout_mode = 1
+offset_left = -8.0
+offset_top = 4.0
+offset_right = -8.0
+offset_bottom = 4.0

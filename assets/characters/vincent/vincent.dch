@@ -1,0 +1,428 @@
+{
+"@path": "res://addons/dialogic/Resources/character.gd",
+"@subpath": NodePath(""),
+"_translation_id": "",
+"color": Color(1, 1, 1, 1),
+"custom_info": {
+"prefix": "",
+"sound_mood_default": "",
+"sound_moods": {},
+"style": "",
+"suffix": ""
+},
+"default_portrait": "Alegria",
+"description": " Ele olha diretamente para nós, cuidando da alegria da vila e dos nossos jardins!",
+"display_name": "{NomeVincent}",
+"mirror": false,
+"nicknames": [""],
+"offset": Vector2(0, 0),
+"portraits": {
+"Alegria": {
+"export_overrides": {
+"image": "\"res://assets/characters/vincent/alegria.png\""
+},
+"mirror": false,
+"offset": Vector2(60, 60),
+"scale": 1,
+"scene": ""
+},
+"Amigo": {
+"export_overrides": {
+"image": "\"res://assets/characters/vincent/Amigo.png\""
+},
+"mirror": false,
+"offset": Vector2(60, 60),
+"scale": 1,
+"scene": ""
+},
+"Asobio": {
+"export_overrides": {
+"image": "\"res://assets/characters/vincent/asobio.png\""
+},
+"mirror": true,
+"offset": Vector2(60, 60),
+"scale": 1,
+"scene": ""
+},
+"Entusiasmo": {
+"export_overrides": {
+"image": "\"res://assets/characters/vincent/entusiasmo.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"Mode": {
+"export_overrides": {
+"image": "\"res://assets/characters/vincent/mode.png\""
+},
+"mirror": false,
+"offset": Vector2(40, 60),
+"scale": 1.0,
+"scene": ""
+},
+"Satisfação": {
+"export_overrides": {
+"image": "\"res://assets/characters/vincent/satisfação.png\""
+},
+"mirror": false,
+"offset": Vector2(60, 60),
+"scale": 1,
+"scene": ""
+},
+"Tchau": {
+"export_overrides": {
+"image": "\"res://assets/characters/vincent/tchau.png\""
+},
+"mirror": false,
+"offset": Vector2(60, 60),
+"scale": 1,
+"scene": ""
+},
+"Tristeza": {
+"export_overrides": {
+"image": "\"res://assets/characters/vincent/tristeza.png\""
+},
+"mirror": false,
+"offset": Vector2(60, 60),
+"scale": 1,
+"scene": ""
+},
+"Vincent_01/1": {
+"export_overrides": {
+"image": "\"res://assets/characters/vincent/Vincent_01/1.png\""
+},
+"ignore_char_scale": false,
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1.0,
+"scene": ""
+},
+"Vincent_01/10": {
+"export_overrides": {
+"image": "\"res://assets/characters/vincent/Vincent_01/10.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"Vincent_01/11": {
+"export_overrides": {
+"image": "\"res://assets/characters/vincent/Vincent_01/11.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"Vincent_01/12": {
+"export_overrides": {
+"image": "\"res://assets/characters/vincent/Vincent_01/12.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"Vincent_01/13": {
+"export_overrides": {
+"image": "\"res://assets/characters/vincent/Vincent_01/13.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"Vincent_01/14": {
+"export_overrides": {
+"image": "\"res://assets/characters/vincent/Vincent_01/14.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"Vincent_01/2": {
+"export_overrides": {
+"image": "\"res://assets/characters/vincent/Vincent_01/2.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1.0,
+"scene": ""
+},
+"Vincent_01/3": {
+"export_overrides": {
+"image": "\"res://assets/characters/vincent/Vincent_01/3.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1.0,
+"scene": ""
+},
+"Vincent_01/4": {
+"export_overrides": {
+"image": "\"res://assets/characters/vincent/Vincent_01/4 .png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1.0,
+"scene": ""
+},
+"Vincent_01/5": {
+"export_overrides": {
+"image": "\"res://assets/characters/vincent/Vincent_01/5.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1.0,
+"scene": ""
+},
+"Vincent_01/6": {
+"export_overrides": {
+"image": "\"res://assets/characters/vincent/Vincent_01/6.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"Vincent_01/7": {
+"export_overrides": {
+"image": "\"res://assets/characters/vincent/Vincent_01/7.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"Vincent_01/8": {
+"export_overrides": {
+"image": "\"res://assets/characters/vincent/Vincent_01/8.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"Vincent_01/9": {
+"export_overrides": {
+"image": "\"res://assets/characters/vincent/Vincent_01/9.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"bolo_vincent/08": {
+"export_overrides": {
+"image": "\"res://assets/characters/vincent/bolo_Vincent/bolo08.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 0.8,
+"scene": ""
+},
+"bolo_vincent/09": {
+"export_overrides": {
+"image": "\"res://assets/characters/vincent/bolo_Vincent/bolo09.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 0.8,
+"scene": ""
+},
+"bolo_vincent/1": {
+"export_overrides": {
+"image": "\"res://assets/characters/vincent/bolo_Vincent/bolo01.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1.0,
+"scene": ""
+},
+"bolo_vincent/10": {
+"export_overrides": {
+"image": "\"res://assets/characters/vincent/bolo_Vincent/bolo10.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 0.8,
+"scene": ""
+},
+"bolo_vincent/11": {
+"export_overrides": {
+"image": "\"res://assets/characters/vincent/bolo_Vincent/bolo11.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 0.8,
+"scene": ""
+},
+"bolo_vincent/12": {
+"export_overrides": {
+"image": "\"res://assets/characters/vincent/bolo_Vincent/bolo12.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"bolo_vincent/13": {
+"export_overrides": {
+"image": "\"res://assets/characters/vincent/bolo_Vincent/bolo13.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 0.8,
+"scene": ""
+},
+"bolo_vincent/14": {
+"export_overrides": {
+"image": "\"res://assets/characters/vincent/bolo_Vincent/bolo14.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 0.8,
+"scene": ""
+},
+"bolo_vincent/15": {
+"export_overrides": {
+"image": "\"res://assets/characters/vincent/bolo_Vincent/bolo15.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 0.8,
+"scene": ""
+},
+"bolo_vincent/16": {
+"export_overrides": {
+"image": "\"res://assets/characters/vincent/bolo_Vincent/bolo16.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 0.8,
+"scene": ""
+},
+"bolo_vincent/17": {
+"export_overrides": {
+"image": "\"res://assets/characters/vincent/bolo_Vincent/bolo17.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 0.8,
+"scene": ""
+},
+"bolo_vincent/2": {
+"export_overrides": {
+"image": "\"res://assets/characters/vincent/bolo_Vincent/bolo02.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1.0,
+"scene": ""
+},
+"bolo_vincent/3": {
+"export_overrides": {
+"image": "\"res://assets/characters/vincent/bolo_Vincent/bolo03.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1.0,
+"scene": ""
+},
+"bolo_vincent/4": {
+"export_overrides": {
+"image": "\"res://assets/characters/vincent/bolo_Vincent/bolo04.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1.0,
+"scene": ""
+},
+"bolo_vincent/5": {
+"export_overrides": {
+"image": "\"res://assets/characters/vincent/bolo_Vincent/bolo05.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1.0,
+"scene": ""
+},
+"bolo_vincent/6": {
+"export_overrides": {
+"image": "\"res://assets/characters/vincent/bolo_Vincent/bolo06.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 50),
+"scale": 1,
+"scene": ""
+},
+"bolo_vincent/7": {
+"export_overrides": {
+"image": "\"res://assets/characters/vincent/bolo_Vincent/bolo07.png\""
+},
+"mirror": false,
+"offset": Vector2(-60, 60),
+"scale": 1,
+"scene": ""
+},
+"cartao/1": {
+"export_overrides": {
+"image": "\"res://assets/characters/vincent/cartao/1.png\""
+},
+"mirror": false,
+"offset": Vector2(-100, -100),
+"scale": 0.9,
+"scene": ""
+},
+"cartao/2": {
+"export_overrides": {
+"image": "\"res://assets/characters/vincent/cartao/2.png\""
+},
+"mirror": false,
+"offset": Vector2(-100, -100),
+"scale": 0.9,
+"scene": ""
+},
+"cartao/3": {
+"export_overrides": {
+"image": "\"res://assets/characters/vincent/cartao/3.png\""
+},
+"mirror": false,
+"offset": Vector2(-100, -100),
+"scale": 0.9,
+"scene": ""
+},
+"cartao/4": {
+"export_overrides": {
+"image": "\"res://assets/characters/vincent/cartao/4.png\""
+},
+"mirror": false,
+"offset": Vector2(0, -100),
+"scale": 0.9,
+"scene": ""
+},
+"cartao/5": {
+"export_overrides": {
+"image": "\"res://assets/characters/vincent/cartao/5.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"cartao/Vincent Cartao": {
+"export_overrides": {
+"image": "\"res://assets/characters/vincent/cartao/Vincent_cartao.png\""
+},
+"mirror": false,
+"offset": Vector2(-100, -100),
+"scale": 0.9,
+"scene": ""
+}
+},
+"scale": 1.0
+}

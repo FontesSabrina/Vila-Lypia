@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bk6bmntgmugea"
+path="res://.godot/imported/Como assim tanto faz A ordem é a base do conhecimento!.mp3-2f5e519f7c2863667068fe99e107de76.mp3str"
+
+[deps]
+
+source_file="res://assets/som/Hera/P_Hera_01/Como assim tanto faz A ordem é a base do conhecimento!.mp3"
+dest_files=["res://.godot/imported/Como assim tanto faz A ordem é a base do conhecimento!.mp3-2f5e519f7c2863667068fe99e107de76.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

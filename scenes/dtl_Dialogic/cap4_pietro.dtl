@@ -1,0 +1,38 @@
+if {Amizade.Pietro} <= 3:
+	[style name="cinzanovo"]
+elif {Amizade.Pietro} <= 7:
+	[style name="azulnovo"]
+else:
+	[style name="verdenovo"]
+
+if {Cap4.Pietro_Feito} == true:
+	[end_timeline]
+audio "res://assets/som/Caminho da Vila.mp3" [volume="-18.0"]
+[background arg="res://assets/backgrounds/praça_festa_IV_pietro.jpg" fade="0.0"]
+
+join Pietro (cartao/1) left
+[voice path="res://assets/som/Pietro/cartao/Eu-escrevi-algumas-palavras-sobre-como-as.mp3" volume="0.0"]
+
+Pietro (cartao/1): Eu escrevi algumas palavras sobre como as lágrimas regam as flores da nossa vila...\
+mas acho que um cartão de aniversário não deveria ter lágrimas.\
+Talvez eu devesse amassar e jogar fora.
+set {Cap4.Pietro_Feito} = true
+
+- Festas de aniversário são para coisas felizes.
+	[voice path="res://assets/som/Pietro/cartao/Você-tem-razão...-[pause]-desculpe.-Vou-t.mp3" volume="0.0"]
+	Pietro (cartao/2): Você tem razão... desculpe. Vou tentar pensar em balões coloridos em vez de chuva.
+	leave Pietro
+- Eu achei as suas palavras muito bonitas, Pietro.
+	[voice path="res://assets/som/Pietro/cartao/Obrigado.-[pause]-É-muito-[emphasis]-reco.mp3" volume="0.0"]
+	Pietro (cartao/3): Obrigado. É muito reconfortante saber que alguém consegue ver valor nas minhas palavras.
+	set {Amizade.Pietro} += 1
+	leave Pietro
+- As lágrimas também fazem parte de quem somos. Seu poema mostra que a Anne pode ser acolhida. É precioso
+	[voice path="res://assets/som/Pietro/cartao/Acolhida...-sim,-era-[emphasis]-tudo-o-qu.mp3" volume="0.0"]
+	Pietro (cartao/4): Acolhida... sim, era tudo o que ela queria quando nos criou. Obrigado por me fazer ver beleza nisso.
+	[voice path="res://assets/som/Pietro/cartao/-Eu-me-lembro-de-vê-la-tentando-guardar-as.mp3" volume="0.0"]
+	Pietro (cartao/5): Eu me lembro de vê-la tentando guardar as memórias antigas dela... algo onde ela pudesse registrar esses sentimentos em segurança seria o presente perfeito.
+	set {Amizade.Pietro} += 2
+	set {Cap4.Excelentes} += 1
+	set {Cap4.Dica_Pietro} = true
+	leave Pietro

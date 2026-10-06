@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://b33el3wpd7exs"
+path="res://.godot/imported/aviso.mp3-b63c1d9d6f747221b010830420bfe864.mp3str"
+
+[deps]
+
+source_file="res://assets/som/Bella/tutorial final/aviso.mp3"
+dest_files=["res://.godot/imported/aviso.mp3-b63c1d9d6f747221b010830420bfe864.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cqw36p4afbfm5"
+path="res://.godot/imported/Eu organizei esses livros por cor, depois por autor, e agora acho que deveria ser por tamanho.mp3-9cb0da8ac68c1b90b66fb3c2aed521d9.mp3str"
+
+[deps]
+
+source_file="res://assets/som/Hera/P_Hera_01/Eu organizei esses livros por cor, depois por autor, e agora acho que deveria ser por tamanho.mp3"
+dest_files=["res://.godot/imported/Eu organizei esses livros por cor, depois por autor, e agora acho que deveria ser por tamanho.mp3-9cb0da8ac68c1b90b66fb3c2aed521d9.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

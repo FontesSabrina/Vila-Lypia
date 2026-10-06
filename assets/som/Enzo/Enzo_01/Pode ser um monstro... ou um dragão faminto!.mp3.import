@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://ds1ko1jx8sgxr"
+path="res://.godot/imported/Pode ser um monstro... ou um dragão faminto!.mp3-9b9c84ca25ed371b6b5e9ef784ce6373.mp3str"
+
+[deps]
+
+source_file="res://assets/som/Enzo/Enzo_01/Pode ser um monstro... ou um dragão faminto!.mp3"
+dest_files=["res://.godot/imported/Pode ser um monstro... ou um dragão faminto!.mp3-9b9c84ca25ed371b6b5e9ef784ce6373.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

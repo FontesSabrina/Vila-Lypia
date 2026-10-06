@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bnq5up40ounh3"
+path="res://.godot/imported/Uma festa.mp3-fc89a3ca5d4d49d67c12d67b63860ac2.mp3str"
+
+[deps]
+
+source_file="res://assets/som/Vincent/Vincent-01/Uma festa.mp3"
+dest_files=["res://.godot/imported/Uma festa.mp3-fc89a3ca5d4d49d67c12d67b63860ac2.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

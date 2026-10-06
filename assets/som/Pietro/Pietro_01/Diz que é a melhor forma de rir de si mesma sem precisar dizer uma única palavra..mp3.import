@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bkmr66xvdiw4p"
+path="res://.godot/imported/Diz que é a melhor forma de rir de si mesma sem precisar dizer uma única palavra..mp3-c63f82fa905e539d00dd5bf27ad13f43.mp3str"
+
+[deps]
+
+source_file="res://assets/som/Pietro/Pietro_01/Diz que é a melhor forma de rir de si mesma sem precisar dizer uma única palavra..mp3"
+dest_files=["res://.godot/imported/Diz que é a melhor forma de rir de si mesma sem precisar dizer uma única palavra..mp3-c63f82fa905e539d00dd5bf27ad13f43.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

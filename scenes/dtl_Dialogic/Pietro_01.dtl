@@ -1,0 +1,89 @@
+[signal arg="estilo:Pietro"]
+audio "res://assets/som/Caminho da Vila.mp3" [volume="-18.0"]
+
+# === APLICAÇÃO DINÂMICA DIRETA NO DIALOGIC ===
+if {Amizade.Pietro} <= 3:
+	[style name="cinzanovo"]
+elif {Amizade.Pietro} <= 7:
+	[style name="azulnovo"]
+else:
+	[style name="verdenovo"]
+# ============================================
+
+[background arg="res://assets/backgrounds/casa_pietro5.jpeg.jpeg" fade="0.0"]
+
+if {Convite.fase_entrega} == true and {Convite.Convite_pietro_entregue} == false:
+	[background arg="res://assets/backgrounds/casa_pietro5.jpeg.jpeg" fade="0.0"]
+	join Pietro (Pietro_01/13) right
+	[voice path="res://assets/som/Pietro/Pietro_01/O outono nem chegou.mp3" volume="0.0"]
+	Pietro (Pietro_01/13): O outono nem chegou... e ela já desistiu de lutar contra a gravidade... Que poético e solitário... Ah... olá... desculpe, eu estava apenas... observando o tempo passar.
+	Protagonista: Pietro... preparei este convite para você. É para a festa da Prefeita.
+	[voice path="res://assets/som/Pietro/Pietro_01/Um convite.mp3" volume="0.0"]
+	Pietro (Pietro_01/14): Um convite... para mim? Obrigado por se lembrar de mim... Às vezes sinto que sou invisível por aqui. Fico feliz que tenha feito isso pensando em mim.
+	Protagonista: Esperamos você lá para comemorar com a gente.
+	[voice path="res://assets/som/Pietro/Pietro_01/boa para.mp3" volume="0.0"]
+	Pietro (Pietro_01/15): A Prefeita Anne sempre foi muito boa para nós... Eu vou tentar ir, sim. Prometo que vou me esforçar para colocar uma roupa com uma cor um pouco mais alegre para combinar com o dia. Obrigado por me acolher...
+	set {Convite.Convite_pietro_entregue} = true
+	set {Convite.pontos_convite} += 1
+	[signal arg="ir_para_praca"]
+
+elif {Convite.fase_entrega} == true and {Convite.Convite_pietro_entregue} == true:
+	[background arg="res://assets/backgrounds/casa_pietro_roupa.jpeg_2K_202608032146.jpeg" fade="0.0"]
+	join Pietro (Pietro_01/16) center
+	[voice path="res://assets/som/Pietro/Pietro_01/Já-estou-separando-uma-roupa-com-tons.mp3" volume="0.0"]
+	Pietro (Pietro_01/16): Já estou separando uma roupa com tons mais claros para levar um pouco mais de cor para a festa... Nos vemos na praça!
+	[signal arg="ir_para_praca"]
+
+elif {Convite.sem_ajuda} == true:
+	[background arg="res://assets/backgrounds/casa_pietro3.jpeg" fade="0.0"]
+	join Pietro (Pietro_01/16) center
+	[voice path="res://assets/som/Pietro/Pietro_01/Às vezes sinto que minhas cores são cinzas demais para este mundo....mp3" volume="0.0"]
+	Pietro (Pietro_01/12): Às vezes, a chuva parece o jeito do céu desabafar.
+
+else:
+	if {Amizade.Pietro} == 0:
+		join Pietro (Pietro_01/1) leftmost
+		[voice path="res://assets/som/Pietro/Pietro_01/... falta um pouco mais de sombra aqui... ou talvez a sombra já esteja em todo lugar..mp3" volume="0.0"]
+		Pietro (Pietro_01/1): ... falta um pouco mais de sombra aqui... ou talvez a sombra já esteja em todo lugar.
+		[voice path="res://assets/som/Pietro/Pietro_01/Ah... olá. Veio ver como a melancolia se transforma em tinta.mp3" volume="0.0"]
+		Pietro (Pietro_01/2): Ah... olá. Veio ver como a melancolia se transforma em tinta?
+		Protagonista: Na verdade, eu queria saber se você conhece bem a Prefeita Anne. Tem alguma dica sobre ela?
+		[voice path="res://assets/som/Pietro/Pietro_01/A Anne....mp3" volume="0.0"]
+		Pietro (Pietro_01/3): A Anne...
+		[voice path="res://assets/som/Pietro/Pietro_01/Ela é uma das poucas que entende que o silêncio também é uma resposta..mp3" volume="0.0"]
+		Pietro (Pietro_01/4): Ela é uma das poucas que entende que o silêncio também é uma resposta.
+		[voice path="res://assets/som/Pietro/Pietro_01/Ela sempre me diz que, quando o mundo parece pesado demais, gosta de brincar de Mímica..mp3" volume="0.0"]
+		Pietro (Pietro_01/5): Ela sempre me diz que, quando o mundo parece pesado demais, gosta de brincar de Mímica.
+		[voice path="res://assets/som/Pietro/Pietro_01/Diz que é a melhor forma de rir de si mesma sem precisar dizer uma única palavra..mp3" volume="0.0"]
+		Pietro (Pietro_01/6): Diz que é a melhor forma de rir de si mesma sem precisar dizer uma única palavra.
+		set {Amizade.Pietro} += 1
+	
+	elif {Amizade.Pietro} == 1:
+		[background arg="res://assets/backgrounds/casa_pietro3.jpeg" fade="0.0"]
+		join Pietro (Pietro_01/7) right
+		[voice path="res://assets/som/Pietro/Pietro_01/Olá novamente... o céu continua com aquele tom de despedida..mp3" volume="0.0"]
+		Pietro (Pietro_01/7): Olá novamente... o céu continua com aquele tom de despedida.
+		[voice path="res://assets/som/Pietro/Pietro_01/Às vezes sinto que minhas cores são cinzas demais para este mundo....mp3" volume="0.0"]
+		Pietro (Pietro_01/8): Às vezes sinto que minhas cores são cinzas demais para este mundo...
+		- Seu quadro está ficando muito expressivo, Pietro.
+			[background arg="res://assets/backgrounds/casa_pietro2.png" fade="0.0"]
+			[voice path="res://assets/som/Pietro/Pietro_01/obg.mp3" volume="0.0"]
+			Pietro (Pietro_01/10): Você acha? \
+			Obrigado... fico feliz que consiga ver algo além da tristeza nele.
+			set {Amizade.Pietro} += 1
+		- O cinza dá profundidade às outras cores. Sua sensibilidade é um dom...
+			[background arg="res://assets/backgrounds/casa_pietro2.png" fade="0.0"]
+			[voice path="res://assets/som/Pietro/Pietro_01/Profundidade... nunca ninguém tinha visto a minha arte por esse ângulo. Obrigado por essas palavras..mp3" volume="0.0"]
+			Pietro (Pietro_01/11): Profundidade... nunca ninguém tinha visto a minha arte por esse ângulo. Obrigado por essas palavras.
+			set {Amizade.Pietro} += 2
+		- Cinza também é uma cor.
+			[background arg="res://assets/backgrounds/casa_pietro2.png" fade="0.0"]
+			[voice path="res://assets/som/Pietro/Pietro_01/É... uma cor que a maioria das pessoas tenta evitar..mp3" volume="0.0"]
+			Pietro (Pietro_01/9): É... uma cor que a maioria das pessoas tenta evitar.
+			set {Amizade.Pietro} += 1
+	
+	else:
+		[background arg="res://assets/backgrounds/casa_pietro3.jpeg" fade="0.0"]
+		join Pietro (Pietro_01/12) center
+		[voice path="res://assets/som/Pietro/Pietro_01/Às vezes sinto que minhas cores são cinzas demais para este mundo....mp3" volume="0.0"]
+		Pietro (Pietro_01/12): Às vezes, a chuva parece o jeito do céu desabafar.

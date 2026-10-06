@@ -1,0 +1,46 @@
+[gd_scene load_steps=7 format=3 uid="uid://8n06cjywowf3"]
+
+[ext_resource type="Script" path="res://scripts/minigame_pietro_floresta_pinceis_03.gd" id="1_cbop6"]
+[ext_resource type="Texture2D" uid="uid://beadyerqi2lud" path="res://assets/backgrounds/floresta04.jpeg" id="1_icrnj"]
+[ext_resource type="PackedScene" uid="uid://dor3bouo3pw5m" path="res://scenes/barra_pinceis.tscn" id="2_p06cc"]
+[ext_resource type="Texture2D" uid="uid://cjyxhhxny2ppg" path="res://assets/icon/pincel03.png" id="3_5nf42"]
+[ext_resource type="Texture2D" uid="uid://y17ug50a7qqd" path="res://assets/icon/raposa-2.png" id="5_kn72p"]
+[ext_resource type="Texture2D" uid="uid://c50f71pflhnqf" path="res://assets/icon/seta.png" id="6_atqfg"]
+
+[node name="minigame_pietro_floresta_pinceis_03" type="Node2D"]
+position = Vector2(575.5, 323.5)
+scale = Vector2(0.419695, 0.42513)
+script = ExtResource("1_cbop6")
+
+[node name="Floresta03" type="Sprite2D" parent="."]
+position = Vector2(-3.57397, 1.1761)
+texture = ExtResource("1_icrnj")
+
+[node name="barra_pincel" parent="." instance=ExtResource("2_p06cc")]
+position = Vector2(-953.238, 562.871)
+scale = Vector2(0.305747, 0.346728)
+
+[node name="pincel-03" type="TextureButton" parent="."]
+offset_left = -120.326
+offset_top = 497.495
+offset_right = 587.674
+offset_bottom = 1547.49
+rotation = -0.00319004
+scale = Vector2(0.15344, 0.0977215)
+texture_normal = ExtResource("3_5nf42")
+
+[node name="Raposa-2" type="Sprite2D" parent="."]
+position = Vector2(-165.596, 408.11)
+texture = ExtResource("5_kn72p")
+
+[node name="seta_03" type="TextureButton" parent="."]
+offset_left = 48.8451
+offset_top = 626.867
+offset_right = 788.845
+offset_bottom = 1119.87
+rotation = 2.42335
+scale = Vector2(0.183936, 0.163044)
+texture_normal = ExtResource("6_atqfg")
+
+[connection signal="pressed" from="pincel-03" to="." method="_on_pincel_03_pressed"]
+[connection signal="pressed" from="seta_03" to="." method="_on_seta_03_pressed"]

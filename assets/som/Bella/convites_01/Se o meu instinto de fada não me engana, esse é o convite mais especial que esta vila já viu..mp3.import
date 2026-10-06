@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://o5iloa4m2pl4"
+path="res://.godot/imported/Se o meu instinto de fada não me engana, esse é o convite mais especial que esta vila já viu..mp3-668d64c2a50fab2962d386c6a7e35850.mp3str"
+
+[deps]
+
+source_file="res://assets/som/Bella/convites_01/Se o meu instinto de fada não me engana, esse é o convite mais especial que esta vila já viu..mp3"
+dest_files=["res://.godot/imported/Se o meu instinto de fada não me engana, esse é o convite mais especial que esta vila já viu..mp3-668d64c2a50fab2962d386c6a7e35850.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

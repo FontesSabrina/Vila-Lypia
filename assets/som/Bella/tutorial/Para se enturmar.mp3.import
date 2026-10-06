@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dqv0sl8mxfyyu"
+path="res://.godot/imported/Para se enturmar.mp3-6ef949630099d63cab71e9ec73f8d6e3.mp3str"
+
+[deps]
+
+source_file="res://assets/som/Bella/tutorial/Para se enturmar.mp3"
+dest_files=["res://.godot/imported/Para se enturmar.mp3-6ef949630099d63cab71e9ec73f8d6e3.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

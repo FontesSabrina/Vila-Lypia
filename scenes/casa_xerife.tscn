@@ -1,0 +1,24 @@
+[gd_scene load_steps=3 format=3 uid="uid://16bfkm2wxpqn"]
+
+[ext_resource type="Texture2D" uid="uid://vatgwsrgc7vl" path="res://assets/backgrounds/casaXerife1.jpeg" id="1_m24xv"]
+[ext_resource type="PackedScene" uid="uid://b4vsaogdwxkno" path="res://scenes_2/botao_voltar.tscn" id="2_nql8f"]
+
+[node name="casa_xerife" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="CasaXerife1" type="Sprite2D" parent="."]
+position = Vector2(574, 324)
+scale = Vector2(0.419985, 0.427051)
+texture = ExtResource("1_m24xv")
+
+[node name="botao_voltar" parent="." instance=ExtResource("2_nql8f")]
+layout_mode = 1
+offset_left = -4.0
+offset_top = 2.0
+offset_right = -4.0
+offset_bottom = 2.0

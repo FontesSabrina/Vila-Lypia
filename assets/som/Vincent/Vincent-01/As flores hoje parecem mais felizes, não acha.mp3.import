@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://b81i8oeeb8muf"
+path="res://.godot/imported/As flores hoje parecem mais felizes, não acha.mp3-963d1d925ce433728c180c224d614cc5.mp3str"
+
+[deps]
+
+source_file="res://assets/som/Vincent/Vincent-01/As flores hoje parecem mais felizes, não acha.mp3"
+dest_files=["res://.godot/imported/As flores hoje parecem mais felizes, não acha.mp3-963d1d925ce433728c180c224d614cc5.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,58 @@
+[gd_scene load_steps=6 format=3 uid="uid://dxjl53c2fedwh"]
+
+[ext_resource type="Script" path="res://scripts/minigame_geleia_vincent.gd" id="1_0nyka"]
+[ext_resource type="Texture2D" uid="uid://cyur6g371x14p" path="res://assets/backgrounds/deposito.jpeg" id="1_dyl3d"]
+[ext_resource type="Texture2D" uid="uid://culhxklcw3jxc" path="res://assets/icon/geleia_amoras.png" id="2_hlyyq"]
+[ext_resource type="Texture2D" uid="uid://bxufnbsinesmc" path="res://assets/icon/flor.png" id="3_lxd3e"]
+[ext_resource type="Texture2D" uid="uid://cyaikmkq0207s" path="res://assets/icon/barra2.png" id="5_xd51i"]
+
+[node name="minigame_geleia_vincent" type="Node2D"]
+script = ExtResource("1_0nyka")
+
+[node name="Deposito" type="Sprite2D" parent="."]
+position = Vector2(579, 327)
+scale = Vector2(0.420785, 0.427083)
+texture = ExtResource("1_dyl3d")
+
+[node name="GeleiaArea" type="TextureButton" parent="."]
+offset_left = 380.0
+offset_top = 503.0
+offset_right = 730.0
+offset_bottom = 905.0
+rotation = 1.55489
+scale = Vector2(0.153208, 0.12773)
+texture_normal = ExtResource("2_hlyyq")
+
+[node name="Flor" type="Sprite2D" parent="."]
+position = Vector2(340, 510)
+scale = Vector2(0.0623183, 0.069987)
+texture = ExtResource("3_lxd3e")
+
+[node name="Barra2" type="Sprite2D" parent="."]
+position = Vector2(981, 581)
+scale = Vector2(0.125728, 0.126122)
+texture = ExtResource("5_xd51i")
+
+[node name="Geleia" type="TextureRect" parent="."]
+custom_minimum_size = Vector2(100, 60)
+offset_left = 877.0
+offset_top = 528.0
+offset_right = 997.0
+offset_bottom = 635.0
+scale = Vector2(0.4, 0.432)
+texture = ExtResource("2_hlyyq")
+expand_mode = 1
+
+[node name="SombraGeleia" type="TextureRect" parent="."]
+modulate = Color(0.473976, 0.473976, 0.473976, 1)
+self_modulate = Color(0.796243, 0.796243, 0.796243, 1)
+custom_minimum_size = Vector2(120, 60)
+offset_left = 877.0
+offset_top = 528.0
+offset_right = 997.0
+offset_bottom = 633.0
+scale = Vector2(0.4, 0.431)
+texture = ExtResource("2_hlyyq")
+expand_mode = 1
+
+[connection signal="pressed" from="GeleiaArea" to="." method="_on_geleia_area_pressed"]

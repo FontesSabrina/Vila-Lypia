@@ -1,0 +1,33 @@
+[gd_scene load_steps=4 format=3 uid="uid://dtffm271bhv2m"]
+
+[ext_resource type="Texture2D" uid="uid://cyaikmkq0207s" path="res://assets/icon/barra2.png" id="1_qjrbi"]
+[ext_resource type="Script" path="res://scripts/barra_acuçar.gd" id="2_xcfnw"]
+[ext_resource type="Texture2D" uid="uid://cgxfo7g6cmmtr" path="res://assets/icon/Açúcar Nuvem.png" id="3_fvmhg"]
+
+[node name="barra_acuçar" type="Sprite2D"]
+position = Vector2(1002, 561)
+scale = Vector2(0.106105, 0.112793)
+texture = ExtResource("1_qjrbi")
+script = ExtResource("2_xcfnw")
+
+[node name="acucar" type="TextureRect" parent="."]
+custom_minimum_size = Vector2(100, 60)
+offset_left = -829.792
+offset_top = -469.887
+offset_right = 90.2083
+offset_bottom = 535.113
+scale = Vector2(0.4, 0.432)
+texture = ExtResource("3_fvmhg")
+expand_mode = 1
+
+[node name="Sombra_acucar" type="TextureRect" parent="."]
+modulate = Color(0.473976, 0.473976, 0.473976, 1)
+self_modulate = Color(0.796243, 0.796243, 0.796243, 1)
+custom_minimum_size = Vector2(100, 60)
+offset_left = -838.792
+offset_top = -469.887
+offset_right = 127.208
+offset_bottom = 558.113
+scale = Vector2(0.4, 0.431)
+texture = ExtResource("3_fvmhg")
+expand_mode = 1

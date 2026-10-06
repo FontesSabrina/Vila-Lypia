@@ -1,0 +1,8 @@
+[style name="cinzanovo"]
+join Bella (bolo/8) pos=x0.14y0.42
+update Bella size=y0.4
+[voice path="res://assets/som/Bella/bolo/Olha-[emphasis]-só!-[short-pause]-Os-i.mp3" volume="0.0"]
+Bella (bolo/8): Olha só! Os ingredientes que você trouxe já estão aqui na mesa.
+[voice path="res://assets/som/Bella/bolo/Para-fazer-o-[emphasis]-bolo,-[short-pause]-arra.mp3" volume="0.0"]
+Bella (bolo/9): Para fazer o bolo, arraste os ingredientes para dentro da tigela.
+leave Bella

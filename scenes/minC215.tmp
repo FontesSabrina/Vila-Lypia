@@ -1,0 +1,44 @@
+[gd_scene load_steps=7 format=3 uid="uid://c83bulxegttue"]
+
+[ext_resource type="Script" path="res://scripts/minigame_velas_enzo.gd" id="1_dnhw3"]
+[ext_resource type="Texture2D" uid="uid://bjnvrq84kvecp" path="res://assets/backgrounds/casaEnzoSalaSegura02.jpeg" id="1_sx3mn"]
+[ext_resource type="Texture2D" uid="uid://c50f71pflhnqf" path="res://assets/icon/seta.png" id="2_f40dw"]
+[ext_resource type="Texture2D" uid="uid://bs1ju2r3pbibm" path="res://assets/icon/vela_03.png" id="3_xu88j"]
+[ext_resource type="Texture2D" uid="uid://dop3pvpm2gx6k" path="res://assets/icon/oie_VAEKX06X5ciQ.png" id="4_4bmwb"]
+[ext_resource type="PackedScene" uid="uid://2xhnao1gxnpf" path="res://scenes/barra_vela.tscn" id="5_jgdsj"]
+
+[node name="minigame_velas_enzo" type="Node2D"]
+script = ExtResource("1_dnhw3")
+
+[node name="CasaEnzoSalaSegura02" type="Sprite2D" parent="."]
+position = Vector2(584.5, 335)
+scale = Vector2(0.426235, 0.436198)
+texture = ExtResource("1_sx3mn")
+
+[node name="seta" type="TextureButton" parent="."]
+offset_left = 816.0
+offset_top = 196.0
+offset_right = 1556.0
+offset_bottom = 689.0
+scale = Vector2(0.112465, 0.122517)
+texture_normal = ExtResource("2_f40dw")
+
+[node name="vela_03" type="TextureButton" parent="."]
+offset_left = 763.0
+offset_top = 505.0
+offset_right = 1124.0
+offset_bottom = 1542.0
+rotation = 1.63721
+scale = Vector2(0.0479633, 0.0432816)
+texture_normal = ExtResource("3_xu88j")
+
+[node name="OieVaekx06x5CiQ" type="Sprite2D" parent="."]
+position = Vector2(725, 494.5)
+scale = Vector2(0.425, 0.440758)
+texture = ExtResource("4_4bmwb")
+
+[node name="barra_vela" parent="." instance=ExtResource("5_jgdsj")]
+position = Vector2(1003, 568)
+
+[connection signal="pressed" from="seta" to="." method="_on_seta_pressed"]
+[connection signal="pressed" from="vela_03" to="." method="_on_vela_03_pressed"]

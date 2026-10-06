@@ -1,0 +1,103 @@
+audio "res://assets/som/Caminho da Vila.mp3" [volume="-18.0"]
+
+if {Amizade.P_Hera} <= 3:
+	[style name="cinzanovo"]
+elif {Amizade.P_Hera} <= 7:
+	[style name="azulnovo"]
+else:
+	[style name="verdenovo"]
+
+# ESTÁGIO 1: Ainda não pegou a farinha (Início da quest)
+if {Bolo.Hera.Farinha_Concluido} == false and {Bolo.Hera.Em_Andamento} == false:
+	[background arg="res://assets/backgrounds/casa_hera_fundos.jpeg" fade="0.0"]
+	join hera (bolo_hera/01) center
+	Protagonista: Oi, professora Hera! Tudo bem?
+	[voice path="res://assets/som/Hera/bolo_hera_02/Minutos-contados,-segundos-voando!-[sh.mp3" volume="0.0"]
+	hera (bolo_hera/01): Minutos contados, segundos voando! O cronograma da minha despensa está milimetricamente planejado, mas preciso focar! Diga rápido, o que te traz aqui?
+	Protagonista: A Bella e eu estamos preparando um bolo para a Prefeita Anne, você poderia nos ajudar com a Farinha de Trigo?
+	[voice path="res://assets/som/Hera/bolo_hera_02/Um-[emphasis]-bolo!-[short-pause]-Sem.mp3" volume="0.0"]
+	hera (bolo_hera/02): Um bolo?! Sem aviso prévio no meu cronograma diário?! Isso altera toda a logística da vila!
+	[voice path="res://assets/som/Hera/bolo_hera_02/Mas...-pensando-bem,-[short-pause]-para-a.mp3" volume="0.0"]
+	hera (bolo_hera/03): Mas... pensando bem, para a Prefeita Anne, a estrutura molecular da massa precisa ser impecável. Sim, eu tenho a Farinha de Trigo Peneirada!
+	[voice path="res://assets/som/Hera/bolo_hera_02/Você-pode-ir-até-a-minha-cozinha-e-olhar-no-armá.mp3" volume="0.0"]
+	hera (bolo_hera/04): Você pode ir até a minha cozinha e olhar no armário principal? Lá você vai encontrar a farinha certa no meio dos potes catalogados!
+	
+	- Claro, vou lá na cozinha procurar!
+		set {Bolo.Hera.Em_Andamento} = true
+		[signal arg="iniciar_minigame_farinha"]
+		[end_timeline]
+	- Agora não posso, professora.
+		[voice path="res://assets/som/Hera/bolo_hera_02/T-Tudo-bem...-[short-pause]-mas-o-reló.mp3" volume="0.0"]
+		hera (bolo_hera/05): T-Tudo bem... mas o relógio não para, volte logo!
+		[end_timeline]
+
+# ESTÁGIO 1B: Aceitou procurar a farinha, mas ainda não achou
+elif {Bolo.Hera.Farinha_Concluido} == false and {Bolo.Hera.Em_Andamento} == true:
+	[background arg="res://assets/backgrounds/casa_hera_fundos.jpeg" fade="0.0"]
+	join hera (bolo_hera/04) center
+	hera (bolo_hera/04): A farinha continua no armário principal da cozinha! Cada minuto conta!
+	- Vou lá agora!
+		[signal arg="iniciar_minigame_farinha"]
+		[end_timeline]
+	- Daqui a pouco, professora.
+		[end_timeline]
+
+# ESTÁGIO 2A: Acabou de voltar do minigame da farinha (mostra "Excelente" uma única vez)
+elif {Bolo.Hera.Farinha_Concluido} == true and {Bolo.Hera.Excelente_Mostrado} == false:
+	set {Bolo.Hera.Excelente_Mostrado} = true
+	[background arg="res://assets/backgrounds/casa_hera_cozinha.jpeg" fade="0.0"]
+	join hera (bolo_hera/11) center
+	[voice path="res://assets/som/Hera/bolo_hera_02/Excelente!-Ganhamos-[emphasis]-quarenta.mp3" volume="0.0"]
+	hera: Excelente! Ganhamos 45 segundos de vantagem no cronograma geral! Obrigado!
+	[end_timeline]
+
+# ESTÁGIO 2B: Farinha concluída + já viu o "Excelente", pede ajuda com os marcadores
+elif {Bolo.Hera.Farinha_Concluido} == true and {Bolo.Hera.Excelente_Mostrado} == true and {Bolo.Hera.Bolo_Hera_Secundaria_Hera} == false and {Bolo.Hera.Bolo_Hera_Marcadores_Concluido} == false:
+	[background arg="res://assets/backgrounds/casa_hera_sala.jpeg.jpeg" fade="0.0"]
+	join hera (bolo_hera/06) center
+	[voice path="res://assets/som/Hera/bolo_hera_02/Onde-foi-parar-[pause]-Não-estava-aqui.mp3" volume="0.0"]
+	hera: Onde foi parar? Não estava aqui no índice... O dia já perdeu dez minutos \
+	só com essa desorganização!
+	join hera (bolo_hera/07) center
+	Protagonista: Professora Hera? Tudo bem por aí?
+	[voice path="res://assets/som/Hera/bolo_hera_02/Colapso-logístico!-[short-pause]-Meus.mp3" volume="0.0"]
+	hera (bolo_hera/08): Colapso logístico! Meus marcadores de fita sumiram de dentro dos livros \
+	e eu não posso sair da mesa agora.
+	[voice path="res://assets/som/Hera/bolo_hera_02/Já-que-tem-polegares-opositores,-vá-até-o.mp3" volume="0.0"]
+	hera (bolo_hera/09): Já que tem polegares opositores, vá até o armário de suprimentos técnicos\
+	e traga os três rolos de fita — o azul, o dourado e o vermelho — antes que o relógio zere!
+	
+	- Vou encontrar os marcadores!
+		set {Bolo.Hera.Bolo_Hera_Marcadores_Em_Andamento} = true
+		[signal arg="iniciar_minigame_fitas"]
+		[end_timeline]
+	- Agora não posso, professora.
+		[voice path="res://assets/som/Hera/bolo_hera_02/T-Tudo-bem...-[short-pause]-mas-o-[emp.mp3" volume="0.0"]
+		hera (bolo_hera/10): T-Tudo bem... mas o relógio continua rodando!
+		[end_timeline]
+
+# ESTÁGIO 2C: Já coletou os 3 marcadores
+elif {Bolo.Hera.Bolo_Hera_Marcadores_Concluido} == true and {Bolo.Hera.Bolo_Hera_Secundaria_Hera} == false:
+	[background arg="res://assets/backgrounds/casa_hera_sala.jpeg.jpeg" fade="0.0"]
+	join hera (bolo_hera/12) center
+	[voice path="res://assets/som/Hera/bolo_hera_02/Fantástico!-Isso-reduziu-meu-nível-de-e.mp3" volume="0.0"]
+	hera (bolo_hera/12): Fantástico! Isso reduziu meu nível de estresse em exatamente 50%! Ótimo trabalho técnico!
+	[voice path="res://assets/som/Hera/bolo_hera_02/Por-ter-me-ajudado-a-colocar-a-organização-em-di.mp3" volume="0.0"]
+	hera (bolo_hera/13): Por ter me ajudado a colocar a organização em dia e salvar meus estudos, aceite esta pequena recompensa...
+	audio "res://assets/som/moedas.mp3"
+	
+	[signal arg="ganhar_moeda"]
+	set {Amizade.P_Hera} += 1
+	set {Bolo.Hera.Bolo_Hera_Secundaria_Hera} = true
+	set {Bolo.Hera.Bolo_Hera_Marcadores_Em_Andamento} = false
+	[signal arg="voltar_mapa"]
+	[end_timeline]
+
+# ESTÁGIO 3: Diálogo casual final
+else:
+	[background arg="res://assets/backgrounds/casa_hera_jadim.jpeg" fade="0.0"]
+	join hera (bolo_hera/14) center
+	[voice path="res://assets/som/Hera/bolo_hera_02/Lembre-se-de-pré-aquecer-o-forno-na-[emphasis]-t.mp3" volume="0.0"]
+	hera: Lembre-se de pré-aquecer o forno na temperatura exata marcada na receita.\
+	Um grau a menos arruinaria o tempo de crescimento!
+	[end_timeline]

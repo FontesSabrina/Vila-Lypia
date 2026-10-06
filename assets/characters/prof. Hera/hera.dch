@@ -1,0 +1,356 @@
+{
+"@path": "res://addons/dialogic/Resources/character.gd",
+"@subpath": NodePath(""),
+"_translation_id": "",
+"color": Color(1, 1, 1, 1),
+"custom_info": {
+"prefix": "",
+"sound_mood_default": "",
+"sound_moods": {},
+"style": "",
+"suffix": ""
+},
+"default_portrait": "Ansiosa",
+"description": "",
+"display_name": "Hera",
+"mirror": false,
+"nicknames": [""],
+"offset": Vector2(0, 0),
+"portraits": {
+"Ansiosa": {
+"export_overrides": {
+"image": "\"res://assets/characters/prof. Hera/ansiosa.png\""
+},
+"mirror": true,
+"offset": Vector2(100, 90),
+"scale": 0.8,
+"scene": ""
+},
+"Hiperfoco": {
+"export_overrides": {
+"image": "\"res://assets/characters/prof. Hera/hiperfoco.png\""
+},
+"ignore_char_scale": false,
+"mirror": true,
+"offset": Vector2(100, 90),
+"scale": 0.8,
+"scene": ""
+},
+"Indignada": {
+"export_overrides": {
+"image": "\"res://assets/characters/prof. Hera/Indignada.png\""
+},
+"mirror": true,
+"offset": Vector2(100, 90),
+"scale": 0.8,
+"scene": ""
+},
+"P_Hera_01/1": {
+"export_overrides": {
+"image": "\"res://assets/characters/prof. Hera/P_Hera_01/1.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 100),
+"scale": 0.9,
+"scene": ""
+},
+"P_Hera_01/10": {
+"export_overrides": {
+"image": "\"res://assets/characters/prof. Hera/P_Hera_01/10.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 0.7,
+"scene": ""
+},
+"P_Hera_01/11": {
+"export_overrides": {
+"image": "\"res://assets/characters/prof. Hera/P_Hera_01/11.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 0.7,
+"scene": ""
+},
+"P_Hera_01/12": {
+"export_overrides": {
+"image": "\"res://assets/characters/prof. Hera/P_Hera_01/12.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 0.7,
+"scene": ""
+},
+"P_Hera_01/13": {
+"export_overrides": {
+"image": "\"res://assets/characters/prof. Hera/P_Hera_01/13.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 0.7,
+"scene": ""
+},
+"P_Hera_01/14": {
+"export_overrides": {
+"image": "\"res://assets/characters/prof. Hera/P_Hera_01/14.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"P_Hera_01/2": {
+"export_overrides": {
+"image": "\"res://assets/characters/prof. Hera/P_Hera_01/2.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 0.9,
+"scene": ""
+},
+"P_Hera_01/3": {
+"export_overrides": {
+"image": "\"res://assets/characters/prof. Hera/P_Hera_01/3.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 100),
+"scale": 0.9,
+"scene": ""
+},
+"P_Hera_01/4": {
+"export_overrides": {
+"image": "\"res://assets/characters/prof. Hera/P_Hera_01/4.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 100),
+"scale": 0.9,
+"scene": ""
+},
+"P_Hera_01/5": {
+"export_overrides": {
+"image": "\"res://assets/characters/prof. Hera/P_Hera_01/5.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 0.7,
+"scene": ""
+},
+"P_Hera_01/6": {
+"export_overrides": {
+"image": "\"res://assets/characters/prof. Hera/P_Hera_01/6.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 100),
+"scale": 0.9,
+"scene": ""
+},
+"P_Hera_01/7": {
+"export_overrides": {
+"image": "\"res://assets/characters/prof. Hera/P_Hera_01/7.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 100),
+"scale": 0.9,
+"scene": ""
+},
+"P_Hera_01/8": {
+"export_overrides": {
+"image": "\"res://assets/characters/prof. Hera/P_Hera_01/8.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 100),
+"scale": 0.9,
+"scene": ""
+},
+"P_Hera_01/9": {
+"export_overrides": {
+"image": "\"res://assets/characters/prof. Hera/P_Hera_01/9.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 80),
+"scale": 0.9,
+"scene": ""
+},
+"Surpresa": {
+"export_overrides": {
+"image": "\"res://assets/characters/prof. Hera/Surpresa.png\""
+},
+"mirror": true,
+"offset": Vector2(100, 90),
+"scale": 0.8,
+"scene": ""
+},
+"bolo_hera/01": {
+"export_overrides": {
+"image": "\"res://assets/characters/prof. Hera/bolo_hera_02/bolo-01.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"bolo_hera/02": {
+"export_overrides": {
+"image": "\"res://assets/characters/prof. Hera/bolo_hera_02/bolo-02.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"bolo_hera/03": {
+"export_overrides": {
+"image": "\"res://assets/characters/prof. Hera/bolo_hera_02/bolo-03.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"bolo_hera/04": {
+"export_overrides": {
+"image": "\"res://assets/characters/prof. Hera/bolo_hera_02/bolo-04.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"bolo_hera/05": {
+"export_overrides": {
+"image": "\"res://assets/characters/prof. Hera/bolo_hera_02/bolo-05.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"bolo_hera/06": {
+"export_overrides": {
+"image": "\"res://assets/characters/prof. Hera/bolo_hera_02/bolo-06.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"bolo_hera/07": {
+"export_overrides": {
+"image": "\"res://assets/characters/prof. Hera/bolo_hera_02/bolo-07.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"bolo_hera/08": {
+"export_overrides": {
+"image": "\"res://assets/characters/prof. Hera/bolo_hera_02/bolo-08.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"bolo_hera/09": {
+"export_overrides": {
+"image": "\"res://assets/characters/prof. Hera/bolo_hera_02/bolo_09.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"bolo_hera/10": {
+"export_overrides": {
+"image": "\"res://assets/characters/prof. Hera/bolo_hera_02/bolo_10.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"bolo_hera/11": {
+"export_overrides": {
+"image": "\"res://assets/characters/prof. Hera/bolo_hera_02/bolo_11.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"bolo_hera/12": {
+"export_overrides": {
+"image": "\"res://assets/characters/prof. Hera/bolo_hera_02/bolo_12.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"bolo_hera/13": {
+"export_overrides": {
+"image": "\"res://assets/characters/prof. Hera/bolo_hera_02/bolo_13.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"bolo_hera/14": {
+"export_overrides": {
+"image": "\"res://assets/characters/prof. Hera/bolo_hera_02/bolo_14.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"cartao/1": {
+"export_overrides": {
+"image": "\"res://assets/characters/prof. Hera/cartao/1.png\""
+},
+"mirror": false,
+"offset": Vector2(-100, -250),
+"scale": 0.55,
+"scene": ""
+},
+"cartao/2": {
+"export_overrides": {
+"image": "\"res://assets/characters/prof. Hera/cartao/2.png\""
+},
+"mirror": false,
+"offset": Vector2(-100, -250),
+"scale": 0.55,
+"scene": ""
+},
+"cartao/3": {
+"export_overrides": {
+"image": "\"res://assets/characters/prof. Hera/cartao/3.png\""
+},
+"mirror": false,
+"offset": Vector2(-100, -250),
+"scale": 0.55,
+"scene": ""
+},
+"cartao/4": {
+"export_overrides": {
+"image": "\"res://assets/characters/prof. Hera/cartao/4.png\""
+},
+"mirror": false,
+"offset": Vector2(-100, -250),
+"scale": 0.55,
+"scene": ""
+},
+"cartao/5": {
+"export_overrides": {
+"image": "\"res://assets/characters/prof. Hera/cartao/5.png\""
+},
+"mirror": false,
+"offset": Vector2(-100, -250),
+"scale": 0.55,
+"scene": ""
+}
+},
+"scale": 1.0
+}

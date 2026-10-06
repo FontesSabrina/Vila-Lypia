@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://67dn1eyqvmah"
+path="res://.godot/imported/Ah! O Vincent mora na casa amarela do mapa..mp3-9a2aa3e03308effa2961bb6206d811db.mp3str"
+
+[deps]
+
+source_file="res://assets/som/Bella/suporte/Acabei me perdendo/Ah! O Vincent mora na casa amarela do mapa..mp3"
+dest_files=["res://.godot/imported/Ah! O Vincent mora na casa amarela do mapa..mp3-9a2aa3e03308effa2961bb6206d811db.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

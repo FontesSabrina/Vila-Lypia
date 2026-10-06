@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://ciej5lwlox2me"
+path="res://.godot/imported/Lamentável!-A-[emphasis]-ordem-da-vila-dep.mp3-43b1df514387a33f0fccc6abeb94b061.mp3str"
+
+[deps]
+
+source_file="res://assets/som/Xerife Pepper/bolo_xerife_02/Lamentável!-A-[emphasis]-ordem-da-vila-dep.mp3"
+dest_files=["res://.godot/imported/Lamentável!-A-[emphasis]-ordem-da-vila-dep.mp3-43b1df514387a33f0fccc6abeb94b061.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

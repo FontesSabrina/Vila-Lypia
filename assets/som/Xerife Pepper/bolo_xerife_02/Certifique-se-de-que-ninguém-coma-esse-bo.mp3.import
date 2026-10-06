@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://ccdxq8qkuds50"
+path="res://.godot/imported/Certifique-se-de-que-ninguém-coma-esse-bo.mp3-aa4f136a9de30eed76dec3512a1863f8.mp3str"
+
+[deps]
+
+source_file="res://assets/som/Xerife Pepper/bolo_xerife_02/Certifique-se-de-que-ninguém-coma-esse-bo.mp3"
+dest_files=["res://.godot/imported/Certifique-se-de-que-ninguém-coma-esse-bo.mp3-aa4f136a9de30eed76dec3512a1863f8.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

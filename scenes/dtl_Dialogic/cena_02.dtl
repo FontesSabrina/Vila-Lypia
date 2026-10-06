@@ -1,0 +1,48 @@
+audio "res://assets/som/floresta.mp3"
+[style name="cinzanovo"]
+[background arg="res://assets/backgrounds/caminho-01.jpeg" fade="0.0"]
+set {NomeBella} = "Bella"
+join Bella (Seguir) center
+[voice path="res://assets/som/Bella/cena02/Levo sim.mp3" volume="0.0"]
+Bella (Seguir): Levo sim! \
+Vem comigo... não é muito longe daqui!
+[background arg="res://assets/backgrounds/caminho-02.jpeg" fade="0.0"]
+[voice path="res://assets/som/Bella/cena02/quase la.mp3" volume="0.0"]
+Bella (Seguir 02): Já estamos quase lá! \
+Só mais um pouquinho e a gente chega!
+[background arg="res://assets/backgrounds/vila.jpeg" fade="0.0"]
+leave Bella
+[voice path="res://assets/som/Bella/cena02/chegamos.mp3" volume="0.0"]
+Bella: Eba, Chegamos!!!
+[background arg="res://assets/backgrounds/casaPrefeita.jpeg" fade="0.0"]
+join Bella (Seguir 04) center
+[voice path="res://assets/som/Bella/cena02/casa Anne.mp3" volume="0.0"]
+Bella (Seguir 04): Ali mora a Prefeita Anne. \
+Foi ela quem desenhou a nossa vila e todos nós, só para ter amigos e não se sentir sozinha.
+[background arg="res://assets/backgrounds/casaPrefeita01.jpeg" fade="0.0"]
+join Bella (Portao 01) center
+[wait time="1.0"]
+audio "res://assets/som/potão.mp3" [volume="2.0"]
+update Bella (Portao 02)
+[wait time="1.0"]
+update Bella (Portao 03)
+[voice path="res://assets/som/Bella/cena02/tenho certeza.mp3" volume="0.0"]
+Bella: Nossa!\
+Eu quase esqueci!\
+O aniversário da Prefeita Anne... eu tenho certeza que está chegando!
+update Bella (Portao 04)
+Protagonista: Mas ela não deveria ficar feliz com o aniversário dela?
+update Bella (Portao 06)
+[voice path="res://assets/som/Bella/cena02/so eu.mp3" volume="0.0"]
+Bella (Portao 05): Ela ficava muito feliz!\
+Mas hoje em dia... parece que ninguém mais lembra, só eu.
+update Bella (Portao 05)
+[voice path="res://assets/som/Bella/cena02/todo mundo.mp3" volume="0.0"]
+Bella (Portao 06): É que todo mundo aqui vive o seu próprio sentimento com tanta força ,que às vezes acaba esquecendo do resto do mundo.
+Protagonista: Todo mundo quem?
+update Bella (Portao 07)
+[voice path="res://assets/som/Bella/cena02/amigos.mp3" volume="0.0"]
+Bella (Portao 07): Ah, é mesmo!\
+Você ainda não conhece eles!\
+Vem comigo, vou te apresentar meus amigos!!
+jump cena_03/

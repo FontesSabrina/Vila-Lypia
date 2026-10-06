@@ -1,0 +1,25 @@
+[gd_scene load_steps=2 format=3 uid="uid://uw8term8hd7h"]
+
+[ext_resource type="Script" path="res://scripts/slot.gd" id="1_s2l5r"]
+
+[node name="slot" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_s2l5r")
+
+[node name="Panel" type="Panel" parent="."]
+self_modulate = Color(1, 1, 1, 0)
+layout_mode = 0
+offset_right = 222.0
+offset_bottom = 117.0
+scale = Vector2(0.028474, 0.0443869)
+
+[node name="IconeItem" type="TextureRect" parent="Panel"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+scale = Vector2(1.19838, 0.582085)

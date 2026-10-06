@@ -1,0 +1,47 @@
+[gd_scene load_steps=8 format=3 uid="uid://jxbcssdvxyk8"]
+
+[ext_resource type="Texture2D" uid="uid://cb0vdlvg4kxyp" path="res://assets/backgrounds/casa_linna_mesa_canto.jpeg" id="1_5vmb8"]
+[ext_resource type="Texture2D" uid="uid://cgxfo7g6cmmtr" path="res://assets/icon/Açúcar Nuvem.png" id="2_6rxug"]
+[ext_resource type="Script" path="res://scripts/minigame_acucar_linna_01.gd" id="2_m1hsv"]
+[ext_resource type="Texture2D" uid="uid://40ekdq72qus4" path="res://assets/icon/caixa_01.png" id="3_s6tyh"]
+[ext_resource type="Texture2D" uid="uid://chjurcshcxjkm" path="res://assets/icon/saco_01.png" id="4_lxsw3"]
+[ext_resource type="PackedScene" uid="uid://dtffm271bhv2m" path="res://scenes/barra_acuçar.tscn" id="4_xbqa6"]
+[ext_resource type="Texture2D" uid="uid://c50f71pflhnqf" path="res://assets/icon/seta.png" id="6_jxbtr"]
+
+[node name="CasaLinnaMesaCanto" type="Sprite2D"]
+position = Vector2(577, 323)
+scale = Vector2(1.22152, 1.15808)
+texture = ExtResource("1_5vmb8")
+script = ExtResource("2_m1hsv")
+
+[node name="acucar" type="TextureButton" parent="."]
+offset_left = -149.467
+offset_top = -263.367
+offset_right = 2250.53
+offset_bottom = 1076.63
+rotation = 0.209252
+scale = Vector2(0.0859698, 0.0789979)
+texture_normal = ExtResource("2_6rxug")
+
+[node name="Caixa01" type="Sprite2D" parent="."]
+position = Vector2(-108.178, -213.284)
+texture = ExtResource("3_s6tyh")
+
+[node name="Saco01" type="Sprite2D" parent="."]
+position = Vector2(405.46, -84.6227)
+texture = ExtResource("4_lxsw3")
+
+[node name="seta_voltar" type="TextureButton" parent="."]
+offset_left = 331.965
+offset_top = 188.242
+offset_right = 1071.97
+offset_bottom = 681.242
+rotation = -0.0156617
+scale = Vector2(0.136183, 0.136769)
+texture_normal = ExtResource("6_jxbtr")
+
+[node name="barra_acuçar" parent="." instance=ExtResource("4_xbqa6")]
+position = Vector2(-313.798, 208.966)
+
+[connection signal="pressed" from="acucar" to="." method="_on_acucar_pressed"]
+[connection signal="pressed" from="seta_voltar" to="." method="_on_seta_voltar_pressed"]

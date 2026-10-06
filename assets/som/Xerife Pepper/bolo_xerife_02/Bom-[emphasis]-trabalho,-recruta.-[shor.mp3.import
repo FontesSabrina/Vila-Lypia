@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://eci2thid2prk"
+path="res://.godot/imported/Bom-[emphasis]-trabalho,-recruta.-[shor.mp3-8362cf561d27f55cffa5aa8b92cac5d5.mp3str"
+
+[deps]
+
+source_file="res://assets/som/Xerife Pepper/bolo_xerife_02/Bom-[emphasis]-trabalho,-recruta.-[shor.mp3"
+dest_files=["res://.godot/imported/Bom-[emphasis]-trabalho,-recruta.-[shor.mp3-8362cf561d27f55cffa5aa8b92cac5d5.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

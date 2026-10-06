@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://burchhcxnwq7o"
+path="res://.godot/imported/eu sou a bella.mp3-0edf34b123c04d7aa33e4d4d2401937e.mp3str"
+
+[deps]
+
+source_file="res://assets/som/Bella/cena01/eu sou a bella.mp3"
+dest_files=["res://.godot/imported/eu sou a bella.mp3-0edf34b123c04d7aa33e4d4d2401937e.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

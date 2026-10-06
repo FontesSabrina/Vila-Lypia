@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://uviinpaahdny"
+path="res://.godot/imported/O outono nem chegou.mp3-3cda1f54560ac79b85c8e96ebaf2096c.mp3str"
+
+[deps]
+
+source_file="res://assets/som/Pietro/Pietro_01/O outono nem chegou.mp3"
+dest_files=["res://.godot/imported/O outono nem chegou.mp3-3cda1f54560ac79b85c8e96ebaf2096c.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://w1xv0mv83j7v"
+path="res://.godot/imported/Eu estarei.mp3-11749b1e196ceac9894d2a8b172a61bb.mp3str"
+
+[deps]
+
+source_file="res://assets/som/Bella/tutorial final/Eu estarei.mp3"
+dest_files=["res://.godot/imported/Eu estarei.mp3-11749b1e196ceac9894d2a8b172a61bb.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

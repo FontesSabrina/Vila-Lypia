@@ -1,0 +1,45 @@
+[gd_scene load_steps=7 format=3 uid="uid://bq0641nok382t"]
+
+[ext_resource type="Script" path="res://scripts/rua_das_ipes_centro_01.gd" id="1_ijdy0"]
+[ext_resource type="Texture2D" uid="uid://em6esrdi52jy" path="res://assets/backgrounds/rua_das_ipes_centro_01.jpeg" id="1_tqcfy"]
+[ext_resource type="PackedScene" uid="uid://dejr6fahbfv0b" path="res://scenes/barra_La.tscn" id="2_rjmr2"]
+[ext_resource type="Texture2D" uid="uid://vsxjlla1lyfi" path="res://assets/icon/la_04.png" id="3_6wf5i"]
+[ext_resource type="Texture2D" uid="uid://b81k5bwkoq2i4" path="res://assets/icon/capivara.png" id="4_vostq"]
+[ext_resource type="Texture2D" uid="uid://c50f71pflhnqf" path="res://assets/icon/seta.png" id="6_4yv1p"]
+
+[node name="RuaDasIpesCentro01" type="Node2D"]
+script = ExtResource("1_ijdy0")
+
+[node name="RuaDasIpesCentro01" type="Sprite2D" parent="."]
+position = Vector2(576.5, 326)
+scale = Vector2(0.421875, 0.428385)
+texture = ExtResource("1_tqcfy")
+
+[node name="barra_La" parent="." instance=ExtResource("2_rjmr2")]
+position = Vector2(999, 590)
+
+[node name="la_04" type="TextureButton" parent="."]
+offset_left = 748.0
+offset_top = 447.0
+offset_right = 1018.0
+offset_bottom = 669.0
+rotation = -0.0334899
+scale = Vector2(0.263464, 0.268638)
+texture_normal = ExtResource("3_6wf5i")
+
+[node name="Capivara" type="Sprite2D" parent="."]
+position = Vector2(732.75, 454.563)
+scale = Vector2(0.432482, 0.450397)
+texture = ExtResource("4_vostq")
+
+[node name="voltar_Ipe" type="TextureButton" parent="."]
+offset_left = 533.0
+offset_top = 581.0
+offset_right = 1273.0
+offset_bottom = 1074.0
+rotation = 1.54754
+scale = Vector2(0.0858504, -0.128001)
+texture_normal = ExtResource("6_4yv1p")
+
+[connection signal="pressed" from="la_04" to="." method="_on_la_04_pressed"]
+[connection signal="pressed" from="voltar_Ipe" to="." method="_on_voltar_ipe_pressed"]

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://csp3djy74306o"
+path="res://.godot/imported/Precisamos fazer os convites para o aniversário da Prefeita Anne..mp3-90d54cdf0ab57ed3ae6ab7cafa906981.mp3str"
+
+[deps]
+
+source_file="res://assets/som/Bella/suporte/Pode me explicar/Precisamos fazer os convites para o aniversário da Prefeita Anne..mp3"
+dest_files=["res://.godot/imported/Precisamos fazer os convites para o aniversário da Prefeita Anne..mp3-90d54cdf0ab57ed3ae6ab7cafa906981.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

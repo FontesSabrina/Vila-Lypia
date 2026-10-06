@@ -1,0 +1,103 @@
+audio "res://assets/som/Caminho da Vila.mp3" [volume="-18.0"]
+
+# === APLICAÇÃO DINÂMICA DIRETA NO DIALOGIC ===
+if {Amizade.Enzo} <= 3:
+	[style name="cinzanovo"]
+elif {Amizade.Enzo} <= 7:
+	[style name="azulnovo"]
+else:
+	[style name="verdenovo"]
+# ============================================
+
+
+[background arg="res://assets/backgrounds/casaEnzo3.jpeg" fade="0.0"]
+if {Convite.fase_entrega} == true and {Convite.Convite_enzo_entregue} == false:
+	[background arg="res://assets/backgrounds/casaEnzo4.jpeg" fade="0.0"]
+	join enzo (Enzo_01/14) right
+	[voice path="res://assets/som/Enzo/Enzo_01/Fique-longe,-criatura-voadora...-eu-e.mp3" volume="0.0"]
+	enzo (Enzo_01/14): Fique longe, criatura voadora... eu estou armado e perigoso...
+	[voice path="res://assets/som/Enzo/Enzo_01/Socorro!-O-monstro-me-[ênfase]-cegou!.mp3" volume="0.0"]
+	enzo (Enzo_01/15): Socorro! O monstro me cegou! Ah, não!
+	Protagonista: Ei, Enzo, sou eu! Não precisa ter medo. Vim apenas te trazer o convite para a festa da Prefeita!
+	[voice path="res://assets/som/Enzo/Enzo_01/bem.mp3" volume="0.0"]
+	enzo (Enzo_01/16): Ufa... que susto! Uma festa na praça central? Com todo mundo junto?\
+	B-Bem... parece um pouco perigoso... e se o vento derrubar as decorações?
+	Protagonista: Eu vou estar lá cuidando de tudo, Enzo. Você vai estar seguro.
+	[voice path="res://assets/som/Enzo/Enzo_01/se vc.mp3" volume="0.0"]
+	enzo (Enzo_01/17): Se você vai estar lá... eu me sinto bem mais seguro para ir.\
+	Mas me promete uma coisa?\
+	Não vai ter aqueles fogos de artifício barulhentos que estouram no céu, né? \
+	Se for uma festa tranquila, eu prometo que faço um esforço e vou!
+	set {Convite.Convite_enzo_entregue} = true
+	set {Convite.pontos_convite} += 1
+	[signal arg="ir_para_praca"]
+
+elif {Convite.fase_entrega} == true and {Convite.Convite_enzo_entregue} == true:
+	[background arg="res://assets/backgrounds/casaEnzo_dentro .jpeg_2K_202608032123.jpeg" fade="0.0"]
+	join enzo (Enzo_01/18) center
+	[voice path="res://assets/som/Enzo/Enzo_01/-Já-estou-preparando-meus-[emphasis]-pr.mp3" volume="0.0"]
+	enzo (Enzo_01/18): Já estou preparando meus protetores auriculares e checando a rota mais segura até a praça!\
+	Espero você lá para me manter a salvo!
+	[signal arg="ir_para_praca"]
+
+elif {Convite.sem_ajuda} == true:
+	join enzo (Enzo_01/13) leftmost
+	[voice path="res://assets/som/Enzo/Enzo_01/Se vir algo suspeito, me avise! Vou ficar aqui na base de comando... digo, atrás deste banco..mp3" volume="0.0"]
+	enzo (Enzo_01/13): Se vir algo suspeito, me avise! \
+	Vou ficar aqui na base de comando... digo, atrás deste banco.
+
+else:
+	if {Amizade.Enzo} == 0:
+		join enzo (Enzo_01/1) left
+		[voice path="res://assets/som/Enzo/Enzo_01/Shhh! Não faça barulho... eu acho que ouvi um rugido vindo daquela direção..mp3" volume="0.0"]
+		enzo (Enzo_01/1): Shhh! Não faça barulho... eu acho que ouvi um rugido vindo daquela direção.
+		Protagonista: Enzo, é só o barulho do vento nas folhas.
+		[voice path="res://assets/som/Enzo/Enzo_01/O vento... claro. É o que os monstros querem que a gente pense! O que você quer Não veio me dar um susto, né.mp3" volume="0.0"]
+		enzo (Enzo_01/2): O vento... claro. \
+		É o que os monstros querem que a gente pense! \
+		O que você quer?\
+		Não veio me dar um susto, né?
+		Protagonista: Não, eu só queria saber se você sabe de algo que a Prefeita Anne goste.
+		[voice path="res://assets/som/Enzo/Enzo_01/A Prefeita Ela é legal... ela nunca faz barulhos repentinos perto de mim..mp3" volume="0.0"]
+		enzo (Enzo_01/3): A Prefeita?\
+		Ela é legal... ela nunca faz barulhos repentinos perto de mim.
+		[voice path="res://assets/som/Enzo/Enzo_01/Uma vez ela me contou que o filme favorito dela é 'As Fábulas dos Animais Silenciosos..mp3" volume="0.0"]
+		enzo (Enzo_01/4): Uma vez ela me contou que o filme favorito dela é \
+		'As Fábulas dos Animais Silenciosos'.
+		[voice path="res://assets/som/Enzo/Enzo_01/Ela gosta porque é uma história calma e segura. Sem explosões, sem vilões gigantes... só paz..mp3" volume="0.0"]
+		enzo (Enzo_01/5): Ela gosta porque é uma história calma e segura. \
+		Sem explosões, sem vilões gigantes... só paz.
+		set {Amizade.Enzo} += 1
+	
+	elif {Amizade.Enzo} == 1:
+		join enzo (Enzo_01/6) left
+		[voice path="res://assets/som/Enzo/Enzo_01/Ah,-é-você.-Que-bom...mp3" volume="0.0"]
+		enzo (Enzo_01/6): Ah, é você. Que bom... achei que fosse aquele gato preto de novo. \
+		Ele me encara de um jeito estranho.
+		[voice path="res://assets/som/Enzo/Enzo_01/Você ouviu esse barulho no arbusto.mp3" volume="0.0"]
+		enzo (Enzo_01/7): Você ouviu esse barulho no arbusto?
+		[voice path="res://assets/som/Enzo/Enzo_01/Pode ser um monstro... ou um dragão faminto!.mp3" volume="0.0"]
+		enzo (Enzo_01/8): Pode ser um monstro... ou um dragão faminto!
+		update enzo (Enzo_01/9)
+		- Eu estou aqui, não precisa ter medo de um arbusto.
+			[voice path="res://assets/som/Enzo/Enzo_01/forte.mp3" volume="0.0"]
+			enzo (Enzo_01/11): É... você é bem forte. \
+			Ficar perto de você me deixa mais seguro.
+			set {Amizade.Enzo} += 1
+		- Quer explorar o arbusto juntos?
+			[voice path="res://assets/som/Enzo/Enzo_01/Juntos-Tipo.mp3" volume="0.0"]
+			enzo (Enzo_01/12): Juntos? \
+			Tipo... uma equipe de exploração? \
+			Tudo bem!\
+			Se você for na frente, eu cubro a retaguarda!
+			set {Amizade.Enzo} += 2
+		- É só o vento, Enzo. Não seja bobo.
+			[voice path="res://assets/som/Enzo/Enzo_01/Você fala isso porque não sabe do que os dragões de vento são capazes....mp3" volume="0.0"]
+			enzo (Enzo_01/10): Você fala isso porque não sabe do que os dragões de vento são capazes...
+			set {Amizade.Enzo} += 1
+	
+	else:
+		join enzo (Enzo_01/13) left
+		[voice path="res://assets/som/Enzo/Enzo_01/Se vir algo suspeito, me avise! Vou ficar aqui na base de comando... digo, atrás deste banco..mp3" volume="0.0"]
+		enzo (Enzo_01/13): Se vir algo suspeito, me avise! \
+		Vou ficar aqui na base de comando... digo, atrás deste banco.

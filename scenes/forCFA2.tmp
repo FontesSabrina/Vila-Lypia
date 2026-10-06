@@ -1,0 +1,33 @@
+[gd_scene load_steps=5 format=3 uid="uid://c7a01ps2fhagc"]
+
+[ext_resource type="Script" path="res://scripts/forno_controller.gd" id="1_odobf"]
+[ext_resource type="Texture2D" uid="uid://cc6i3nxgacijv" path="res://assets/icon/formadebolo.png" id="2_ef2yl"]
+[ext_resource type="Texture2D" uid="uid://cmb6p5iywtf0h" path="res://assets/icon/forninhoD.png" id="3_40gfy"]
+[ext_resource type="Texture2D" uid="uid://04l3emghmxfo" path="res://assets/icon/forninhoL.png" id="4_vljxi"]
+
+[node name="forno_controller" type="Node2D"]
+script = ExtResource("1_odobf")
+
+[node name="FormaComMassa" type="TextureButton" parent="."]
+offset_left = 157.0
+offset_top = 309.0
+offset_right = 1324.0
+offset_bottom = 1032.0
+scale = Vector2(0.248979, 0.216206)
+texture_normal = ExtResource("2_ef2yl")
+
+[node name="Forninho" type="TextureButton" parent="."]
+offset_left = 530.0
+offset_top = 185.0
+offset_right = 2930.0
+offset_bottom = 1525.0
+scale = Vector2(0.219251, 0.222663)
+texture_normal = ExtResource("3_40gfy")
+
+[node name="ForninhoLigado" type="TextureButton" parent="."]
+offset_left = 530.0
+offset_top = 185.0
+offset_right = 2930.0
+offset_bottom = 1525.0
+scale = Vector2(0.219, 0.224)
+texture_normal = ExtResource("4_vljxi")

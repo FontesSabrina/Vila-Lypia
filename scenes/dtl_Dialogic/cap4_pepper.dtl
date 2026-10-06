@@ -1,0 +1,37 @@
+if {Amizade.Xerife} <= 3:
+	[style name="cinzanovo"]
+elif {Amizade.Xerife} <= 7:
+	[style name="azulnovo"]
+else:
+	[style name="verdenovo"]
+
+if {Cap4.Pepper_Feito} == true:
+	[end_timeline]
+[background arg="res://assets/backgrounds/praça_festa_IV_xerife.jpg" fade="0.0"]
+audio "res://assets/som/Caminho da Vila.mp3" [volume="-18.0"]
+join xerife (cartao/1) rightmost
+[voice path="res://assets/som/Xerife Pepper/cartao/Isso-aqui-é-uma-[emphasis]-infração-às-r.mp3" volume="0.0"]
+
+xerife (cartao/Xerife Cartao): Isso aqui é uma infração às regras de correspondência oficial!\
+Não posso assinar um cartão cheio de coraçõezinhos.\
+Eu sou a autoridade desta vila! Preciso manter a postura!
+set {Cap4.Pepper_Feito} = true
+
+- Então apenas assine o seu nome.
+	[voice path="res://assets/som/Xerife Pepper/cartao/Direto-e-sem-rodeios.-É-assim-que-a-[emphasis]-l.mp3" volume="0.0"]
+	xerife (cartao/1): Direto e sem rodeios. É assim que a lei e a ordem funcionam. Assinado.
+	leave xerife
+- Você pode ser o xerife e ainda ser gentil de vez em quando.
+	[voice path="res://assets/som/Xerife Pepper/cartao/A-gentileza-não-consta-no-manual-de.mp3" volume="0.0"]
+	xerife (cartao/2): A gentileza não consta no manual de infrações, mas... suponho que uma pequena exceção festiva seja tolerável.
+	set {Amizade.Xerife} += 1
+	leave xerife
+- Carinho não tira autoridade, Xerife. Só prova que você protege a Prefeita de verdade.
+	[voice path="res://assets/som/Xerife Pepper/cartao/Hum!-[short-pause]-Bem...-visto-sob-essa-ótica-e.mp3" volume="0.0"]
+	xerife (cartao/3): Hum! Bem... visto sob essa ótica estratégica, um selo oficial de afeto é totalmente aceitável.
+	[voice path="res://assets/som/Xerife Pepper/cartao/Já-que-estamos-falando-do-que-é-oficial.mp3" volume="0.0"]
+	xerife (cartao/5): Já que estamos falando do que é oficial, um livro imponente, bem encadernado em couro para registrar as crônicas da vila, seria um presente digno para ela!
+	set {Amizade.Xerife} += 2
+	set {Cap4.Excelentes} += 1
+	set {Cap4.Dica_Pepper} = true
+	leave xerife

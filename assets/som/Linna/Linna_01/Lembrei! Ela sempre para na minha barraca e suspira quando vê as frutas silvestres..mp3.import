@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://rrp20v46dpq7"
+path="res://.godot/imported/Lembrei! Ela sempre para na minha barraca e suspira quando vê as frutas silvestres..mp3-a4e15548cf6f22ef9f150f295b58f3ba.mp3str"
+
+[deps]
+
+source_file="res://assets/som/Linna/Linna_01/Lembrei! Ela sempre para na minha barraca e suspira quando vê as frutas silvestres..mp3"
+dest_files=["res://.godot/imported/Lembrei! Ela sempre para na minha barraca e suspira quando vê as frutas silvestres..mp3-a4e15548cf6f22ef9f150f295b58f3ba.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

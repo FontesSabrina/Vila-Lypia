@@ -1,0 +1,52 @@
+audio "res://assets/som/floresta.mp3"
+[style name="cinzanovo"]
+[background arg="res://assets/backgrounds/floresta_01.jpeg" fade="0.0"]
+set {NomeJogador} = "????"
+Protagonista: Minha cabeça dói um pouco...\
+Onde eu estou?
+audio "res://assets/som/arbusto.mp3" [bus=""]
+[wait time="3.0"]
+[background arg="res://assets/backgrounds/curiosa.png" fade="0.0"]
+[voice path="res://assets/som/Bella/cena01/OI.mp3" volume="0.0"]
+Bella: Oi...?\
+Você está bem?
+Protagonista: Sim, estou bem...
+join Bella (Que Bom) right
+[background arg="res://assets/backgrounds/floresta_02.png" fade="0.0"]
+[voice path="res://assets/som/Bella/cena01/bem.mp3" volume="0.0"]
+Bella (Que Bom): Que bom que você está bem!!
+[background arg="res://assets/backgrounds/caminho-02.jpeg" fade="0.0"]
+join Bella (Bella Pensativa) center
+[voice path="res://assets/som/Bella/cena01/eu sou a bella.mp3" volume="0.0"]
+Bella (Bella Pensativa): É difícil encontrar pessoas novas por aqui!\
+Eu fico muito feliz com visitas!\
+Eu sou a Bella.\
+E você?\
+Como se chama?
+set {NomeJogador} = "????"
+[text_input text="Digite seu nome " var="NomeJogador"]
+set {NomeBella} = "Bella"
+[voice path="res://assets/som/Bella/cena01/nome lindo.mp3" volume="-6.0"]
+Bella (Animada 01): {NomeJogador}! \
+Que nome lindo!
+Protagonista: Obrigado!\
+Você poderia me ajudar?\
+Eu estou perdida e não conheço a região
+[background arg="res://assets/backgrounds/mapa.png" fade="0.0"]
+leave Bella
+[voice path="res://assets/som/Bella/cena01/vila.mp3" volume="0.0"]
+Bella: Claro!\
+Escute... você está na região de Vila Lypia!
+[background arg="res://assets/backgrounds/floresta_04.jpeg" fade="0.0"]
+join Bella (Apresenta) center
+[voice path="res://assets/som/Bella/cena01/anne.mp3" volume="0.0"]
+Bella (Apresenta): Caso o seu desejo seja voltar para casa...\
+a Prefeita Anne é a única que sabe como criar esse caminho.
+[background arg="res://assets/backgrounds/floresta_03.jpeg" fade="0.0"]
+join Bella (Lapis) center
+[voice path="res://assets/som/Bella/cena01/lapis.mp3" volume="0.0"]
+Bella (Lapis): É que a Prefeita tem um Lápis Mágico! \
+Com ele, ela desenhou toda essa floresta... e o mais incrível é que os desenhos dela viram coisas de verdade!
+Protagonista: Isso é incrível!\
+Você pode me levar até  ela?
+jump cena_02/

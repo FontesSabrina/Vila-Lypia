@@ -1,0 +1,29 @@
+[gd_scene load_steps=4 format=3 uid="uid://buyryfss77id6"]
+
+[ext_resource type="Texture2D" uid="uid://coky1chapdwx6" path="res://assets/backgrounds/casaEnzo.jpeg" id="1_p0ugx"]
+[ext_resource type="PackedScene" uid="uid://b4vsaogdwxkno" path="res://scenes_2/botao_voltar.tscn" id="2_41l3j"]
+[ext_resource type="PackedScene" uid="uid://diji3f6x2a5jo" path="res://scenes_2/mochila.tscn" id="2_yxmq5"]
+
+[node name="casa_enzo" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="CasaEnzo" type="Sprite2D" parent="."]
+position = Vector2(578, 326)
+scale = Vector2(0.423077, 0.41683)
+texture = ExtResource("1_p0ugx")
+
+[node name="mochila" parent="." instance=ExtResource("2_yxmq5")]
+offset_top = 10.0001
+offset_bottom = 10.0001
+
+[node name="botao_voltar" parent="." instance=ExtResource("2_41l3j")]
+layout_mode = 1
+offset_left = 1.0
+offset_top = 3.0
+offset_right = 1.0
+offset_bottom = 3.0

@@ -1,0 +1,6 @@
+[style name="cinzanovo"]
+join Bella (bolo/2) pos=x0.14y0.42
+update Bella size=y0.4
+Bella (bolo/2): Ah... parece que a nossa tigela ficou vazia e não conseguimos nenhum ingrediente dos moradores desta vez, não é? Não tem problema! Eu tentei misturar um pouco de água e doçura mágica para não ficarmos sem nada, e saiu um bolinho bem simples. Ele não tem aquele recheio especial, mas foi o que conseguimos fazer por agora!
+Bella (bolo/2): Que tal aproveitarmos o próximo capítulo para conversar mais com o pessoal da vila? Eles têm histórias incríveis e adoram interagir! Vamos focar no próximo passo juntos?
+leave Bella

@@ -1,0 +1,10 @@
+[gd_resource type="StyleBoxTexture" load_steps=2 format=3 uid="uid://dcl3pki7j7uu"]
+
+[ext_resource type="Texture2D" uid="uid://c8ywh348kc148" path="res://assets/resources/Cinza(neutro).png" id="1_jf8nj"]
+
+[resource]
+content_margin_left = 60.0
+content_margin_top = 70.0
+content_margin_right = 80.0
+content_margin_bottom = 60.0
+texture = ExtResource("1_jf8nj")

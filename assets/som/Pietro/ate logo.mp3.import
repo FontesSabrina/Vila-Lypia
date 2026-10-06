@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://uei7spbmry03"
+path="res://.godot/imported/ate logo.mp3-7b6046435fab79631c75258b804810bc.mp3str"
+
+[deps]
+
+source_file="res://assets/som/Pietro/ate logo.mp3"
+dest_files=["res://.godot/imported/ate logo.mp3-7b6046435fab79631c75258b804810bc.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://duvhelvuqvqpv"
+path="res://.godot/imported/Tudo eu… tudo eu… se não fosse por mim essa vila estava debaixo de milhões de papéis….mp3-a1d8dde28888b98e3a2261c73896d455.mp3str"
+
+[deps]
+
+source_file="res://assets/som/Xerife Pepper/XerifeP_01/Tudo eu… tudo eu… se não fosse por mim essa vila estava debaixo de milhões de papéis….mp3"
+dest_files=["res://.godot/imported/Tudo eu… tudo eu… se não fosse por mim essa vila estava debaixo de milhões de papéis….mp3-a1d8dde28888b98e3a2261c73896d455.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

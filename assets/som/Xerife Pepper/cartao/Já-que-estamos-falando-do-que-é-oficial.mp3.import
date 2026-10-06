@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://du53yxi0dxoo3"
+path="res://.godot/imported/Já-que-estamos-falando-do-que-é-oficial.mp3-25fcc7d9bd3a2b51e73ac36fdd2032f2.mp3str"
+
+[deps]
+
+source_file="res://assets/som/Xerife Pepper/cartao/Já-que-estamos-falando-do-que-é-oficial.mp3"
+dest_files=["res://.godot/imported/Já-que-estamos-falando-do-que-é-oficial.mp3-25fcc7d9bd3a2b51e73ac36fdd2032f2.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

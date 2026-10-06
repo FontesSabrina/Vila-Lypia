@@ -1,0 +1,49 @@
+[style name="cinzanovo"]
+audio "res://assets/som/floresta.mp3"
+[background arg="res://assets/backgrounds/praça2.jpeg" fade="0.0"]
+join Bella (Eba) left
+[voice path="res://assets/som/Bella/tutorial final/olhos de águia.mp3" volume="0.0"]
+Bella (Eba): Eba! Você tem olhos de águia!\
+Você encontrou! Muito obrigada.
+[signal arg="ganhar_moeda"]
+[voice path="res://assets/som/Bella/tutorial final/Tome esta Moeda.mp3" volume="0.0"]
+Bella (Moeda): Tome esta Moeda de Ouro. \
+Guarde-a com carinho; você poderá utilizar isso mais para frente, caso as coisas fiquem difíceis com os outros moradores.
+audio "res://assets/som/moedas.mp3"
+[voice path="res://assets/som/Bella/tutorial final/mapa.mp3" volume="0.0"]
+Bella (Explicando): E como já tenho um mapa, pode ficar com esse, vai ser útil caso você se perca!
+leave Bella
+[background arg="res://assets/backgrounds/Vila Lipya (1).jpg" fade="0.0"]
+[voice path="res://assets/som/Bella/tutorial final/Agora que você.mp3" volume="0.0"]
+Bella: Agora que você conhece todos, vamos  para os desafios.
+[background arg="res://assets/backgrounds/mapa.png" fade="0.0"]
+[voice path="res://assets/som/Bella/tutorial final/Eles são o coração da Vila Lypia,.mp3" volume="0.0"]
+Bella: Eles são o coração da Vila Lypia, mas estão desconectados. \
+Para a Prefeita Anne abrir aquele portão e te dar o Lápis Mágico, ela precisa sentir que a criação dela ainda tem união.
+[background arg="res://assets/backgrounds/praça2.jpeg" fade="0.0"]
+join Bella (Festa) center
+[voice path="res://assets/som/Bella/tutorial final/surpresa de aniversário!.mp3" volume="0.0"]
+Bella (Festa): E para isso, vamos organizar uma festa surpresa de aniversário!
+update Bella (Prof) right
+[voice path="res://assets/som/Bella/tutorial final/aviso.mp3" volume="0.0"]
+Bella (Prof): Mas um aviso\: não basta apenas fazer a festa. \
+Vamos organizar a melhor festa do mundo!\
+Para isso, você terá que\:
+[voice path="res://assets/som/Bella/tutorial final/Customizar e Entregar os Convites.mp3" volume="0.0"]
+Bella (Lista): 1 - Customizar e Entregar os Convites\: \
+Você vai criar os convites e tentar convencer cada um deles a sair de suas casas. \
+Suas escolhas aqui determinam quem vai aparecer na festa.
+[voice path="res://assets/som/Bella/tutorial final/Preparar o bolo.mp3" volume="0.0"]
+Bella (Bolo): 2- Preparar o bolo\:\
+Depois de convencê-los, você precisará pedir os ingredientes. \
+Mas eles só darão os melhores itens se confiarem em você.
+[voice path="res://assets/som/Bella/tutorial final/Presente Especial.mp3" volume="0.0"]
+Bella (Presente): 3-  Presente Especial\: \
+Por fim, você deve descobrir o que a Prefeita mais ama para darmos o presente final e quebrar o isolamento dela.
+update Bella (Prometo) left
+[voice path="res://assets/som/Bella/tutorial final/Eu estarei.mp3" volume="0.0"]
+Bella (Prometo): Eu estarei sempre por perto para te dar sugestões. \
+Lembre-se\: em Vila Lypia, cada palavra desenha um destino diferente. \
+Por onde quer começar os convites?
+leave Bella
+[signal arg="ir_para_praca"]

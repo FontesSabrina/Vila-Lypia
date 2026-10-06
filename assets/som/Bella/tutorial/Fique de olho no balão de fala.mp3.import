@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://5mdd4jvof425"
+path="res://.godot/imported/Fique de olho no balão de fala.mp3-f9ecf37b5da8c310e195b9eea7eeb9d2.mp3str"
+
+[deps]
+
+source_file="res://assets/som/Bella/tutorial/Fique de olho no balão de fala.mp3"
+dest_files=["res://.godot/imported/Fique de olho no balão de fala.mp3-f9ecf37b5da8c310e195b9eea7eeb9d2.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

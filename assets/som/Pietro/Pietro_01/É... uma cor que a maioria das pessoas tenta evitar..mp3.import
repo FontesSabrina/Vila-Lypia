@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cnf7qv0juhplp"
+path="res://.godot/imported/É... uma cor que a maioria das pessoas tenta evitar..mp3-3de8fe318497c761382e6ffc30cece3b.mp3str"
+
+[deps]
+
+source_file="res://assets/som/Pietro/Pietro_01/É... uma cor que a maioria das pessoas tenta evitar..mp3"
+dest_files=["res://.godot/imported/É... uma cor que a maioria das pessoas tenta evitar..mp3-3de8fe318497c761382e6ffc30cece3b.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

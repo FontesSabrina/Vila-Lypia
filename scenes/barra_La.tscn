@@ -1,0 +1,102 @@
+[gd_scene load_steps=7 format=3 uid="uid://dejr6fahbfv0b"]
+
+[ext_resource type="Texture2D" uid="uid://cyaikmkq0207s" path="res://assets/icon/barra2.png" id="1_e4av5"]
+[ext_resource type="Texture2D" uid="uid://dvvx3qmlu5v2v" path="res://assets/icon/la_01.png" id="2_355by"]
+[ext_resource type="Script" path="res://scripts/barra_la.gd" id="2_ipklu"]
+[ext_resource type="Texture2D" uid="uid://c54v8mjseyyug" path="res://assets/icon/la_02.png" id="3_3d10y"]
+[ext_resource type="Texture2D" uid="uid://djdso25wcbq04" path="res://assets/icon/la_03.png" id="4_8f1ja"]
+[ext_resource type="Texture2D" uid="uid://vsxjlla1lyfi" path="res://assets/icon/la_04.png" id="5_pom72"]
+
+[node name="barra_La" type="Sprite2D"]
+position = Vector2(1002, 561)
+scale = Vector2(0.106105, 0.112793)
+texture = ExtResource("1_e4av5")
+script = ExtResource("2_ipklu")
+
+[node name="la_01" type="TextureRect" parent="."]
+custom_minimum_size = Vector2(100, 60)
+offset_left = -914.613
+offset_top = -434.424
+offset_right = 476.384
+offset_bottom = 570.576
+scale = Vector2(0.38423, 0.400865)
+texture = ExtResource("2_355by")
+expand_mode = 1
+
+[node name="Sombra_la_01" type="TextureRect" parent="."]
+modulate = Color(0.473976, 0.473976, 0.473976, 1)
+self_modulate = Color(0.796243, 0.796243, 0.796243, 1)
+custom_minimum_size = Vector2(100, 60)
+offset_left = -923.613
+offset_top = -434.424
+offset_right = 513.384
+offset_bottom = 593.576
+scale = Vector2(0.376981, 0.396421)
+texture = ExtResource("2_355by")
+expand_mode = 1
+
+[node name="la_02" type="TextureRect" parent="."]
+custom_minimum_size = Vector2(100, 60)
+offset_left = -235.616
+offset_top = -390.095
+offset_right = 1155.38
+offset_bottom = 614.905
+scale = Vector2(0.349248, 0.372668)
+texture = ExtResource("3_3d10y")
+expand_mode = 1
+
+[node name="Sombra_la_02" type="TextureRect" parent="."]
+modulate = Color(0.473976, 0.473976, 0.473976, 1)
+self_modulate = Color(0.796243, 0.796243, 0.796243, 1)
+custom_minimum_size = Vector2(100, 60)
+offset_left = -245.04
+offset_top = -398.961
+offset_right = 1191.96
+offset_bottom = 629.039
+scale = Vector2(0.360719, 0.372259)
+texture = ExtResource("3_3d10y")
+expand_mode = 1
+
+[node name="la_03" type="TextureRect" parent="."]
+custom_minimum_size = Vector2(100, 60)
+offset_left = 433.532
+offset_top = -461.021
+offset_right = 1824.53
+offset_bottom = 994.975
+scale = Vector2(0.300731, 0.303907)
+texture = ExtResource("4_8f1ja")
+expand_mode = 1
+
+[node name="Sombra_la_03" type="TextureRect" parent="."]
+modulate = Color(0.473976, 0.473976, 0.473976, 1)
+self_modulate = Color(0.796243, 0.796243, 0.796243, 1)
+custom_minimum_size = Vector2(100, 60)
+offset_left = 433.532
+offset_top = -469.887
+offset_right = 1870.53
+offset_bottom = 1052.11
+scale = Vector2(0.306587, 0.29866)
+texture = ExtResource("4_8f1ja")
+expand_mode = 1
+
+[node name="la_04" type="TextureRect" parent="."]
+custom_minimum_size = Vector2(100, 60)
+offset_left = -904.193
+offset_top = 44.4637
+offset_right = 1007.81
+offset_bottom = 1500.46
+scale = Vector2(0.25655, 0.273116)
+texture = ExtResource("5_pom72")
+expand_mode = 1
+
+[node name="Sombra_la_04" type="TextureRect" parent="."]
+modulate = Color(0.473976, 0.473976, 0.473976, 1)
+self_modulate = Color(0.796243, 0.796243, 0.796243, 1)
+custom_minimum_size = Vector2(100, 60)
+offset_left = -914.193
+offset_top = 35.4637
+offset_right = 1052.81
+offset_bottom = 1557.46
+scale = Vector2(0.272898, 0.272811)
+texture = ExtResource("5_pom72")
+expand_mode = 1

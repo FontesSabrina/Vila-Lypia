@@ -1,0 +1,169 @@
+[gd_scene load_steps=10 format=3 uid="uid://cktw6e7yee4rl"]
+
+[ext_resource type="Texture2D" uid="uid://dktbpa7dhsrmw" path="res://assets/backgrounds/mesa_artes.jpg" id="1_6gafs"]
+[ext_resource type="Script" path="res://scripts/loja_iv.gd" id="1_pm57n"]
+[ext_resource type="Texture2D" uid="uid://oge27o1cttu2" path="res://assets/icon/catálogo mágico.png" id="2_4eij1"]
+[ext_resource type="Texture2D" uid="uid://dmek0bggiq0sw" path="res://assets/icon/Caixa de Veludo Protetora.png" id="3_ech1m"]
+[ext_resource type="Texture2D" uid="uid://b10msmsdyk0vx" path="res://assets/icon/Caderno de Esboços Estrelado.png" id="4_sqpe3"]
+[ext_resource type="Texture2D" uid="uid://bdrciwea4cfys" path="res://assets/icon/Caixinha de Música Comum.png" id="5_3qw6m"]
+[ext_resource type="Texture2D" uid="uid://dsurh6qntft7v" path="res://assets/icon/Gemini_Generated_Image_hkqlbahkqlbahkql (1).png" id="5_otxne"]
+[ext_resource type="FontFile" uid="uid://f4x20yulylhx" path="res://assets/fonte/KGPerfectPenmanship.ttf" id="7_wrgey"]
+[ext_resource type="PackedScene" uid="uid://dtk65tlgsfgmk" path="res://scenes/moedas.tscn" id="8_7t64h"]
+
+[node name="loja_IV" type="Node2D"]
+script = ExtResource("1_pm57n")
+
+[node name="MesaArtes" type="Sprite2D" parent="."]
+position = Vector2(662, 408)
+texture = ExtResource("1_6gafs")
+
+[node name="Catalogo" type="Node2D" parent="."]
+position = Vector2(598, 317)
+scale = Vector2(0.463118, 0.488281)
+
+[node name="LivroMagico" type="Sprite2D" parent="Catalogo"]
+position = Vector2(15.115, 30.72)
+scale = Vector2(1.01373, 0.877334)
+texture = ExtResource("2_4eij1")
+
+[node name="Caixinha" type="TextureButton" parent="Catalogo"]
+offset_left = -932.808
+offset_top = -512.0
+offset_right = 1467.19
+offset_bottom = 828.0
+scale = Vector2(0.40775, 0.284037)
+texture_normal = ExtResource("5_3qw6m")
+
+[node name="Veludo" type="TextureButton" parent="Catalogo"]
+offset_left = -963.038
+offset_top = -90.112
+offset_right = 1436.96
+offset_bottom = 1249.89
+scale = Vector2(0.285394, 0.239496)
+texture_normal = ExtResource("3_ech1m")
+
+[node name="Caderno" type="TextureButton" parent="Catalogo"]
+offset_left = 194.335
+offset_top = -378.88
+offset_right = 2594.33
+offset_bottom = 961.12
+scale = Vector2(0.265454, 0.282259)
+texture_normal = ExtResource("4_sqpe3")
+
+[node name="PrecoCaixinha" type="Node2D" parent="Catalogo"]
+scale = Vector2(1, 1)
+
+[node name="Sprite2D3" type="Sprite2D" parent="Catalogo/PrecoCaixinha"]
+position = Vector2(-218.087, -118.784)
+scale = Vector2(0.107548, 0.0899398)
+texture = ExtResource("5_otxne")
+
+[node name="Label" type="Label" parent="Catalogo/PrecoCaixinha"]
+modulate = Color(0.737255, 0.52549, 0.223529, 1)
+offset_left = -829.163
+offset_top = -176.128
+offset_right = -282.163
+offset_bottom = -75.128
+theme_override_fonts/font = ExtResource("7_wrgey")
+theme_override_font_sizes/font_size = 34
+text = "Bonitinha e toca uma música suave. 
+Um presente simples e simpático."
+
+[node name="PrecoVeludo" type="Node2D" parent="Catalogo"]
+
+[node name="Sprite2D" type="Sprite2D" parent="Catalogo/PrecoVeludo"]
+position = Vector2(-252.636, 178.176)
+scale = Vector2(0.107548, 0.0899398)
+texture = ExtResource("5_otxne")
+
+[node name="Sprite2D2" type="Sprite2D" parent="Catalogo/PrecoVeludo"]
+position = Vector2(-151.15, 178.176)
+scale = Vector2(0.107548, 0.0899398)
+texture = ExtResource("5_otxne")
+
+[node name="Sprite2D7" type="Sprite2D" parent="Catalogo/PrecoVeludo"]
+position = Vector2(-207.291, 98.304)
+scale = Vector2(0.107548, 0.0899398)
+texture = ExtResource("5_otxne")
+
+[node name="Label" type="Label" parent="Catalogo/PrecoVeludo"]
+modulate = Color(0.737255, 0.52549, 0.223529, 1)
+offset_left = -919.853
+offset_top = 206.848
+offset_right = -244.853
+offset_bottom = 307.848
+theme_override_fonts/font = ExtResource("7_wrgey")
+theme_override_font_sizes/font_size = 34
+text = "Macia e resistente, ideal para 
+guardar algo precioso como o Lápis Mágico."
+
+[node name="PrecoCaderno" type="Node2D" parent="Catalogo"]
+
+[node name="Sprite2D8" type="Sprite2D" parent="Catalogo/PrecoCaderno"]
+position = Vector2(591.642, 243.712)
+scale = Vector2(0.107548, 0.0899398)
+texture = ExtResource("5_otxne")
+
+[node name="Sprite2D7" type="Sprite2D" parent="Catalogo/PrecoCaderno"]
+position = Vector2(382.192, 245.76)
+scale = Vector2(0.107548, 0.0899398)
+texture = ExtResource("5_otxne")
+
+[node name="Sprite2D6" type="Sprite2D" parent="Catalogo/PrecoCaderno"]
+position = Vector2(490.156, 247.808)
+scale = Vector2(0.107548, 0.0899398)
+texture = ExtResource("5_otxne")
+
+[node name="Sprite2D5" type="Sprite2D" parent="Catalogo/PrecoCaderno"]
+position = Vector2(535.501, 159.744)
+scale = Vector2(0.107548, 0.0899398)
+texture = ExtResource("5_otxne")
+
+[node name="Sprite2D4" type="Sprite2D" parent="Catalogo/PrecoCaderno"]
+position = Vector2(431.856, 165.888)
+scale = Vector2(0.107548, 0.0899398)
+texture = ExtResource("5_otxne")
+
+[node name="Label" type="Label" parent="Catalogo/PrecoCaderno"]
+modulate = Color(0.737255, 0.52549, 0.223529, 1)
+offset_left = 218.087
+offset_top = -2.04801
+offset_right = 893.087
+offset_bottom = 98.952
+theme_override_fonts/font = ExtResource("7_wrgey")
+theme_override_font_sizes/font_size = 34
+text = "Capa resistente de couro e folhas 
+em branco para novas memórias."
+
+[node name="Confirmacao" type="Panel" parent="."]
+offset_left = 441.0
+offset_top = 277.0
+offset_right = 786.0
+offset_bottom = 338.0
+
+[node name="Pergunta" type="Label" parent="Confirmacao"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+theme_override_fonts/font = ExtResource("7_wrgey")
+theme_override_font_sizes/font_size = 18
+text = "Comprar a Caixa de Veludo por 3 moedas?"
+
+[node name="BotaoSim" type="Button" parent="Confirmacao"]
+layout_mode = 0
+offset_left = 110.0
+offset_top = 30.0
+offset_right = 147.0
+offset_bottom = 61.0
+text = "Sim"
+
+[node name="BotaoNao" type="Button" parent="Confirmacao"]
+layout_mode = 0
+offset_left = 174.0
+offset_top = 29.0
+offset_right = 214.0
+offset_bottom = 60.0
+text = "Não"
+
+[node name="moedas" parent="." instance=ExtResource("8_7t64h")]
+position = Vector2(1076, -555)

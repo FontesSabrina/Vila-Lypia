@@ -1,0 +1,20 @@
+audio "res://assets/som/Caminho da Vila.mp3" [volume="-18.0"]
+[style name="cinzanovo"]
+
+[background arg="res://assets/backgrounds/festa1.jpeg" fade="0.0"]
+[voice path="res://assets/som/Bella/capitulo_2/decoração.mp3" volume="0.0"]
+Bella: Ufa, acho que foram todas as caixas de decoração.
+[background arg="res://assets/backgrounds/festa2.jpeg" fade="0.0"]
+join Bella (Entusiasmo) center
+[voice path="res://assets/som/Bella/capitulo_2/criação dos convites.mp3" volume="0.0"]
+Bella (Entusiasmo): Agora que tudo está aqui podemos começar com a criação dos convites.
+[voice path="res://assets/som/Bella/capitulo_2/informações.mp3" volume="0.0"]
+Bella (Sobrancelha Levantada): Mas lembrando, para o convite ser perfeito, precisamos de informações!
+[voice path="res://assets/som/Bella/capitulo_2/Cada morador.mp3" volume="0.0"]
+Bella (Mostrando Sinceridade): Cada morador conhece um lado da Prefeita Anne. Te aconselho conversar com eles antes.
+[voice path="res://assets/som/Bella/capitulo_2/Tente começar com o Vincent.mp3" volume="0.0"]
+Bella (Suavemente): Tente começar com o Vincent, ele sempre está preparado para uma boa conversa.
+[voice path="res://assets/som/Bella/capitulo_2/Quando você tiver as informações.mp3" volume="0.0"]
+Bella (Legal): Quando você tiver as informações que desejar venha falar comigo que estarei pronta para te ajudar com a criação dos convites.
+[voice path="res://assets/som/Bella/capitulo_2/Se precisar de ajuda.mp3" volume="0.0"]
+Bella (Segurança): Se precisar de ajuda também estarei aqui para te aconselhar.

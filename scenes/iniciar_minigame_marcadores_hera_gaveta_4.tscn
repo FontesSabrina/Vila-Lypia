@@ -1,0 +1,62 @@
+[gd_scene load_steps=11 format=3 uid="uid://diinuppvp05vr"]
+
+[ext_resource type="Script" path="res://scripts/iniciar_minigame_marcadores_hera_gaveta_4.gd" id="1_gifut"]
+[ext_resource type="Texture2D" uid="uid://cgol6dkvh3nb4" path="res://assets/backgrounds/casa_hera_ gaveta_4.jpeg" id="1_jxeo7"]
+[ext_resource type="Texture2D" uid="uid://d0tic8jnqyhir" path="res://assets/icon/fita_4.png" id="2_yfsmx"]
+[ext_resource type="Texture2D" uid="uid://bo7n15l6qeamm" path="res://assets/icon/fita_5.png" id="3_rowqt"]
+[ext_resource type="Texture2D" uid="uid://dtt5t38eayy83" path="res://assets/icon/fita_6.png" id="4_gwlb5"]
+[ext_resource type="Texture2D" uid="uid://cimgobic7wel" path="res://assets/icon/fitas_2.png" id="5_fsytu"]
+[ext_resource type="Texture2D" uid="uid://cd0g2dsmxleed" path="res://assets/icon/fita_3.png" id="6_m1ogk"]
+[ext_resource type="Texture2D" uid="uid://bxvvi4ponlit" path="res://assets/icon/fitas.png" id="7_fiexg"]
+[ext_resource type="PackedScene" uid="uid://d2xciyaba14pa" path="res://scenes/gavetas_hera_seta.tscn" id="8_oatmw"]
+[ext_resource type="PackedScene" uid="uid://cgkw3nyjgicht" path="res://scenes/barra_fitas.tscn" id="10_45hq7"]
+
+[node name="iniciar_minigame_marcadores_hera_Gaveta-4" type="Node2D"]
+script = ExtResource("1_gifut")
+
+[node name="CasaHeraGaveta4" type="Sprite2D" parent="."]
+position = Vector2(584.25, 322.25)
+scale = Vector2(0.427871, 0.429362)
+texture = ExtResource("1_jxeo7")
+
+[node name="Fita4" type="Sprite2D" parent="."]
+position = Vector2(565, 178)
+rotation = -3.13888
+scale = Vector2(0.132708, 0.134766)
+texture = ExtResource("2_yfsmx")
+
+[node name="Fita5" type="Sprite2D" parent="."]
+position = Vector2(858, 187)
+scale = Vector2(0.122917, 0.138328)
+texture = ExtResource("3_rowqt")
+
+[node name="Fita6" type="Sprite2D" parent="."]
+position = Vector2(274, 181)
+scale = Vector2(0.151, 0.160959)
+texture = ExtResource("4_gwlb5")
+
+[node name="Fitas2" type="Sprite2D" parent="."]
+position = Vector2(285, 405)
+scale = Vector2(0.128542, 0.133371)
+texture = ExtResource("5_fsytu")
+
+[node name="Fita3" type="Sprite2D" parent="."]
+position = Vector2(571.125, 397.125)
+scale = Vector2(0.124063, 0.127372)
+texture = ExtResource("6_m1ogk")
+
+[node name="Fitas" type="TextureButton" parent="."]
+offset_left = 697.0
+offset_top = 287.0
+offset_right = 2169.0
+offset_bottom = 1316.0
+scale = Vector2(0.216882, 0.217809)
+texture_normal = ExtResource("7_fiexg")
+
+[node name="gavetas_hera_seta" parent="." instance=ExtResource("8_oatmw")]
+position = Vector2(320, 254)
+
+[node name="barra_fitas" parent="." instance=ExtResource("10_45hq7")]
+position = Vector2(139, 566)
+
+[connection signal="pressed" from="Fitas" to="." method="_on_fitas_pressed"]

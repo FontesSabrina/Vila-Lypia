@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cigxdxs8trgd1"
+path="res://.godot/imported/Sentiu o cheirinho de papel novo no ar É o sinal de que a nossa oficina de convites está aberta!.mp3-a6bee27f7d9f9f20fc4eb439910a8bb2.mp3str"
+
+[deps]
+
+source_file="res://assets/som/Bella/convites_01/Sentiu o cheirinho de papel novo no ar É o sinal de que a nossa oficina de convites está aberta!.mp3"
+dest_files=["res://.godot/imported/Sentiu o cheirinho de papel novo no ar É o sinal de que a nossa oficina de convites está aberta!.mp3-a6bee27f7d9f9f20fc4eb439910a8bb2.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

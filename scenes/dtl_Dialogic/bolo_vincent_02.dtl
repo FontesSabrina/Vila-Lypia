@@ -1,0 +1,104 @@
+audio "res://assets/som/Caminho da Vila.mp3" [volume="-18.0"]
+
+# === APLICAÇÃO DINÂMICA DO BALÃO (COLOCADA NO INÍCIO PARA VALER EM TODOS OS ESTÁGIOS) ===
+if {Amizade.Vincent} <= 3:
+	[style name="cinzanovo"]
+elif {Amizade.Vincent} <= 7:
+	[style name="azulnovo"]
+else:
+	[style name="verdenovo"]
+# ======================================================================================
+
+# ESTÁGIO 1: Ainda não pegou a geleia
+if {Bolo.Vincent.Ingrediente_Vincent} == false:
+	[background arg="res://assets/backgrounds/casaVincent_fundos.jpeg.jpeg" fade="0.0"]
+	join vincent (bolo_vincent/1) center
+	[voice path="res://assets/som/Vincent/bolo_Vincent/Olá,-[emphasis]-amigo!-[pause]-Que-bom.mp3" volume="0.0"]
+	vincent (bolo_vincent/1): Olá, amigo!\
+	Que bom te ver !
+	[voice path="res://assets/som/Vincent/bolo_Vincent/Eu-estava-aqui-pensando...-[short-pause]-o-bolo.mp3" volume="0.0"]
+	vincent (bolo_vincent/2): Eu estava pensando... o bolo da Prefeita precisa de cor, precisa de brilho!
+	[voice path="res://assets/som/Vincent/bolo_Vincent/Eu-tenho-o-[emphasis]-ingrediente-perfeito[pause.mp3" volume="0.0"]
+	vincent (bolo_vincent/3): Eu tenho o ingrediente perfeito\: \
+	Geleia de Amoras Radiantes!
+	[voice path="res://assets/som/Vincent/bolo_Vincent/Mas,-[gasping]-eita...-[short-pause]-eu-estava-p.mp3" volume="0.0"]
+	vincent (bolo_vincent/4): Mas, eita... eu estava pulando corda no quintal e derrubei meu pote no depósito de ferramentas.
+	[voice path="res://assets/som/Vincent/bolo_Vincent/Você-me-ajuda-[short-pause]-a-[emphasis]-achar.mp3" volume="0.0"]
+	vincent (bolo_vincent/5): Você me ajuda a achar?
+	
+	- Claro, vamos procurar!
+		[signal arg="minigame_geleia_vincent"]
+		[end_timeline]
+	- Agora não posso, Vincent.
+		[voice path="res://assets/som/Vincent/bolo_Vincent/Sem-problemas!-[short-pause]-Se-mudar-d.mp3" volume="0.0"]
+		vincent (bolo_vincent/12): Sem problemas! \
+		Estarei por aqui se mudar de ideia!
+		[end_timeline]
+
+# ESTÁGIO 2A: Acabou de achar a geleia no minigame (Comemoração imediata)
+elif {Bolo.Vincent.Bolo_Vincent_Geleia_Entregue} == false:
+	set {Bolo.Vincent.Bolo_Vincent_Geleia_Entregue} = true
+	[background arg="res://assets/backgrounds/deposito.jpeg" fade="0.0"]
+	join vincent center
+	[voice path="res://assets/som/Vincent/bolo_Vincent/Viva!-[short-pause]-Você-encontrou-a-m.mp3" volume="0.0"]
+	vincent (bolo_vincent/6): Viva! Você encontrou minha Geleia de Amoras Radiantes!
+	[voice path="res://assets/som/Vincent/bolo_Vincent/Muito-obrigado,-[pause]-agora-o-bolo-va.mp3" volume="0.0"]
+	vincent (bolo_vincent/7): Muito obrigado! Agora o bolo vai ficar incrível!
+	[end_timeline]
+
+# ESTÁGIO 2B: Pede ajuda para achar as luvas (SÓ entra se ainda NÃO fez o minijogo e NÃO aceitou antes)
+elif {Bolo.Vincent.Bolo_Vincent_Em_Andamento} == false and {Bolo.Vincent.Bolo_Vincent_Luvas_Concluido} == false and {Bolo.Vincent.Bolo_Secundaria_Vincent} == false:
+	[background arg="res://assets/backgrounds/casaVincent_floricu.jpeg_2K_202608140847.jpeg" fade="0.0"]
+	join vincent (bolo_vincent/08) center
+	[voice path="res://assets/som/Vincent/bolo_Vincent/Ah,-você-[emphasis]-voltou!-[short-pau.mp3" volume="0.0"]
+	vincent (bolo_vincent/08): Ah, você voltou! Sabe o que é?
+	[voice path="res://assets/som/Vincent/bolo_Vincent/-Com-tanta-alegria,-acabei-espalhando-mi.mp3" volume="0.0"]
+	vincent (bolo_vincent/09): Com tanta alegria, acabei espalhando minhas 3 luvas de jardinagem\
+	coloridas enquanto caminhava pela floresta à esquerda da vila.
+	[voice path="res://assets/som/Vincent/bolo_Vincent/Se-você-encontrá-las,-[short-pause]-meu.mp3" volume="0.0"]
+	vincent (bolo_vincent/10): Se você encontrá-las, meu jardim vai ficar ainda mais feliz!
+	
+	- Sim, eu te ajudo!
+		set {Bolo.Vincent.Bolo_Vincent_Em_Andamento} = true
+		[signal arg="voltar_mapa"]
+		[end_timeline]
+	- Agora não posso, Vincent.
+		set {Bolo.Vincent.Bolo_Vincent_Em_Andamento} = false
+		[voice path="res://assets/som/Vincent/bolo_Vincent/Sem-problemas!-[short-pause]-Se-mudar-d.mp3" volume="0.0"]
+		vincent (bolo_vincent/11): Sem problemas! Se mudar de ideia, estarei por aqui!
+		[end_timeline]
+
+# ESTÁGIO 2C: Já coletou as luvas no minijogo, mas ainda não conversou com ele para pegar a recompensa
+elif {Bolo.Vincent.Bolo_Vincent_Luvas_Concluido} == true and {Bolo.Vincent.Bolo_Secundaria_Vincent} == false:
+	[background arg="res://assets/backgrounds/casa_VIncent_estufa.jpeg" fade="0.0"]
+	join vincent (bolo_vincent/13) center
+	[voice path="res://assets/som/Vincent/bolo_Vincent/Uau!-[pause]-Você-tem-[emphasis]-olhos.mp3" volume="0.0"]
+	vincent (bolo_vincent/13): Uau! Você tem olhos brilhantes!
+	[voice path="res://assets/som/Vincent/bolo_Vincent/Obrigado-[short-pause]-pela-[emphasis].mp3" volume="0.0"]
+	vincent (bolo_vincent/14): Obrigado pela ajuda extra!
+	[voice path="res://assets/som/Vincent/bolo_Vincent/Como-recompensa-por-me-ajudar,-[short-pause]-tom.mp3" volume="0.0"]
+	vincent (bolo_vincent/15): Como recompensa por me ajudar, tome essa moeda.
+	audio "res://assets/som/moedas.mp3"
+	
+	[signal arg="ganhar_moeda"]
+	set {Amizade.Vincent} += 1
+	set {Bolo.Vincent.Bolo_Secundaria_Vincent} = true
+	set {Bolo.Vincent.Bolo_Vincent_Em_Andamento} = false
+	[end_timeline]
+
+# ESTÁGIO 2D: Aceitou procurar as luvas, mas ainda não achou
+elif {Bolo.Vincent.Bolo_Vincent_Em_Andamento} == true and {Bolo.Vincent.Bolo_Vincent_Luvas_Concluido} == false:
+	[background arg="res://assets/backgrounds/casaVincent_floricu.jpeg_2K_202608140847.jpeg" fade="0.0"]
+	join vincent (bolo_vincent/10) center
+	vincent (bolo_vincent/10): As luvas ainda estão espalhadas pela floresta à esquerda da vila!
+	[end_timeline]
+
+# ESTÁGIO 3: Já concluiu tudo com o Vincent (Diálogo final normal da vila)
+else:
+	[background arg="res://assets/backgrounds/casa_VIncent_estufa.jpeg" fade="0.0"]
+	join vincent center
+	[voice path="res://assets/som/Vincent/bolo_Vincent/O-dia-está-[emphasis]-simplesmente-lind.mp3" volume="0.0"]
+	vincent (bolo_vincent/16): O dia está simplesmente lindo para assar um bolo, não acha?
+	[voice path="res://assets/som/Vincent/bolo_Vincent/Mal-posso-esperar-[short-pause]-pelo-[.mp3" volume="0.0"]
+	vincent (bolo_vincent/17): Mal posso esperar pelo parabéns!
+	[end_timeline]

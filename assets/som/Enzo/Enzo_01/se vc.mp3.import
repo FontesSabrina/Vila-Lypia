@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://wdxgp56o67hp"
+path="res://.godot/imported/se vc.mp3-49b800645c0f9973cc3a7c0be4f11dff.mp3str"
+
+[deps]
+
+source_file="res://assets/som/Enzo/Enzo_01/se vc.mp3"
+dest_files=["res://.godot/imported/se vc.mp3-49b800645c0f9973cc3a7c0be4f11dff.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

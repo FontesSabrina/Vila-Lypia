@@ -1,0 +1,49 @@
+audio "res://assets/som/Caminho da Vila.mp3" [volume="-18.0"]
+[style name="cinzanovo"]
+
+leave Bella [animation="Fade Out"]
+
+[wait time="1.0"]
+
+[background arg="res://assets/backgrounds/ruaA.jpeg" fade="0.5"]
+
+[wait time="0.5"]
+
+join Bella (Seguir 05) center
+
+[wait time="1.0"]
+
+leave Bella [animation="Fade Out"]
+
+[wait time="1.0"]
+join vincent (Asobio) center [animation="Fade In Down"]
+
+[background arg="res://assets/backgrounds/casaVincent_03.png" fade="0.0"]
+audio "res://assets/som/assobio.mp3"
+
+[wait time="3.0"]
+update vincent (Entusiasmo) right
+join Bella (Surpresa) left [animation="Fade In"]
+
+[wait time="1.0"]
+[voice path="res://assets/som/Vincent/cena03/SURPREEESA!.mp3" volume="0.0"]
+
+vincent: SURPREEESA! \
+Rá-há! Olha só... mais um  amigo para o nosso jardim!
+[background arg="res://assets/backgrounds/casaVincent_02.jpeg" fade="0.0"]
+
+[wait time="0.5"]
+set {NomeBella} = "Bella"
+update vincent (Mode) right
+update Bella (Brava) left
+[voice path="res://assets/som/Bella/tutorial/Vincent cuidado.mp3" volume="0.0"]
+Bella (Brava): Vincent!!!\
+Toma cuidado! \
+Você quase molhou o nosso novo amigo.
+update vincent (Satisfação) right
+[voice path="res://assets/som/Bella/cena03/jardineiro.mp3" volume="0.0"]
+Bella (Amigável.): Esse e  o Vincent!\
+Ele é quem mantém tudo colorido por aqui. \
+Como jardineiro, ele cuida das plantas, mas o maior talento dele é espalhar sorrisos por onde passa!
+leave vincent
+jump tutorial/

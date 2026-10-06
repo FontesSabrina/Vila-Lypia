@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://lhhf0xuik2qm"
+path="res://.godot/imported/Negativa-registrada!-[pause]-Volte-assim.mp3-f6193d2b37d7d3e3e64ffd0c1129becf.mp3str"
+
+[deps]
+
+source_file="res://assets/som/Xerife Pepper/bolo_xerife_02/Negativa-registrada!-[pause]-Volte-assim.mp3"
+dest_files=["res://.godot/imported/Negativa-registrada!-[pause]-Volte-assim.mp3-f6193d2b37d7d3e3e64ffd0c1129becf.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

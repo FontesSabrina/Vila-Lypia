@@ -1,0 +1,25 @@
+[gd_scene load_steps=3 format=3 uid="uid://dgoohix0k3amd"]
+
+[ext_resource type="Script" path="res://scripts/bella_presente.gd" id="1_xr77m"]
+[ext_resource type="Texture2D" uid="uid://c1bbchnongjqh" path="res://assets/characters/bella/cartao/0.png" id="2_g6ly7"]
+
+[node name="bella_presente" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_xr77m")
+
+[node name="bella" type="Button" parent="."]
+layout_mode = 0
+offset_left = -2.00002
+offset_top = 2.99999
+offset_right = 2758.0
+offset_bottom = 1547.0
+scale = Vector2(0.0557, 0.0533494)
+icon = ExtResource("2_g6ly7")
+flat = true
+
+[connection signal="pressed" from="bella" to="." method="_on_bella_pressed"]

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://c2uxv4rlnwflg"
+path="res://.godot/imported/Shhh! Não faça barulho... eu acho que ouvi um rugido vindo daquela direção..mp3-9d5cdff8d302eeed764ef4c03ed736c8.mp3str"
+
+[deps]
+
+source_file="res://assets/som/Enzo/Enzo_01/Shhh! Não faça barulho... eu acho que ouvi um rugido vindo daquela direção..mp3"
+dest_files=["res://.godot/imported/Shhh! Não faça barulho... eu acho que ouvi um rugido vindo daquela direção..mp3-9d5cdff8d302eeed764ef4c03ed736c8.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

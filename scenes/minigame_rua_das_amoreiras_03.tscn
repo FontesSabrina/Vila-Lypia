@@ -1,0 +1,45 @@
+[gd_scene load_steps=7 format=3 uid="uid://bisrm5hwquane"]
+
+[ext_resource type="Texture2D" uid="uid://bjhq41kwp4dty" path="res://assets/backgrounds/rua_das_amoreiras_03.jpeg" id="1_lsnun"]
+[ext_resource type="Script" path="res://scripts/minigame_rua_das_amoreiras_03.gd" id="1_r6r2g"]
+[ext_resource type="Texture2D" uid="uid://c50f71pflhnqf" path="res://assets/icon/seta.png" id="2_7sa54"]
+[ext_resource type="Texture2D" uid="uid://cxoqyb8tn5jg1" path="res://assets/icon/distintivo3.png" id="4_4p5uh"]
+[ext_resource type="PackedScene" uid="uid://bmdaaobh615tl" path="res://scenes/barra_distintivos.tscn" id="5_004wi"]
+[ext_resource type="Texture2D" uid="uid://c43k0yj7kn7yf" path="res://assets/icon/pote.png" id="6_bbs40"]
+
+[node name="minigame_rua_das_amoreiras_03" type="Node2D"]
+script = ExtResource("1_r6r2g")
+
+[node name="RuaDasAmoreiras03" type="Sprite2D" parent="."]
+position = Vector2(572.5, 322)
+scale = Vector2(0.413154, 0.425781)
+texture = ExtResource("1_lsnun")
+
+[node name="seta_02_voltar" type="TextureButton" parent="."]
+offset_left = 581.0
+offset_top = 586.0
+offset_right = 1321.0
+offset_bottom = 1079.0
+rotation = -4.79442
+scale = Vector2(0.05, 0.05)
+texture_normal = ExtResource("2_7sa54")
+texture_pressed = ExtResource("2_7sa54")
+
+[node name="Distintivo03" type="TextureButton" parent="."]
+offset_left = 242.0
+offset_top = 438.0
+offset_right = 1465.0
+offset_bottom = 1699.0
+scale = Vector2(0.03, 0.03)
+texture_normal = ExtResource("4_4p5uh")
+
+[node name="barra_distintivos" parent="." instance=ExtResource("5_004wi")]
+position = Vector2(945, 569)
+
+[node name="Pote" type="Sprite2D" parent="."]
+position = Vector2(250, 458)
+scale = Vector2(0.386364, 0.357143)
+texture = ExtResource("6_bbs40")
+
+[connection signal="pressed" from="seta_02_voltar" to="." method="_on_seta_02_voltar_pressed"]
+[connection signal="pressed" from="Distintivo03" to="." method="_on_distintivo_03_pressed"]

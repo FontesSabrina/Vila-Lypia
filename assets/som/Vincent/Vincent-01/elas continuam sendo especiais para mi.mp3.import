@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://56a232h6nvke"
+path="res://.godot/imported/elas continuam sendo especiais para mi.mp3-f2f49e688f403cf73cd54f8c976098e8.mp3str"
+
+[deps]
+
+source_file="res://assets/som/Vincent/Vincent-01/elas continuam sendo especiais para mi.mp3"
+dest_files=["res://.godot/imported/elas continuam sendo especiais para mi.mp3-f2f49e688f403cf73cd54f8c976098e8.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

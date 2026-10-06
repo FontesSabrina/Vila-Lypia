@@ -1,0 +1,8 @@
+# Pastas de build e exportação
+JogoPronto/
+*.zip
+*.exe
+*.pck
+
+# Cache da Godot
+.godot/

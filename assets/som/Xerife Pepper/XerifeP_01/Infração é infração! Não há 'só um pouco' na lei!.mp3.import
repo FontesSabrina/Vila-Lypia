@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://h6vgpehg6lu5"
+path="res://.godot/imported/Infração é infração! Não há 'só um pouco' na lei!.mp3-3de8a05d77818aa92da70c07b86861b1.mp3str"
+
+[deps]
+
+source_file="res://assets/som/Xerife Pepper/XerifeP_01/Infração é infração! Não há 'só um pouco' na lei!.mp3"
+dest_files=["res://.godot/imported/Infração é infração! Não há 'só um pouco' na lei!.mp3-3de8a05d77818aa92da70c07b86861b1.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

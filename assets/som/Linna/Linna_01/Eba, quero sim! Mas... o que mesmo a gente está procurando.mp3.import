@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://ceqjulk4cv1eq"
+path="res://.godot/imported/Eba, quero sim! Mas... o que mesmo a gente está procurando.mp3-3b31aeca2330934261f6bc98ee60ea58.mp3str"
+
+[deps]
+
+source_file="res://assets/som/Linna/Linna_01/Eba, quero sim! Mas... o que mesmo a gente está procurando.mp3"
+dest_files=["res://.godot/imported/Eba, quero sim! Mas... o que mesmo a gente está procurando.mp3-3b31aeca2330934261f6bc98ee60ea58.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

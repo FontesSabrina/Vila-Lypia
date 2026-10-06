@@ -1,0 +1,75 @@
+[gd_scene load_steps=8 format=3 uid="uid://d0w6518by6118"]
+
+[ext_resource type="Script" path="res://scripts/minigame_acucar_linna.gd" id="1_li85s"]
+[ext_resource type="Texture2D" uid="uid://bpn04s6qe53wt" path="res://assets/backgrounds/casa_linna_loja.jpeg" id="1_mamv7"]
+[ext_resource type="Texture2D" uid="uid://c5r5v44f6m018" path="res://assets/icon/nome.png" id="2_prm0y"]
+[ext_resource type="Texture2D" uid="uid://40ekdq72qus4" path="res://assets/icon/caixa_01.png" id="3_rac2b"]
+[ext_resource type="Texture2D" uid="uid://c43k0yj7kn7yf" path="res://assets/icon/pote.png" id="4_x4bk0"]
+[ext_resource type="PackedScene" uid="uid://dtffm271bhv2m" path="res://scenes/barra_acuçar.tscn" id="5_pwv6l"]
+[ext_resource type="Texture2D" uid="uid://b1yu3glqxspkl" path="res://assets/icon/lupa.png" id="7_7ghlc"]
+
+[node name="minigame_acucar_linna" type="Node2D"]
+script = ExtResource("1_li85s")
+
+[node name="CasaLinnaLoja" type="Sprite2D" parent="."]
+position = Vector2(577.5, 323.75)
+scale = Vector2(0.423329, 0.431315)
+texture = ExtResource("1_mamv7")
+
+[node name="Nome" type="Sprite2D" parent="CasaLinnaLoja"]
+position = Vector2(100.16, 4.64751)
+scale = Vector2(0.213837, 0.194201)
+texture = ExtResource("2_prm0y")
+
+[node name="Caixa01" type="Sprite2D" parent="CasaLinnaLoja"]
+position = Vector2(-37.968, -77.5573)
+texture = ExtResource("3_rac2b")
+
+[node name="Caixa02" type="Sprite2D" parent="CasaLinnaLoja"]
+position = Vector2(-31.968, -129.557)
+scale = Vector2(0.77451, 0.75641)
+texture = ExtResource("3_rac2b")
+
+[node name="Caixa03" type="Sprite2D" parent="CasaLinnaLoja"]
+position = Vector2(-28.968, -170.557)
+scale = Vector2(0.599865, 0.572156)
+texture = ExtResource("3_rac2b")
+
+[node name="Pote" type="Sprite2D" parent="CasaLinnaLoja"]
+position = Vector2(565.185, -25.5613)
+scale = Vector2(0.525974, 0.407143)
+texture = ExtResource("4_x4bk0")
+
+[node name="barra_acuçar" parent="." instance=ExtResource("5_pwv6l")]
+position = Vector2(151, 578)
+
+[node name="lupa1" type="TextureButton" parent="."]
+offset_left = 208.0
+offset_top = 323.0
+offset_right = 1584.0
+offset_bottom = 1091.0
+rotation = -0.472349
+scale = Vector2(0.0547547, 0.0555267)
+texture_normal = ExtResource("7_7ghlc")
+
+[node name="lupa2" type="TextureButton" parent="."]
+offset_left = 579.0
+offset_top = 258.0
+offset_right = 1955.0
+offset_bottom = 1026.0
+rotation = 0.213204
+scale = Vector2(0.0547547, 0.0555267)
+texture_normal = ExtResource("7_7ghlc")
+
+[node name="lupa3" type="TextureButton" parent="."]
+offset_left = 530.0
+offset_top = 341.0
+offset_right = 1906.0
+offset_bottom = 1109.0
+rotation = 0.679283
+scale = Vector2(0.0547547, 0.0555267)
+texture_normal = ExtResource("7_7ghlc")
+
+[connection signal="pressed" from="lupa1" to="." method="_on_lupa_1_pressed"]
+[connection signal="pressed" from="lupa2" to="." method="_on_lupa_2_pressed"]
+[connection signal="pressed" from="lupa3" to="." method="_on_lupa_3_pressed"]

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cmxxfq1cihqv7"
+path="res://.godot/imported/bagunça.mp3-a1fc665342294771d269d30c0223abbb.mp3str"
+
+[deps]
+
+source_file="res://assets/som/Xerife Pepper/tutorial/bagunça.mp3"
+dest_files=["res://.godot/imported/bagunça.mp3-a1fc665342294771d269d30c0223abbb.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,129 @@
+[gd_scene load_steps=9 format=3 uid="uid://cay6l6wp6me5v"]
+
+[ext_resource type="Script" path="res://scripts/minigame_secundario_vincent.gd" id="1_am57u"]
+[ext_resource type="Texture2D" uid="uid://demnjk3dyu2cr" path="res://assets/backgrounds/floresta.jpeg" id="2_dk4ka"]
+[ext_resource type="Texture2D" uid="uid://b0u184jo0l4xp" path="res://assets/icon/Luva Amarela.png" id="3_010j3"]
+[ext_resource type="Texture2D" uid="uid://bo2sgguq51sby" path="res://assets/icon/Luva Azul.png" id="4_l14ut"]
+[ext_resource type="Texture2D" uid="uid://cb8fbl3qtss03" path="res://assets/icon/Luva RosaVermelha.png" id="5_34qkw"]
+[ext_resource type="Texture2D" uid="uid://cyaikmkq0207s" path="res://assets/icon/barra2.png" id="5_isu1v"]
+[ext_resource type="Texture2D" uid="uid://d363u3y3axaw3" path="res://assets/icon/pedra.png" id="7_823gl"]
+[ext_resource type="Texture2D" uid="uid://y17ug50a7qqd" path="res://assets/icon/raposa-2.png" id="8_wc4yg"]
+
+[node name="minigame_luvas_vincent" type="Node2D"]
+script = ExtResource("1_am57u")
+
+[node name="Floresta" type="Sprite2D" parent="."]
+position = Vector2(577, 323.5)
+scale = Vector2(0.420785, 0.422526)
+texture = ExtResource("2_dk4ka")
+
+[node name="Luva Amarela" type="TextureButton" parent="."]
+offset_left = 401.0
+offset_top = 534.0
+offset_right = 1669.0
+offset_bottom = 1806.0
+rotation = -4.72112
+scale = Vector2(0.05, 0.05)
+texture_normal = ExtResource("3_010j3")
+
+[node name="Luva Azul" type="TextureButton" parent="."]
+offset_left = 508.0
+offset_top = 446.0
+offset_right = 1764.0
+offset_bottom = 1706.0
+scale = Vector2(0.05, 0.05)
+texture_normal = ExtResource("4_l14ut")
+metadata/_edit_use_anchors_ = true
+
+[node name="Luva Rosa_Vermelha" type="TextureButton" parent="."]
+offset_left = 794.0
+offset_top = 569.0
+offset_right = 2078.0
+offset_bottom = 1847.0
+scale = Vector2(0.05, 0.05)
+texture_normal = ExtResource("5_34qkw")
+
+[node name="Barra2" type="Sprite2D" parent="."]
+position = Vector2(981, 581)
+scale = Vector2(0.125728, 0.126122)
+texture = ExtResource("5_isu1v")
+
+[node name="Luva Amarela2" type="TextureRect" parent="."]
+custom_minimum_size = Vector2(100, 60)
+offset_left = 865.0
+offset_top = 528.0
+offset_right = 985.0
+offset_bottom = 635.0
+scale = Vector2(0.4, 0.432)
+texture = ExtResource("3_010j3")
+expand_mode = 1
+
+[node name="SombraLuva Amarela" type="TextureRect" parent="."]
+modulate = Color(0.473976, 0.473976, 0.473976, 1)
+self_modulate = Color(0.796243, 0.796243, 0.796243, 1)
+custom_minimum_size = Vector2(120, 60)
+offset_left = 865.0
+offset_top = 528.0
+offset_right = 985.0
+offset_bottom = 633.0
+scale = Vector2(0.4, 0.431)
+texture = ExtResource("3_010j3")
+expand_mode = 1
+
+[node name="Luva Azul2" type="TextureRect" parent="."]
+custom_minimum_size = Vector2(100, 60)
+offset_left = 959.0
+offset_top = 528.0
+offset_right = 1079.0
+offset_bottom = 635.0
+scale = Vector2(0.4, 0.432)
+texture = ExtResource("4_l14ut")
+expand_mode = 1
+
+[node name="SombraLuva Azul" type="TextureRect" parent="."]
+modulate = Color(0.473976, 0.473976, 0.473976, 1)
+self_modulate = Color(0.796243, 0.796243, 0.796243, 1)
+custom_minimum_size = Vector2(120, 60)
+offset_left = 959.0
+offset_top = 528.0
+offset_right = 1079.0
+offset_bottom = 633.0
+scale = Vector2(0.4, 0.431)
+texture = ExtResource("4_l14ut")
+expand_mode = 1
+
+[node name="Luva Rosa_Vermelha2" type="TextureRect" parent="."]
+custom_minimum_size = Vector2(100, 60)
+offset_left = 1057.0
+offset_top = 526.0
+offset_right = 1177.0
+offset_bottom = 633.0
+scale = Vector2(0.4, 0.432)
+texture = ExtResource("5_34qkw")
+expand_mode = 1
+
+[node name="SombraLuva Rosa_Vermelha" type="TextureRect" parent="."]
+modulate = Color(0.473976, 0.473976, 0.473976, 1)
+self_modulate = Color(0.796243, 0.796243, 0.796243, 1)
+custom_minimum_size = Vector2(120, 60)
+offset_left = 1057.0
+offset_top = 526.0
+offset_right = 1177.0
+offset_bottom = 631.0
+scale = Vector2(0.4, 0.431)
+texture = ExtResource("5_34qkw")
+expand_mode = 1
+
+[node name="Pedra" type="Sprite2D" parent="."]
+position = Vector2(404.875, 577.5)
+scale = Vector2(0.120004, 0.119141)
+texture = ExtResource("7_823gl")
+
+[node name="Raposa-2" type="Sprite2D" parent="."]
+position = Vector2(569, 435)
+scale = Vector2(0.461765, 0.418033)
+texture = ExtResource("8_wc4yg")
+
+[connection signal="pressed" from="Luva Amarela" to="." method="_on_luva_amarela_pressed"]
+[connection signal="pressed" from="Luva Azul" to="." method="_on_luva_azul_pressed"]
+[connection signal="pressed" from="Luva Rosa_Vermelha" to="." method="_on_luva_rosa_vermelha_pressed"]

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cmg7t76gknlcd"
+path="res://.godot/imported/casa Anne.mp3-45e22af7fa3f173f26be90676d137ce0.mp3str"
+
+[deps]
+
+source_file="res://assets/som/Bella/cena02/casa Anne.mp3"
+dest_files=["res://.godot/imported/casa Anne.mp3-45e22af7fa3f173f26be90676d137ce0.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

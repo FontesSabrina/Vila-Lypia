@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://mpl44jsdvtbp"
+path="res://.godot/imported/casa enzo.mp3-51e6c53da74781b0f72f28a6221c30b4.mp3str"
+
+[deps]
+
+source_file="res://assets/som/Bella/tutorial/casa enzo.mp3"
+dest_files=["res://.godot/imported/casa enzo.mp3-51e6c53da74781b0f72f28a6221c30b4.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

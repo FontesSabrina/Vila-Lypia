@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://4o6hvjxmy65g"
+path="res://.godot/imported/Olá, precisa de algo.mp3-ded326dbcf601d2ef90fe8367ee0724d.mp3str"
+
+[deps]
+
+source_file="res://assets/som/Bella/suporte/Acabei me perdendo/Olá, precisa de algo.mp3"
+dest_files=["res://.godot/imported/Olá, precisa de algo.mp3-ded326dbcf601d2ef90fe8367ee0724d.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

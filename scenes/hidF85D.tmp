@@ -1,0 +1,41 @@
+[gd_scene load_steps=5 format=3 uid="uid://c3ai5upn408n1"]
+
+[ext_resource type="Texture2D" uid="uid://cr2yyt1rc7vrx" path="res://assets/backgrounds/casa_linna.jpeg" id="1_d5c3l"]
+[ext_resource type="Script" path="res://scripts/hidden_object_linna.gd" id="1_wl60o"]
+[ext_resource type="PackedScene" uid="uid://dkvvvvax7c2c1" path="res://scenes/mapa.tscn" id="2_x0qkt"]
+[ext_resource type="Texture2D" uid="uid://b7bwh6vrn7k" path="res://assets/icon/remova_os_livros_2K_202605261703.png" id="4_cwfu0"]
+
+[node name="HiddenObjectLinna" type="Node2D"]
+script = ExtResource("1_wl60o")
+
+[node name="CasaLinna" type="Sprite2D" parent="."]
+position = Vector2(577, 330)
+scale = Vector2(0.418182, 0.429597)
+texture = ExtResource("1_d5c3l")
+
+[node name="mapa" parent="CasaLinna" instance=ExtResource("2_x0qkt")]
+position = Vector2(289.348, 48.883)
+scale = Vector2(0.364952, 0.345474)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="MarginContainer" type="MarginContainer" parent="CanvasLayer"]
+anchors_preset = 9
+anchor_bottom = 1.0
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/MarginContainer"]
+layout_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer/MarginContainer/VBoxContainer"]
+custom_minimum_size = Vector2(120, 60)
+layout_mode = 2
+texture = ExtResource("4_cwfu0")
+expand_mode = 1
+
+[node name="Label" type="Label" parent="CanvasLayer"]
+offset_left = 24.0
+offset_top = 37.0
+offset_right = 150.0
+offset_bottom = 92.0
+scale = Vector2(1.03969, 0.849243)

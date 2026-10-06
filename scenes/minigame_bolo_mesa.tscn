@@ -1,0 +1,30 @@
+[gd_scene load_steps=7 format=3 uid="uid://b1act10o6ebd1"]
+
+[ext_resource type="Script" path="res://scripts/minigame_bolo_mesa.gd" id="1_eogmt"]
+[ext_resource type="Texture2D" uid="uid://bt8d78j0f4k8d" path="res://assets/backgrounds/fazer_bolo.jpeg" id="2_f8cii"]
+[ext_resource type="PackedScene" uid="uid://bkb574hw12sfv" path="res://scenes/ingredientes.tscn" id="3_m0dul"]
+[ext_resource type="Texture2D" uid="uid://c263pgbljggm1" path="res://assets/icon/tigela.png" id="4_n0v27"]
+[ext_resource type="PackedScene" uid="uid://c7a01ps2fhagc" path="res://scenes/forno_controller.tscn" id="5_4tt3l"]
+[ext_resource type="PackedScene" uid="uid://om5peo7p386m" path="res://scenes/resultadoBolo.tscn" id="6_l3bhq"]
+
+[node name="minigame_bolo_mesa" type="Node2D"]
+script = ExtResource("1_eogmt")
+
+[node name="FazerBolo" type="Sprite2D" parent="."]
+position = Vector2(578.25, 327)
+scale = Vector2(0.42351, 0.433594)
+texture = ExtResource("2_f8cii")
+
+[node name="Tigela" type="Sprite2D" parent="."]
+position = Vector2(566, 270)
+scale = Vector2(0.172918, 0.197419)
+texture = ExtResource("4_n0v27")
+
+[node name="Ingredientes" parent="." instance=ExtResource("3_m0dul")]
+position = Vector2(12, 6)
+
+[node name="forno_controller" parent="." instance=ExtResource("5_4tt3l")]
+position = Vector2(-19, 9)
+
+[node name="ResultadoBolo" parent="." instance=ExtResource("6_l3bhq")]
+position = Vector2(64, -1)

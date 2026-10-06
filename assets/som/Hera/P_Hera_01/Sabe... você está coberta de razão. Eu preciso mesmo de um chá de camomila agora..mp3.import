@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://c5t4ig8gc72pw"
+path="res://.godot/imported/Sabe... você está coberta de razão. Eu preciso mesmo de um chá de camomila agora..mp3-38547a1e7b953bf01be584a965801803.mp3str"
+
+[deps]
+
+source_file="res://assets/som/Hera/P_Hera_01/Sabe... você está coberta de razão. Eu preciso mesmo de um chá de camomila agora..mp3"
+dest_files=["res://.godot/imported/Sabe... você está coberta de razão. Eu preciso mesmo de um chá de camomila agora..mp3-38547a1e7b953bf01be584a965801803.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

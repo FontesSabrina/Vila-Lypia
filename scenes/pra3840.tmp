@@ -1,0 +1,36 @@
+[gd_scene load_steps=5 format=3 uid="uid://cg48sjdq2g3yi"]
+
+[ext_resource type="Script" path="res://scripts/praca_bolo_zoom.gd" id="1_0rsdo"]
+[ext_resource type="Texture2D" uid="uid://fwl4uowvp6hg" path="res://assets/backgrounds/praça_festa_bolo2.jpeg.jpeg" id="2_ikv8t"]
+[ext_resource type="PackedScene" uid="uid://b4vsaogdwxkno" path="res://scenes/botao_voltar.tscn" id="3_3iadp"]
+[ext_resource type="Texture2D" uid="uid://bn6cbxk884vyc" path="res://assets/characters/bella/bolo/bolo_1.png" id="4_35kyw"]
+
+[node name="praca_bolo_zoom" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_0rsdo")
+
+[node name="PraçaFestaBolo2_jpeg" type="Sprite2D" parent="."]
+position = Vector2(577, 322.5)
+scale = Vector2(0.419331, 0.422526)
+texture = ExtResource("2_ikv8t")
+
+[node name="botao_voltar" parent="." instance=ExtResource("3_3iadp")]
+layout_mode = 1
+offset_left = 1.0
+offset_right = 1.0
+
+[node name="Button" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 58.0
+offset_top = 122.0
+offset_right = 2114.0
+offset_bottom = 2178.0
+scale = Vector2(0.213, 0.213)
+texture_normal = ExtResource("4_35kyw")
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

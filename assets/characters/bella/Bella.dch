@@ -1,0 +1,1069 @@
+{
+"@path": "res://addons/dialogic/Resources/character.gd",
+"@subpath": NodePath(""),
+"_translation_id": "",
+"color": Color(1, 1, 1, 1),
+"custom_info": {
+"prefix": "",
+"sound_mood_default": "",
+"sound_moods": {},
+"style": "",
+"suffix": ""
+},
+"default_portrait": "Brava",
+"description": "",
+"display_name": "{NomeBella}",
+"mirror": false,
+"nicknames": [""],
+"offset": Vector2(0, 0),
+"portraits": {
+"Amigos": {
+"export_overrides": {
+"image": "\"res://assets/characters/bella/amigos.png\""
+},
+"mirror": false,
+"offset": Vector2(-220, -300),
+"scale": 0.5,
+"scene": ""
+},
+"Amigável.": {
+"export_overrides": {
+"image": "\"res://assets/characters/bella/amigável..png\""
+},
+"ignore_char_scale": false,
+"mirror": false,
+"offset": Vector2(-300, -350),
+"scale": 0.5,
+"scene": ""
+},
+"Animada 01": {
+"export_overrides": {
+"image": "\"res://assets/characters/bella/animada_01.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 0.9,
+"scene": ""
+},
+"Apaziguadora": {
+"export_overrides": {
+"image": "\"res://assets/characters/bella/Apaziguadora.png\""
+},
+"mirror": false,
+"offset": Vector2(-300, -350),
+"scale": 0.4,
+"scene": ""
+},
+"Apresenta": {
+"export_overrides": {
+"image": "\"res://assets/characters/bella/apresenta.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 0.9,
+"scene": ""
+},
+"Apresenta 01": {
+"export_overrides": {
+"image": "\"res://assets/characters/bella/apresenta 01.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"Apresenta 2": {
+"export_overrides": {
+"image": "\"res://assets/characters/bella/apresenta2.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"Apresenta 5": {
+"export_overrides": {
+"image": "\"res://assets/characters/bella/Apresenta5.png\""
+},
+"mirror": false,
+"offset": Vector2(-200, -300),
+"scale": 0.6,
+"scene": ""
+},
+"Apresentar 4": {
+"export_overrides": {
+"image": "\"res://assets/characters/bella/apresentar4.png\""
+},
+"mirror": true,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"Bella Pensativa": {
+"export_overrides": {
+"image": "\"res://assets/characters/bella/bella_pensativa.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 0.9,
+"scene": ""
+},
+"Bolo": {
+"export_overrides": {
+"image": "\"res://assets/characters/bella/bolo/bolo.png\""
+},
+"mirror": true,
+"offset": Vector2(-110, -160),
+"scale": 0.7,
+"scene": ""
+},
+"Brava": {
+"export_overrides": {
+"image": "\"res://assets/characters/bella/brava.png\""
+},
+"ignore_char_scale": false,
+"mirror": true,
+"offset": Vector2(-100, -200),
+"scale": 0.6,
+"scene": ""
+},
+"Calma": {
+"export_overrides": {
+"image": "\"res://assets/characters/bella/calma.png\""
+},
+"mirror": false,
+"offset": Vector2(-250, -200),
+"scale": 0.8,
+"scene": ""
+},
+"Caminhando": {
+"export_overrides": {
+"image": "\"res://assets/characters/bella/Caminhando.png\""
+},
+"mirror": false,
+"offset": Vector2(-100, -90),
+"scale": 0.6,
+"scene": ""
+},
+"Curiosa": {
+"export_overrides": {
+"image": "\"res://assets/characters/bella/curiosa.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"Demostrativa": {
+"export_overrides": {
+"image": "\"res://assets/characters/bella/demostrativa.png\""
+},
+"mirror": false,
+"offset": Vector2(-120, -110),
+"scale": 0.8,
+"scene": ""
+},
+"Eba": {
+"export_overrides": {
+"image": "\"res://assets/characters/bella/eba.png\""
+},
+"mirror": false,
+"offset": Vector2(-110, -160),
+"scale": 0.8,
+"scene": ""
+},
+"Engraçada": {
+"export_overrides": {
+"image": "\"res://assets/characters/bella/Engraçada.png\""
+},
+"mirror": false,
+"offset": Vector2(-200, -300),
+"scale": 0.6,
+"scene": ""
+},
+"Entusiasmo": {
+"export_overrides": {
+"image": "\"res://assets/characters/bella/entusiasmo.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"Esqueci": {
+"export_overrides": {
+"image": "\"res://assets/characters/bella/esqueci.png\""
+},
+"mirror": false,
+"offset": Vector2(-200, -300),
+"scale": 0.6,
+"scene": ""
+},
+"Explicando": {
+"export_overrides": {
+"image": "\"res://assets/characters/bella/explicando.png\""
+},
+"mirror": false,
+"offset": Vector2(-110, -160),
+"scale": 0.8,
+"scene": ""
+},
+"Explicativa": {
+"export_overrides": {
+"image": "\"res://assets/characters/bella/explicativa.png\""
+},
+"mirror": false,
+"offset": Vector2(-100, -90),
+"scale": 0.8,
+"scene": ""
+},
+"Festa": {
+"export_overrides": {
+"image": "\"res://assets/characters/bella/festa.png\""
+},
+"mirror": false,
+"offset": Vector2(-110, -160),
+"scale": 0.8,
+"scene": ""
+},
+"Grito": {
+"export_overrides": {
+"image": "\"res://assets/characters/bella/Grito.png\""
+},
+"mirror": false,
+"offset": Vector2(-100, -200),
+"scale": 0.5,
+"scene": ""
+},
+"Lapis": {
+"export_overrides": {
+"image": "\"res://assets/characters/bella/lapis.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"Legal": {
+"export_overrides": {
+"image": "\"res://assets/characters/bella/legal.png\""
+},
+"mirror": false,
+"offset": Vector2(-100, -150),
+"scale": 0.8,
+"scene": ""
+},
+"Lista": {
+"export_overrides": {
+"image": "\"res://assets/characters/bella/lista.png\""
+},
+"mirror": true,
+"offset": Vector2(-110, -160),
+"scale": 0.7,
+"scene": ""
+},
+"Moeda": {
+"export_overrides": {
+"image": "\"res://assets/characters/bella/moeda.png\""
+},
+"mirror": false,
+"offset": Vector2(-110, -160),
+"scale": 0.8,
+"scene": ""
+},
+"Mostrando Sinceridade)": {
+"export_overrides": {
+"image": "\"res://assets/characters/bella/mostrando sinceridade).png\""
+},
+"mirror": false,
+"offset": Vector2(-100, -150),
+"scale": 0.8,
+"scene": ""
+},
+"Oi": {
+"export_overrides": {
+"image": "\"res://assets/characters/bella/oi.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"Pena": {
+"export_overrides": {
+"image": "\"res://assets/characters/bella/pena.png\""
+},
+"ignore_char_scale": false,
+"mirror": true,
+"offset": Vector2(100, -300),
+"scale": 0.5,
+"scene": ""
+},
+"Pensativa": {
+"export_overrides": {
+"image": "\"res://assets/characters/bella/pensativa.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"Portao 01": {
+"export_overrides": {
+"image": "\"res://assets/characters/bella/portao_01.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"Portao 02": {
+"export_overrides": {
+"image": "\"res://assets/characters/bella/portao_02.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"Portao 03": {
+"export_overrides": {
+"image": "\"res://assets/characters/bella/portao_03.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"Portao 04": {
+"export_overrides": {
+"image": "\"res://assets/characters/bella/portao_04.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"Portao 05": {
+"export_overrides": {
+"image": "\"res://assets/characters/bella/portao_05.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"Portao 06": {
+"export_overrides": {
+"image": "\"res://assets/characters/bella/Portao06.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"Portao 07": {
+"export_overrides": {
+"image": "\"res://assets/characters/bella/portao_07.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"Presente": {
+"export_overrides": {
+"image": "\"res://assets/characters/bella/presente.png\""
+},
+"mirror": true,
+"offset": Vector2(-110, -160),
+"scale": 0.7,
+"scene": ""
+},
+"Prof": {
+"export_overrides": {
+"image": "\"res://assets/characters/bella/pref.png\""
+},
+"mirror": true,
+"offset": Vector2(-110, -160),
+"scale": 0.7,
+"scene": ""
+},
+"Prometo": {
+"export_overrides": {
+"image": "\"res://assets/characters/bella/prometo.png\""
+},
+"mirror": false,
+"offset": Vector2(-110, -160),
+"scale": 0.7,
+"scene": ""
+},
+"Que Bom": {
+"export_overrides": {
+"image": "\"res://assets/characters/bella/que bom.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"Realidade": {
+"export_overrides": {
+"image": "\"res://assets/characters/bella/Realidade.png\""
+},
+"mirror": false,
+"offset": Vector2(-100, -200),
+"scale": 0.5,
+"scene": ""
+},
+"Seguindo": {
+"export_overrides": {
+"image": "\"res://assets/characters/bella/Seguindo.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"Seguir": {
+"export_overrides": {
+"image": "\"res://assets/characters/bella/seguir.png\""
+},
+"mirror": false,
+"offset": Vector2(-100, -100),
+"scale": 1,
+"scene": ""
+},
+"Seguir 02": {
+"export_overrides": {
+"image": "\"res://assets/characters/bella/Seguindo.png\""
+},
+"mirror": false,
+"offset": Vector2(-100, -200),
+"scale": 0.7,
+"scene": ""
+},
+"Seguir 03": {
+"export_overrides": {
+"image": "\"res://assets/characters/bella/seguir_03.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"Seguir 04": {
+"export_overrides": {
+"image": "\"res://assets/characters/bella/seguir_04.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"Seguir 05": {
+"export_overrides": {
+"image": "\"res://assets/characters/bella/seguir_05.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"Seguir Alt": {
+"export_overrides": {
+"image": "\"res://assets/characters/bella/seguir_alt.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"Segurança": {
+"export_overrides": {
+"image": "\"res://assets/characters/bella/segurança.png\""
+},
+"mirror": false,
+"offset": Vector2(-100, -150),
+"scale": 0.8,
+"scene": ""
+},
+"Sobrancelha Levantada": {
+"export_overrides": {
+"image": "\"res://assets/characters/bella/sobrancelha levantada.png\""
+},
+"mirror": false,
+"offset": Vector2(-100, -150),
+"scale": 0.8,
+"scene": ""
+},
+"Suavemente": {
+"export_overrides": {
+"image": "\"res://assets/characters/bella/suavemente.png\""
+},
+"mirror": false,
+"offset": Vector2(-100, -150),
+"scale": 0.8,
+"scene": ""
+},
+"Surpresa": {
+"export_overrides": {
+"image": "\"res://assets/characters/bella/surpresa.png\""
+},
+"mirror": false,
+"offset": Vector2(-200, -300),
+"scale": 0.6,
+"scene": ""
+},
+"Tchau": {
+"export_overrides": {
+"image": "\"res://assets/characters/bella/tchau.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"bolo/10": {
+"export_overrides": {
+"image": "\"res://assets/characters/bella/bolo/bolo10.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"bolo/11": {
+"export_overrides": {
+"image": "\"res://assets/characters/bella/bolo/bolo11.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"bolo/12": {
+"export_overrides": {
+"image": "\"res://assets/characters/bella/bolo/bolo12.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"bolo/13": {
+"export_overrides": {
+"image": "\"res://assets/characters/bella/bolo/bolo13.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"bolo/14": {
+"export_overrides": {
+"image": "\"res://assets/characters/bella/bolo/bolo14.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"bolo/15": {
+"export_overrides": {
+"image": "\"res://assets/characters/bella/bolo/bolo15.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"bolo/16": {
+"export_overrides": {
+"image": "\"res://assets/characters/bella/bolo/bolo16.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"bolo/17": {
+"export_overrides": {
+"image": "\"res://assets/characters/bella/bolo/bolo17.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"bolo/18": {
+"export_overrides": {
+"image": "\"res://assets/characters/bella/bolo/bolo18.png\""
+},
+"mirror": false,
+"offset": Vector2(0, -10),
+"scale": 1,
+"scene": ""
+},
+"bolo/19": {
+"export_overrides": {
+"image": "\"res://assets/characters/bella/bolo/bolo19.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"bolo/2": {
+"export_overrides": {
+"image": "\"res://assets/characters/bella/bolo/bolo2.png\""
+},
+"mirror": false,
+"offset": Vector2(100, -100),
+"scale": 0.8,
+"scene": ""
+},
+"bolo/20": {
+"export_overrides": {
+"image": "\"res://assets/characters/bella/bolo/bolo20.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"bolo/21": {
+"export_overrides": {
+"image": "\"res://assets/characters/bella/bolo/bolo21.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"bolo/3": {
+"export_overrides": {
+"image": "\"res://assets/characters/bella/bolo/bolo3.png\""
+},
+"mirror": false,
+"offset": Vector2(100, -100),
+"scale": 0.8,
+"scene": ""
+},
+"bolo/4": {
+"export_overrides": {
+"image": "\"res://assets/characters/bella/bolo/bolo4.png\""
+},
+"mirror": false,
+"offset": Vector2(100, -100),
+"scale": 0.8,
+"scene": ""
+},
+"bolo/5": {
+"export_overrides": {
+"image": "\"res://assets/characters/bella/bolo/bolo5.png\""
+},
+"mirror": false,
+"offset": Vector2(100, -100),
+"scale": 0.8,
+"scene": ""
+},
+"bolo/6": {
+"export_overrides": {
+"image": "\"res://assets/characters/bella/bolo/bolo6.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"bolo/7": {
+"export_overrides": {
+"image": "\"res://assets/characters/bella/bolo/bolo7.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"bolo/8": {
+"export_overrides": {
+"image": "\"res://assets/characters/bella/bolo/bolo8.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"bolo/9": {
+"export_overrides": {
+"image": "\"res://assets/characters/bella/bolo/bolo9.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"bolo/Bolo 1": {
+"export_overrides": {
+"image": "\"res://assets/characters/bella/bolo/bolo_1.png\""
+},
+"mirror": false,
+"offset": Vector2(100, -100),
+"scale": 0.8,
+"scene": ""
+},
+"cartao /0": {
+"export_overrides": {
+"image": "\"res://assets/characters/bella/cartao/0.png\""
+},
+"mirror": false,
+"offset": Vector2(0, -100),
+"scale": 0.8,
+"scene": ""
+},
+"cartao /1": {
+"export_overrides": {
+"image": "\"res://assets/characters/bella/cartao/1.png\""
+},
+"mirror": false,
+"offset": Vector2(0, -100),
+"scale": 0.8,
+"scene": ""
+},
+"cartao /2": {
+"export_overrides": {
+"image": "\"res://assets/characters/bella/cartao/2.png\""
+},
+"mirror": false,
+"offset": Vector2(0, -100),
+"scale": 0.8,
+"scene": ""
+},
+"cartao /3": {
+"export_overrides": {
+"image": "\"res://assets/characters/bella/cartao/3.png\""
+},
+"mirror": false,
+"offset": Vector2(0, -100),
+"scale": 0.8,
+"scene": ""
+},
+"cartao /4": {
+"export_overrides": {
+"image": "\"res://assets/characters/bella/cartao/4.png\""
+},
+"mirror": false,
+"offset": Vector2(0, -100),
+"scale": 0.8,
+"scene": ""
+},
+"cartao /5": {
+"export_overrides": {
+"image": "\"res://assets/characters/bella/cartao/5.png\""
+},
+"mirror": false,
+"offset": Vector2(0, -100),
+"scale": 0.8,
+"scene": ""
+},
+"cartao /6": {
+"export_overrides": {
+"image": "\"res://assets/characters/bella/cartao/6.png\""
+},
+"mirror": false,
+"offset": Vector2(0, -100),
+"scale": 0.8,
+"scene": ""
+},
+"cartao /7": {
+"export_overrides": {
+"image": "\"res://assets/characters/bella/cartao/7.png\""
+},
+"mirror": false,
+"offset": Vector2(0, -100),
+"scale": 0.8,
+"scene": ""
+},
+"cartao /8": {
+"export_overrides": {
+"image": "\"res://assets/characters/bella/cartao/8.png\""
+},
+"mirror": false,
+"offset": Vector2(0, -100),
+"scale": 0.8,
+"scene": ""
+},
+"convite/1": {
+"export_overrides": {
+"image": "\"res://assets/characters/bella/convitess_01/1.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"convite/10": {
+"export_overrides": {
+"image": "\"res://assets/characters/bella/convitess_01/10.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"convite/11": {
+"export_overrides": {
+"image": "\"res://assets/characters/bella/convitess_01/11.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"convite/12": {
+"export_overrides": {
+"image": "\"res://assets/characters/bella/convitess_01/12.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"convite/2": {
+"export_overrides": {
+"image": "\"res://assets/characters/bella/convitess_01/2.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"convite/3": {
+"export_overrides": {
+"image": "\"res://assets/characters/bella/convitess_01/3.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"convite/4": {
+"export_overrides": {
+"image": "\"res://assets/characters/bella/convitess_01/4.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"convite/5": {
+"export_overrides": {
+"image": "\"res://assets/characters/bella/convitess_01/5.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"convite/6": {
+"export_overrides": {
+"image": "\"res://assets/characters/bella/convitess_01/6 .png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"convite/7": {
+"export_overrides": {
+"image": "\"res://assets/characters/bella/convitess_01/7.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"convite/8": {
+"export_overrides": {
+"image": "\"res://assets/characters/bella/convitess_01/8.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"convite/9": {
+"export_overrides": {
+"image": "\"res://assets/characters/bella/convitess_01/9.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"convite/Amigável": {
+"export_overrides": {
+"image": "\"res://assets/characters/bella/convitess_01/Amigável.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"convite/Confiante": {
+"export_overrides": {
+"image": "\"res://assets/characters/bella/convitess_01/Confiante.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"convite/Incrível": {
+"export_overrides": {
+"image": "\"res://assets/characters/bella/convitess_01/Incrível.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"convite/Vamos": {
+"export_overrides": {
+"image": "\"res://assets/characters/bella/convitess_01/Vamos.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"convite/Visionária": {
+"export_overrides": {
+"image": "\"res://assets/characters/bella/convitess_01/Visionária.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"sup/1": {
+"export_overrides": {
+"image": "\"res://assets/characters/bella/suporte/Frase 1.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"sup/10 (explicação Das Tarefas - Parte 2)": {
+"export_overrides": {
+"image": "\"res://assets/characters/bella/suporte/Frase 10 (Explicação das Tarefas - Parte 2).png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"sup/11 (explicação Das Tarefas - Parte 3)": {
+"export_overrides": {
+"image": "\"res://assets/characters/bella/suporte/Frase 11 (Explicação das Tarefas - Parte 3).png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"sup/12 (explicação Das Tarefas - Parte 4)": {
+"export_overrides": {
+"image": "\"res://assets/characters/bella/suporte/Frase 12 (Explicação das Tarefas - Parte 4).png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"sup/13 (início Da Criação)": {
+"export_overrides": {
+"image": "\"res://assets/characters/bella/suporte/Frase 13 (Início da criação).png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"sup/2 (resposta Geral Sobre Moradores)": {
+"export_overrides": {
+"image": "\"res://assets/characters/bella/suporte/Frase 2 (Resposta Geral sobre moradores).png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"sup/3 (sobre O Vincent)": {
+"export_overrides": {
+"image": "\"res://assets/characters/bella/suporte/Frase 3 (Sobre o Vincent).png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"sup/4 (sobre O Xerife Pepper)": {
+"export_overrides": {
+"image": "\"res://assets/characters/bella/suporte/Frase 4 (Sobre o Xerife Pepper).png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"sup/5 (sobre O Pietro)": {
+"export_overrides": {
+"image": "\"res://assets/characters/bella/suporte/Frase 5 (Sobre o Pietro).png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"sup/6 (sobre A Linna)": {
+"export_overrides": {
+"image": "\"res://assets/characters/bella/suporte/Frase 6 (Sobre a Linna).png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"sup/7 (sobre O Enzo)": {
+"export_overrides": {
+"image": "\"res://assets/characters/bella/suporte/Frase 7 (Sobre o Enzo).png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"sup/8 (sobre A Profª Hera)": {
+"export_overrides": {
+"image": "\"res://assets/characters/bella/suporte/Frase 8 (Sobre a Profª Hera).png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"sup/9 (explicação Das Tarefas - Parte 1)": {
+"export_overrides": {
+"image": "\"res://assets/characters/bella/suporte/Frase 9 (Explicação das Tarefas - Parte 1).png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+}
+},
+"scale": 1.0
+}

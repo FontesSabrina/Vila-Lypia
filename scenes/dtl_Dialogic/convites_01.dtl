@@ -1,0 +1,74 @@
+audio "res://assets/som/Caminho da Vila.mp3" [volume="-18.0"]
+[style name="cinzanovo"]
+
+[background arg="res://assets/backgrounds/festa2.jpeg" fade="0.0"]
+join Bella (convite/1) center
+[voice path="res://assets/som/Bella/convites_01/Sentiu o cheirinho de papel novo no ar É o sinal de que a nossa oficina de convites está aberta!.mp3" volume="0.0"]
+Bella (convite/1): Sentiu o cheirinho de papel novo no ar? \
+É o sinal de que a nossa oficina de convites está aberta!
+[voice path="res://assets/som/Bella/convites_01/Espero que seus ouvidos tenham estado bem atentos às conversas na vila....mp3" volume="0.0"]
+Bella (convite/2): Espero que seus ouvidos tenham estado bem atentos às conversas na vila...
+[voice path="res://assets/som/Bella/convites_01/Primeiro,-precisamos decidir-a-cor-base..mp3" volume="0.0"]
+Bella (convite/3): Primeiro, precisamos decidir a cor base. \
+Qual dessas você acha que vai fazer os olhos da Prefeita Anne brilharem?
+- Um Rosa vibrante e cheio de energia!
+- Um Azul profundo e sereno
+- Lilás, como as flores do jardim | [if {Amizade.Vincent} > 0]
+	set {Convite.pontos_convite} += 1
+[voice path="res://assets/som/Bella/convites_01/otima escolha.mp3" volume="0.0"]
+Bella (convite/4): Ótima escolha!\
+Agora, como vamos escrever as informações?\
+A letra diz muito sobre quem convida!
+- Letras Clássicas e Elegantes. | [if {Amizade.Xerife} > 0]
+	set {Convite.pontos_convite} += 1
+- Letras Coloridas e Divertidas, para mostrar que a festa vai ser animada!
+- Uma fonte Simples e direta ao ponto.
+[voice path="res://assets/som/Bella/convites_01/O papel está ficando lindo.mp3" volume="0.0"]
+Bella (convite/5): O papel está ficando lindo! Mas falta um detalhe decorativo nas bordas.\
+O que devemos usar?
+- Algumas flores delicadas para enfeitar.
+- Que tal um tema de Estrelas e Astronomia? | [if {Amizade.P_Hera} > 0]
+	set {Convite.pontos_convite} += 1
+- Muitos Balões coloridos de festa!
+[voice path="res://assets/som/Bella/convites_01/Agora a parte importante o que vamos prometer de diversão no convite.mp3" volume="0.0"]
+Bella (convite/6): Agora a parte importante\: o que vamos prometer de diversão no convite?
+- Vamos colocar que teremos uma rodada de Mímica! | [if {Amizade.Pietro} > 0]
+	set {Convite.pontos_convite} += 1
+- Escreva que teremos uma Gincana de Corrida na praça!
+- Anuncie um grande Baile de Máscaras.
+[voice path="res://assets/som/Bella/convites_01/Hum  já estou ate sentindo o cheiro da.mp3" volume="0.0"]
+Bella (convite/7): Hum... já estou até sentindo o cheiro da comida!\
+Qual será o destaque do cardápio?
+- Torta de Amoras! | [if {Amizade.Linna} > 0]
+	set {Convite.pontos_convite} += 1
+- Muitos Docinhos tradicionais de festa.
+- Uma montanha de Sanduíches variados.
+
+[voice path="res://assets/som/Bella/convites_01/Para fechar o texto com chave de ouro.mp3" volume="0.0"]
+Bella (convite/8): Para fechar o texto com chave de ouro, qual filme vamos anunciar para a sessão de cinema?
+- As Fábulas dos Animais Silenciosos. | [if {Amizade.Vincent} > 0]
+	set {Convite.pontos_convite} += 1
+- Um filme de Ação com muitos heróis!
+- Um Documentário sobre a história da vila.
+
+[voice path="res://assets/som/Bella/convites_01/Uau  Olhe só para isso.mp3" volume="0.0"]
+Bella (convite/9): Uau! Olhe só para isso!
+
+if {Convite.pontos_convite} == 6:
+	[voice path="res://assets/som/Bella/convites_01/Pelas minhas asas.mp3" volume="0.0"]
+	Bella (convite/10): Pelas minhas asas, você prestou atenção em tudo! \
+	Esse convite ficou impecável e captura exatamente a essência da Prefeita Anne!
+	set {Amizade.Enzo} += 1
+	set {Amizade.Linna} += 1
+	set {Amizade.P_Hera} += 1
+	set {Amizade.Pietro} += 1
+	set {Amizade.Vincent} += 1
+	set {Amizade.Xerife} += 1
+elif {Convite.pontos_convite} >= 4:
+	[voice path="res://assets/som/Bella/convites_01/Agora a parte importante o que vamos prometer de diversão no convite.mp3" volume="0.0"]
+	Bella (convite/12): Agora, só falta a parte mais corajosa\: entregá-los!
+else:
+	[voice path="res://assets/som/Bella/convites_01/Se o meu instinto de fada não me engana, esse é o convite mais especial que esta vila já viu..mp3" volume="0.0"]
+	Bella (convite/11): Se o meu instinto de fada não me engana, esse é o convite mais especial que esta vila já viu.
+
+set {Convite.fase_entrega} = true

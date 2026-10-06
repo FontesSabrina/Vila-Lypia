@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dtsjxtm0iqrjq"
+path="res://.godot/imported/Quando você tiver as informações.mp3-5bca87e5f369dbb65938cf50bfd922fe.mp3str"
+
+[deps]
+
+source_file="res://assets/som/Bella/capitulo_2/Quando você tiver as informações.mp3"
+dest_files=["res://.godot/imported/Quando você tiver as informações.mp3-5bca87e5f369dbb65938cf50bfd922fe.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

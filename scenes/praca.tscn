@@ -1,0 +1,32 @@
+[gd_scene load_steps=4 format=3 uid="uid://ba3h2cu2fp8kl"]
+
+[ext_resource type="Texture2D" uid="uid://cjrtm2rbslttw" path="res://assets/backgrounds/praça_festa.jpeg" id="1_udyxd"]
+[ext_resource type="PackedScene" uid="uid://b4vsaogdwxkno" path="res://scenes/botao_voltar.tscn" id="2_wrrcm"]
+[ext_resource type="PackedScene" uid="uid://dvm2e4133u0ye" path="res://scenes/bella_praca.tscn" id="3_7l2te"]
+
+[node name="preca" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Praça" type="Sprite2D" parent="."]
+position = Vector2(580, 320)
+scale = Vector2(0.423222, 0.418963)
+texture = ExtResource("1_udyxd")
+
+[node name="botao_voltar" parent="." instance=ExtResource("2_wrrcm")]
+layout_mode = 1
+offset_left = -1.0
+offset_top = -2.0
+offset_right = -1.0
+offset_bottom = -2.0
+
+[node name="bella_praca" parent="." instance=ExtResource("3_7l2te")]
+layout_mode = 1
+offset_left = 496.0
+offset_top = 208.0
+offset_right = 496.0
+offset_bottom = 208.0

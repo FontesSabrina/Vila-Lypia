@@ -1,0 +1,31 @@
+[gd_scene load_steps=4 format=3 uid="uid://gcdn3uq7o8i6"]
+
+[ext_resource type="Texture2D" uid="uid://ccyjlea20nbi2" path="res://assets/icon/Iniciar a Aventura.png" id="1_3fokd"]
+[ext_resource type="Script" path="res://scripts/painel_primeira_vez.gd" id="1_qb84y"]
+[ext_resource type="Texture2D" uid="uid://bfopb3qdvg6ma" path="res://assets/icon/Pular Tutorial.png" id="2_asmie"]
+
+[node name="PainelPrimeiraVez" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_qb84y")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+scale = Vector2(0.159755, 0.231132)
+
+[node name="BotaoIniciar" type="TextureButton" parent="VBoxContainer"]
+layout_mode = 2
+texture_normal = ExtResource("1_3fokd")
+
+[node name="BotaoPularTutorial" type="TextureButton" parent="VBoxContainer"]
+layout_mode = 2
+texture_normal = ExtResource("2_asmie")
+
+[connection signal="pressed" from="VBoxContainer/BotaoIniciar" to="." method="_on_botao_iniciar_pressed"]
+[connection signal="pressed" from="VBoxContainer/BotaoPularTutorial" to="." method="_on_botao_pular_tutorial_pressed"]

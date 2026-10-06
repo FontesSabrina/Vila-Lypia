@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dij7mrfh5qhab"
+path="res://.godot/imported/Ache-o-fermento-para-mim-[short-pause]-para-não.mp3-274d575d4dffd9daac199ddc28254fa8.mp3str"
+
+[deps]
+
+source_file="res://assets/som/Xerife Pepper/bolo_xerife_02/Ache-o-fermento-para-mim-[short-pause]-para-não.mp3"
+dest_files=["res://.godot/imported/Ache-o-fermento-para-mim-[short-pause]-para-não.mp3-274d575d4dffd9daac199ddc28254fa8.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

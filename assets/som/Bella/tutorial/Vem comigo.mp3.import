@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dwhwdk78v3a3d"
+path="res://.godot/imported/Vem comigo.mp3-3a38c938ef46a6526dc26262cb9b3cf4.mp3str"
+
+[deps]
+
+source_file="res://assets/som/Bella/tutorial/Vem comigo.mp3"
+dest_files=["res://.godot/imported/Vem comigo.mp3-3a38c938ef46a6526dc26262cb9b3cf4.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

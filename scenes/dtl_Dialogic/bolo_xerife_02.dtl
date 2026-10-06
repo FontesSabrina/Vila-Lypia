@@ -1,0 +1,112 @@
+audio "res://assets/som/Caminho da Vila.mp3" [volume="-18.0"]
+
+# === APLICAÇÃO DINÂMICA DIRETA NO DIALOGIC ===
+if {Amizade.Xerife} <= 3:
+	[style name="cinzanovo"]
+elif {Amizade.Xerife} <= 7:
+	[style name="azulnovo"]
+else:
+	[style name="verdenovo"]
+# ============================================
+
+# Fases do Xerife (Bolo.Xerife.Xerife_Fase):
+#   0 = ainda não pediu o fermento
+#   1 = aceitou procurar o fermento (mini-jogo do fermento)
+#   2 = fermento entregue
+#   3 = aceitou procurar os distintivos (mini-jogo dos distintivos)
+#   4 = tudo concluído
+
+# === INTERAÇÃO 1: MISSÃO DO INGREDIENTE PRINCIPAL ===
+if {Bolo.Xerife.Xerife_Fase} == 0:
+	[background arg="res://assets/backgrounds/xerife_sala_papeis.jpeg" fade="0.0"]
+	join xerife (Bolo/1) right
+	[voice path="res://assets/som/Xerife Pepper/bolo_xerife_02/Alto-[emphasis]-lá!-[short-pause]-Estou-[.mp3" volume="0.0"]
+	xerife (Bolo/1): Alto lá! \
+	Estou inspecionando os arredores.
+	Protagonista: Vim te pedir ajuda para fazer um bolo para a Prefeita.
+	[voice path="res://assets/som/Xerife Pepper/bolo_xerife_02/Um-[emphasis]-bolo-[angry]-Francamente,-[pause].mp3" volume="0.0"]
+	xerife (Bolo/2): Um bolo? \
+	Francamente, quanta falta de protocolo!
+	[voice path="res://assets/som/Xerife Pepper/bolo_xerife_02/Mas...-[pause]-a-lei-[emphasis]-exige-que-o-aniv.mp3" volume="0.0"]
+	xerife (Bolo/3): Mas... a lei exige que o aniversário da Prefeita seja cumprido à risca.
+	[voice path="res://assets/som/Xerife Pepper/bolo_xerife_02/Eu-tenho-o-[short-pause]-[emphasis]-Fermento-Esp.mp3" volume="0.0"]
+	xerife (Bolo/4): Eu tenho o Fermento Especial de Altíssima Qualidade.
+	[voice path="res://assets/som/Xerife Pepper/bolo_xerife_02/Só-que-minha-mesa-de-relatórios-está-uma.mp3" volume="0.0"]
+	xerife (Bolo/5): Só que minha mesa de relatórios está uma bagunça completa e o fermento sumiu no meio dos papéis!
+	[voice path="res://assets/som/Xerife Pepper/bolo_xerife_02/Ache-o-fermento-para-mim-[short-pause]-para-não.mp3" volume="0.0"]
+	xerife (Bolo/Bolo 07): Ache o fermento para mim para não infringirmos o código da vila!
+	
+	- Claro, vou procurar!
+		set {Bolo.Xerife.Xerife_Fase} = 1
+		[signal arg="iniciar_minigame_fermento"]
+		[end_timeline]
+	- Agora não posso, Xerife.
+		[voice path="res://assets/som/Xerife Pepper/bolo_xerife_02/Negativa-registrada!-[pause]-Volte-assim.mp3" volume="0.0"]
+		xerife (Bolo/6): Negativa registrada!\
+		Volte assim que decidir respeitar o código da vila!
+		[end_timeline]
+
+# RESULTADO DA INTERAÇÃO 1 (PÓS MINIGAME DO FERMENTO): o fermento é entregue aqui
+elif {Bolo.Xerife.Xerife_Fase} == 1:
+	[background arg="res://assets/backgrounds/xerife_sala_02.jpeg" fade="0.0"]
+	join xerife (Bolo/Bolo 08) leftmost
+	[voice path="res://assets/som/Xerife Pepper/bolo_xerife_02/Muito-bem.-Pelo-menos-alguém-aqui-sa.mp3" volume="0.0"]
+	xerife (Bolo/Bolo 08): Muito bem.\
+	Pelo menos alguém aqui sabe seguir ordens e manter a organização.
+	# A mesa do bolo conta o fermento por esta variável:
+	set {Bolo.Xerife.Ingrediente_Pepper} = true
+	set {Bolo.Xerife.Xerife_Fase} = 2
+	[signal arg="voltar_mapa"]
+	[end_timeline]
+
+# === INTERAÇÃO 2: MISSÃO SECUNDÁRIA DE ITENS PERDIDOS ===
+elif {Bolo.Xerife.Xerife_Fase} == 2:
+	[background arg="res://assets/backgrounds/sala_xerife_cafe.jpeg" fade="0.0"]
+	join xerife (Bolo/09) center
+	[voice path="res://assets/som/Xerife Pepper/bolo_xerife_02/Voltou-[pause]-[emphasis]Ótimo,-preciso.mp3" volume="0.0"]
+	xerife (Bolo/09): Voltou? \
+	Ótimo, preciso de um assistente de campo.
+	[voice path="res://assets/som/Xerife Pepper/bolo_xerife_02/Algum-[emphasis]espertinho-deixou-ca.mp3" volume="0.0"]
+	xerife (Bolo/10): Algum espertinho deixou cair 3 distintivos de papel oficiais perto da calçada.
+	[voice path="res://assets/som/Xerife Pepper/bolo_xerife_02/Encontre-os-[short-pause]-[emphasis]-ante.mp3" volume="0.0"]
+	xerife (Bolo/11): Encontre-os antes que o vento espalhe lixo pela jurisdição!
+	
+	- Pode deixar, vou encontrar!
+		set {Bolo.Xerife.Xerife_Secundaria} = true
+		set {Bolo.Xerife.Xerife_Fase} = 3
+		[signal arg="iniciar_minigame_distintivos"]
+		[end_timeline]
+	- Agora não posso.
+		[voice path="res://assets/som/Xerife Pepper/bolo_xerife_02/Lamentável!-A-[emphasis]-ordem-da-vila-dep.mp3" volume="0.0"]
+		xerife (Bolo/Bolo 12): Lamentável!\
+		A ordem da vila depende de nós. \
+		Espero que mude de ideia logo!
+		[end_timeline]
+
+# RESULTADO DA INTERAÇÃO 2 (PÓS MINIGAME DOS DISTINTIVOS)
+elif {Bolo.Xerife.Xerife_Fase} == 3:
+	[background arg="res://assets/backgrounds/sala_xerife_cafe.jpeg" fade="0.0"]
+	join xerife (Bolo/13) center
+	[voice path="res://assets/som/Xerife Pepper/bolo_xerife_02/Bom-[emphasis]-trabalho,-recruta.-[shor.mp3" volume="0.0"]
+	xerife (Bolo/13): Bom trabalho, recruta. \
+	A vila agradece a sua postura civilizada.
+	[voice path="res://assets/som/Xerife Pepper/bolo_xerife_02/Por-cumprir-o-dever-com-eficiência-e-manter-a-or.mp3" volume="0.0"]
+	xerife (Bolo/14): Por cumprir o dever com eficiência e manter a ordem pública, \
+	você recebeu uma recompensa oficial da jurisdição!
+	[voice path="res://assets/som/Xerife Pepper/bolo_xerife_02/Guarde-bem-essa-[emphasis]-moeda.-[joyful]-Consi.mp3" volume="0.0"]
+	xerife (Bolo/15): Guarde bem essa moeda. \
+	Considere isso uma condecoração ao seu mérito!
+	audio "res://assets/som/moedas.mp3" [volume="1.0"]
+	[signal arg="ganhar_moeda"]
+	set {Amizade.Xerife} += 1
+	set {Bolo.Xerife.Xerife_Fase} = 4
+	[signal arg="voltar_mapa"]
+	[end_timeline]
+
+# === INTERAÇÃO 3: CONVERSA BÁSICA ===
+else:
+	[background arg="res://assets/backgrounds/sala_xerife_cafe.jpeg" fade="0.0"]
+	join xerife (Bolo/Bolo 16) center
+	[voice path="res://assets/som/Xerife Pepper/bolo_xerife_02/Certifique-se-de-que-ninguém-coma-esse-bo.mp3" volume="0.0"]
+	xerife (Bolo/Bolo 16): Certifique-se de que ninguém coma esse bolo antes da hora regulamentar! \
+	Estou de olho!

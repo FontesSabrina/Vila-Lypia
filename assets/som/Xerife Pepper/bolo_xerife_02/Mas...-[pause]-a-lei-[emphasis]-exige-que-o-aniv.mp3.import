@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://c2t5yf4b5w6ci"
+path="res://.godot/imported/Mas...-[pause]-a-lei-[emphasis]-exige-que-o-aniv.mp3-cf976d4994aa3771198e39d5fd85d387.mp3str"
+
+[deps]
+
+source_file="res://assets/som/Xerife Pepper/bolo_xerife_02/Mas...-[pause]-a-lei-[emphasis]-exige-que-o-aniv.mp3"
+dest_files=["res://.godot/imported/Mas...-[pause]-a-lei-[emphasis]-exige-que-o-aniv.mp3-cf976d4994aa3771198e39d5fd85d387.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

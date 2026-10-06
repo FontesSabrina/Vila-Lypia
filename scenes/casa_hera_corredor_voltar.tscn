@@ -1,0 +1,24 @@
+[gd_scene load_steps=4 format=3 uid="uid://byuerc2gv0j5i"]
+
+[ext_resource type="Texture2D" uid="uid://e1n88bav5ssy" path="res://assets/backgrounds/casa_hera_corredor_voltar.jpeg" id="1_g2ukm"]
+[ext_resource type="Script" path="res://scripts/casa_hera_corredor_voltar.gd" id="1_kbeor"]
+[ext_resource type="Texture2D" uid="uid://c50f71pflhnqf" path="res://assets/icon/seta.png" id="3_gkef5"]
+
+[node name="casa_hera_corredor_voltar" type="Node2D"]
+script = ExtResource("1_kbeor")
+
+[node name="CasaHeraCorredorVoltar" type="Sprite2D" parent="."]
+position = Vector2(572, 319)
+scale = Vector2(0.419971, 0.434987)
+texture = ExtResource("1_g2ukm")
+
+[node name="seta" type="TextureButton" parent="."]
+offset_left = 544.0
+offset_top = 425.0
+offset_right = 1284.0
+offset_bottom = 918.0
+rotation = -1.57319
+scale = Vector2(0.0963742, 0.0997054)
+texture_normal = ExtResource("3_gkef5")
+
+[connection signal="pressed" from="seta" to="." method="_on_seta_pressed"]

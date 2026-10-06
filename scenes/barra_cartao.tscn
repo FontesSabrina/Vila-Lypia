@@ -1,0 +1,67 @@
+[gd_scene load_steps=9 format=3 uid="uid://qgknhrb2io50"]
+
+[ext_resource type="Script" path="res://scripts/barra_cartao.gd" id="1_0bsbd"]
+[ext_resource type="Texture2D" uid="uid://cyaikmkq0207s" path="res://assets/icon/barra2.png" id="1_nqjb7"]
+[ext_resource type="Texture2D" uid="uid://c2ltfygsdgyv0" path="res://assets/icon/cartao.jpg" id="2_h70x1"]
+[ext_resource type="Texture2D" uid="uid://bsstesq55hn0e" path="res://assets/icon/Sol Radiante.png" id="3_jk4se"]
+[ext_resource type="Texture2D" uid="uid://dy1mnou4865lw" path="res://assets/icon/Poema em Gota.png" id="4_wck5y"]
+[ext_resource type="Texture2D" uid="uid://p88y2mc8qrut" path="res://assets/icon/Escudo Torto.png" id="5_pchoa"]
+[ext_resource type="Texture2D" uid="uid://cdl60rb22cfkh" path="res://assets/icon/Selo de Cera Vermelho.png" id="6_tklkt"]
+[ext_resource type="Texture2D" uid="uid://ddxqpswb6gmh4" path="res://assets/icon/Dente-de-leão.png" id="7_30snk"]
+
+[node name="barra_cartao" type="Node2D"]
+script = ExtResource("1_0bsbd")
+
+[node name="Barra2" type="Sprite2D" parent="."]
+position = Vector2(218.125, 556.25)
+scale = Vector2(0.195755, 0.149248)
+texture = ExtResource("1_nqjb7")
+
+[node name="SolRadiante" type="TextureButton" parent="Barra2"]
+offset_left = -174.324
+offset_top = 11.7256
+offset_right = 981.676
+offset_bottom = 1161.73
+scale = Vector2(0.278612, 0.381495)
+texture_normal = ExtResource("3_jk4se")
+texture_pressed = ExtResource("3_jk4se")
+
+[node name="PoemaEmGota" type="TextureButton" parent="Barra2"]
+offset_left = -787.336
+offset_top = -477.394
+offset_right = 101.664
+offset_bottom = 862.606
+scale = Vector2(0.297571, 0.347994)
+texture_normal = ExtResource("4_wck5y")
+
+[node name="EscudoTorto" type="TextureButton" parent="Barra2"]
+offset_left = -751.576
+offset_top = -28.4762
+offset_right = 314.424
+offset_bottom = 1311.52
+scale = Vector2(0.26033, 0.351352)
+texture_normal = ExtResource("5_pchoa")
+
+[node name="SeloDeCeraVermelho" type="TextureButton" parent="Barra2"]
+offset_left = 469.0
+offset_top = -457.0
+offset_right = 1486.0
+offset_bottom = 669.0
+scale = Vector2(0.29398, 0.380754)
+texture_normal = ExtResource("6_tklkt")
+
+[node name="Dente-de-leão" type="TextureButton" parent="Barra2"]
+offset_left = 515.314
+offset_top = -108.879
+offset_right = 1325.31
+offset_bottom = 1231.12
+scale = Vector2(0.352722, 0.514318)
+texture_normal = ExtResource("7_30snk")
+
+[node name="Cartao" type="TextureButton" parent="Barra2"]
+offset_left = -225.0
+offset_top = -424.0
+offset_right = 1695.0
+offset_bottom = 682.0
+scale = Vector2(0.231038, 0.339397)
+texture_normal = ExtResource("2_h70x1")

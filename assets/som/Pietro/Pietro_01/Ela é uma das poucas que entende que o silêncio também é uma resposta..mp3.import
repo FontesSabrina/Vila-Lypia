@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cvnd4fpexaknj"
+path="res://.godot/imported/Ela é uma das poucas que entende que o silêncio também é uma resposta..mp3-074e5b8e88861644e17d1964b7742cc3.mp3str"
+
+[deps]
+
+source_file="res://assets/som/Pietro/Pietro_01/Ela é uma das poucas que entende que o silêncio também é uma resposta..mp3"
+dest_files=["res://.godot/imported/Ela é uma das poucas que entende que o silêncio também é uma resposta..mp3-074e5b8e88861644e17d1964b7742cc3.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

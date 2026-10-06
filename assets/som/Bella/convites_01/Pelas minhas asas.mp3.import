@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://beid4axtfo13x"
+path="res://.godot/imported/Pelas minhas asas.mp3-200f5b52b48dc4faf685e19e743c4690.mp3str"
+
+[deps]
+
+source_file="res://assets/som/Bella/convites_01/Pelas minhas asas.mp3"
+dest_files=["res://.godot/imported/Pelas minhas asas.mp3-200f5b52b48dc4faf685e19e743c4690.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

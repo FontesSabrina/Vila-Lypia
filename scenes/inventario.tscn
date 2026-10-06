@@ -1,0 +1,145 @@
+[gd_scene load_steps=5 format=3 uid="uid://d1ph731pyjswp"]
+
+[ext_resource type="Script" path="res://scripts/inventario.gd" id="1_nbvfe"]
+[ext_resource type="Texture2D" uid="uid://deoo0kiqpl5bn" path="res://assets/icon/fundo_branco_2K_202605281238.png" id="2_4e44w"]
+[ext_resource type="PackedScene" uid="uid://uw8term8hd7h" path="res://scenes_2/slot.tscn" id="2_evw34"]
+[ext_resource type="Texture2D" uid="uid://dx4mqde8sxmq1" path="res://assets/icon/x.png" id="4_n0sj6"]
+
+[node name="Inventario" type="Control" node_paths=PackedStringArray("slots") groups=["inventario"]]
+layout_mode = 3
+anchors_preset = 0
+offset_left = -61.0
+offset_top = 48.0
+offset_right = -61.0
+offset_bottom = 48.0
+script = ExtResource("1_nbvfe")
+slots = [NodePath("JanelaPainel/slot"), NodePath("JanelaPainel/slot2"), NodePath("JanelaPainel/slot3"), NodePath("JanelaPainel/slot4"), NodePath("JanelaPainel/slot5"), NodePath("JanelaPainel/slot6"), NodePath("JanelaPainel/slot7"), NodePath("JanelaPainel/slot8"), NodePath("JanelaPainel/slot9")]
+
+[node name="JanelaPainel" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 64.0
+offset_top = -49.0
+offset_right = 2112.0
+offset_bottom = 1999.0
+scale = Vector2(0.304273, 0.312795)
+texture = ExtResource("2_4e44w")
+
+[node name="slot" parent="JanelaPainel" instance=ExtResource("2_evw34")]
+layout_mode = 1
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_left = 322.079
+offset_top = 725.715
+offset_right = 322.079
+offset_bottom = 725.715
+grow_horizontal = 1
+grow_vertical = 1
+scale = Vector2(24.526, 28.9846)
+
+[node name="slot2" parent="JanelaPainel" instance=ExtResource("2_evw34")]
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_left = 328.652
+offset_top = 1147.72
+offset_right = 328.652
+offset_bottom = 1147.72
+grow_horizontal = 1
+grow_vertical = 1
+scale = Vector2(23.1145, 31.4597)
+
+[node name="slot3" parent="JanelaPainel" instance=ExtResource("2_evw34")]
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_left = 834.777
+offset_top = 709.73
+offset_right = 834.777
+offset_bottom = 709.73
+grow_horizontal = 1
+grow_vertical = 1
+scale = Vector2(26.0236, 31.5183)
+
+[node name="slot4" parent="JanelaPainel" instance=ExtResource("2_evw34")]
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_left = 831.49
+offset_top = 1118.94
+offset_right = 831.49
+offset_bottom = 1118.94
+grow_horizontal = 1
+grow_vertical = 1
+scale = Vector2(27.2238, 35.0799)
+
+[node name="slot5" parent="JanelaPainel" instance=ExtResource("2_evw34")]
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_left = 1324.47
+offset_top = 700.14
+offset_right = 1324.47
+offset_bottom = 700.14
+grow_horizontal = 1
+grow_vertical = 1
+scale = Vector2(24.2613, 32.2983)
+
+[node name="slot6" parent="JanelaPainel" instance=ExtResource("2_evw34")]
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_left = 1334.33
+offset_top = 1125.34
+offset_right = 1334.33
+offset_bottom = 1125.34
+grow_horizontal = 1
+grow_vertical = 1
+scale = Vector2(21.7184, 32.4611)
+
+[node name="slot7" parent="JanelaPainel" instance=ExtResource("2_evw34")]
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_left = 351.658
+offset_top = 1537.75
+offset_right = 351.658
+offset_bottom = 1537.75
+grow_horizontal = 1
+grow_vertical = 1
+scale = Vector2(23.3621, 29.6321)
+
+[node name="slot8" parent="JanelaPainel" instance=ExtResource("2_evw34")]
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_left = 841.35
+offset_top = 1524.96
+offset_right = 841.35
+offset_bottom = 1524.96
+grow_horizontal = 1
+grow_vertical = 1
+scale = Vector2(24.2106, 27.8094)
+
+[node name="slot9" parent="JanelaPainel" instance=ExtResource("2_evw34")]
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_left = 1360.62
+offset_top = 1540.95
+offset_right = 1360.62
+offset_bottom = 1540.95
+grow_horizontal = 1
+grow_vertical = 1
+scale = Vector2(20.9228, 27.5098)
+
+[node name="BotaoFechar" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 535.0
+offset_top = -21.0
+offset_right = 2935.0
+offset_bottom = 1771.0
+scale = Vector2(0.0290569, 0.0273445)
+texture_normal = ExtResource("4_n0sj6")
+
+[connection signal="pressed" from="BotaoFechar" to="." method="_on_botao_fechar_pressed"]

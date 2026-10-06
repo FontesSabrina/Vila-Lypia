@@ -1,0 +1,79 @@
+[gd_scene load_steps=6 format=3 uid="uid://dor3bouo3pw5m"]
+
+[ext_resource type="Texture2D" uid="uid://cyaikmkq0207s" path="res://assets/icon/barra2.png" id="1_f2lc6"]
+[ext_resource type="Script" path="res://scripts/barra_pinceis.gd" id="2_poxpc"]
+[ext_resource type="Texture2D" uid="uid://b8gxa8m1ca6ww" path="res://assets/icon/pincel01.png" id="3_ioy8e"]
+[ext_resource type="Texture2D" uid="uid://c4bf87wqk3t5c" path="res://assets/icon/pincel02.png" id="4_sc3bi"]
+[ext_resource type="Texture2D" uid="uid://cjyxhhxny2ppg" path="res://assets/icon/pincel03.png" id="5_6i4w0"]
+
+[node name="barra_pincel" type="Sprite2D"]
+position = Vector2(1003, 579)
+scale = Vector2(0.106105, 0.112793)
+texture = ExtResource("1_f2lc6")
+script = ExtResource("2_poxpc")
+
+[node name="pincel01" type="TextureRect" parent="."]
+custom_minimum_size = Vector2(100, 60)
+offset_left = -876.489
+offset_top = -452.156
+offset_right = 114.511
+offset_bottom = 511.844
+scale = Vector2(0.4, 0.432)
+texture = ExtResource("3_ioy8e")
+expand_mode = 1
+
+[node name="Sombra_pincel01" type="TextureRect" parent="."]
+modulate = Color(0.473976, 0.473976, 0.473976, 1)
+self_modulate = Color(0.796243, 0.796243, 0.796243, 1)
+custom_minimum_size = Vector2(100, 60)
+offset_left = -895.339
+offset_top = -452.156
+offset_right = 164.662
+offset_bottom = 533.844
+scale = Vector2(0.4, 0.431)
+texture = ExtResource("3_ioy8e")
+expand_mode = 1
+
+[node name="pincel02" type="TextureRect" parent="."]
+custom_minimum_size = Vector2(100, 60)
+offset_left = -198.0
+offset_top = -567.0
+offset_right = 1121.0
+offset_bottom = 705.0
+scale = Vector2(0.4, 0.432)
+texture = ExtResource("4_sc3bi")
+expand_mode = 1
+
+[node name="Sombra_pincel02" type="TextureRect" parent="."]
+modulate = Color(0.473976, 0.473976, 0.473976, 1)
+self_modulate = Color(0.796243, 0.796243, 0.796243, 1)
+custom_minimum_size = Vector2(100, 60)
+offset_left = -207.0
+offset_top = -576.0
+offset_right = 1160.0
+offset_bottom = 739.0
+scale = Vector2(0.4, 0.431)
+texture = ExtResource("4_sc3bi")
+expand_mode = 1
+
+[node name="pincel03" type="TextureRect" parent="."]
+custom_minimum_size = Vector2(100, 60)
+offset_left = 461.807
+offset_top = -434.424
+offset_right = 1452.8
+offset_bottom = 529.576
+scale = Vector2(0.4, 0.432)
+texture = ExtResource("5_6i4w0")
+expand_mode = 1
+
+[node name="Sombra_pincel03" type="TextureRect" parent="."]
+modulate = Color(0.473976, 0.473976, 0.473976, 1)
+self_modulate = Color(0.796243, 0.796243, 0.796243, 1)
+custom_minimum_size = Vector2(100, 60)
+offset_left = 452.382
+offset_top = -434.424
+offset_right = 1512.38
+offset_bottom = 551.576
+scale = Vector2(0.4, 0.431)
+texture = ExtResource("5_6i4w0")
+expand_mode = 1

@@ -1,0 +1,128 @@
+audio "res://assets/som/Caminho da Vila.mp3" [volume="-18.0"]
+
+# === APLICAÇÃO DINÂMICA DO BALÃO ===
+if {Amizade.Enzo} <= 3:
+	[style name="cinzanovo"]
+elif {Amizade.Enzo} <= 7:
+	[style name="azulnovo"]
+else:
+	[style name="verdenovo"]
+# ======================================================================================
+
+# ESTÁGIO 1: Ainda não pegou os ovos (Início da quest)
+if {Bolo.Enzo.Em_Andamento} == false and {Bolo.Enzo.Secundaria} == false:
+	[background arg="res://assets/backgrounds/casaEnzoquintal.jpeg" fade="0.0"]
+	join enzo (bolo_enzo_02/1) leftmost
+	
+	Protagonista: Oi, Enzo!
+	
+	[voice path="res://assets/som/Enzo/bolo_enzo_02/-M-M-M-Morador!.mp3" volume="0.0"]
+	enzo (bolo_enzo_02/1): M-M-M-Morador! Que susto!
+	
+	Protagonista: Desculpa, preciso da sua ajuda para fazer o bolo da Prefeita Anne.
+	
+	[voice path="res://assets/som/Enzo/bolo_enzo_02/B-Bolo-Usar-o-forno.mp3" volume="0.0"]
+	enzo (bolo_enzo_02/2): B-Bolo? Usar o forno?\
+	Ai, ai, ai, e se queimar? E se o gás acabar?
+	
+	Protagonista: Calma, Enzo! Preciso de ingredientes para o bolo da Prefeita.
+	
+	[voice path="res://assets/som/Enzo/bolo_enzo_02/B-Bem...-Eu-tenho-os-.mp3" volume="0.0"]
+	enzo (bolo_enzo_02/3): B-Bem... Eu tenho os Ovos Caipiras Frescos!\
+	Eles vieram protegidos em uma caixinha de espuma macia para não quebrarem de jeito nenhum!
+	
+	[voice path="res://assets/som/Enzo/bolo_enzo_02/Mas-eu-fiquei-com-tanto-med.mp3" volume="0.0"]
+	enzo (bolo_enzo_02/4): Mas eu fiquei com tanto medo de quebrar tudo que escondi a chave da geladeira bem longe... \
+	e agora não me lembro onde deixei!
+	
+	[voice path="res://assets/som/Enzo/bolo_enzo_02/..e-com-todo-esse-nervosismo,-minhas.mp3" volume="0.0"]
+	enzo (bolo_enzo_02/5): ...e com todo esse nervosismo, minhas mãos não param de tremer...\
+	C-Você pode procurar a chave para mim?
+	
+	- Claro, vou pegar com todo cuidado!
+		set {Bolo.Enzo.Em_Andamento} = true
+		[signal arg="iniciar_minigame_ovos"]
+		[end_timeline]
+	- Agora não posso, Enzo.
+		[voice path="res://assets/som/Enzo/bolo_enzo_02/T-Tudo-bem...Tome-muito.mp3" volume="0.0"]
+		enzo (bolo_enzo_02/6): T-Tudo bem... Tome muito cuidado ao andar por aí!
+		[end_timeline]
+
+# ESTÁGIO 2A: Já pegou os ovos no minigame, mas ainda NÃO entregou formalmente
+elif {Bolo.Enzo.Ovos_Concluido} == false:
+	set {Bolo.Enzo.Ovos_Concluido} = true
+	# A mesa do bolo conta os ovos por esta variável:
+	set {Bolo.Enzo.Ovos_Entregue} = true
+	[signal arg="ganhar_ovos"]
+	[background arg="res://assets/backgrounds/cozinha_enzo.jpeg" fade="0.0"]
+	join enzo (bolo_enzo_02/8) leftmost
+	[voice path="res://assets/som/Enzo/bolo_enzo_02/Ufa!-Você-pegou-com-muito-.mp3" volume="0.0"]
+	enzo (bolo_enzo_02/8): Ufa! Você pegou com muito cuidado, nenhum quebrou!\
+	Obrigado pelos ovos!
+	[signal arg="voltar_mapa"]
+	[end_timeline]
+
+# ESTÁGIO 2B: Pede ajuda para achar as velas na sala segura (Nas conversas seguintes)
+elif {Bolo.Enzo.Velas_Em_Andamento} == false and {Bolo.Enzo.Velas_Concluido} == false and {Bolo.Enzo.Secundaria} == false:
+	join enzo (bolo_enzo_02/9) right
+	[background arg="res://assets/backgrounds/casaEnzoSalaSegura.jpeg" fade="0.0"]
+	Protagonista: Uau, Enzo... Esta sala de segurança máxima é super protegida! Tem tranca para todo lado.
+	
+	[voice path="res://assets/som/Enzo/bolo_enzo_02/S-Sim!-Aqui-dentro-com-os-trincos-fechado.mp3" volume="0.0"]
+	enzo (bolo_enzo_02/9): S-Sim! Aqui dentro com os trincos fechados eu me sinto a salvo... \
+	Mas a verdade é que nem tudo está sob controle lá fora.
+	
+	Protagonista: Aconteceu alguma coisa fora daqui?
+	[voice path="res://assets/som/Enzo/bolo_enzo_02/P-Para-me-sentir-[emphasis]-seguro-mesmo-se-falt.mp3" volume="0.0"]
+	
+	enzo (bolo_enzo_02/10): P-Para me sentir seguro mesmo se faltar luz à noite, \
+	eu fui até a loja da Linna e comprei 3 velas extras de emergência.
+	[voice path="res://assets/som/Enzo/bolo_enzo_02/-Mas-elas-[emphasis]-caíram-da-minha-capa,-[short.mp3" volume="0.0"]
+	enzo (bolo_enzo_02/11): Mas elas caíram da minha capa, bem na hora que eu corria para cá pela Rua dos Ipês...
+	[voice path="res://assets/som/Enzo/bolo_enzo_02/P-Pode-encontrá-las-na-ruazinha-para-q.mp3" volume="0.0"]
+	enzo (bolo_enzo_02/12): P-Pode encontrá-las na ruazinha para que o escuro não me pegue de surpresa lá fora?
+	
+	- Claro, pode deixar que eu procuro na ruazinha para você!
+		set {Bolo.Enzo.Velas_Em_Andamento} = true
+		[signal arg="iniciar_minigame_velas_enzo"]
+		[end_timeline]
+	- Agora estou sem tempo, Enzo. Preciso ir.
+		[voice path="res://assets/som/Enzo/bolo_enzo_02/C-Certo...-[short-pause]-Só-não-demore.mp3" volume="0.0"]
+		enzo (bolo_enzo_02/13): C-Certo... Só não demore muito, o sol já vai baixar...
+		[end_timeline]
+
+# ESTÁGIO 2C: Já coletou as 3 velas na ruazinha e concluiu a missão secundária
+elif {Bolo.Enzo.Velas_Concluido} == true and {Bolo.Enzo.Secundaria} == false:
+	[background arg="res://assets/backgrounds/casaEnzoSalaCental.jpeg" fade="0.0"]
+	join enzo (bolo_enzo_02/14) rightmost
+	[voice path="res://assets/som/Enzo/bolo_enzo_02/V-Você-limpou-o-[emphasis]-perigo!-[pau.mp3" volume="0.0"]
+	enzo (bolo_enzo_02/14): V-Você limpou o perigo! Agora estou muito mais seguro com as minhas velas. Obrigado!
+	[voice path="res://assets/som/Enzo/bolo_enzo_02/ome,-é-uma-pequena-[emphasis]-recompen.mp3" volume="0.0"]
+	enzo (bolo_enzo_02/15): Tome, é uma pequena recompensa pela sua coragem... Prometo que da próxima vez eu não deixo nada cair na rua!
+	audio "res://assets/som/moedas.mp3"
+	
+	[signal arg="ganhar_moeda"]
+	set {Amizade.Enzo} += 1
+	set {Bolo.Enzo.Secundaria} = true
+	[signal arg="voltar_mapa"]
+	[end_timeline]
+
+# ESTÁGIO 2D: Aceitou procurar as velas, mas ainda não terminou
+elif {Bolo.Enzo.Velas_Em_Andamento} == true and {Bolo.Enzo.Velas_Concluido} == false:
+	[background arg="res://assets/backgrounds/casaEnzoSalaSegura.jpeg" fade="0.0"]
+	join enzo (bolo_enzo_02/12) right
+	enzo (bolo_enzo_02/12): A-As velas ainda estão lá na Rua dos Ipês... Você pode procurar para mim?
+	- Vou agora mesmo!
+		[signal arg="iniciar_minigame_velas_enzo"]
+		[end_timeline]
+	- Daqui a pouco, Enzo.
+		[end_timeline]
+
+# ESTÁGIO 3: Diálogo casual final (após tudo concluído)
+else:
+	[background arg="res://assets/backgrounds/cozinha_enzo.jpeg" fade="0.0"]
+	join enzo (bolo_enzo_02/16) leftmost
+	[voice path="res://assets/som/Enzo/bolo_enzo_02/Por-favor,-[short-pause]-tome-muito-c.mp3" volume="0.0"]
+	enzo (bolo_enzo_02/16): Por favor, tome muito cuidado ao mexer na colher do bolo para não espirrar nos olhos!\
+	Segurança em primeiro lugar!
+	[end_timeline]

@@ -1,0 +1,156 @@
+[gd_scene load_steps=7 format=3 uid="uid://bomjj6lltejrf"]
+
+[ext_resource type="Script" path="res://scripts/mapa_pricipal.gd" id="1_wiku2"]
+[ext_resource type="Texture2D" uid="uid://dx2futa8lkjri" path="res://assets/backgrounds/mapa.png" id="1_xfa8u"]
+[ext_resource type="Texture2D" uid="uid://bpcv1q12u753x" path="res://assets/backgrounds/fundo.jpeg" id="2_75dvk"]
+[ext_resource type="Texture2D" uid="uid://dx4mqde8sxmq1" path="res://assets/icon/x.png" id="3_1hnnq"]
+[ext_resource type="Texture2D" uid="uid://c50f71pflhnqf" path="res://assets/icon/seta.png" id="4_q0ivr"]
+[ext_resource type="PackedScene" uid="uid://dtk65tlgsfgmk" path="res://scenes/moedas.tscn" id="6_dw3q5"]
+
+[node name="mapa_principal" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 12.0
+offset_top = -4.0
+offset_right = 12.0
+offset_bottom = -4.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.976452, 0.964461)
+script = ExtResource("1_wiku2")
+metadata/_edit_horizontal_guides_ = [36.0]
+
+[node name="Fundo" type="Sprite2D" parent="."]
+position = Vector2(600.132, 381.56)
+scale = Vector2(0.593369, 0.714858)
+texture = ExtResource("2_75dvk")
+
+[node name="Mapa" type="Sprite2D" parent="."]
+position = Vector2(577, 337)
+scale = Vector2(0.432675, 0.443111)
+texture = ExtResource("1_xfa8u")
+
+[node name="moedas" parent="." instance=ExtResource("6_dw3q5")]
+position = Vector2(17.41, 25.9211)
+
+[node name="ruadosipes" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 518.203
+offset_top = 491.466
+offset_right = 658.203
+offset_bottom = 616.466
+
+[node name="casaprefeita" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 840.0
+offset_top = 241.0
+offset_right = 1104.0
+offset_bottom = 435.0
+
+[node name="floresta" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 39.9405
+offset_top = 217.738
+offset_right = 298.941
+offset_bottom = 452.738
+
+[node name="casaenzo" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 705.616
+offset_top = 494.577
+offset_right = 713.616
+offset_bottom = 502.577
+scale = Vector2(15.3571, 14.3244)
+
+[node name="casahera" type="TextureButton" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.082
+anchor_bottom = 0.031
+offset_left = 321.573
+offset_top = 511.167
+offset_right = 267.109
+offset_bottom = 531.079
+scale = Vector2(3.70009, 2.40069)
+
+[node name="praca" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 381.995
+offset_top = 237.438
+offset_right = 421.995
+offset_bottom = 277.438
+scale = Vector2(9.50556, 5.46471)
+
+[node name="casalinna" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 918.632
+offset_top = 487.319
+offset_right = 958.632
+offset_bottom = 527.319
+scale = Vector2(3.59063, 3.25054)
+
+[node name="casapietro" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 310.307
+offset_top = 79.8374
+offset_right = 350.307
+offset_bottom = 119.837
+scale = Vector2(4.06303, 2.5299)
+
+[node name="casavincent" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 703.568
+offset_top = 86.0585
+offset_right = 743.568
+offset_bottom = 126.058
+scale = Vector2(2.66505, 2.23245)
+
+[node name="casaxerife" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 845.92
+offset_top = 81.9111
+offset_right = 885.92
+offset_bottom = 121.911
+scale = Vector2(3.32142, 2.77778)
+
+[node name="botao_fechar" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 1029.24
+offset_top = 57.0267
+offset_right = 3429.24
+offset_bottom = 1849.03
+scale = Vector2(0.0318025, 0.0345248)
+texture_normal = ExtResource("3_1hnnq")
+
+[node name="rua das amoreiras" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 511.034
+offset_top = 73.6162
+offset_right = 644.034
+offset_bottom = 183.616
+
+[node name="Seta" type="Button" parent="."]
+layout_mode = 0
+offset_left = 29.0
+offset_top = 22.0
+offset_right = 777.0
+offset_bottom = 523.0
+rotation = -3.13822
+scale = Vector2(0.04, 0.04)
+icon = ExtResource("4_q0ivr")
+flat = true
+
+[connection signal="pressed" from="ruadosipes" to="." method="_on_ruadosipes_pressed"]
+[connection signal="pressed" from="casaprefeita" to="." method="_on_casaprefeita_pressed"]
+[connection signal="pressed" from="floresta" to="." method="_on_floresta_pressed"]
+[connection signal="pressed" from="casaenzo" to="." method="_on_casaenzo_pressed"]
+[connection signal="pressed" from="casahera" to="." method="_on_casahera_pressed"]
+[connection signal="pressed" from="praca" to="." method="_on_praca_pressed"]
+[connection signal="pressed" from="casalinna" to="." method="_on_casalinna_pressed"]
+[connection signal="pressed" from="casapietro" to="." method="_on_casapietro_pressed"]
+[connection signal="pressed" from="casavincent" to="." method="_on_casavincent_pressed"]
+[connection signal="pressed" from="casaxerife" to="." method="_on_casaxerife_pressed"]
+[connection signal="pressed" from="botao_fechar" to="." method="_on_botao_fechar_pressed"]
+[connection signal="pressed" from="rua das amoreiras" to="." method="_on_rua_das_amoreiras_pressed"]

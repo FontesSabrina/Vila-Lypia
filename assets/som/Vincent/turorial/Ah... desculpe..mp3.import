@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bc83kxtalcje1"
+path="res://.godot/imported/Ah... desculpe..mp3-cb1ec8590baa4d368dec3284badd0608.mp3str"
+
+[deps]
+
+source_file="res://assets/som/Vincent/turorial/Ah... desculpe..mp3"
+dest_files=["res://.godot/imported/Ah... desculpe..mp3-cb1ec8590baa4d368dec3284badd0608.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

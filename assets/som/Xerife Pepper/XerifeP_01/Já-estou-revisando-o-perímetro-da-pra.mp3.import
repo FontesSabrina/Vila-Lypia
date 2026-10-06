@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cauqq8i45yfwo"
+path="res://.godot/imported/Já-estou-revisando-o-perímetro-da-pra.mp3-5e8550ebc06d8c58a5aff1dda2af8fca.mp3str"
+
+[deps]
+
+source_file="res://assets/som/Xerife Pepper/XerifeP_01/Já-estou-revisando-o-perímetro-da-pra.mp3"
+dest_files=["res://.godot/imported/Já-estou-revisando-o-perímetro-da-pra.mp3-5e8550ebc06d8c58a5aff1dda2af8fca.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

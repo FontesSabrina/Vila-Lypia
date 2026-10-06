@@ -1,0 +1,24 @@
+[gd_scene load_steps=4 format=3 uid="uid://dtk65tlgsfgmk"]
+
+[ext_resource type="Script" path="res://scripts/moedas.gd" id="1_pwxs0"]
+[ext_resource type="Texture2D" uid="uid://dsurh6qntft7v" path="res://assets/icon/Gemini_Generated_Image_hkqlbahkqlbahkql (1).png" id="2_7g5pb"]
+
+[sub_resource type="FontVariation" id="FontVariation_2h0n0"]
+
+[node name="moedas" type="Node2D"]
+script = ExtResource("1_pwxs0")
+
+[node name="IconeMoeda" type="Sprite2D" parent="."]
+position = Vector2(23, 609)
+scale = Vector2(0.0434028, 0.0400189)
+texture = ExtResource("2_7g5pb")
+
+[node name="Label" type="Label" parent="IconeMoeda"]
+offset_left = -161.28
+offset_top = -1124.47
+offset_right = -151.28
+offset_bottom = -1101.47
+scale = Vector2(30, 30)
+theme_override_fonts/font = SubResource("FontVariation_2h0n0")
+text = "0"
+metadata/_edit_use_anchors_ = true

@@ -1,0 +1,24 @@
+[gd_scene load_steps=3 format=3 uid="uid://dul0pc25secyl"]
+
+[ext_resource type="Texture2D" uid="uid://duyrlgedr4eqg" path="res://assets/backgrounds/casa_hera_01.jpeg" id="1_u1w0m"]
+[ext_resource type="PackedScene" uid="uid://b4vsaogdwxkno" path="res://scenes_2/botao_voltar.tscn" id="2_kbmmq"]
+
+[node name="casa_hera" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="CasaHera01" type="Sprite2D" parent="."]
+position = Vector2(572.25, 321.5)
+scale = Vector2(0.41915, 0.421224)
+texture = ExtResource("1_u1w0m")
+
+[node name="botao_voltar" parent="." instance=ExtResource("2_kbmmq")]
+layout_mode = 1
+offset_left = 2.0
+offset_top = 2.0
+offset_right = 2.0
+offset_bottom = 2.0

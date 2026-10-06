@@ -1,0 +1,57 @@
+[gd_scene load_steps=7 format=3 uid="uid://c3ai5upn408n1"]
+
+[ext_resource type="Texture2D" uid="uid://cr2yyt1rc7vrx" path="res://assets/backgrounds/casa_linna.jpeg" id="1_d5c3l"]
+[ext_resource type="Script" path="res://scripts/hidden_object_linna.gd" id="1_jes06"]
+[ext_resource type="Texture2D" uid="uid://b7bwh6vrn7k" path="res://assets/icon/remova_os_livros_2K_202605261703.png" id="4_cwfu0"]
+[ext_resource type="Script" path="res://scripts/item_mapa.gd" id="4_l1xkx"]
+[ext_resource type="Texture2D" uid="uid://cyaikmkq0207s" path="res://assets/icon/barra2.png" id="5_gvr7y"]
+[ext_resource type="Resource" uid="uid://le03glth26fn" path="res://assets/resources/mapa.tres" id="5_nqwo5"]
+
+[node name="HiddenObjectLinna" type="Node2D"]
+position = Vector2(-2, -2)
+scale = Vector2(1.05559, 1)
+script = ExtResource("1_jes06")
+
+[node name="CasaLinna" type="Sprite2D" parent="."]
+position = Vector2(549.457, 327)
+scale = Vector2(0.398052, 0.423783)
+texture = ExtResource("1_d5c3l")
+
+[node name="TextureButton2" type="TextureButton" parent="."]
+offset_left = 668.822
+offset_top = 351.0
+offset_right = 1317.82
+offset_bottom = 637.0
+scale = Vector2(0.114757, 0.129534)
+texture_normal = ExtResource("4_cwfu0")
+script = ExtResource("4_l1xkx")
+item_data = ExtResource("5_nqwo5")
+
+[node name="Barra2" type="Sprite2D" parent="."]
+position = Vector2(172.415, 568)
+scale = Vector2(0.125728, 0.126122)
+texture = ExtResource("5_gvr7y")
+
+[node name="MapaColorido" type="TextureRect" parent="."]
+custom_minimum_size = Vector2(120, 60)
+offset_left = 230.203
+offset_top = 518.0
+offset_right = 350.203
+offset_bottom = 578.0
+scale = Vector2(0.64938, 0.701506)
+texture = ExtResource("4_cwfu0")
+expand_mode = 1
+
+[node name="SombraMapa" type="TextureRect" parent="."]
+modulate = Color(0.473976, 0.473976, 0.473976, 1)
+self_modulate = Color(0.796243, 0.796243, 0.796243, 1)
+custom_minimum_size = Vector2(120, 60)
+offset_left = 228.308
+offset_top = 518.0
+offset_right = 348.308
+offset_bottom = 578.0
+scale = Vector2(0.674298, 0.726669)
+texture = ExtResource("4_cwfu0")
+expand_mode = 1
+
+[connection signal="pressed" from="TextureButton2" to="TextureButton2" method="_on_pressed"]

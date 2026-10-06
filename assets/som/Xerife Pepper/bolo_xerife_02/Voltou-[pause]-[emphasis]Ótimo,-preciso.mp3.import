@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cmnvee6mqxydk"
+path="res://.godot/imported/Voltou-[pause]-[emphasis]Ótimo,-preciso.mp3-8141509d46280918f16374f93b9b7206.mp3str"
+
+[deps]
+
+source_file="res://assets/som/Xerife Pepper/bolo_xerife_02/Voltou-[pause]-[emphasis]Ótimo,-preciso.mp3"
+dest_files=["res://.godot/imported/Voltou-[pause]-[emphasis]Ótimo,-preciso.mp3-8141509d46280918f16374f93b9b7206.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

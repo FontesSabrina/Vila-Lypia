@@ -1,0 +1,24 @@
+[gd_scene load_steps=3 format=3 uid="uid://c12uev61xa5ji"]
+
+[ext_resource type="Texture2D" uid="uid://br8v5kox7gjqq" path="res://assets/backgrounds/casaVincent_01.jpeg" id="1_k7a2p"]
+[ext_resource type="PackedScene" uid="uid://b4vsaogdwxkno" path="res://scenes_2/botao_voltar.tscn" id="2_6nyhq"]
+
+[node name="casa_vincent" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="CasaVincent01" type="Sprite2D" parent="."]
+position = Vector2(572, 325)
+scale = Vector2(0.421133, 0.422662)
+texture = ExtResource("1_k7a2p")
+
+[node name="botao_voltar" parent="." instance=ExtResource("2_6nyhq")]
+layout_mode = 1
+offset_left = -3.0
+offset_top = -2.0
+offset_right = -3.0
+offset_bottom = -2.0

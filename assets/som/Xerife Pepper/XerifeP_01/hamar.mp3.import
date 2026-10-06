@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://b6sd3xer807xf"
+path="res://.godot/imported/hamar.mp3-734d95027f23f2d0a56ed1907f31c813.mp3str"
+
+[deps]
+
+source_file="res://assets/som/Xerife Pepper/XerifeP_01/hamar.mp3"
+dest_files=["res://.godot/imported/hamar.mp3-734d95027f23f2d0a56ed1907f31c813.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

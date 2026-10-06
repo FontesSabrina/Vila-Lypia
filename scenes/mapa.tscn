@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://dkvvvvax7c2c1"]
+
+[ext_resource type="Script" path="res://scripts/mapa.gd" id="1_501mi"]
+[ext_resource type="Texture2D" uid="uid://b7bwh6vrn7k" path="res://assets/icon/mapa.png" id="2_b8gup"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_l8qaw"]
+size = Vector2(570, 133.5)
+
+[node name="mapa" type="Area2D"]
+script = ExtResource("1_501mi")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(330, 128)
+shape = SubResource("RectangleShape2D_l8qaw")
+
+[node name="RemovaOsLivros2k202605261703" type="Sprite2D" parent="."]
+position = Vector2(326, 146)
+texture = ExtResource("2_b8gup")
+
+[connection signal="input_event" from="." to="." method="_on_input_event"]

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://d37vgjr3ln2hv"
+path="res://.godot/imported/Eu não esqueci! Só guardei a memória em um lugar tão bom que nem eu sei onde está!.mp3-50411dfddee01b5a10c9f9e67777e32f.mp3str"
+
+[deps]
+
+source_file="res://assets/som/Linna/Linna_01/Eu não esqueci! Só guardei a memória em um lugar tão bom que nem eu sei onde está!.mp3"
+dest_files=["res://.godot/imported/Eu não esqueci! Só guardei a memória em um lugar tão bom que nem eu sei onde está!.mp3-50411dfddee01b5a10c9f9e67777e32f.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

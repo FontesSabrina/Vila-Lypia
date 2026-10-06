@@ -1,0 +1,22 @@
+[gd_scene load_steps=3 format=3 uid="uid://dwukfwa2r3slo"]
+
+[ext_resource type="Texture2D" uid="uid://b1o62qll10n3x" path="res://assets/backgrounds/casa_pietro4.jpeg" id="1_cqrd1"]
+[ext_resource type="PackedScene" uid="uid://b4vsaogdwxkno" path="res://scenes_2/botao_voltar.tscn" id="2_nsgul"]
+
+[node name="casa_pietro" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="CasaPietro4" type="Sprite2D" parent="."]
+position = Vector2(578, 323)
+scale = Vector2(0.418832, 0.420431)
+texture = ExtResource("1_cqrd1")
+
+[node name="botao_voltar" parent="." instance=ExtResource("2_nsgul")]
+layout_mode = 1
+offset_top = 3.0
+offset_bottom = 3.0

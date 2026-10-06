@@ -1,0 +1,35 @@
+[gd_scene load_steps=6 format=3 uid="uid://oavgcrwyk61p"]
+
+[ext_resource type="Texture2D" uid="uid://cet4gbd8n2lb7" path="res://assets/backgrounds/mesa_praça_festa_IV.jpeg" id="1_i3bff"]
+[ext_resource type="Script" path="res://scripts/mesa_praca_iv.gd" id="1_julwl"]
+[ext_resource type="PackedScene" uid="uid://om5peo7p386m" path="res://scenes/resultadoBolo.tscn" id="3_io3f4"]
+[ext_resource type="PackedScene" uid="uid://b4vsaogdwxkno" path="res://scenes/botao_voltar.tscn" id="4_cdxq6"]
+[ext_resource type="Texture2D" uid="uid://c1bbchnongjqh" path="res://assets/characters/bella/cartao/0.png" id="5_qtyps"]
+
+[node name="mesa_praca_IV" type="Node2D"]
+script = ExtResource("1_julwl")
+
+[node name="MesaPraçaFestaIv" type="Sprite2D" parent="."]
+position = Vector2(590.75, 327.75)
+scale = Vector2(0.429688, 0.430013)
+texture = ExtResource("1_i3bff")
+
+[node name="ResultadoBolo" parent="." instance=ExtResource("3_io3f4")]
+position = Vector2(388, 140)
+scale = Vector2(0.437033, 0.462276)
+
+[node name="botao_voltar" parent="." instance=ExtResource("4_cdxq6")]
+offset_left = 1.0
+offset_top = 3.0
+offset_right = 1.0
+offset_bottom = 3.0
+
+[node name="bella_botao" type="TextureButton" parent="."]
+offset_left = 462.0
+offset_top = 363.0
+offset_right = 3214.0
+offset_bottom = 2411.0
+scale = Vector2(0.13957, 0.135659)
+texture_normal = ExtResource("5_qtyps")
+
+[connection signal="pressed" from="bella_botao" to="." method="_on_bella_botao_pressed"]

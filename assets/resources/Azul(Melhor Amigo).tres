@@ -1,0 +1,14 @@
+[gd_resource type="StyleBoxTexture" load_steps=2 format=3 uid="uid://40g8de8fmbkq"]
+
+[ext_resource type="Texture2D" uid="uid://2ibm6oe51mcw" path="res://assets/icon/Azul(Melhor Amigo).png" id="1_60siw"]
+
+[resource]
+content_margin_left = 60.0
+content_margin_top = 70.0
+content_margin_right = 80.0
+content_margin_bottom = 60.0
+texture = ExtResource("1_60siw")
+texture_margin_left = 5.0
+texture_margin_top = 5.0
+texture_margin_right = 5.0
+texture_margin_bottom = 5.0

@@ -1,0 +1,114 @@
+audio "res://assets/som/Caminho da Vila.mp3" [volume="-18.0"]
+
+# === APLICAÇÃO DINÂMICA DO BALÃO ===
+if {Amizade.Linna} <= 3:
+	[style name="cinzanovo"]
+elif {Amizade.Linna} <= 7:
+	[style name="azulnovo"]
+else:
+	[style name="verdenovo"]
+# ======================================================================================
+
+# ESTÁGIO 1: Ainda não pegou o açúcar (Bolo_Linna_Acucar_Concluido == false)
+if {Bolo.Linna.Bolo_Linna_Acucar_Concluido} == false:
+	[background arg="res://assets/backgrounds/casaLinna_jadim.jpeg" fade="0.0"]
+	join linna (bolo_02/1) center
+	[voice path="res://assets/som/Linna/bolo_linna_02/Oh!-Um-passarinho-amarelo-Ah,-não,-é-[.mp3" volume="0.0"]
+	linna (bolo_02/1): Oh! Um passarinho amarelo?\
+	Ah, não, é você!\
+	Que surpresa boa!
+	Protagonista: Oi Linna, preciso de ingredientes para fazer um bolo para a prefeita.
+	[voice path="res://assets/som/Linna/bolo_linna_02/Um-bolo-Que-lindo!-Eu-separ.mp3" volume="0.0"]
+	linna (bolo_02/2): Um bolo? Que lindo! \
+	Eu separei o Açúcar de Confeiteiro Nuvem, ele é tão fofinho...
+	[voice path="res://assets/som/Linna/bolo_linna_02/Espera,onde-foi-que-eu-col.mp3" volume="0.0"]
+	linna (bolo_02/3): Espera, onde foi que eu coloquei? \
+	Ah, sim!
+	[voice path="res://assets/som/Linna/bolo_linna_02/Deixei-no-balcão-da-loja,-mas-acab.mp3" volume="0.0"]
+	linna (bolo_02/4): Deixei no balcão da loja, mas acabei colocando muitas caixas por cima e esqueci qual era...
+	[voice path="res://assets/som/Linna/bolo_linna_02/Você-me-ajuda-a--achar-.mp3" volume="0.0"]
+	linna (bolo_02/5): Você me ajuda a achar?
+	
+	- Claro, vamos procurar!
+		[signal arg="iniciar_minigame_acucar"]
+		[end_timeline]
+	- Agora não posso, Linna.
+		[voice path="res://assets/som/Linna/bolo_linna_02/Tudo-bem!-Se-lembrar,-estarei-por.mp3" volume="0.0"]
+		linna (bolo_02/6): Tudo bem! \
+		Se lembrar, estarei por aqui olhando as nuvens...
+		[end_timeline]
+
+# ESTÁGIO 2A: Já achou o açúcar no minijogo, mas ainda não agradeceu
+elif {Bolo.Linna.Bolo_Linna_Acucar_Entregue} == false:
+	set {Bolo.Linna.Bolo_Linna_Acucar_Entregue} = true
+	[background arg="res://assets/backgrounds/casa_linna_loja.jpeg" fade="0.0"]
+	join linna (bolo_02/7) left
+	[voice path="res://assets/som/Linna/bolo_linna_02/-Oba! Você.mp3" volume="0.0"]
+	linna (bolo_02/7): Oba! Você achou!
+	[voice path="res://assets/som/Linna/bolo_linna_02/Esse-açúcar-vai-deixar-o-bolo-tão-leve.mp3" volume="0.0"]
+	linna (bolo_02/8): Esse açúcar vai deixar o bolo tão leve que vai parecer que está flutuando!
+	[signal arg="voltar_mapa"]
+	[end_timeline]
+
+# ESTÁGIO 2B: Pede ajuda para achar os novelos de lã
+elif {Bolo.Linna.Bolo_Linna_Novelos_Em_Andamento} == false and {Bolo.Linna.Bolo_Linna_Novelos_Concluido} == false and {Bolo.Linna.Bolo_Linna_Secundaria_Linna} == false:
+	[background arg="res://assets/backgrounds/corredor_loja_linna.jpeg" fade="0.0"]
+	join linna (bolo_02/09) center
+	[voice path="res://assets/som/Linna/bolo_linna_02/Sabe-do-que-lembrei-Eu-tinha-quatro-n.mp3" volume="0.0"]
+	linna (bolo_02/09): Sabe do que lembrei?\
+	Eu tinha 4 novelos de lã colorida para decorar os potes da loja...
+	[voice path="res://assets/som/Linna/bolo_linna_02/mas-acho-que-eles-rolaram-pela-[emphasis]-Rua.mp3" volume="0.0"]
+	linna (bolo_02/10): ...mas acho que eles rolaram pela Rua dos Ipês enquanto eu olhava as nuvens.
+	[voice path="res://assets/som/Linna/bolo_linna_02/Se-você-achar-a-loja-vai-ficar.mp3" volume="0.0"]
+	linna (bolo_02/11): Se você achar, a loja vai ficar tão colorida!\
+	Você me ajuda a procurar?
+	
+	- Vou encontrar os novelos!
+		set {Bolo.Linna.Bolo_Linna_Em_Andamento} = true
+		set {Bolo.Linna.Bolo_Linna_Novelos_Em_Andamento} = true
+		[signal arg="voltar_mapa"]
+		[end_timeline]
+	- Agora não posso, Linna.
+		set {Bolo.Linna.Bolo_Linna_Em_Andamento} = false
+		set {Bolo.Linna.Bolo_Linna_Novelos_Em_Andamento} = false
+		[voice path="res://assets/som/Linna/bolo_linna_02/Sem-problemas.-a.mp3" volume="0.0"]
+		linna (bolo_02/12): Sem problemas... a lã não vai fugir... eu acho!
+		[end_timeline]
+
+# ESTÁGIO 2C: Já coletou os 4 novelos
+elif {Bolo.Linna.Bolo_Linna_Novelos_Concluido} == true and {Bolo.Linna.Bolo_Linna_Secundaria_Linna} == false:
+	[background arg="res://assets/backgrounds/corredor_loja_linna.jpeg" fade="0.0"]
+	join linna (bolo_02/13) center
+	[voice path="res://assets/som/Linna/bolo_linna_02/Puxa,-você-achou!.mp3" volume="0.0"]
+	linna (bolo_02/13): Puxa, você achou! \
+	Eu nem lembrava que tinha perdido eles ali.\
+	Obrigada!
+	[voice path="res://assets/som/Linna/bolo_linna_02/Tome-esta-moedinha-pelo-carinh.mp3" volume="0.0"]
+	linna (bolo_02/14): Tome esta moedinha pelo carinho.\
+	A loja ficou bem mais alegre!
+	audio "res://assets/som/moedas.mp3"
+	
+	[signal arg="ganhar_moeda"]
+	set {Amizade.Linna} += 1
+	set {Bolo.Linna.Bolo_Linna_Secundaria_Linna} = true
+	set {Bolo.Linna.Bolo_Linna_Em_Andamento} = false
+	set {Bolo.Linna.Bolo_Linna_Novelos_Em_Andamento} = false
+	[signal arg="voltar_mapa"]
+	[end_timeline]
+
+# ESTÁGIO 2D: Aceitou procurar os novelos, mas ainda não achou todos
+elif {Bolo.Linna.Bolo_Linna_Novelos_Em_Andamento} == true and {Bolo.Linna.Bolo_Linna_Novelos_Concluido} == false:
+	[background arg="res://assets/backgrounds/corredor_loja_linna.jpeg" fade="0.0"]
+	join linna (bolo_02/09) center
+	linna (bolo_02/09): Os novelos ainda devem estar rolando pela Rua dos Ipês... Achou algum?
+	[end_timeline]
+
+# ESTÁGIO 3: Já concluiu tudo (Casual)
+else:
+	[background arg="res://assets/backgrounds/corredor_loja_linna.jpeg" fade="0.0"]
+	join linna (bolo_02/15) right
+	[voice path="res://assets/som/Linna/bolo_linna_02/O-que-eu-estava-fazendo-mesmo-Ah,.mp3" volume="0.0"]
+	linna (bolo_02/15): O que eu estava fazendo mesmo? Ah, sim!
+	[voice path="res://assets/som/Linna/bolo_linna_02/Pensando-em-como-o-glacê-do-bo.mp3" volume="0.0"]
+	linna (bolo_02/16): Pensando em como o glacê do bolo combina com o formato das nuvens lá em cima...
+	[end_timeline]

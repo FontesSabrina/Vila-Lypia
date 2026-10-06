@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bs4042ip8nl27"
+path="res://.godot/imported/Cada morador.mp3-801adbe375b1f53278ca3a3b2411240a.mp3str"
+
+[deps]
+
+source_file="res://assets/som/Bella/capitulo_2/Cada morador.mp3"
+dest_files=["res://.godot/imported/Cada morador.mp3-801adbe375b1f53278ca3a3b2411240a.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
