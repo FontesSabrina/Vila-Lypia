@@ -2,22 +2,27 @@ extends Node2D
 class_name LojaIV
 ## Loja da Linna (Capítulo IV, Cena 4): a compra do presente da Prefeita.
 ##
-## 1. A Linna fala (timeline cap4_loja_intro) e, no fim, o catálogo abre.
+## Tudo acontece numa timeline só (cap4_loja_intro), dividida em labels.
+## 1. A Linna fala e, no fim, o catálogo abre.
 ## 2. Itens que o jogador não consegue pagar ficam apagados.
 ## 3. Ao clicar num item:
 ##    - AMIZADE MÁXIMA (Cap4.Excelentes >= 6): os moradores entram na loja
-##      ANTES da confirmação (timeline cap4_loja_amizade) -> Kit do Criador de Mundos.
+##      ANTES da confirmação (label "amizade") -> Kit do Criador de Mundos.
 ##    - Normal: aparece a confirmação; ao comprar, a Linna embrulha o presente
-##      (timeline cap4_loja_compra).
-## 4. Depois, a Cena 6 (timeline cap4_anoitecer) e o Capítulo Final.
+##      (label "compra_caixinha", "compra_veludo" ou "compra_caderno").
+## 4. Depois, a Cena 6 (label "anoitecer") e o Capítulo Final.
 ##
 ## Nada precisa ser conectado pelo editor: o script liga os botões sozinho.
 
 # ---------------------------------------------------------------- AJUSTE AQUI
-const TIMELINE_INTRO := "cap4_loja_intro"
-const TIMELINE_COMPRA := "cap4_loja_compra"
-const TIMELINE_AMIZADE := "cap4_loja_amizade"
-const TIMELINE_ANOITECER := "cap4_anoitecer"
+## Uma timeline só para a loja inteira, dividida em partes (labels):
+##   início            -> fala de abertura da Linna (termina abrindo o catálogo)
+##   compra_caixinha   -> a Linna embrulha a Caixinha
+##   compra_veludo     -> a Linna embrulha a Caixa de Veludo
+##   compra_caderno    -> a Linna embrulha o Caderno
+##   amizade           -> os moradores entram, Kit do Criador de Mundos
+##   anoitecer         -> Cena 6, na praça
+const TIMELINE_LOJA := "cap4_loja_intro"
 ## Cena do Capítulo Final (ainda não existe: troque quando criar).
 const CENA_CAPITULO_FINAL := "res://scenes/capitulo_final.tscn"
 ## Quantas respostas excelentes liberam o evento de amizade máxima.
@@ -75,7 +80,7 @@ func _ready() -> void:
 	# A Linna fala primeiro; o catálogo abre no fim da fala
 	_ocupado = true
 	await get_tree().process_frame
-	Dialogic.start(TIMELINE_INTRO)
+	Dialogic.start(TIMELINE_LOJA)
 	await Dialogic.timeline_ended
 	_abrir_catalogo()
 
@@ -194,7 +199,7 @@ func _on_sim() -> void:
 	# A Linna embrulha o presente
 	if catalogo:
 		catalogo.visible = false
-	Dialogic.start(TIMELINE_COMPRA)
+	Dialogic.start(TIMELINE_LOJA, "compra_" + str(ITENS[nome]["codigo"]))
 	await Dialogic.timeline_ended
 	_anoitecer()
 
@@ -212,7 +217,7 @@ func _evento_amizade() -> void:
 	GameState.ganhar_selo_coracao_vila()
 	print(">>> Loja: evento de amizade máxima -> Kit do Criador de Mundos")
 
-	Dialogic.start(TIMELINE_AMIZADE)
+	Dialogic.start(TIMELINE_LOJA, "amizade")
 	await Dialogic.timeline_ended
 	_anoitecer()
 
@@ -226,7 +231,7 @@ func _anoitecer() -> void:
 	await get_tree().process_frame
 	if not is_inside_tree():
 		return
-	Dialogic.start(TIMELINE_ANOITECER)
+	Dialogic.start(TIMELINE_LOJA, "anoitecer")
 	await Dialogic.timeline_ended
 	if not is_inside_tree():
 		return

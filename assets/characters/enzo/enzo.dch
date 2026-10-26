@@ -44,6 +44,15 @@
 "scale": 0.5,
 "scene": ""
 },
+"Enzo Final": {
+"export_overrides": {
+"image": "\"res://assets/characters/enzo/presente_loja/Enzo_final.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 0.6,
+"scene": ""
+},
 "Enzo_01/1": {
 "export_overrides": {
 "image": "\"res://assets/characters/enzo/Enzo_01/1.png\""
@@ -203,6 +212,15 @@
 },
 "mirror": false,
 "offset": Vector2(-100, 0),
+"scale": 0.5,
+"scene": ""
+},
+"Loja 04": {
+"export_overrides": {
+"image": "\"res://assets/characters/enzo/presente_loja/loja04.png\""
+},
+"mirror": false,
+"offset": Vector2(100, 40),
 "scale": 0.5,
 "scene": ""
 },
@@ -402,7 +420,7 @@
 },
 "mirror": false,
 "offset": Vector2(0, 0),
-"scale": 0.4,
+"scale": 0.7,
 "scene": ""
 },
 "cartao/Enzo Carto": {
@@ -412,15 +430,6 @@
 "mirror": false,
 "offset": Vector2(0, 0),
 "scale": 0.4,
-"scene": ""
-},
-"vazio": {
-"export_overrides": {
-"image": ""
-},
-"mirror": false,
-"offset": Vector2(0, 0),
-"scale": 1,
 "scene": ""
 }
 },

@@ -1,0 +1,23 @@
+[gd_scene load_steps=5 format=3 uid="uid://b76t33eyxh3ta"]
+
+[ext_resource type="Texture2D" uid="uid://ocpl1t4b2g4o" path="res://assets/backgrounds/praça_festa_IV_noite_novo2.jpg" id="1_ho8ch"]
+[ext_resource type="Texture2D" uid="uid://b67kuy057u3ky" path="res://assets/backgrounds/praça_festa_IV_noite_novo.jpg" id="1_itlbu"]
+[ext_resource type="Script" path="res://scripts/capitulo_final.gd" id="1_np2s6"]
+[ext_resource type="PackedScene" uid="uid://om5peo7p386m" path="res://scenes/resultadoBolo.tscn" id="3_xgoxy"]
+
+[node name="capitulo_final" type="Node2D"]
+script = ExtResource("1_np2s6")
+
+[node name="PracaEscura" type="Sprite2D" parent="."]
+position = Vector2(578.5, 324)
+scale = Vector2(0.420422, 0.423177)
+texture = ExtResource("1_ho8ch")
+
+[node name="PracaAcesa" type="Sprite2D" parent="."]
+position = Vector2(579.25, 326)
+scale = Vector2(0.420603, 0.424479)
+texture = ExtResource("1_itlbu")
+
+[node name="ResultadoBolo" parent="." instance=ExtResource("3_xgoxy")]
+position = Vector2(542, 284)
+scale = Vector2(0.0597064, 0.0622669)

@@ -18,8 +18,14 @@ signal pingente_coletado
 signal moedas_alteradas(nova_quantidade: int)
 signal presente_comprado_sinal(presente: String)
 
+# === MOEDAS PARA TESTE ===
+## SÓ PARA TESTAR: o jogador começa o jogo novo com esta quantidade de moedas.
+## 7 dá para testar as três compras da loja (1, 3 e 5).
+## IMPORTANTE: volte para 0 antes de exportar o jogo.
+const MOEDAS_DE_TESTE := 7
+
 # === VARIÁVEIS DE ESTADO ===
-var moedas: int = 0
+var moedas: int = MOEDAS_DE_TESTE
 
 var mapa_pego: bool = false
 
@@ -66,6 +72,14 @@ var presente_comprado: String = ""
 
 # Selo final "Coração da Vila" (só no evento de amizade máxima).
 var selo_coracao_vila: bool = false
+
+# --- Capítulo Final ---
+# Item lendário: só no Final Verdadeiro.
+var lapis_magico: bool = false
+
+# Qual final o jogador viu por último: 0 = nenhum | 1 = Esquecido |
+# 2 = Sorriso Incompleto | 3 = Coração da Vila. A tela de créditos usa isso.
+var final_alcancado: int = 0
 
 # --- Métodos de Alteração de Dados ---
 
@@ -182,3 +196,20 @@ func comprar_presente(presente: String) -> void:
 
 func ganhar_selo_coracao_vila() -> void:
 	selo_coracao_vila = true
+
+
+# --- Capítulo Final ---
+
+func ganhar_lapis_magico() -> void:
+	lapis_magico = true
+
+
+## Volta TODAS as variáveis para o valor inicial (usado no "Tentar Novamente").
+## Não precisa mexer aqui quando criar variável nova: ela entra sozinha.
+func resetar() -> void:
+	var limpo: Node = get_script().new()
+	for propriedade in get_property_list():
+		if propriedade.usage & PROPERTY_USAGE_SCRIPT_VARIABLE:
+			set(propriedade.name, limpo.get(propriedade.name))
+	limpo.free()
+	moedas_alteradas.emit(moedas)

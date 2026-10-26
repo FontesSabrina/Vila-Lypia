@@ -108,6 +108,78 @@
 "scale": 0.9,
 "scene": ""
 },
+"Bella_final/1": {
+"export_overrides": {
+"image": "\"res://assets/characters/bella/bella_final/Bella_final_1.png\""
+},
+"mirror": false,
+"offset": Vector2(-100, -150),
+"scale": 0.5,
+"scene": ""
+},
+"Bella_final/2": {
+"export_overrides": {
+"image": "\"res://assets/characters/bella/bella_final/Bella_final_2.png\""
+},
+"mirror": false,
+"offset": Vector2(-100, -100),
+"scale": 0.5,
+"scene": ""
+},
+"Bella_final/3": {
+"export_overrides": {
+"image": "\"res://assets/characters/bella/bella_final/Bella_final_3.png\""
+},
+"mirror": false,
+"offset": Vector2(-100, -100),
+"scale": 0.5,
+"scene": ""
+},
+"Bella_final/4": {
+"export_overrides": {
+"image": "\"res://assets/characters/bella/bella_final/Bella_final_4.png\""
+},
+"mirror": false,
+"offset": Vector2(-100, -100),
+"scale": 0.5,
+"scene": ""
+},
+"Bella_final/5": {
+"export_overrides": {
+"image": "\"res://assets/characters/bella/bella_final/Bella_final_5.png\""
+},
+"mirror": false,
+"offset": Vector2(-100, -100),
+"scale": 0.5,
+"scene": ""
+},
+"Bella_final/6": {
+"export_overrides": {
+"image": "\"res://assets/characters/bella/bella_final/Bella_final_6.png\""
+},
+"mirror": false,
+"offset": Vector2(-100, -100),
+"scale": 0.5,
+"scene": ""
+},
+"Bella_final/7": {
+"export_overrides": {
+"image": "\"res://assets/characters/bella/bella_final/Bella_final_7.png\""
+},
+"mirror": false,
+"offset": Vector2(-100, -100),
+"scale": 0.5,
+"scene": ""
+},
+"Bella_final/8": {
+"export_overrides": {
+"image": "\"res://assets/characters/bella/bella_final/Bella_final_8.png\""
+},
+"mirror": false,
+"offset": Vector2(-100, -100),
+"scale": 0.5,
+"scene": ""
+},
 "Bolo": {
 "export_overrides": {
 "image": "\"res://assets/characters/bella/bolo/bolo.png\""
@@ -941,6 +1013,33 @@
 "convite/Visionária": {
 "export_overrides": {
 "image": "\"res://assets/characters/bella/convitess_01/Visionária.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"presente/1": {
+"export_overrides": {
+"image": "\"res://assets/characters/bella/presente_capIV/noite1.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"presente/2": {
+"export_overrides": {
+"image": "\"res://assets/characters/bella/presente_capIV/noite2.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"presente/3": {
+"export_overrides": {
+"image": "\"res://assets/characters/bella/presente_capIV/noite3.png\""
 },
 "mirror": false,
 "offset": Vector2(0, 0),

@@ -26,6 +26,15 @@
 "scale": 0.8,
 "scene": ""
 },
+"Hera Final": {
+"export_overrides": {
+"image": "\"res://assets/characters/prof. Hera/presente_loja/Hera_final.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 0.8,
+"scene": ""
+},
 "Hiperfoco": {
 "export_overrides": {
 "image": "\"res://assets/characters/prof. Hera/hiperfoco.png\""
@@ -43,6 +52,15 @@
 "mirror": true,
 "offset": Vector2(100, 90),
 "scale": 0.8,
+"scene": ""
+},
+"Loja 5": {
+"export_overrides": {
+"image": "\"res://assets/characters/prof. Hera/presente_loja/loja5.png\""
+},
+"mirror": false,
+"offset": Vector2(100, 40),
+"scale": 0.9,
 "scene": ""
 },
 "P_Hera_01/1": {

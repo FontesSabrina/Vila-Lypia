@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://0vkqpahmctll"
+path="res://.godot/imported/Veja-só,-[pause]...-Os-convites-entregu.mp3-993b89a3cdedf0c29d2cb44d29d2dc4d.mp3str"
+
+[deps]
+
+source_file="res://assets/som/cap IV/Veja-só,-[pause]...-Os-convites-entregu.mp3"
+dest_files=["res://.godot/imported/Veja-só,-[pause]...-Os-convites-entregu.mp3-993b89a3cdedf0c29d2cb44d29d2dc4d.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

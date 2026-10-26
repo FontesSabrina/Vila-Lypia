@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://wan041o8xrc8"
+path="res://.godot/imported/As-luzes-das-casas-se-[emphasis]-apagaram.mp3-9bffce63887ad2785ca4a28ad4e0fb20.mp3str"
+
+[deps]
+
+source_file="res://assets/som/cap IV/As-luzes-das-casas-se-[emphasis]-apagaram.mp3"
+dest_files=["res://.godot/imported/As-luzes-das-casas-se-[emphasis]-apagaram.mp3-9bffce63887ad2785ca4a28ad4e0fb20.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

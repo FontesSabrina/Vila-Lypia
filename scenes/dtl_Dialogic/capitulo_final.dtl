@@ -1,0 +1,331 @@
+# CAPÍTULO FINAL: A FESTA (O GRANDE FINAL)
+# O FUNDO é a própria cena capitulo_final.tscn (PracaEscura / PracaAcesa / ResultadoBolo).
+# Não use [background] com imagem aqui: ele cobre a cena e esconde o bolo.
+
+[style name="cinzanovo"]
+[background fade="0.0"]
+[wait time="1.0"]
+join Anne (1) center
+[voice path="res://assets/som/Anne/final/Mais-um-ano....mp3" volume="0.0"]
+Anne (1): Mais um ano... O céu está bonito hoje, mas a praça está tão vazia.
+[voice path="res://assets/som/Anne/final/Eu-criei-a-A.mp3.mp3" volume="0.0"]
+Anne (3): Eu criei cada sentimento desta vila...\
+E, mesmo assim, ninguém lembrou do meu aniversário
+[wait time="1.0"]
+join Bella (Bella_final/1) left
+[voice path="res://assets/som/Bella/Bella_final/É-emphasisagoraemphasis.mp3" volume="0.0"]
+Bella (Bella_final/1): É agora, {NomeJogador}! No três... Um... Dois... Três!
+leave Bella
+[signal arg="flash"]
+[signal arg="acender_luzes"]
+SURPRESA!!! FELIZ ANIVERSÁRIO, PREFEITA ANNE!
+
+if {Final.Tipo} == 3:
+	jump final_3
+elif {Final.Tipo} == 2:
+	jump final_2
+else:
+	jump final_1
+
+# ======================================================================
+# FINAL 1: O ANIVERSÁRIO ESQUECIDO
+# ======================================================================
+label final_1
+[style name="cinzanovo"]
+join Bella (Bella_final/2) left
+[voice path="res://assets/som/Anne/final/Oh...-Bella-E...-quem.mp3" volume="0.0"]
+Anne (3): Oh... Bella? E... quem é você, pequena criança?
+[voice path="res://assets/som/Bella/Bella_final/Esse-é-[long-pause].-[pause]-Nós-tentamos-organi (1).mp3" volume="0.0"]
+Bella (Bella_final/2): Esse é  {NomeJogador}. \
+Nós tentamos organizar uma festa para você ,Prefeita!
+[signal arg="mostrar_bolo"]
+[wait time="1.5"]
+Protagonista: Feliz aniversário, Prefeita Anne. Isto é para você.
+[voice path="res://assets/som/Anne/final/-É-muito-gentil-da-parte-d.mp3" volume="0.0"]
+Anne (4): É muito gentil da parte de vocês tentarem... \
+Eu agradeço muito, de verdade.\
+Mas... onde estão os outros?
+[signal arg="esconder_bolo"]
+[voice path="res://assets/som/Anne/final/Onde-está-o-Vincent-[com-ternur.mp3" volume="0.0"]
+Anne (5): Onde está o Vincent?\
+O sorriso dele sempre alegra meus dias cinzentos...
+[voice path="res://assets/som/Anne/final/E-o-Piet.mp3" volume="0.0"]
+Anne (5): E o Pietro? \
+Ninguém entende meu coração como ele e suas pinturas...
+[voice path="res://assets/som/Anne/final/Sinto-falta-até-das-broncas-do-Xer.mp3" volume="0.0"]
+Anne (5): Sinto falta até das broncas do Xerife Pepper.\
+O jeito bravo dele é só para nos proteger.
+[voice path="res://assets/som/Anne/final/A-Professora-Hera-não-veio...-[tom-sua.mp3" volume="0.0"]
+Anne (5): A Professora Hera não veio... \
+Eu queria dizer a ela que hoje podia só descansar.
+[voice path="res://assets/som/Anne/final/Onde-está-a-Linna-[com-carinho.mp3" volume="0.0"]
+Anne (5): Onde está a Linna?\
+As histórias dela deixam o mundo mais leve...
+[voice path="res://assets/som/Anne/final/E-o-pequeno-Enzo....mp3" volume="0.0"]
+Anne (5): E o pequeno Enzo... deve estar com medo do escuro.\
+Eu só queria abraçá-lo e dizer que não há monstros aqui.
+Bella (Bella_final/3): Nós não conseguimos convencê-los a vir...
+[voice path="res://assets/som/Anne/final/Entendo...-[sigh]-Acho.mp3" volume="0.0"]
+Anne (6): Entendo... Acho que eu realmente falhei em conectá-los. \
+Minhas criações não se importam comigo.
+[voice path="res://assets/som/Anne/final/Me-desculpem...-eu.mp3" volume="0.0"]
+Anne (7): Me desculpem... eu não me sinto bem para festas agora.
+leave Anne
+[signal arg="apagar_luzes"]
+[wait time="1.0"]
+[voice path="res://assets/som/Bella/Bella_final/-Fazer-amigos-é-[emphasis].mp3" volume="0.0"]
+Bella (Bella_final/4): Puxa, {NomeJogador}... Fazer amigos é conversar e ouvir.\
+Como não conhecemos bem os moradores, eles não se sentiram seguros para vir
+if {Final.Bolo} <= 3:
+	[voice path="res://assets/som/Bella/Bella_final/O-bolo-e-o-presente-não-saíram-como-esperá.mp3" volume="0.0"]
+	Bella (Bella_final/4): O bolo e o presente não saíram como esperávamos...\
+	Mas sabe o que é mágico aqui?\
+	Sempre podemos tentar de novo!
+else:
+	[voice path="res://assets/som/Bella/Bella_final/A-festa-não-saiu-como-a-gente-[emphasis]-s.mp3" volume="0.0"]
+	Bella (Bella_final/4): A festa não saiu como a gente sonhou...\
+	Mas sabe de uma coisa mágica dos mundos que criamos? \
+	Nós sempre podemos tentar de novo!
+[voice path="res://assets/som/Bella/Bella_final/Você-gostaria-de-usar-a-[emphasis]Ampulheta-Mági.mp3" volume="0.0"]
+Bella (Bella_final/5): Você gostaria de usar a Ampulheta Mágica e voltar no tempo para\
+tentarmos fazer escolhas diferentes e nos conectarmos mais com os moradores?
+- Tentar Novamente
+	[signal arg="tentar_novamente"]
+leave Bella
+[end_timeline]
+
+# ======================================================================
+# FINAL 2: UM SORRISO INCOMPLETO
+# ======================================================================
+label final_2
+audio "res://assets/som/Caminho da Vila.mp3" [volume="-18.0"]
+[style name="cinzanovo"]
+join Bella (Bella_final/6) leftmost
+[voice path="res://assets/som/Anne/final/Uma-festa-Para-mim-Vocês..mp3" volume="0.0"]
+Anne (8): Uma festa?\
+Para mim? \
+Vocês... vocês lembraram?
+if {Convite.Convite_vincent_entregue} == true:
+	join vincent (presente_loja/Vincent Final) right
+	if {Amizade.Vincent} <= 3:
+		[style name="cinzanovo"]
+	elif {Amizade.Vincent} <= 7:
+		[style name="azulnovo"]
+	else:
+		[style name="verdenovo"]
+	[voice path="res://assets/som/Vincent/Final/Feliz-aniversário,-Anne!-[short-pause].mp3" volume="0.0"]
+	vincent (presente_loja/Vincent Final): Feliz aniversário, Anne! Hoje é dia de alegria!
+	leave vincent
+elif {Convite.Convite_Linna_entregue} == true:
+	join linna (Linna Final) right
+	if {Amizade.Linna} <= 3:
+		[style name="cinzanovo"]
+	elif {Amizade.Linna} <= 7:
+		[style name="azulnovo"]
+	else:
+		[style name="verdenovo"]
+	[voice path="res://assets/som/Linna/Final_linna/Confete-para-todo-lado!-[gasping]-Ops...mp3" volume="0.0"]
+	linna (Linna Final): Confete para todo lado! Ops... caiu um no bolo!
+	leave linna
+elif {Convite.Convite_pietro_entregue} == true:
+	join Pietro (presente_loja/Pietro Final) right
+	if {Amizade.Pietro} <= 3:
+		[style name="cinzanovo"]
+	elif {Amizade.Pietro} <= 7:
+		[style name="azulnovo"]
+	else:
+		[style name="verdenovo"]
+	[voice path="res://assets/som/Pietro/final_pietro/-A-gente-acabou-se-lembrando-do-que-realmente-imp.mp3" volume="0.0"]
+	Pietro (presente_loja/Pietro Final): A gente acabou se lembrando do que realmente importa\: estar juntos.
+	leave Pietro
+elif {Convite.Convite_P_Hera_entregue} == true:
+	join hera (Hera Final) right
+	if {Amizade.P_Hera} <= 3:
+		[style name="cinzanovo"]
+	elif {Amizade.P_Hera} <= 7:
+		[style name="azulnovo"]
+	else:
+		[style name="verdenovo"]
+	[voice path="res://assets/som/Hera/final_hera/48-[excited]-Balões-a-cada-[emphasis]-trinta-centím.mp3" volume="0.0"]
+	hera (Hera Final): Balões a cada 30 centímetros, exatamente como planejado!
+	leave hera
+elif {Convite.Convite_enzo_entregue} == true:
+	join enzo (Enzo Final) right
+	if {Amizade.Enzo} <= 3:
+		[style name="cinzanovo"]
+	elif {Amizade.Enzo} <= 7:
+		[style name="azulnovo"]
+	else:
+		[style name="verdenovo"]
+	[voice path="res://assets/som/Enzo/final_enzo/E-eu-vim...-[short-pause]-e-não-estou.mp3" volume="0.0"]
+	enzo (Enzo Final): E-eu vim... e não estou com medo!
+	leave enzo
+elif {Convite.Convite_Xerife_entregue} == true:
+	join xerife (presente_loja/Xerife Final) right
+	if {Amizade.Xerife} <= 3:
+		[style name="cinzanovo"]
+	elif {Amizade.Xerife} <= 7:
+		[style name="azulnovo"]
+	else:
+		[style name="verdenovo"]
+	[voice path="res://assets/som/Xerife Pepper/final_xerife/Missão-[emphasis]-cumprida,-Prefeita!.mp3" volume="0.0"]
+	xerife (presente_loja/Xerife Final): Missão cumprida, Prefeita! Festa sob controle!
+	leave xerife
+else:
+	[style name="cinzanovo"]
+	[voice path="res://assets/som/Bella/Bella_final/teve-essa-ideia,-[emphasis]-Prefeita!-[jo.mp3" volume="0.0"]
+	Bella (Bella_final/2): {NomeJogador} teve essa ideia, Prefeita! \
+	Nós queríamos celebrar o seu dia!
+[style name="cinzanovo"]
+[signal arg="mostrar_bolo"]
+[wait time="1.5"]
+Protagonista: Feliz aniversário, Prefeita Anne. Isto é para você.
+[voice path="res://assets/som/Anne/final/Um-presente-tão-atencioso..mp3" volume="0.0"]
+Anne (9): Um presente tão atencioso...\
+Eu estava mesmo precisando!\
+E esse bolo parece delicioso. \
+Muito obrigada, {NomeJogador}, e obrigada aos que vieram.
+[signal arg="flash"]
+update Anne (10)
+[wait time="1.0"]
+[signal arg="esconder_bolo"]
+if {Final.Convites} < 6:
+	[voice path="res://assets/som/Anne/final/É-uma-pena-que-a-vila-inteira-não-pô.mp3" volume="0.0"]
+	Anne (10): É uma pena que a vila inteira não pôde estar aqui... \
+	Mas estou muito contente com o carinho de vocês.
+else:
+	[voice path="res://assets/som/Anne/final/Ver-todos-vocês-aqui.mp3" volume="0.0"]
+	Anne (10): Ver todos vocês aqui reunidos já aquece o meu coração. \
+	Estou muito contente com o carinho de vocês.
+[voice path="res://assets/som/Anne/final/Você-trouxe-um-pouco-de-(emphasis)-cor-de.mp3" volume="0.0"]
+Anne (11): Você trouxe um pouco de cor de volta para o meu coração.\
+Com meu Lápis Mágico, vou desenhar uma porta até a sua casa!
+[signal arg="flash"]
+leave Anne
+leave Bella
+join Bella (Bella_final/6) center
+[voice path="res://assets/som/Bella/Bella_final/Foi-uma-[emphasis]festa-bonita!-[pause].mp3" volume="0.0"]
+Bella (Bella_final/6): Foi uma festa bonita! Muito bonita mesmo! \
+A Prefeita sorriu de verdade, e você ainda conseguiu voltar para casa!
+[voice path="res://assets/som/Bella/Bella_final/Mas...-sabe-que-faltou-um-[emphasis]-pouq.mp3" volume="0.0"]
+Bella (Bella_final/7): Mas... sabe que faltou um pouquinho?\
+Ajudando todos os amigos e achando o presente perfeito, a vila toda brilha! \
+Quem sabe da próxima vez?
+[signal arg="creditos"]
+leave Bella
+[end_timeline]
+
+# ======================================================================
+# FINAL 3: O CORAÇÃO DA VILA (FINAL VERDADEIRO)
+# ======================================================================
+label final_3
+audio "res://assets/som/Caminho da Vila.mp3" [volume="-18.0"]
+[voice path="res://assets/som/Anne/final/Todos-vocês...-Estão-to.mp3" volume="0.0"]
+Anne (12): Todos vocês... Estão todos aqui! \
+Vocês lembraram do meu aniversário!
+# --- Todos os moradores falam (Final Verdadeiro) ---
+join vincent (presente_loja/Vincent Final) right
+if {Amizade.Vincent} <= 3:
+	[style name="cinzanovo"]
+elif {Amizade.Vincent} <= 7:
+	[style name="azulnovo"]
+else:
+	[style name="verdenovo"]
+[voice path="res://assets/som/Vincent/Final/Feliz-aniversário,-Anne!-[short-pause].mp3" volume="0.0"]
+vincent (presente_loja/Vincent Final): Feliz aniversário, Anne!\
+Hoje é dia de alegria!
+leave vincent
+join linna (Linna Final) left
+if {Amizade.Linna} <= 3:
+	[style name="cinzanovo"]
+elif {Amizade.Linna} <= 7:
+	[style name="azulnovo"]
+else:
+	[style name="verdenovo"]
+[voice path="res://assets/som/Linna/Final_linna/Confete-[short-pause]-para-[emphasis]-t.mp3" volume="0.0"]
+linna (Linna Final): Confete para todo lado!
+leave linna
+join hera (Hera Final) right
+if {Amizade.P_Hera} <= 3:
+	[style name="cinzanovo"]
+elif {Amizade.P_Hera} <= 7:
+	[style name="azulnovo"]
+else:
+	[style name="verdenovo"]
+[voice path="res://assets/som/Hera/final_hera/48-[excited]-Balões-a-cada-[emphasis]-trinta-centím.mp3" volume="0.0"]
+hera (Hera Final): Balões a cada 30 centímetros, exatamente como planejado!
+leave hera
+join enzo (Enzo Final) left
+if {Amizade.Enzo} <= 3:
+	[style name="cinzanovo"]
+elif {Amizade.Enzo} <= 7:
+	[style name="azulnovo"]
+else:
+	[style name="verdenovo"]
+[voice path="res://assets/som/Enzo/final_enzo/E-eu-vim...-[short-pause]-e-não-estou.mp3" volume="0.0"]
+enzo (Enzo Final): E-eu vim... e não estou com medo!
+leave enzo
+join xerife (presente_loja/Xerife Final) right
+if {Amizade.Xerife} <= 3:
+	[style name="cinzanovo"]
+elif {Amizade.Xerife} <= 7:
+	[style name="azulnovo"]
+else:
+	[style name="verdenovo"]
+[voice path="res://assets/som/Xerife Pepper/final_xerife/Missão-[emphasis]-cumprida,-Prefeita!.mp3" volume="0.0"]
+xerife (presente_loja/Xerife Final): Missão cumprida, Prefeita! Festa sob controle!
+leave xerife
+join Pietro (presente_loja/Pietro Final) left
+if {Amizade.Pietro} <= 3:
+	[style name="cinzanovo"]
+elif {Amizade.Pietro} <= 7:
+	[style name="azulnovo"]
+else:
+	[style name="verdenovo"]
+[voice path="res://assets/som/Pietro/final_pietro/-A-gente-acabou-se-lembrando-do-que-realmente-imp.mp3" volume="0.0"]
+Pietro (presente_loja/Pietro Final): A gente acabou se lembrando do que realmente importa\: estar juntos.
+leave Pietro
+[signal arg="mostrar_bolo"]
+[wait time="1.5"]
+[voice path="res://assets/som/Anne/final/Pelas-estrelas...-Ess.mp3" volume="0.0"]
+Anne (13): Pelas estrelas... \
+Esse é o bolo mais lindo que eu já vi na minha vida!
+Protagonista: Prefeita Anne, nós também temos um presente para você. De toda a Vila das Emoções.
+[voice path="res://assets/som/Anne/final/Uma-caixa-p.mp3" volume="0.0"]
+Anne (14): Uma caixa protetora, tintas, um caderno infinito... \
+Vocês prestaram atenção em cada detalhe de quem eu sou.
+[signal arg="esconder_bolo"]
+[voice path="res://assets/som/Anne/final/Durante-muito (1).mp3" volume="0.0"]
+Anne (15): Durante muito tempo, eu usei o Lápis Mágico para \
+criar coisas porque eu me sentia sozinha...\
+Eu tentava desenhar a felicidade.
+[voice path="res://assets/som/Anne/final/Olhando-para-vocês,-rindo-juntos...-[paus.mp3" volume="0.0"]
+Anne (16): Olhando para vocês, rindo juntos... eu entendi.\
+A verdadeira magia não está no lápis, está na amizade de vocês!
+[voice path="res://assets/som/Anne/final/Eu-não-me-sinto-mais-[emphasis]-sozinha.mp3" volume="0.0"]
+Anne: Eu não me sinto mais sozinha.\
+Tenho tudo o que preciso aqui!
+[signal arg="flash"]
+update Anne (17)
+[wait time="1.5"]
+[voice path="res://assets/som/Anne/final/você-trouxe-todas-as-core.mp3" volume="0.0"]
+Anne (17): {NomeJogador}, você trouxe todas as cores de volta para a minha vida. \
+Eu não preciso mais deste lápis... \
+Ele agora pertence a você.
+[signal arg="ganhar_lapis"]
+audio "res://assets/som/item_recebido.mp3"
+Protagonista: Item lendário obtido\: Lápis Mágico!
+[voice path="res://assets/som/Anne/final/Com-ele,-você-pode-des.mp3" volume="0.0"]
+Anne (17): Com ele, você desenha a porta para o seu mundo.\
+E o melhor de tudo \: pode voltar para a Vila Lypia quando quiser!
+leave Anne
+join Bella (Bella_final/8) left
+[voice path="res://assets/som/Bella/Bella_final/Você-[emphasis]-conseguiu!n[joyful]-A-v.mp3" volume="0.0"]
+Bella (Bella_final/8): Você conseguiu!\
+A vila inteira está colorida de novo!\
+Obrigada por cuidar de todos nós.\
+Estaremos sempre esperando sua visita!
+leave Bella
+# Ao terminar: a praça desce, aparece o céu estrelado com a lua e a palavra "Fim" (feito pelo script).
+[signal arg="creditos"]
+[end_timeline]

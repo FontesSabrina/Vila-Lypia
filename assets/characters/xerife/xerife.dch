@@ -23,7 +23,7 @@
 },
 "mirror": false,
 "offset": Vector2(-10, 0),
-"scale": 1,
+"scale": 1.0,
 "scene": ""
 },
 "Bolo/1": {
@@ -393,6 +393,24 @@
 "mirror": false,
 "offset": Vector2(-150, -150),
 "scale": 0.5,
+"scene": ""
+},
+"presente_loja/Loja 1 (2)": {
+"export_overrides": {
+"image": "\"res://assets/characters/xerife/presente_loja/loja_1 (2).png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 0.7,
+"scene": ""
+},
+"presente_loja/Xerife Final": {
+"export_overrides": {
+"image": "\"res://assets/characters/xerife/presente_loja/Xerife_final.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 0.7,
 "scene": ""
 }
 },

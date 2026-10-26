@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://crrecpdwx610p"
+path="res://.godot/imported/-Boa-[emphasis]-sorte-na-festa!-[short-p.mp3-2cdac31c0d0db0980d5088e36823cfc5.mp3str"
+
+[deps]
+
+source_file="res://assets/som/cap IV/-Boa-[emphasis]-sorte-na-festa!-[short-p.mp3"
+dest_files=["res://.godot/imported/-Boa-[emphasis]-sorte-na-festa!-[short-p.mp3-2cdac31c0d0db0980d5088e36823cfc5.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

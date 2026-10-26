@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://t0hnphqqoq6n"
+path="res://.godot/imported/O-jeito-que-você-nos-ajudou-com-o-cartão...-[pau.mp3-58de6ec4a56747f028af91d4c90d59c6.mp3str"
+
+[deps]
+
+source_file="res://assets/som/cap IV/O-jeito-que-você-nos-ajudou-com-o-cartão...-[pau.mp3"
+dest_files=["res://.godot/imported/O-jeito-que-você-nos-ajudou-com-o-cartão...-[pau.mp3-58de6ec4a56747f028af91d4c90d59c6.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -387,6 +387,24 @@
 "scale": 0.8,
 "scene": ""
 },
+"presente_loja/Loja 3": {
+"export_overrides": {
+"image": "\"res://assets/characters/pietro/presente_loja/loja3.png\""
+},
+"mirror": false,
+"offset": Vector2(100, 40),
+"scale": 1.0,
+"scene": ""
+},
+"presente_loja/Pietro Final": {
+"export_overrides": {
+"image": "\"res://assets/characters/pietro/presente_loja/Pietro_final.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 0.9,
+"scene": ""
+},
 "vazio": {
 "export_overrides": {
 "image": ""

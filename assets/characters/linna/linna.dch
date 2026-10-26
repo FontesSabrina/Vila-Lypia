@@ -62,6 +62,15 @@
 "scale": 0.67,
 "scene": ""
 },
+"Linna Final": {
+"export_overrides": {
+"image": "\"res://assets/characters/linna/Linna_final.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 0.8,
+"scene": ""
+},
 "Linna_01/1": {
 "export_overrides": {
 "image": "\"res://assets/characters/linna/Linna_01/1.png\""
@@ -444,6 +453,42 @@
 "loja/3": {
 "export_overrides": {
 "image": "\"res://assets/characters/linna/loja_IV/3.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"loja/4": {
+"export_overrides": {
+"image": "\"res://assets/characters/linna/loja_IV/loja4.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"loja/7": {
+"export_overrides": {
+"image": "\"res://assets/characters/linna/loja_IV/loja7.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"loja/Loja 5": {
+"export_overrides": {
+"image": "\"res://assets/characters/linna/loja_IV/loja5.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"loja/Loja 6": {
+"export_overrides": {
+"image": "\"res://assets/characters/linna/loja_IV/loja6.png\""
 },
 "mirror": false,
 "offset": Vector2(0, 0),

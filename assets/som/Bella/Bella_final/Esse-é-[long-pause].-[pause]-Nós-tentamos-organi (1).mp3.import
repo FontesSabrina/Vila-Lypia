@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dqmgsit3wvg5k"
+path="res://.godot/imported/Esse-é-[long-pause].-[pause]-Nós-tentamos-organi (1).mp3-70210dac17618bad1a7bb8b5d2ab600a.mp3str"
+
+[deps]
+
+source_file="res://assets/som/Bella/Bella_final/Esse-é-[long-pause].-[pause]-Nós-tentamos-organi (1).mp3"
+dest_files=["res://.godot/imported/Esse-é-[long-pause].-[pause]-Nós-tentamos-organi (1).mp3-70210dac17618bad1a7bb8b5d2ab600a.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

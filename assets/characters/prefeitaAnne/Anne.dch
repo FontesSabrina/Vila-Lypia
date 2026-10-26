@@ -1,0 +1,193 @@
+{
+"@path": "res://addons/dialogic/Resources/character.gd",
+"@subpath": NodePath(""),
+"_translation_id": "",
+"color": Color(1, 1, 1, 1),
+"custom_info": {
+"prefix": "",
+"sound_mood_default": "",
+"sound_moods": {},
+"style": "",
+"suffix": ""
+},
+"default_portrait": "Cor",
+"description": "",
+"display_name": "Anne",
+"mirror": false,
+"nicknames": [""],
+"offset": Vector2(0, 0),
+"portraits": {
+"1": {
+"export_overrides": {
+"image": "\"res://assets/characters/prefeitaAnne/final/final_1.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 0.7,
+"scene": ""
+},
+"10": {
+"export_overrides": {
+"image": "\"res://assets/characters/prefeitaAnne/final/final_10.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 0.7,
+"scene": ""
+},
+"11": {
+"export_overrides": {
+"image": "\"res://assets/characters/prefeitaAnne/final/final_11.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 0.7,
+"scene": ""
+},
+"12": {
+"export_overrides": {
+"image": "\"res://assets/characters/prefeitaAnne/final/final_12.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 0.7,
+"scene": ""
+},
+"13": {
+"export_overrides": {
+"image": "\"res://assets/characters/prefeitaAnne/final/final_13.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 0.7,
+"scene": ""
+},
+"14": {
+"export_overrides": {
+"image": "\"res://assets/characters/prefeitaAnne/final/final_14.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 0.7,
+"scene": ""
+},
+"15": {
+"export_overrides": {
+"image": "\"res://assets/characters/prefeitaAnne/final/final_15.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 0.7,
+"scene": ""
+},
+"16": {
+"export_overrides": {
+"image": "\"res://assets/characters/prefeitaAnne/final/final_16.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 0.7,
+"scene": ""
+},
+"17": {
+"export_overrides": {
+"image": "\"res://assets/characters/prefeitaAnne/final/final_17.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 0.7,
+"scene": ""
+},
+"3": {
+"export_overrides": {
+"image": "\"res://assets/characters/prefeitaAnne/final/final_3.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 0.7,
+"scene": ""
+},
+"4": {
+"export_overrides": {
+"image": "\"res://assets/characters/prefeitaAnne/final/final_4.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 0.7,
+"scene": ""
+},
+"5": {
+"export_overrides": {
+"image": "\"res://assets/characters/prefeitaAnne/final/final_5.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 0.7,
+"scene": ""
+},
+"6": {
+"export_overrides": {
+"image": "\"res://assets/characters/prefeitaAnne/final/final_6.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 0.7,
+"scene": ""
+},
+"7": {
+"export_overrides": {
+"image": "\"res://assets/characters/prefeitaAnne/final/final_7.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 0.7,
+"scene": ""
+},
+"8": {
+"export_overrides": {
+"image": "\"res://assets/characters/prefeitaAnne/final/final_8.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 0.7,
+"scene": ""
+},
+"9": {
+"export_overrides": {
+"image": "\"res://assets/characters/prefeitaAnne/final/final_9.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 0.7,
+"scene": ""
+},
+"Cor": {
+"export_overrides": {
+"image": "\"res://assets/characters/prefeitaAnne/anne_cor.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 0.7,
+"scene": ""
+},
+"Pastel": {
+"export_overrides": {
+"image": "\"res://assets/characters/prefeitaAnne/anne_pastel.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 0.7,
+"scene": ""
+},
+"Pb": {
+"export_overrides": {
+"image": "\"res://assets/characters/prefeitaAnne/anne_pb.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 0.7,
+"scene": ""
+}
+},
+"scale": 1.0
+}

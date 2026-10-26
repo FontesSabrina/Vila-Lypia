@@ -3,7 +3,7 @@ class_name PainelComSave
 ## Painel do menu quando JÁ existe save.
 ## Cuida dos próprios botões E faz as próprias ações:
 ##   - Continuar      -> carrega o save e volta para a cena onde o jogador parou
-##   - Novo Jogo      -> apaga o save, fecha o menu e começa a cena_01
+##   - Novo Jogo      -> apaga o save, zera as variáveis, fecha o menu e começa a cena_01
 ##   - Configurações  -> mostra/esconde o nó PainelConfig do menu (se existir)
 ##   - Sair do Jogo   -> fecha o jogo
 ## Os botões são ligados aqui pelo código (no _ready).
@@ -49,6 +49,11 @@ func _on_novo_jogo() -> void:
 	_saindo = true
 	print(">>> Painel com save: Novo Jogo -> ", TIMELINE_INICIO)
 	Salvamento.apagar()
+	# Zera tudo da partida anterior (importante quando o menu é aberto
+	# depois dos créditos, com o jogo ainda aberto).
+	GameState.resetar()
+	if Dialogic.VAR.has_method("reset"):
+		Dialogic.VAR.reset()
 	_fechar_menu()
 	Dialogic.start(TIMELINE_INICIO)
 

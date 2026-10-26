@@ -1,5 +1,6 @@
 audio "res://assets/som/Caminho da Vila.mp3" [volume="-18.0"]
 
+# Cor do balão da Linna (pela amizade dela)
 if {Amizade.Linna} <= 3:
 	[style name="cinzanovo"]
 elif {Amizade.Linna} <= 7:
@@ -7,14 +8,185 @@ elif {Amizade.Linna} <= 7:
 else:
 	[style name="verdenovo"]
 
+# ======================================================================
+# PARTE 1: ABERTURA (começa aqui quando a loja abre)
+# ======================================================================
 [background arg="res://assets/backgrounds/loja_blação.jpg" fade="0.0"]
 join linna (loja/1) center
+[voice path="res://assets/som/cap IV/Oh!-[pause]-Olá!-Você-veio-comprar-um.mp3" volume="0.0"]
 linna (loja/1): Oh! Olá! Você veio comprar um globo de neve?
+[voice path="res://assets/som/cap IV/-Não,-[short-pause]-espere...-você-está-com-aquel.mp3" volume="0.0"]
 linna (loja/2): Não, espere... você está com aquela carinha de quem procura um presente de aniversário!
 Protagonista: Sim, Linna! É para a Prefeita Anne. \
 Nós já temos o cartão, agora precisamos do presente. \
 O que você tem na loja?
+[voice path="res://assets/som/cap IV/Ah,-a-Anne!-Eu-tenho-várias-coisas-lindas...-só.mp3" volume="0.0"]
 linna (loja/3): Ah, a Anne! Eu tenho várias coisas lindas... só preciso lembrar onde coloquei.\
 Veja o meu catálogo mágico!
 leave linna
 [signal arg="abrir_catalogo"]
+[end_timeline]
+
+# ======================================================================
+# PARTE 2: COMPRA NORMAL (o script começa no label do item comprado)
+# ======================================================================
+label compra_caixinha
+if {Amizade.Linna} <= 3:
+	[style name="cinzanovo"]
+elif {Amizade.Linna} <= 7:
+	[style name="azulnovo"]
+else:
+	[style name="verdenovo"]
+[background arg="res://assets/backgrounds/loja_blação.jpg" fade="0.0"]
+join linna (loja/4) center
+[voice path="res://assets/som/cap IV/A-Caixinha-de-[emphasis]-Música!-Ela-to.mp3" volume="0.0"]
+linna (loja/4): A Caixinha de Música! Ela toca uma melodia tão suave...\
+A Anne vai poder ouvir enquanto desenha!
+jump embrulhar
+
+label compra_veludo
+if {Amizade.Linna} <= 3:
+	[style name="cinzanovo"]
+elif {Amizade.Linna} <= 7:
+	[style name="azulnovo"]
+else:
+	[style name="verdenovo"]
+[background arg="res://assets/backgrounds/loja_blação.jpg" fade="0.0"]
+join linna (loja/4) center
+[voice path="res://assets/som/cap IV/-A-[emphasis]-Caixa-de-Veludo-Protetora.mp3" volume="0.0"]
+linna (loja/4): A Caixa de Veludo Protetora! Macia e resistente...\
+Perfeita para o Lápis Mágico nunca mais se perder!
+jump embrulhar
+
+label compra_caderno
+if {Amizade.Linna} <= 3:
+	[style name="cinzanovo"]
+elif {Amizade.Linna} <= 7:
+	[style name="azulnovo"]
+else:
+	[style name="verdenovo"]
+[background arg="res://assets/backgrounds/loja_blação.jpg" fade="0.0"]
+join linna (loja/4) center
+[voice path="res://assets/som/cap IV/O-[emphasis]Caderno-de-Esboços-Estrelad.mp3" volume="0.0"]
+linna (loja/4): O Caderno de Esboços Estrelado! Folhas em branco para novas memórias...\
+Ela vai amar desenhar novos horizontes nele!
+jump embrulhar
+
+label embrulhar
+[voice path="res://assets/som/cap IV/Deixa-eu-fazer-um-laço-bem-[emphasis]-bonito....mp3" volume="0.0"]
+linna (loja/4): Deixa eu fazer um laço bem bonito... pronto!\
+Embrulhado com todo o carinho do mundo!
+update linna (loja/7)
+[voice path="res://assets/som/cap IV/-Boa-[emphasis]-sorte-na-festa!-[short-p.mp3" volume="0.0"]
+linna (loja/7): Boa sorte na festa! Diga à Anne que fui eu que fiz o laço, tá bom?
+leave linna
+[end_timeline]
+
+# ======================================================================
+# PARTE 3: EVENTO DE AMIZADE MÁXIMA
+# ======================================================================
+label amizade
+[background arg="res://assets/backgrounds/loja_blação_obs.jpg" fade="0.0"]
+audio "res://assets/som/sino_porta.mp3"
+join vincent (presente_loja/1) leftmost
+if {Amizade.Vincent} <= 3:
+	[style name="cinzanovo"]
+elif {Amizade.Vincent} <= 7:
+	[style name="azulnovo"]
+else:
+	[style name="verdenovo"]
+[voice path="res://assets/som/cap IV/Espera-aí,-[pausa]!-Não-compre-nada-ainda!.mp3" volume="0.0"]
+vincent (presente_loja/1): Espera aí, {NomeJogador}! Não compre nada ainda!
+leave vincent
+join xerife (presente_loja/Loja 2) right
+if {Amizade.Xerife} <= 3:
+	[style name="cinzanovo"]
+elif {Amizade.Xerife} <= 7:
+	[style name="azulnovo"]
+else:
+	[style name="verdenovo"]
+[voice path="res://assets/som/cap IV/Interrompendo-a-[emphasis]-transação-come.mp3" volume="0.0"]
+xerife (presente_loja/Loja 2): Interrompendo a transação comercial! Nós fizemos uma reunião emergencial na praça.
+leave xerife
+join Pietro (presente_loja/Loja 1 (3)) leftmost
+if {Amizade.Pietro} <= 3:
+	[style name="cinzanovo"]
+elif {Amizade.Pietro} <= 7:
+	[style name="azulnovo"]
+else:
+	[style name="verdenovo"]
+[voice path="res://assets/som/cap IV/O-jeito-que-você-nos-ajudou-com-o-cartão...-[pau.mp3" volume="0.0"]
+Pietro (presente_loja/Loja 3): O jeito que você nos ajudou com o cartão... fez a gente perceber que a Anne não precisa do presente de uma única pessoa.
+leave Pietro
+join hera (Loja 5) right
+if {Amizade.P_Hera} <= 3:
+	[style name="cinzanovo"]
+elif {Amizade.P_Hera} <= 7:
+	[style name="azulnovo"]
+else:
+	[style name="verdenovo"]
+[voice path="res://assets/som/cap IV/Baseado-nos-nossos-cálculos-e-na-economia-coleti.mp3" volume="0.0"]
+hera (Loja 5): Baseado nos nossos cálculos e na economia coletiva, juntamos todos os nossos recursos.
+leave hera
+join enzo (Loja 04) leftmost
+if {Amizade.Enzo} <= 3:
+	[style name="cinzanovo"]
+elif {Amizade.Enzo} <= 7:
+	[style name="azulnovo"]
+else:
+	[style name="verdenovo"]
+[voice path="res://assets/som/cap IV/É-É-isso-mesmo...-[short-pause]-nós-qu.mp3" volume="0.0"]
+enzo (Loja 04): É-É isso mesmo... nós queremos ajudar a comprar.
+leave enzo
+join linna (loja/Loja 5) center
+if {Amizade.Linna} <= 3:
+	[style name="cinzanovo"]
+elif {Amizade.Linna} <= 7:
+	[style name="azulnovo"]
+else:
+	[style name="verdenovo"]
+[background arg="res://assets/backgrounds/loja_blação.jpg" fade="0.0"]
+[voice path="res://assets/som/cap IV/Oh!-Que-[emphasis]-lindo!-[pause]-Vocês.mp3" volume="0.0"]
+linna (loja/Loja 5): Oh! Que lindo! Vocês querem aquele presente?\
+Eu sabia que estava guardando ele debaixo do balcão para um momento muito, muito especial!
+update linna (loja/Loja 6)
+[voice path="res://assets/som/cap IV/-Este-é-o-[emphasis]-Kit-do-Criador-de-Mundos.-[j.mp3" volume="0.0"]
+linna (loja/Loja 6): Este é o "Kit do Criador de Mundos".\
+Ele vem com o Caderno de Esboços Estrelado com folhas infinitas, a Caixa de Veludo Protetora para o Lápis Mágico e um conjunto de tintas que nunca secam!
+leave linna
+join vincent (presente_loja/2) center
+if {Amizade.Vincent} <= 3:
+	[style name="cinzanovo"]
+elif {Amizade.Vincent} <= 7:
+	[style name="azulnovo"]
+else:
+	[style name="verdenovo"]
+[background arg="res://assets/backgrounds/loja_blação_obs.jpg" fade="0.0"]
+[voice path="res://assets/som/cap IV/-Nós-queremos-dar-isso-[emphasis]-junto-com-você,.mp3" volume="0.0"]
+vincent (presente_loja/2): Nós queremos dar isso junto com você, {NomeJogador}.\
+O cartão e o presente... de toda a Vila das Emoções, finalmente unidos!
+leave vincent
+audio "res://assets/som/item_recebido.mp3"
+[style name="cinzanovo"]
+Protagonista: Item obtido\: Kit do Criador de Mundos!\
+E também o selo final\: Coração da Vila!
+[end_timeline]
+
+# ======================================================================
+# PARTE 4: CENA 6, O ANOITECER MÁGICO
+# ======================================================================
+label anoitecer
+[style name="cinzanovo"]
+[background arg="res://assets/backgrounds/mesa_praça_festa_IV_noite.jpeg.jpg" fade="1.0"]
+join Bella (presente/1) center
+[voice path="res://assets/som/cap IV/Veja-só,-[pause]...-Os-convites-entregu.mp3" volume="0.0"]
+Bella (presente/1): Veja só, {NomeJogador}... Os convites entregues, o bolo perfeito no centro, o Cartão Gigante e este presente maravilhoso.
+[voice path="res://assets/som/cap IV/As-luzes-das-casas-se-[emphasis]-apagaram.mp3" volume="0.0"]
+Bella (presente/2): As luzes das casas se apagaram.\
+A Prefeita Anne costuma caminhar por aqui nessa hora, quando acha que todos já estão dormindo e esqueceram dela.
+[voice path="res://assets/som/cap IV/É-[emphasis]-agora!-[short-pause]-Rápi.mp3" volume="0.0"]
+Bella (presente/3): É agora! Rápido, todos para trás dos arbustos!\
+O Capítulo Final vai começar!
+leave Bella
+[wait time="1.0"]
+[end_timeline]
