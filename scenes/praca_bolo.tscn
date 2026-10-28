@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://pjwy2knnjqvg"]
 
-[ext_resource type="Script" path="res://scripts/praca_bolo.gd" id="1_25k7g"]
+[ext_resource type="Script" uid="uid://cfwg6bidtfr6x" path="res://scripts/praca_bolo.gd" id="1_25k7g"]
 [ext_resource type="Texture2D" uid="uid://bo6ya6hvimbti" path="res://assets/backgrounds/praça_festa.jpeg_2K_202607111643.jpeg" id="2_v8n0w"]
 [ext_resource type="PackedScene" uid="uid://cd42irvj5f3nc" path="res://scenes/bella_bolo.tscn" id="3_s8mdj"]
 [ext_resource type="PackedScene" uid="uid://b4vsaogdwxkno" path="res://scenes/botao_voltar.tscn" id="4_h0byl"]

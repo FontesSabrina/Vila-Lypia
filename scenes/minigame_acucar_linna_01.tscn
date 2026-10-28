@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://cb0vdlvg4kxyp" path="res://assets/backgrounds/casa_linna_mesa_canto.jpeg" id="1_5vmb8"]
 [ext_resource type="Texture2D" uid="uid://cgxfo7g6cmmtr" path="res://assets/icon/Açúcar Nuvem.png" id="2_6rxug"]
-[ext_resource type="Script" path="res://scripts/minigame_acucar_linna_01.gd" id="2_m1hsv"]
+[ext_resource type="Script" uid="uid://wpvpxinei86o" path="res://scripts/minigame_acucar_linna_01.gd" id="2_m1hsv"]
 [ext_resource type="Texture2D" uid="uid://40ekdq72qus4" path="res://assets/icon/caixa_01.png" id="3_s6tyh"]
 [ext_resource type="Texture2D" uid="uid://chjurcshcxjkm" path="res://assets/icon/saco_01.png" id="4_lxsw3"]
 [ext_resource type="PackedScene" uid="uid://dtffm271bhv2m" path="res://scenes/barra_acuçar.tscn" id="4_xbqa6"]

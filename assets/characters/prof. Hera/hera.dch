@@ -1,22 +1,22 @@
 {
 "@path": "res://addons/dialogic/Resources/character.gd",
 "@subpath": NodePath(""),
-"_translation_id": "",
-"color": Color(1, 1, 1, 1),
-"custom_info": {
+&"_translation_id": "",
+&"color": Color(1, 1, 1, 1),
+&"custom_info": {
 "prefix": "",
 "sound_mood_default": "",
 "sound_moods": {},
 "style": "",
 "suffix": ""
 },
-"default_portrait": "Ansiosa",
-"description": "",
-"display_name": "Hera",
-"mirror": false,
-"nicknames": [""],
-"offset": Vector2(0, 0),
-"portraits": {
+&"default_portrait": "Ansiosa",
+&"description": "",
+&"display_name": "Hera",
+&"mirror": false,
+&"nicknames": [""],
+&"offset": Vector2(0, 0),
+&"portraits": {
 "Ansiosa": {
 "export_overrides": {
 "image": "\"res://assets/characters/prof. Hera/ansiosa.png\""
@@ -370,5 +370,5 @@
 "scene": ""
 }
 },
-"scale": 1.0
+&"scale": 1.0
 }

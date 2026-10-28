@@ -1,6 +1,6 @@
 [gd_scene load_steps=6 format=3 uid="uid://bety5j7ofw8jh"]
 
-[ext_resource type="Script" path="res://scripts/minigame_fermento_xerife.gd" id="1_20jof"]
+[ext_resource type="Script" uid="uid://b08i1daw8td7o" path="res://scripts/minigame_fermento_xerife.gd" id="1_20jof"]
 [ext_resource type="Texture2D" uid="uid://chnkjahjjytk5" path="res://assets/backgrounds/xerife_sala_02.jpeg" id="1_p7tje"]
 [ext_resource type="Texture2D" uid="uid://0k6txw46vx2s" path="res://assets/icon/Fermento.png" id="2_nyxbx"]
 [ext_resource type="Texture2D" uid="uid://bggdci46hwkgi" path="res://assets/icon/posta.png" id="3_mgvhs"]

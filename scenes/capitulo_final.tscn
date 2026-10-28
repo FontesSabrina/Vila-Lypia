@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://ocpl1t4b2g4o" path="res://assets/backgrounds/praça_festa_IV_noite_novo2.jpg" id="1_ho8ch"]
 [ext_resource type="Texture2D" uid="uid://b67kuy057u3ky" path="res://assets/backgrounds/praça_festa_IV_noite_novo.jpg" id="1_itlbu"]
-[ext_resource type="Script" path="res://scripts/capitulo_final.gd" id="1_np2s6"]
+[ext_resource type="Script" uid="uid://dog2uw0jvpf38" path="res://scripts/capitulo_final.gd" id="1_np2s6"]
 [ext_resource type="PackedScene" uid="uid://om5peo7p386m" path="res://scenes/resultadoBolo.tscn" id="3_xgoxy"]
 
 [node name="capitulo_final" type="Node2D"]

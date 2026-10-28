@@ -1,6 +1,6 @@
 [gd_scene load_steps=7 format=3 uid="uid://b1act10o6ebd1"]
 
-[ext_resource type="Script" path="res://scripts/minigame_bolo_mesa.gd" id="1_eogmt"]
+[ext_resource type="Script" uid="uid://bi4i4f8k0buqh" path="res://scripts/minigame_bolo_mesa.gd" id="1_eogmt"]
 [ext_resource type="Texture2D" uid="uid://bt8d78j0f4k8d" path="res://assets/backgrounds/fazer_bolo.jpeg" id="2_f8cii"]
 [ext_resource type="PackedScene" uid="uid://bkb574hw12sfv" path="res://scenes/ingredientes.tscn" id="3_m0dul"]
 [ext_resource type="Texture2D" uid="uid://c263pgbljggm1" path="res://assets/icon/tigela.png" id="4_n0v27"]

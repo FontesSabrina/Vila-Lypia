@@ -1,7 +1,7 @@
 [gd_scene load_steps=6 format=3 uid="uid://dor3bouo3pw5m"]
 
 [ext_resource type="Texture2D" uid="uid://cyaikmkq0207s" path="res://assets/icon/barra2.png" id="1_f2lc6"]
-[ext_resource type="Script" path="res://scripts/barra_pinceis.gd" id="2_poxpc"]
+[ext_resource type="Script" uid="uid://bwivrbeyf07ql" path="res://scripts/barra_pinceis.gd" id="2_poxpc"]
 [ext_resource type="Texture2D" uid="uid://b8gxa8m1ca6ww" path="res://assets/icon/pincel01.png" id="3_ioy8e"]
 [ext_resource type="Texture2D" uid="uid://c4bf87wqk3t5c" path="res://assets/icon/pincel02.png" id="4_sc3bi"]
 [ext_resource type="Texture2D" uid="uid://cjyxhhxny2ppg" path="res://assets/icon/pincel03.png" id="5_6i4w0"]

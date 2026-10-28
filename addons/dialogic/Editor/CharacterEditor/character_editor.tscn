@@ -1,4 +1,4 @@
-[gd_scene format=3 uid="uid://dlskc36c5hrwv"]
+[gd_scene load_steps=7 format=3 uid="uid://dlskc36c5hrwv"]
 
 [ext_resource type="Script" uid="uid://cwhe7tpe75oh7" path="res://addons/dialogic/Editor/CharacterEditor/character_editor.gd" id="2"]
 [ext_resource type="PackedScene" uid="uid://dbpkta2tjsqim" path="res://addons/dialogic/Editor/Common/hint_tooltip_icon.tscn" id="2_uhhqs"]
@@ -9,7 +9,7 @@
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_4xgdx"]
 
-[node name="CharacterEditor" type="Control" unique_id=1430618019]
+[node name="CharacterEditor" type="Control"]
 self_modulate = Color(0, 0, 0, 1)
 layout_mode = 3
 anchors_preset = 15
@@ -19,7 +19,7 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("2")
 
-[node name="Scroll" type="ScrollContainer" parent="." unique_id=2103751498]
+[node name="Scroll" type="ScrollContainer" parent="."]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -27,26 +27,26 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="VBox" type="VBoxContainer" parent="Scroll" unique_id=478102003]
+[node name="VBox" type="VBoxContainer" parent="Scroll"]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 size_flags_stretch_ratio = 0.3
 theme_override_constants/separation = 0
 
-[node name="TopSection" type="HBoxContainer" parent="Scroll/VBox" unique_id=196003140]
+[node name="TopSection" type="HBoxContainer" parent="Scroll/VBox"]
 layout_mode = 2
 
-[node name="NameContainer" type="HBoxContainer" parent="Scroll/VBox/TopSection" unique_id=1249855270]
+[node name="NameContainer" type="HBoxContainer" parent="Scroll/VBox/TopSection"]
 layout_mode = 2
 
-[node name="CharacterName" type="Label" parent="Scroll/VBox/TopSection/NameContainer" unique_id=1631969065]
+[node name="CharacterName" type="Label" parent="Scroll/VBox/TopSection/NameContainer"]
 unique_name_in_owner = true
 layout_mode = 2
 theme_type_variation = &"DialogicTitle"
 text = "My Character"
 
-[node name="NameTooltip" parent="Scroll/VBox/TopSection/NameContainer" unique_id=1870345891 instance=ExtResource("2_uhhqs")]
+[node name="NameTooltip" parent="Scroll/VBox/TopSection/NameContainer" instance=ExtResource("2_uhhqs")]
 layout_mode = 2
 tooltip_text = "This unique identifier is based on the file name. You can change it in the Reference Manager.
 Use this name in timelines to reference this character."
@@ -54,61 +54,61 @@ texture = null
 hint_text = "This unique identifier is based on the file name. You can change it in the Reference Manager.
 Use this name in timelines to reference this character."
 
-[node name="MainHSplit" type="HSplitContainer" parent="Scroll/VBox" unique_id=1603115244]
+[node name="MainHSplit" type="HSplitContainer" parent="Scroll/VBox"]
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
-[node name="MainSettingsPanel" type="PanelContainer" parent="Scroll/VBox/MainHSplit" unique_id=465890127]
+[node name="MainSettingsPanel" type="PanelContainer" parent="Scroll/VBox/MainHSplit"]
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_stretch_ratio = 0.2
 theme_type_variation = &"DialogicPanelA"
 
-[node name="MainSettings" type="VBoxContainer" parent="Scroll/VBox/MainHSplit/MainSettingsPanel" unique_id=843706490]
+[node name="MainSettings" type="VBoxContainer" parent="Scroll/VBox/MainHSplit/MainSettingsPanel"]
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_stretch_ratio = 0.2
 
-[node name="HBoxContainer" type="HBoxContainer" parent="Scroll/VBox/MainHSplit/MainSettingsPanel/MainSettings" unique_id=989140237]
+[node name="HBoxContainer" type="HBoxContainer" parent="Scroll/VBox/MainHSplit/MainSettingsPanel/MainSettings"]
 layout_mode = 2
 
-[node name="MainSettingsTitle" type="Label" parent="Scroll/VBox/MainHSplit/MainSettingsPanel/MainSettings/HBoxContainer" unique_id=1680089144]
+[node name="MainSettingsTitle" type="Label" parent="Scroll/VBox/MainHSplit/MainSettingsPanel/MainSettings/HBoxContainer"]
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 3
 theme_type_variation = &"DialogicSubTitle"
 text = "Main Settings"
 
-[node name="CloseButton" type="Button" parent="Scroll/VBox/MainHSplit/MainSettingsPanel/MainSettings/HBoxContainer" unique_id=21396123]
+[node name="CloseButton" type="Button" parent="Scroll/VBox/MainHSplit/MainSettingsPanel/MainSettings/HBoxContainer"]
 unique_name_in_owner = true
 layout_mode = 2
 tooltip_text = "Hide Main Settings"
 theme_type_variation = &"FlatButton"
 text = "     "
 
-[node name="MainSettingsScroll" type="ScrollContainer" parent="Scroll/VBox/MainHSplit/MainSettingsPanel/MainSettings" unique_id=802937484]
+[node name="MainSettingsScroll" type="ScrollContainer" parent="Scroll/VBox/MainHSplit/MainSettingsPanel/MainSettings"]
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_vertical = 3
 theme_override_styles/panel = SubResource("StyleBoxEmpty_es2rd")
 horizontal_scroll_mode = 0
 
-[node name="MainSettingsSections" type="VBoxContainer" parent="Scroll/VBox/MainHSplit/MainSettingsPanel/MainSettings/MainSettingsScroll" unique_id=667263369]
+[node name="MainSettingsSections" type="VBoxContainer" parent="Scroll/VBox/MainHSplit/MainSettingsPanel/MainSettings/MainSettingsScroll"]
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
-[node name="MainSettingsHidden" type="VBoxContainer" parent="Scroll/VBox/MainHSplit/MainSettingsPanel" unique_id=190117290]
+[node name="MainSettingsHidden" type="VBoxContainer" parent="Scroll/VBox/MainHSplit/MainSettingsPanel"]
 unique_name_in_owner = true
 visible = false
 layout_mode = 2
 
-[node name="OpenButton" type="Button" parent="Scroll/VBox/MainHSplit/MainSettingsPanel/MainSettingsHidden" unique_id=349430792]
+[node name="OpenButton" type="Button" parent="Scroll/VBox/MainHSplit/MainSettingsPanel/MainSettingsHidden"]
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 0
@@ -117,61 +117,61 @@ tooltip_text = "Show Main Settings"
 theme_type_variation = &"FlatButton"
 theme_override_constants/icon_max_width = 20
 
-[node name="Split" type="HSplitContainer" parent="Scroll/VBox/MainHSplit" unique_id=203063071]
+[node name="Split" type="HSplitContainer" parent="Scroll/VBox/MainHSplit"]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
-[node name="HBoxContainer" type="HBoxContainer" parent="Scroll/VBox/MainHSplit/Split" unique_id=1087042926]
+[node name="HBoxContainer" type="HBoxContainer" parent="Scroll/VBox/MainHSplit/Split"]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_stretch_ratio = 0.2
 theme_override_constants/separation = 0
 
-[node name="MarginContainer" type="MarginContainer" parent="Scroll/VBox/MainHSplit/Split/HBoxContainer" unique_id=1163073523]
+[node name="MarginContainer" type="MarginContainer" parent="Scroll/VBox/MainHSplit/Split/HBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_stretch_ratio = 0.2
 
-[node name="PortraitListSection" type="PanelContainer" parent="Scroll/VBox/MainHSplit/Split/HBoxContainer/MarginContainer" unique_id=95553638]
+[node name="PortraitListSection" type="PanelContainer" parent="Scroll/VBox/MainHSplit/Split/HBoxContainer/MarginContainer"]
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 3
 theme_type_variation = &"DialogicPanelA"
 
-[node name="Portraits" type="VBoxContainer" parent="Scroll/VBox/MainHSplit/Split/HBoxContainer/MarginContainer/PortraitListSection" unique_id=331914429]
+[node name="Portraits" type="VBoxContainer" parent="Scroll/VBox/MainHSplit/Split/HBoxContainer/MarginContainer/PortraitListSection"]
 layout_mode = 2
 
-[node name="Title" type="HBoxContainer" parent="Scroll/VBox/MainHSplit/Split/HBoxContainer/MarginContainer/PortraitListSection/Portraits" unique_id=1467490767]
+[node name="Title" type="HBoxContainer" parent="Scroll/VBox/MainHSplit/Split/HBoxContainer/MarginContainer/PortraitListSection/Portraits"]
 layout_mode = 2
 
-[node name="PortraitsTitle" type="Label" parent="Scroll/VBox/MainHSplit/Split/HBoxContainer/MarginContainer/PortraitListSection/Portraits/Title" unique_id=1012902349]
+[node name="PortraitsTitle" type="Label" parent="Scroll/VBox/MainHSplit/Split/HBoxContainer/MarginContainer/PortraitListSection/Portraits/Title"]
 layout_mode = 2
 theme_type_variation = &"DialogicSubTitle"
 text = "Portraits"
 
-[node name="AddPortraitButton" type="Button" parent="Scroll/VBox/MainHSplit/Split/HBoxContainer/MarginContainer/PortraitListSection/Portraits/Title" unique_id=1343539624]
+[node name="AddPortraitButton" type="Button" parent="Scroll/VBox/MainHSplit/Split/HBoxContainer/MarginContainer/PortraitListSection/Portraits/Title"]
 unique_name_in_owner = true
 layout_mode = 2
 tooltip_text = "Add Empty Portrait"
 theme_type_variation = &"FlatButton"
 
-[node name="AddPortraitGroupButton" type="Button" parent="Scroll/VBox/MainHSplit/Split/HBoxContainer/MarginContainer/PortraitListSection/Portraits/Title" unique_id=554125997]
+[node name="AddPortraitGroupButton" type="Button" parent="Scroll/VBox/MainHSplit/Split/HBoxContainer/MarginContainer/PortraitListSection/Portraits/Title"]
 unique_name_in_owner = true
 layout_mode = 2
 tooltip_text = "Add Portrait Group"
 theme_type_variation = &"FlatButton"
 
-[node name="ImportPortraitsButton" type="Button" parent="Scroll/VBox/MainHSplit/Split/HBoxContainer/MarginContainer/PortraitListSection/Portraits/Title" unique_id=423626215]
+[node name="ImportPortraitsButton" type="Button" parent="Scroll/VBox/MainHSplit/Split/HBoxContainer/MarginContainer/PortraitListSection/Portraits/Title"]
 unique_name_in_owner = true
 layout_mode = 2
 tooltip_text = "Import Images as Portraits"
 theme_type_variation = &"FlatButton"
 
-[node name="PortraitListTools" type="HBoxContainer" parent="Scroll/VBox/MainHSplit/Split/HBoxContainer/MarginContainer/PortraitListSection/Portraits" unique_id=1864279451]
+[node name="PortraitListTools" type="HBoxContainer" parent="Scroll/VBox/MainHSplit/Split/HBoxContainer/MarginContainer/PortraitListSection/Portraits"]
 layout_mode = 2
 
-[node name="PortraitSearch" type="LineEdit" parent="Scroll/VBox/MainHSplit/Split/HBoxContainer/MarginContainer/PortraitListSection/Portraits/PortraitListTools" unique_id=1047008144]
+[node name="PortraitSearch" type="LineEdit" parent="Scroll/VBox/MainHSplit/Split/HBoxContainer/MarginContainer/PortraitListSection/Portraits/PortraitListTools"]
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 3
@@ -182,19 +182,19 @@ clear_button_enabled = true
 caret_blink = true
 caret_blink_interval = 0.5
 
-[node name="PortraitTreePanel" type="PanelContainer" parent="Scroll/VBox/MainHSplit/Split/HBoxContainer/MarginContainer/PortraitListSection/Portraits" unique_id=1248108876]
+[node name="PortraitTreePanel" type="PanelContainer" parent="Scroll/VBox/MainHSplit/Split/HBoxContainer/MarginContainer/PortraitListSection/Portraits"]
 layout_mode = 2
 size_flags_vertical = 3
 theme_override_styles/panel = SubResource("StyleBoxEmpty_4xgdx")
 
-[node name="PortraitTree" type="Tree" parent="Scroll/VBox/MainHSplit/Split/HBoxContainer/MarginContainer/PortraitListSection/Portraits/PortraitTreePanel" unique_id=1126516054]
+[node name="PortraitTree" type="Tree" parent="Scroll/VBox/MainHSplit/Split/HBoxContainer/MarginContainer/PortraitListSection/Portraits/PortraitTreePanel"]
 unique_name_in_owner = true
 layout_mode = 2
 allow_rmb_select = true
 hide_root = true
 script = ExtResource("2_vad0i")
 
-[node name="PortraitRightClickMenu" type="PopupMenu" parent="Scroll/VBox/MainHSplit/Split/HBoxContainer/MarginContainer/PortraitListSection/Portraits/PortraitTreePanel/PortraitTree" unique_id=1852436528]
+[node name="PortraitRightClickMenu" type="PopupMenu" parent="Scroll/VBox/MainHSplit/Split/HBoxContainer/MarginContainer/PortraitListSection/Portraits/PortraitTreePanel/PortraitTree"]
 size = Vector2i(118, 100)
 item_count = 5
 item_0/text = "Rename"
@@ -208,11 +208,11 @@ item_3/separator = true
 item_4/text = "Make Default"
 item_4/id = 4
 
-[node name="PortraitChangeInfo" type="HBoxContainer" parent="Scroll/VBox/MainHSplit/Split/HBoxContainer/MarginContainer/PortraitListSection/Portraits" unique_id=867743359]
+[node name="PortraitChangeInfo" type="HBoxContainer" parent="Scroll/VBox/MainHSplit/Split/HBoxContainer/MarginContainer/PortraitListSection/Portraits"]
 unique_name_in_owner = true
 layout_mode = 2
 
-[node name="PortraitChangeWarning" type="Label" parent="Scroll/VBox/MainHSplit/Split/HBoxContainer/MarginContainer/PortraitListSection/Portraits/PortraitChangeInfo" unique_id=505408175]
+[node name="PortraitChangeWarning" type="Label" parent="Scroll/VBox/MainHSplit/Split/HBoxContainer/MarginContainer/PortraitListSection/Portraits/PortraitChangeInfo"]
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 3
@@ -220,24 +220,24 @@ theme_override_colors/font_color = Color(0, 0, 0, 1)
 text = "Some portraits were renamed. Make sure no references broke!"
 autowrap_mode = 3
 
-[node name="ReferenceMangerButton" type="Button" parent="Scroll/VBox/MainHSplit/Split/HBoxContainer/MarginContainer/PortraitListSection/Portraits/PortraitChangeInfo" unique_id=1685213609]
+[node name="ReferenceMangerButton" type="Button" parent="Scroll/VBox/MainHSplit/Split/HBoxContainer/MarginContainer/PortraitListSection/Portraits/PortraitChangeInfo"]
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_vertical = 4
 text = "Reference
 Manager"
 
-[node name="RightSection2" type="VBoxContainer" parent="Scroll/VBox/MainHSplit/Split" unique_id=223577878]
+[node name="RightSection2" type="VBoxContainer" parent="Scroll/VBox/MainHSplit/Split"]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 size_flags_stretch_ratio = 0.5
 
-[node name="Spacer" type="Control" parent="Scroll/VBox/MainHSplit/Split/RightSection2" unique_id=1547642731]
+[node name="Spacer" type="Control" parent="Scroll/VBox/MainHSplit/Split/RightSection2"]
 custom_minimum_size = Vector2(0, 10)
 layout_mode = 2
 
-[node name="RightSection" type="SplitContainer" parent="Scroll/VBox/MainHSplit/Split/RightSection2" unique_id=1177475928]
+[node name="RightSection" type="SplitContainer" parent="Scroll/VBox/MainHSplit/Split/RightSection2"]
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 3
@@ -245,7 +245,7 @@ size_flags_vertical = 3
 size_flags_stretch_ratio = 0.5
 vertical = true
 
-[node name="PortraitPreviewSection" type="Panel" parent="Scroll/VBox/MainHSplit/Split/RightSection2/RightSection" unique_id=1063379299]
+[node name="PortraitPreviewSection" type="Panel" parent="Scroll/VBox/MainHSplit/Split/RightSection2/RightSection"]
 unique_name_in_owner = true
 show_behind_parent = true
 custom_minimum_size = Vector2(100, 0)
@@ -254,7 +254,7 @@ size_flags_horizontal = 3
 size_flags_vertical = 3
 theme_type_variation = &"DialogicPanelB"
 
-[node name="ClipRect" type="Control" parent="Scroll/VBox/MainHSplit/Split/RightSection2/RightSection/PortraitPreviewSection" unique_id=167304182]
+[node name="ClipRect" type="Control" parent="Scroll/VBox/MainHSplit/Split/RightSection2/RightSection/PortraitPreviewSection"]
 clip_contents = true
 layout_mode = 1
 anchors_preset = 15
@@ -263,14 +263,14 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="Node2D" type="Node2D" parent="Scroll/VBox/MainHSplit/Split/RightSection2/RightSection/PortraitPreviewSection/ClipRect" unique_id=2047494054]
+[node name="Node2D" type="Node2D" parent="Scroll/VBox/MainHSplit/Split/RightSection2/RightSection/PortraitPreviewSection/ClipRect"]
 position = Vector2(13, 17)
 
-[node name="RealPreviewPivot" type="Sprite2D" parent="Scroll/VBox/MainHSplit/Split/RightSection2/RightSection/PortraitPreviewSection/ClipRect/Node2D" unique_id=1422961354]
+[node name="RealPreviewPivot" type="Sprite2D" parent="Scroll/VBox/MainHSplit/Split/RightSection2/RightSection/PortraitPreviewSection/ClipRect/Node2D"]
 unique_name_in_owner = true
 position = Vector2(329, 287)
 
-[node name="ScenePreviewWarning" type="Label" parent="Scroll/VBox/MainHSplit/Split/RightSection2/RightSection/PortraitPreviewSection" unique_id=1589232067]
+[node name="ScenePreviewWarning" type="Label" parent="Scroll/VBox/MainHSplit/Split/RightSection2/RightSection/PortraitPreviewSection"]
 unique_name_in_owner = true
 visible = false
 layout_mode = 1
@@ -291,7 +291,7 @@ vertical_alignment = 1
 autowrap_mode = 3
 metadata/_edit_layout_mode = 1
 
-[node name="PreviewReal" type="CenterContainer" parent="Scroll/VBox/MainHSplit/Split/RightSection2/RightSection/PortraitPreviewSection" unique_id=817899797]
+[node name="PreviewReal" type="CenterContainer" parent="Scroll/VBox/MainHSplit/Split/RightSection2/RightSection/PortraitPreviewSection"]
 unique_name_in_owner = true
 layout_mode = 1
 anchors_preset = 7
@@ -307,16 +307,16 @@ grow_vertical = 0
 mouse_filter = 2
 metadata/_edit_layout_mode = 1
 
-[node name="Control" type="Control" parent="Scroll/VBox/MainHSplit/Split/RightSection2/RightSection/PortraitPreviewSection/PreviewReal" unique_id=1058864451]
+[node name="Control" type="Control" parent="Scroll/VBox/MainHSplit/Split/RightSection2/RightSection/PortraitPreviewSection/PreviewReal"]
 layout_mode = 2
 
-[node name="RealSizeRemotePivotTransform" type="RemoteTransform2D" parent="Scroll/VBox/MainHSplit/Split/RightSection2/RightSection/PortraitPreviewSection/PreviewReal/Control" unique_id=995132075]
+[node name="RealSizeRemotePivotTransform" type="RemoteTransform2D" parent="Scroll/VBox/MainHSplit/Split/RightSection2/RightSection/PortraitPreviewSection/PreviewReal/Control"]
 unique_name_in_owner = true
 remote_path = NodePath("../../../ClipRect/Node2D/RealPreviewPivot")
 update_rotation = false
 update_scale = false
 
-[node name="FullPreviewAvailableRect" type="Control" parent="Scroll/VBox/MainHSplit/Split/RightSection2/RightSection/PortraitPreviewSection" unique_id=115907348]
+[node name="FullPreviewAvailableRect" type="Control" parent="Scroll/VBox/MainHSplit/Split/RightSection2/RightSection/PortraitPreviewSection"]
 unique_name_in_owner = true
 layout_mode = 1
 anchors_preset = 15
@@ -331,7 +331,7 @@ grow_vertical = 2
 mouse_filter = 2
 metadata/_edit_layout_mode = 1
 
-[node name="HBoxContainer" type="HBoxContainer" parent="Scroll/VBox/MainHSplit/Split/RightSection2/RightSection/PortraitPreviewSection" unique_id=1496501948]
+[node name="HBoxContainer" type="HBoxContainer" parent="Scroll/VBox/MainHSplit/Split/RightSection2/RightSection/PortraitPreviewSection"]
 layout_mode = 1
 anchors_preset = 10
 anchor_right = 1.0
@@ -342,7 +342,7 @@ offset_bottom = 43.0
 grow_horizontal = 2
 mouse_filter = 2
 
-[node name="PreviewLabel" type="Label" parent="Scroll/VBox/MainHSplit/Split/RightSection2/RightSection/PortraitPreviewSection/HBoxContainer" unique_id=564645258]
+[node name="PreviewLabel" type="Label" parent="Scroll/VBox/MainHSplit/Split/RightSection2/RightSection/PortraitPreviewSection/HBoxContainer"]
 unique_name_in_owner = true
 show_behind_parent = true
 layout_mode = 2
@@ -352,7 +352,7 @@ theme_override_colors/font_color = Color(0, 0, 0, 1)
 text = "No portrait to preview."
 text_overrun_behavior = 1
 
-[node name="FitPreview_Toggle" type="Button" parent="Scroll/VBox/MainHSplit/Split/RightSection2/RightSection/PortraitPreviewSection/HBoxContainer" unique_id=388224784]
+[node name="FitPreview_Toggle" type="Button" parent="Scroll/VBox/MainHSplit/Split/RightSection2/RightSection/PortraitPreviewSection/HBoxContainer"]
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_vertical = 0
@@ -363,22 +363,22 @@ button_pressed = true
 flat = true
 metadata/_edit_layout_mode = 1
 
-[node name="VBox" type="VBoxContainer" parent="Scroll/VBox/MainHSplit/Split/RightSection2/RightSection" unique_id=1189439711]
+[node name="VBox" type="VBoxContainer" parent="Scroll/VBox/MainHSplit/Split/RightSection2/RightSection"]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 size_flags_stretch_ratio = 0.75
 
-[node name="Hbox" type="HBoxContainer" parent="Scroll/VBox/MainHSplit/Split/RightSection2/RightSection/VBox" unique_id=130485759]
+[node name="Hbox" type="HBoxContainer" parent="Scroll/VBox/MainHSplit/Split/RightSection2/RightSection/VBox"]
 layout_mode = 2
 
-[node name="PortraitSettingsTitle" type="Label" parent="Scroll/VBox/MainHSplit/Split/RightSection2/RightSection/VBox/Hbox" unique_id=1706205105]
+[node name="PortraitSettingsTitle" type="Label" parent="Scroll/VBox/MainHSplit/Split/RightSection2/RightSection/VBox/Hbox"]
 unique_name_in_owner = true
 layout_mode = 2
 theme_type_variation = &"DialogicSubTitle"
 text = "Portrait Settings"
 
-[node name="SwitchPortraitSettingsPosition" type="Button" parent="Scroll/VBox/MainHSplit/Split/RightSection2/RightSection/VBox/Hbox" unique_id=1532886824]
+[node name="SwitchPortraitSettingsPosition" type="Button" parent="Scroll/VBox/MainHSplit/Split/RightSection2/RightSection/VBox/Hbox"]
 unique_name_in_owner = true
 modulate = Color(1, 1, 1, 0.647059)
 layout_mode = 2
@@ -386,24 +386,24 @@ tooltip_text = "Switch position"
 focus_mode = 0
 flat = true
 
-[node name="Scroll" type="ScrollContainer" parent="Scroll/VBox/MainHSplit/Split/RightSection2/RightSection/VBox" unique_id=1486898798]
+[node name="Scroll" type="ScrollContainer" parent="Scroll/VBox/MainHSplit/Split/RightSection2/RightSection/VBox"]
 layout_mode = 2
 size_flags_vertical = 3
 size_flags_stretch_ratio = 0.4
 
-[node name="PortraitSettingsSection" type="VBoxContainer" parent="Scroll/VBox/MainHSplit/Split/RightSection2/RightSection/VBox/Scroll" unique_id=1171723602]
+[node name="PortraitSettingsSection" type="VBoxContainer" parent="Scroll/VBox/MainHSplit/Split/RightSection2/RightSection/VBox/Scroll"]
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 size_flags_stretch_ratio = 0.3
 
-[node name="Spacer2" type="Control" parent="Scroll/VBox/MainHSplit/Split/RightSection2" unique_id=1167242753]
+[node name="Spacer2" type="Control" parent="Scroll/VBox/MainHSplit/Split/RightSection2"]
 visible = false
 custom_minimum_size = Vector2(0, 20)
 layout_mode = 2
 
-[node name="NoCharacterScreen" type="PanelContainer" parent="." unique_id=190821474]
+[node name="NoCharacterScreen" type="PanelContainer" parent="."]
 visible = false
 layout_mode = 1
 anchors_preset = 15
@@ -413,21 +413,21 @@ grow_horizontal = 2
 grow_vertical = 2
 size_flags_horizontal = 3
 
-[node name="CenterContainer" type="CenterContainer" parent="NoCharacterScreen" unique_id=1885703718]
+[node name="CenterContainer" type="CenterContainer" parent="NoCharacterScreen"]
 layout_mode = 2
 
-[node name="VBoxContainer" type="VBoxContainer" parent="NoCharacterScreen/CenterContainer" unique_id=135127017]
+[node name="VBoxContainer" type="VBoxContainer" parent="NoCharacterScreen/CenterContainer"]
 custom_minimum_size = Vector2(250, 0)
 layout_mode = 2
 
-[node name="Label" type="Label" parent="NoCharacterScreen/CenterContainer/VBoxContainer" unique_id=429783209]
+[node name="Label" type="Label" parent="NoCharacterScreen/CenterContainer/VBoxContainer"]
 layout_mode = 2
 text = "No character opened. 
 Create a character or double-click one in the file system dock."
 horizontal_alignment = 1
 autowrap_mode = 3
 
-[node name="CreateCharacterButton" type="Button" parent="NoCharacterScreen/CenterContainer/VBoxContainer" unique_id=1496778365]
+[node name="CreateCharacterButton" type="Button" parent="NoCharacterScreen/CenterContainer/VBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 4
 text = "Create New Character"

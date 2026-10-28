@@ -78,7 +78,7 @@ elif {Bolo.Xerife.Xerife_Fase} == 2:
 		[end_timeline]
 	- Agora não posso.
 		[voice path="res://assets/som/Xerife Pepper/bolo_xerife_02/Lamentável!-A-[emphasis]-ordem-da-vila-dep.mp3" volume="0.0"]
-		xerife (Bolo/Bolo 12): Lamentável!\
+		xerife (Bolo/12): Lamentável!\
 		A ordem da vila depende de nós. \
 		Espero que mude de ideia logo!
 		[end_timeline]

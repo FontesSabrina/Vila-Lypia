@@ -14,9 +14,11 @@ var _pegou := false
 
 func _ready() -> void:
 	if seta_voltar:
-		seta_voltar.pressed.connect(_on_seta_voltar_pressed)
+		if not seta_voltar.pressed.is_connected(_on_seta_voltar_pressed):
+			seta_voltar.pressed.connect(_on_seta_voltar_pressed)
 	if acucar:
-		acucar.pressed.connect(_on_acucar_pressed)
+		if not acucar.pressed.is_connected(_on_acucar_pressed):
+			acucar.pressed.connect(_on_acucar_pressed)
 		acucar.visible = not GameState.acucar_pego
 
 

@@ -1,7 +1,7 @@
 [gd_scene load_steps=6 format=3 uid="uid://ym81xh6oyftp"]
 
 [ext_resource type="Texture2D" uid="uid://dvacs4k61ky8w" path="res://assets/backgrounds/floresta03.jpeg" id="1_6cx4e"]
-[ext_resource type="Script" path="res://scripts/minigame_pietro_floresta_pinceis_02.gd" id="2_5w52v"]
+[ext_resource type="Script" uid="uid://xxtcqhw8inrf" path="res://scripts/minigame_pietro_floresta_pinceis_02.gd" id="2_5w52v"]
 [ext_resource type="Texture2D" uid="uid://c50f71pflhnqf" path="res://assets/icon/seta.png" id="2_hfcwp"]
 [ext_resource type="PackedScene" uid="uid://dor3bouo3pw5m" path="res://scenes/barra_pinceis.tscn" id="3_1g4iy"]
 [ext_resource type="Texture2D" uid="uid://c4bf87wqk3t5c" path="res://assets/icon/pincel02.png" id="5_onuko"]

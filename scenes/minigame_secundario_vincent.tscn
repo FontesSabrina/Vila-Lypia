@@ -1,6 +1,6 @@
 [gd_scene load_steps=9 format=3 uid="uid://cay6l6wp6me5v"]
 
-[ext_resource type="Script" path="res://scripts/minigame_secundario_vincent.gd" id="1_am57u"]
+[ext_resource type="Script" uid="uid://db6p0voe0mhnu" path="res://scripts/minigame_secundario_vincent.gd" id="1_am57u"]
 [ext_resource type="Texture2D" uid="uid://demnjk3dyu2cr" path="res://assets/backgrounds/floresta.jpeg" id="2_dk4ka"]
 [ext_resource type="Texture2D" uid="uid://b0u184jo0l4xp" path="res://assets/icon/Luva Amarela.png" id="3_010j3"]
 [ext_resource type="Texture2D" uid="uid://bo2sgguq51sby" path="res://assets/icon/Luva Azul.png" id="4_l14ut"]

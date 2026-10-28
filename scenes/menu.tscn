@@ -1,10 +1,11 @@
-[gd_scene load_steps=6 format=3 uid="uid://nug86jdamvjb"]
+[gd_scene load_steps=7 format=3 uid="uid://nug86jdamvjb"]
 
-[ext_resource type="Script" path="res://scripts/menu.gd" id="1_337nk"]
+[ext_resource type="Script" uid="uid://88oymwcijq0e" path="res://scripts/menu.gd" id="1_337nk"]
 [ext_resource type="Texture2D" uid="uid://b7i1lpbcmdt75" path="res://assets/backgrounds/menu.png" id="2_73gwl"]
 [ext_resource type="Texture2D" uid="uid://bn4bc7nyfu7yr" path="res://assets/icon/logo (2).png" id="3_knycb"]
 [ext_resource type="PackedScene" uid="uid://gcdn3uq7o8i6" path="res://scenes/painel_primeira_vez.tscn" id="4_50bpr"]
 [ext_resource type="PackedScene" uid="uid://cmw0ue0xtj3j6" path="res://scenes/painel_com_save.tscn" id="5_jxd3s"]
+[ext_resource type="Script" uid="uid://fwdycfeg8gse" path="res://scripts/painel_config.gd" id="6_g3eks"]
 
 [node name="menu" type="Control"]
 layout_mode = 3
@@ -31,16 +32,22 @@ texture = ExtResource("3_knycb")
 
 [node name="PainelPrimeiraVez" parent="." instance=ExtResource("4_50bpr")]
 layout_mode = 1
-offset_left = 329.0
-offset_top = 278.0
-offset_right = 329.0
-offset_bottom = 278.0
+offset_left = 305.0
+offset_top = 267.0
+offset_right = 305.0
+offset_bottom = 267.0
 scale = Vector2(1.39409, 1.6885)
 
 [node name="PainelComSave" parent="." instance=ExtResource("5_jxd3s")]
 layout_mode = 1
-offset_left = 306.0
-offset_top = 413.0
-offset_right = 306.0
-offset_bottom = 413.0
+offset_left = 291.0
+offset_top = 392.0
+offset_right = 291.0
+offset_bottom = 392.0
 scale = Vector2(1.06244, 1.20213)
+
+[node name="PainelConfig" type="Control" parent="."]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("6_g3eks")

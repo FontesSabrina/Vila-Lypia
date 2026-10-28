@@ -87,7 +87,7 @@ leave linna
 # ======================================================================
 label amizade
 [background arg="res://assets/backgrounds/loja_blação_obs.jpg" fade="0.0"]
-audio "res://assets/som/sino_porta.mp3"
+# audio "res://assets/som/sino_porta.mp3"  (som ainda não existe: tire o # quando colocar o arquivo)
 join vincent (presente_loja/1) leftmost
 if {Amizade.Vincent} <= 3:
 	[style name="cinzanovo"]
@@ -108,7 +108,7 @@ else:
 [voice path="res://assets/som/cap IV/Interrompendo-a-[emphasis]-transação-come.mp3" volume="0.0"]
 xerife (presente_loja/Loja 2): Interrompendo a transação comercial! Nós fizemos uma reunião emergencial na praça.
 leave xerife
-join Pietro (presente_loja/Loja 1 (3)) leftmost
+join Pietro (presente_loja/Loja 3) leftmost
 if {Amizade.Pietro} <= 3:
 	[style name="cinzanovo"]
 elif {Amizade.Pietro} <= 7:

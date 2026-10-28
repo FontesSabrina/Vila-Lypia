@@ -5,24 +5,34 @@ class_name Creditos
 ## O texto sobe devagar. Clique ou tecla pula. No fim volta para o menu.
 
 const CENA_MENU := "res://scenes/menu.tscn"
-const DURACAO := 25.0   # segundos para o texto atravessar a tela
+const DURACAO := 32.0   # segundos para o texto atravessar a tela
 const MUSICA := "res://assets/som/Caminho da Vila.mp3"
 
-## Edite aqui os créditos. Linha vazia = espaço.
+## Edite aqui os créditos.
+##   Linha vazia = espaço.
+##   Linha que começa com "#" = título de seção (aparece em dourado).
 const LINHAS := [
 	"Vila Lypia",
 	"",
 	"",
-	"Criação, roteiro e programação",
-	"(seu nome aqui)",
+	"#Desenvolvimento",
+	"Alexandre do Amaral Quintão",
+	"Sabrina Caetano Fontes",
 	"",
-	"Arte e personagens",
-	"(nome aqui)",
+	"#Orientador",
+	"Prof. Paulo Vinicius Moreira Dutra",
 	"",
-	"Vozes",
-	"(nome aqui)",
+	"#Projeto de Extensão",
+	"Instituto Federal do Sudeste de Minas Gerais",
+	"IF Sudeste MG",
 	"",
-	"Feito com Godot Engine e Dialogic",
+	"",
+	"#Ferramentas",
+	"Motor do jogo: Godot Engine",
+	"Diálogos: Dialogic",
+	"Vozes: Fish Audio",
+	"Imagens: Google Flow (Whisk)",
+	"Remoção de fundo: Photoroom",
 	"",
 	"",
 	"Obrigada por jogar!",
@@ -57,8 +67,13 @@ func _ready() -> void:
 		coluna.add_child(_label("", 20))
 
 	for i in LINHAS.size():
-		var tamanho := 44 if i == 0 else 24
-		coluna.add_child(_label(LINHAS[i], tamanho))
+		var linha: String = LINHAS[i]
+		if i == 0:
+			coluna.add_child(_label(linha, 44))
+		elif linha.begins_with("#"):
+			coluna.add_child(_label(linha.substr(1), 26, Color("ffd76e")))
+		else:
+			coluna.add_child(_label(linha, 24))
 
 	if GameState.lapis_magico:
 		coluna.add_child(_label("", 20))

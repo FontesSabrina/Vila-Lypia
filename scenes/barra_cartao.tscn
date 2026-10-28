@@ -1,6 +1,6 @@
 [gd_scene load_steps=9 format=3 uid="uid://qgknhrb2io50"]
 
-[ext_resource type="Script" path="res://scripts/barra_cartao.gd" id="1_0bsbd"]
+[ext_resource type="Script" uid="uid://c0q8q68b4tav" path="res://scripts/barra_cartao.gd" id="1_0bsbd"]
 [ext_resource type="Texture2D" uid="uid://cyaikmkq0207s" path="res://assets/icon/barra2.png" id="1_nqjb7"]
 [ext_resource type="Texture2D" uid="uid://c2ltfygsdgyv0" path="res://assets/icon/cartao.jpg" id="2_h70x1"]
 [ext_resource type="Texture2D" uid="uid://bsstesq55hn0e" path="res://assets/icon/Sol Radiante.png" id="3_jk4se"]

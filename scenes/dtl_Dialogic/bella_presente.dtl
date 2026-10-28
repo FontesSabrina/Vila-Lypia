@@ -23,6 +23,12 @@ if {Cap4.Intro_Feita} == true:
 		leave Bella
 		[signal arg="iniciar_minigame_cartao"]
 	else:
+		# Ainda falta conversar com algum morador: a Bella avisa (antes ela
+		# não falava nada e o jogo voltava para a praça sem explicar).
+		join Bella (cartao /7) left
+		Bella (cartao /7): Ainda tem moradores precisando de ajuda com o cartão.\
+		Converse com todos na praça e depois volte aqui!
+		leave Bella
 		[signal arg="ir_para_mesa"]
 	[end_timeline]
 

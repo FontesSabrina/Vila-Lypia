@@ -1,6 +1,6 @@
 [gd_scene load_steps=7 format=3 uid="uid://bq0641nok382t"]
 
-[ext_resource type="Script" path="res://scripts/rua_das_ipes_centro_01.gd" id="1_ijdy0"]
+[ext_resource type="Script" uid="uid://me8sy5w03k01" path="res://scripts/rua_das_ipes_centro_01.gd" id="1_ijdy0"]
 [ext_resource type="Texture2D" uid="uid://em6esrdi52jy" path="res://assets/backgrounds/rua_das_ipes_centro_01.jpeg" id="1_tqcfy"]
 [ext_resource type="PackedScene" uid="uid://dejr6fahbfv0b" path="res://scenes/barra_La.tscn" id="2_rjmr2"]
 [ext_resource type="Texture2D" uid="uid://vsxjlla1lyfi" path="res://assets/icon/la_04.png" id="3_6wf5i"]

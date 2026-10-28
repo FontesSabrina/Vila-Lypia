@@ -9,7 +9,8 @@ const CENA_INICIO := "res://scenes/minigame_acucar_linna.tscn"
 
 func _ready() -> void:
 	if seta_voltar:
-		seta_voltar.pressed.connect(_on_seta_voltar_pressed)
+		if not seta_voltar.pressed.is_connected(_on_seta_voltar_pressed):
+			seta_voltar.pressed.connect(_on_seta_voltar_pressed)
 
 
 func _on_seta_voltar_pressed() -> void:

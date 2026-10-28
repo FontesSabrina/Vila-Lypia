@@ -1,22 +1,22 @@
 {
 "@path": "res://addons/dialogic/Resources/character.gd",
 "@subpath": NodePath(""),
-"_translation_id": "",
-"color": Color(1, 1, 1, 1),
-"custom_info": {
+&"_translation_id": "",
+&"color": Color(1, 1, 1, 1),
+&"custom_info": {
 "prefix": "",
 "sound_mood_default": "",
 "sound_moods": {},
 "style": "",
 "suffix": ""
 },
-"default_portrait": "Nuvem",
-"description": "",
-"display_name": "Linna",
-"mirror": false,
-"nicknames": [""],
-"offset": Vector2(0, 0),
-"portraits": {
+&"default_portrait": "Nuvem",
+&"description": "",
+&"display_name": "Linna",
+&"mirror": false,
+&"nicknames": [""],
+&"offset": Vector2(0, 0),
+&"portraits": {
 "Ajuste": {
 "export_overrides": {
 "image": "\"res://assets/characters/linna/Ajuste.png\""
@@ -496,5 +496,5 @@
 "scene": ""
 }
 },
-"scale": 1.0
+&"scale": 1.0
 }

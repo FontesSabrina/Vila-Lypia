@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://dgoohix0k3amd"]
 
-[ext_resource type="Script" path="res://scripts/bella_presente.gd" id="1_xr77m"]
+[ext_resource type="Script" uid="uid://dyulmciux0s" path="res://scripts/bella_presente.gd" id="1_xr77m"]
 [ext_resource type="Texture2D" uid="uid://c1bbchnongjqh" path="res://assets/characters/bella/cartao/0.png" id="2_g6ly7"]
 
 [node name="bella_presente" type="Control"]

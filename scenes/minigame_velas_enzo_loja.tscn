@@ -1,6 +1,6 @@
 [gd_scene load_steps=7 format=3 uid="uid://drdn7yqpxhsep"]
 
-[ext_resource type="Script" path="res://scripts/minigame_velas_enzo_loja.gd" id="1_eb45j"]
+[ext_resource type="Script" uid="uid://8rvpn4ajlq2f" path="res://scripts/minigame_velas_enzo_loja.gd" id="1_eb45j"]
 [ext_resource type="Texture2D" uid="uid://dc2nygh6mvbgo" path="res://assets/backgrounds/casaLinna_calcada.jpeg" id="1_lm7wg"]
 [ext_resource type="Texture2D" uid="uid://ctqdjoas15ydr" path="res://assets/icon/vela_02.png" id="2_uk85i"]
 [ext_resource type="Texture2D" uid="uid://dxdwa7uy7hhxn" path="res://assets/icon/casaLinna_calcada-Photoroom.png" id="3_y86ph"]

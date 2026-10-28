@@ -6,7 +6,7 @@ class_name BellaPraca
 const CENA_CONVITES := "res://scenes/criacao_convites.tscn"
 # Sem "ç" no nome do arquivo: o caminho antigo "praça_bolo.tscn" não existia.
 const CENA_PRACA_BOLO := "res://scenes/praca_bolo.tscn"
-const CENA_PRACA := "res://scenes/preca.tscn"
+const CENA_PRACA := "res://scenes/praca.tscn"
 
 var _trocando := false
 

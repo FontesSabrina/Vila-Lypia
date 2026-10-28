@@ -43,7 +43,7 @@ elif {Convite.sem_ajuda} == true:
 else:
 	if {Amizade.Pietro} == 0:
 		join Pietro (Pietro_01/1) leftmost
-		[voice path="res://assets/som/Pietro/Pietro_01/... falta um pouco mais de sombra aqui... ou talvez a sombra já esteja em todo lugar..mp3" volume="0.0"]
+		[voice path="res://assets/som/Pietro/Pietro_01/falta um pouco mais de sombra aqui... ou talvez a sombra já esteja em todo lugar..mp3" volume="0.0"]
 		Pietro (Pietro_01/1): ... falta um pouco mais de sombra aqui... ou talvez a sombra já esteja em todo lugar.
 		[voice path="res://assets/som/Pietro/Pietro_01/Ah... olá. Veio ver como a melancolia se transforma em tinta.mp3" volume="0.0"]
 		Pietro (Pietro_01/2): Ah... olá. Veio ver como a melancolia se transforma em tinta?

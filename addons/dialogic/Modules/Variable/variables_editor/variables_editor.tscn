@@ -46,7 +46,7 @@ corner_radius_top_right = 3
 corner_radius_bottom_right = 3
 corner_radius_bottom_left = 3
 
-[node name="VariablesEditor" type="HSplitContainer" unique_id=1387896974]
+[node name="VariablesEditor" type="HSplitContainer"]
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
@@ -54,25 +54,25 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("2")
 
-[node name="Editor" type="VBoxContainer" parent="." unique_id=1875027373]
+[node name="Editor" type="VBoxContainer" parent="."]
 layout_mode = 2
 size_flags_horizontal = 3
 
-[node name="HBox" type="HBoxContainer" parent="Editor" unique_id=522266499]
+[node name="HBox" type="HBoxContainer" parent="Editor"]
 layout_mode = 2
 
-[node name="Title" type="Label" parent="Editor/HBox" unique_id=2042431687]
+[node name="Title" type="Label" parent="Editor/HBox"]
 layout_mode = 2
 theme_type_variation = &"DialogicSubTitle"
 text = "Variables"
 
-[node name="Search" type="LineEdit" parent="Editor/HBox" unique_id=2112236003]
+[node name="Search" type="LineEdit" parent="Editor/HBox"]
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 3
 placeholder_text = "Filter"
 
-[node name="Tree" type="Tree" parent="Editor" unique_id=913318958]
+[node name="Tree" type="Tree" parent="Editor"]
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_vertical = 3
@@ -83,10 +83,10 @@ columns = 3
 column_titles_visible = true
 script = ExtResource("2_1i17i")
 
-[node name="ChangeTypePopup" type="PanelContainer" parent="Editor/Tree" unique_id=782708767]
+[node name="ChangeTypePopup" type="PanelContainer" parent="Editor/Tree"]
 unique_name_in_owner = true
 visible = false
-self_modulate = Color(0.1021275, 0.1021275, 0.1021275, 1)
+self_modulate = Color(0.102127, 0.102127, 0.102127, 1)
 layout_mode = 0
 offset_left = 140.0
 offset_top = 160.0
@@ -95,78 +95,78 @@ offset_bottom = 190.0
 theme = SubResource("Theme_17j6i")
 theme_override_styles/panel = SubResource("StyleBoxFlat_ncgqs")
 
-[node name="HBox" type="HBoxContainer" parent="Editor/Tree/ChangeTypePopup" unique_id=133785951]
+[node name="HBox" type="HBoxContainer" parent="Editor/Tree/ChangeTypePopup"]
 layout_mode = 2
 
-[node name="String" type="Button" parent="Editor/Tree/ChangeTypePopup/HBox" unique_id=592609856]
+[node name="String" type="Button" parent="Editor/Tree/ChangeTypePopup/HBox"]
 custom_minimum_size = Vector2(30, 30)
 layout_mode = 2
 tooltip_text = "String (Any text)"
 toggle_mode = true
 icon_alignment = 1
 
-[node name="Float" type="Button" parent="Editor/Tree/ChangeTypePopup/HBox" unique_id=304875364]
+[node name="Float" type="Button" parent="Editor/Tree/ChangeTypePopup/HBox"]
 custom_minimum_size = Vector2(30, 30)
 layout_mode = 2
 tooltip_text = "Float (Number with Decimals)"
 toggle_mode = true
 icon_alignment = 1
 
-[node name="Int" type="Button" parent="Editor/Tree/ChangeTypePopup/HBox" unique_id=1830794936]
+[node name="Int" type="Button" parent="Editor/Tree/ChangeTypePopup/HBox"]
 custom_minimum_size = Vector2(30, 30)
 layout_mode = 2
 tooltip_text = "Int (Integer)"
 toggle_mode = true
 icon_alignment = 1
 
-[node name="Bool" type="Button" parent="Editor/Tree/ChangeTypePopup/HBox" unique_id=586558133]
+[node name="Bool" type="Button" parent="Editor/Tree/ChangeTypePopup/HBox"]
 custom_minimum_size = Vector2(30, 30)
 layout_mode = 2
 tooltip_text = "Bool (True/False flag)"
 toggle_mode = true
 icon_alignment = 1
 
-[node name="RightClickMenu" type="PopupMenu" parent="Editor/Tree" unique_id=567109241]
+[node name="RightClickMenu" type="PopupMenu" parent="Editor/Tree"]
 unique_name_in_owner = true
 size = Vector2i(67, 35)
 item_count = 1
 item_0/text = "Copy"
 item_0/id = 0
 
-[node name="ReferenceInfo" type="HBoxContainer" parent="Editor" unique_id=307117089]
+[node name="ReferenceInfo" type="HBoxContainer" parent="Editor"]
 unique_name_in_owner = true
 layout_mode = 2
 
-[node name="Label" type="Label" parent="Editor/ReferenceInfo" unique_id=1059085735]
+[node name="Label" type="Label" parent="Editor/ReferenceInfo"]
 layout_mode = 2
 size_flags_horizontal = 3
 theme_override_colors/font_color = Color(0.83, 0.78, 0.62, 1)
 text = "You've made some changes to existing variables! Use the reference manager to check if something broke."
 autowrap_mode = 3
 
-[node name="ReferenceManager" type="Button" parent="Editor/ReferenceInfo" unique_id=1766978997]
+[node name="ReferenceManager" type="Button" parent="Editor/ReferenceInfo"]
 layout_mode = 2
 text = "Reference Manager"
 
-[node name="Info" type="VBoxContainer" parent="." unique_id=227696553]
+[node name="Info" type="VBoxContainer" parent="."]
 layout_mode = 2
 size_flags_horizontal = 3
 
-[node name="HBox" type="HBoxContainer" parent="Info" unique_id=362730822]
+[node name="HBox" type="HBoxContainer" parent="Info"]
 layout_mode = 2
 
-[node name="Title" type="Label" parent="Info/HBox" unique_id=695119999]
+[node name="Title" type="Label" parent="Info/HBox"]
 layout_mode = 2
 size_flags_horizontal = 3
 theme_type_variation = &"DialogicSection"
 text = "How to use variables"
 
-[node name="Documentation" type="LinkButton" parent="Info/HBox" unique_id=965398298]
+[node name="Documentation" type="LinkButton" parent="Info/HBox"]
 layout_mode = 2
 text = "Read the Docs"
 uri = "https://docs.dialogic.pro/variables.html"
 
-[node name="RichTextLabel" type="RichTextLabel" parent="Info" unique_id=2046774878]
+[node name="RichTextLabel" type="RichTextLabel" parent="Info"]
 layout_mode = 2
 text = "Variables are good way to keep track of all kinds of things during your game. Dialogic has an easy-to-use and beginner friendly variable system built in. However Dialogic allows to use outside variables (of Autoload Singletons) just as easily. You can also access the Dialogic variables from outside scripts."
 fit_content = true

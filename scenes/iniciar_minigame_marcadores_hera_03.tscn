@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://dd6s4ykmpxp6u"]
 
-[ext_resource type="Script" path="res://scripts/iniciar_minigame_marcadores_hera_03.gd" id="1_gnve3"]
+[ext_resource type="Script" uid="uid://lx7n3requ0u5" path="res://scripts/iniciar_minigame_marcadores_hera_03.gd" id="1_gnve3"]
 [ext_resource type="Texture2D" uid="uid://ci6y7buk77lbh" path="res://assets/backgrounds/casa_hera_armário de suprimentos _gavetas.jpeg" id="1_o5dxy"]
 [ext_resource type="Texture2D" uid="uid://b1yu3glqxspkl" path="res://assets/icon/lupa.png" id="3_71qay"]
 

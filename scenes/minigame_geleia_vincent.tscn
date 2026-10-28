@@ -1,6 +1,6 @@
 [gd_scene load_steps=6 format=3 uid="uid://dxjl53c2fedwh"]
 
-[ext_resource type="Script" path="res://scripts/minigame_geleia_vincent.gd" id="1_0nyka"]
+[ext_resource type="Script" uid="uid://bsbkwfrjspa2k" path="res://scripts/minigame_geleia_vincent.gd" id="1_0nyka"]
 [ext_resource type="Texture2D" uid="uid://cyur6g371x14p" path="res://assets/backgrounds/deposito.jpeg" id="1_dyl3d"]
 [ext_resource type="Texture2D" uid="uid://culhxklcw3jxc" path="res://assets/icon/geleia_amoras.png" id="2_hlyyq"]
 [ext_resource type="Texture2D" uid="uid://bxufnbsinesmc" path="res://assets/icon/flor.png" id="3_lxd3e"]

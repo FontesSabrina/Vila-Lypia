@@ -2,194 +2,194 @@
 
 [ext_resource type="Script" uid="uid://bqu863yjcjc8y" path="res://addons/dialogic/Modules/Glossary/glossary_editor.gd" id="1_tf3p1"]
 
-[node name="GlossaryEditor" type="VBoxContainer" unique_id=608210914]
+[node name="GlossaryEditor" type="VBoxContainer"]
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 script = ExtResource("1_tf3p1")
 
-[node name="Entries" type="HSplitContainer" parent="." unique_id=1791315182]
+[node name="Entries" type="HSplitContainer" parent="."]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 split_offset = -200
 
-[node name="Settings" type="VBoxContainer" parent="Entries" unique_id=158192512]
+[node name="Settings" type="VBoxContainer" parent="Entries"]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_stretch_ratio = 0.3
 
-[node name="Label" type="Label" parent="Entries/Settings" unique_id=187320707]
+[node name="Label" type="Label" parent="Entries/Settings"]
 layout_mode = 2
 theme_type_variation = &"DialogicSection"
 text = "Glossaries"
 
-[node name="Glossaries" type="PanelContainer" parent="Entries/Settings" unique_id=1781414739]
+[node name="Glossaries" type="PanelContainer" parent="Entries/Settings"]
 layout_mode = 2
 size_flags_vertical = 3
 theme_type_variation = &"DialogicPanelA"
 
-[node name="Glossaries" type="VBoxContainer" parent="Entries/Settings/Glossaries" unique_id=999740602]
+[node name="Glossaries" type="VBoxContainer" parent="Entries/Settings/Glossaries"]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 size_flags_stretch_ratio = 0.69
 
-[node name="HBox" type="HBoxContainer" parent="Entries/Settings/Glossaries/Glossaries" unique_id=1906623219]
+[node name="HBox" type="HBoxContainer" parent="Entries/Settings/Glossaries/Glossaries"]
 layout_mode = 2
 
-[node name="AddGlossaryFile" type="Button" parent="Entries/Settings/Glossaries/Glossaries/HBox" unique_id=1372731008]
+[node name="AddGlossaryFile" type="Button" parent="Entries/Settings/Glossaries/Glossaries/HBox"]
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_vertical = 4
 tooltip_text = "New Glossary"
 theme_type_variation = &"FlatButton"
 
-[node name="LoadGlossaryFile" type="Button" parent="Entries/Settings/Glossaries/Glossaries/HBox" unique_id=844011673]
+[node name="LoadGlossaryFile" type="Button" parent="Entries/Settings/Glossaries/Glossaries/HBox"]
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_vertical = 4
 tooltip_text = "Import Glossary File"
 theme_type_variation = &"FlatButton"
 
-[node name="DeleteGlossaryFile" type="Button" parent="Entries/Settings/Glossaries/Glossaries/HBox" unique_id=47014725]
+[node name="DeleteGlossaryFile" type="Button" parent="Entries/Settings/Glossaries/Glossaries/HBox"]
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_vertical = 4
 tooltip_text = "Delete Glossary"
 theme_type_variation = &"FlatButton"
 
-[node name="ScrollContainer" type="ScrollContainer" parent="Entries/Settings/Glossaries/Glossaries" unique_id=2080880117]
+[node name="ScrollContainer" type="ScrollContainer" parent="Entries/Settings/Glossaries/Glossaries"]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
-[node name="GlossaryList" type="ItemList" parent="Entries/Settings/Glossaries/Glossaries/ScrollContainer" unique_id=1933899237]
+[node name="GlossaryList" type="ItemList" parent="Entries/Settings/Glossaries/Glossaries/ScrollContainer"]
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
-[node name="Label2" type="Label" parent="Entries/Settings" unique_id=1393798511]
+[node name="Label2" type="Label" parent="Entries/Settings"]
 layout_mode = 2
 theme_type_variation = &"DialogicSection"
 text = "Defaults"
 
-[node name="Defaults" type="VBoxContainer" parent="Entries/Settings" unique_id=1590003377]
+[node name="Defaults" type="VBoxContainer" parent="Entries/Settings"]
 layout_mode = 2
 
-[node name="DefaultsColor" type="HBoxContainer" parent="Entries/Settings/Defaults" unique_id=1931048099]
+[node name="DefaultsColor" type="HBoxContainer" parent="Entries/Settings/Defaults"]
 layout_mode = 2
 
-[node name="Label" type="Label" parent="Entries/Settings/Defaults/DefaultsColor" unique_id=1559529424]
+[node name="Label" type="Label" parent="Entries/Settings/Defaults/DefaultsColor"]
 layout_mode = 2
 size_flags_horizontal = 3
 text = "Color"
 
-[node name="DefaultColor" type="ColorPickerButton" parent="Entries/Settings/Defaults/DefaultsColor" unique_id=564100523]
+[node name="DefaultColor" type="ColorPickerButton" parent="Entries/Settings/Defaults/DefaultsColor"]
 unique_name_in_owner = true
 custom_minimum_size = Vector2(50, 0)
 layout_mode = 2
 size_flags_horizontal = 8
 
-[node name="DefCaseSensitive" type="HBoxContainer" parent="Entries/Settings/Defaults" unique_id=1499741960]
+[node name="DefCaseSensitive" type="HBoxContainer" parent="Entries/Settings/Defaults"]
 layout_mode = 2
 
-[node name="Label" type="Label" parent="Entries/Settings/Defaults/DefCaseSensitive" unique_id=1561297631]
+[node name="Label" type="Label" parent="Entries/Settings/Defaults/DefCaseSensitive"]
 layout_mode = 2
 size_flags_horizontal = 3
 text = "Case sensitive"
 
-[node name="DefaultCaseSensitive" type="CheckBox" parent="Entries/Settings/Defaults/DefCaseSensitive" unique_id=1716818662]
+[node name="DefaultCaseSensitive" type="CheckBox" parent="Entries/Settings/Defaults/DefCaseSensitive"]
 unique_name_in_owner = true
 layout_mode = 2
 
-[node name="HSplit" type="HSplitContainer" parent="Entries" unique_id=1755850017]
+[node name="HSplit" type="HSplitContainer" parent="Entries"]
 layout_mode = 2
 size_flags_horizontal = 3
 
-[node name="VBoxContainer" type="VBoxContainer" parent="Entries/HSplit" unique_id=1915836047]
+[node name="VBoxContainer" type="VBoxContainer" parent="Entries/HSplit"]
 layout_mode = 2
 size_flags_horizontal = 3
 
-[node name="Label2" type="Label" parent="Entries/HSplit/VBoxContainer" unique_id=1837675753]
+[node name="Label2" type="Label" parent="Entries/HSplit/VBoxContainer"]
 layout_mode = 2
 theme_type_variation = &"DialogicSection"
 text = "Entries"
 
-[node name="Tabs" type="PanelContainer" parent="Entries/HSplit/VBoxContainer" unique_id=1614030082]
+[node name="Tabs" type="PanelContainer" parent="Entries/HSplit/VBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 theme_type_variation = &"DialogicPanelA"
 
-[node name="Entries" type="VBoxContainer" parent="Entries/HSplit/VBoxContainer/Tabs" unique_id=763725325]
+[node name="Entries" type="VBoxContainer" parent="Entries/HSplit/VBoxContainer/Tabs"]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_stretch_ratio = 0.69
 
-[node name="HBox" type="HBoxContainer" parent="Entries/HSplit/VBoxContainer/Tabs/Entries" unique_id=1320185943]
+[node name="HBox" type="HBoxContainer" parent="Entries/HSplit/VBoxContainer/Tabs/Entries"]
 layout_mode = 2
 
-[node name="AddGlossaryEntry" type="Button" parent="Entries/HSplit/VBoxContainer/Tabs/Entries/HBox" unique_id=1810792886]
+[node name="AddGlossaryEntry" type="Button" parent="Entries/HSplit/VBoxContainer/Tabs/Entries/HBox"]
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_vertical = 4
 tooltip_text = "New Glossary Entry"
 theme_type_variation = &"FlatButton"
 
-[node name="DeleteGlossaryEntry" type="Button" parent="Entries/HSplit/VBoxContainer/Tabs/Entries/HBox" unique_id=255107373]
+[node name="DeleteGlossaryEntry" type="Button" parent="Entries/HSplit/VBoxContainer/Tabs/Entries/HBox"]
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_vertical = 4
 tooltip_text = "Delete Glossary Entry"
 theme_type_variation = &"FlatButton"
 
-[node name="EntrySearch" type="LineEdit" parent="Entries/HSplit/VBoxContainer/Tabs/Entries/HBox" unique_id=1739964421]
+[node name="EntrySearch" type="LineEdit" parent="Entries/HSplit/VBoxContainer/Tabs/Entries/HBox"]
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 3
 placeholder_text = "Filter Entries"
 
-[node name="ScrollContainer" type="ScrollContainer" parent="Entries/HSplit/VBoxContainer/Tabs/Entries" unique_id=2042054821]
+[node name="ScrollContainer" type="ScrollContainer" parent="Entries/HSplit/VBoxContainer/Tabs/Entries"]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
-[node name="EntryList" type="ItemList" parent="Entries/HSplit/VBoxContainer/Tabs/Entries/ScrollContainer" unique_id=1856422620]
+[node name="EntryList" type="ItemList" parent="Entries/HSplit/VBoxContainer/Tabs/Entries/ScrollContainer"]
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 focus_neighbor_right = NodePath("../../../../EntryEditor/Tabs/Entry Settings/EntrySettings/HBox/EntryName")
 
-[node name="EntryEditor" type="ScrollContainer" parent="Entries/HSplit" unique_id=1492909954]
+[node name="EntryEditor" type="ScrollContainer" parent="Entries/HSplit"]
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 3
 horizontal_scroll_mode = 0
 metadata/_edit_layout_mode = 1
 
-[node name="VBox" type="VBoxContainer" parent="Entries/HSplit/EntryEditor" unique_id=588896365]
+[node name="VBox" type="VBoxContainer" parent="Entries/HSplit/EntryEditor"]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
-[node name="Label" type="Label" parent="Entries/HSplit/EntryEditor/VBox" unique_id=1141312912]
+[node name="Label" type="Label" parent="Entries/HSplit/EntryEditor/VBox"]
 layout_mode = 2
 theme_type_variation = &"DialogicSection"
 text = "Entry Settings"
 
-[node name="Panel" type="PanelContainer" parent="Entries/HSplit/EntryEditor/VBox" unique_id=1164466153]
+[node name="Panel" type="PanelContainer" parent="Entries/HSplit/EntryEditor/VBox"]
 layout_mode = 2
 theme_type_variation = &"DialogicPanelA"
 
-[node name="Entry Settings" type="VBoxContainer" parent="Entries/HSplit/EntryEditor/VBox/Panel" unique_id=1443456715]
+[node name="Entry Settings" type="VBoxContainer" parent="Entries/HSplit/EntryEditor/VBox/Panel"]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
-[node name="EntrySettings" type="GridContainer" parent="Entries/HSplit/EntryEditor/VBox/Panel/Entry Settings" unique_id=1223271566]
+[node name="EntrySettings" type="GridContainer" parent="Entries/HSplit/EntryEditor/VBox/Panel/Entry Settings"]
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 3
@@ -197,15 +197,15 @@ size_flags_vertical = 3
 theme_override_constants/h_separation = 13
 columns = 2
 
-[node name="Label2" type="Label" parent="Entries/HSplit/EntryEditor/VBox/Panel/Entry Settings/EntrySettings" unique_id=1505272645]
+[node name="Label2" type="Label" parent="Entries/HSplit/EntryEditor/VBox/Panel/Entry Settings/EntrySettings"]
 layout_mode = 2
 size_flags_vertical = 0
 text = "Name"
 
-[node name="HBox2" type="HBoxContainer" parent="Entries/HSplit/EntryEditor/VBox/Panel/Entry Settings/EntrySettings" unique_id=1313845106]
+[node name="HBox2" type="HBoxContainer" parent="Entries/HSplit/EntryEditor/VBox/Panel/Entry Settings/EntrySettings"]
 layout_mode = 2
 
-[node name="EntryName" type="LineEdit" parent="Entries/HSplit/EntryEditor/VBox/Panel/Entry Settings/EntrySettings/HBox2" unique_id=786772019]
+[node name="EntryName" type="LineEdit" parent="Entries/HSplit/EntryEditor/VBox/Panel/Entry Settings/EntrySettings/HBox2"]
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 3
@@ -214,81 +214,81 @@ theme_override_colors/caret_color = Color(0, 0, 0, 1)
 placeholder_text = "Enter unique name..."
 caret_blink = true
 
-[node name="EntryCaseSensitive" type="Button" parent="Entries/HSplit/EntryEditor/VBox/Panel/Entry Settings/EntrySettings/HBox2" unique_id=1455247238]
+[node name="EntryCaseSensitive" type="Button" parent="Entries/HSplit/EntryEditor/VBox/Panel/Entry Settings/EntrySettings/HBox2"]
 unique_name_in_owner = true
 layout_mode = 2
 tooltip_text = "Case sensitive"
 theme_type_variation = &"FlatButton"
 toggle_mode = true
 
-[node name="Label3" type="Label" parent="Entries/HSplit/EntryEditor/VBox/Panel/Entry Settings/EntrySettings" unique_id=322125079]
+[node name="Label3" type="Label" parent="Entries/HSplit/EntryEditor/VBox/Panel/Entry Settings/EntrySettings"]
 layout_mode = 2
 size_flags_vertical = 0
 text = "Alternatives"
 
-[node name="EntryAlternatives" type="LineEdit" parent="Entries/HSplit/EntryEditor/VBox/Panel/Entry Settings/EntrySettings" unique_id=1589876286]
+[node name="EntryAlternatives" type="LineEdit" parent="Entries/HSplit/EntryEditor/VBox/Panel/Entry Settings/EntrySettings"]
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 3
 caret_blink = true
 
-[node name="Label4" type="Label" parent="Entries/HSplit/EntryEditor/VBox/Panel/Entry Settings/EntrySettings" unique_id=891580357]
+[node name="Label4" type="Label" parent="Entries/HSplit/EntryEditor/VBox/Panel/Entry Settings/EntrySettings"]
 layout_mode = 2
 size_flags_vertical = 0
 text = "Title"
 
-[node name="EntryTitle" type="LineEdit" parent="Entries/HSplit/EntryEditor/VBox/Panel/Entry Settings/EntrySettings" unique_id=287451368]
+[node name="EntryTitle" type="LineEdit" parent="Entries/HSplit/EntryEditor/VBox/Panel/Entry Settings/EntrySettings"]
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 3
 caret_blink = true
 
-[node name="Label5" type="Label" parent="Entries/HSplit/EntryEditor/VBox/Panel/Entry Settings/EntrySettings" unique_id=1424832000]
+[node name="Label5" type="Label" parent="Entries/HSplit/EntryEditor/VBox/Panel/Entry Settings/EntrySettings"]
 layout_mode = 2
 size_flags_vertical = 0
 text = "Description"
 
-[node name="EntryText" type="TextEdit" parent="Entries/HSplit/EntryEditor/VBox/Panel/Entry Settings/EntrySettings" unique_id=1465466718]
+[node name="EntryText" type="TextEdit" parent="Entries/HSplit/EntryEditor/VBox/Panel/Entry Settings/EntrySettings"]
 unique_name_in_owner = true
 custom_minimum_size = Vector2(0, 100)
 layout_mode = 2
 focus_next = NodePath("../EntryExtra")
 wrap_mode = 1
 
-[node name="Label6" type="Label" parent="Entries/HSplit/EntryEditor/VBox/Panel/Entry Settings/EntrySettings" unique_id=982171799]
+[node name="Label6" type="Label" parent="Entries/HSplit/EntryEditor/VBox/Panel/Entry Settings/EntrySettings"]
 layout_mode = 2
 size_flags_vertical = 0
 text = "Extra"
 
-[node name="EntryExtra" type="TextEdit" parent="Entries/HSplit/EntryEditor/VBox/Panel/Entry Settings/EntrySettings" unique_id=894073414]
+[node name="EntryExtra" type="TextEdit" parent="Entries/HSplit/EntryEditor/VBox/Panel/Entry Settings/EntrySettings"]
 unique_name_in_owner = true
 custom_minimum_size = Vector2(0, 50)
 layout_mode = 2
 wrap_mode = 1
 
-[node name="Label8" type="Label" parent="Entries/HSplit/EntryEditor/VBox/Panel/Entry Settings/EntrySettings" unique_id=672629169]
+[node name="Label8" type="Label" parent="Entries/HSplit/EntryEditor/VBox/Panel/Entry Settings/EntrySettings"]
 layout_mode = 2
 size_flags_vertical = 0
 text = "Enabled"
 
-[node name="EntryEnabled" type="CheckBox" parent="Entries/HSplit/EntryEditor/VBox/Panel/Entry Settings/EntrySettings" unique_id=1910310606]
+[node name="EntryEnabled" type="CheckBox" parent="Entries/HSplit/EntryEditor/VBox/Panel/Entry Settings/EntrySettings"]
 unique_name_in_owner = true
 layout_mode = 2
 button_pressed = true
 
-[node name="Label7" type="Label" parent="Entries/HSplit/EntryEditor/VBox/Panel/Entry Settings/EntrySettings" unique_id=1829568029]
+[node name="Label7" type="Label" parent="Entries/HSplit/EntryEditor/VBox/Panel/Entry Settings/EntrySettings"]
 layout_mode = 2
 size_flags_vertical = 0
 text = "Color"
 
-[node name="HBox" type="HBoxContainer" parent="Entries/HSplit/EntryEditor/VBox/Panel/Entry Settings/EntrySettings" unique_id=130817493]
+[node name="HBox" type="HBoxContainer" parent="Entries/HSplit/EntryEditor/VBox/Panel/Entry Settings/EntrySettings"]
 layout_mode = 2
 
-[node name="EntryCustomColor" type="CheckBox" parent="Entries/HSplit/EntryEditor/VBox/Panel/Entry Settings/EntrySettings/HBox" unique_id=1094528950]
+[node name="EntryCustomColor" type="CheckBox" parent="Entries/HSplit/EntryEditor/VBox/Panel/Entry Settings/EntrySettings/HBox"]
 unique_name_in_owner = true
 layout_mode = 2
 
-[node name="EntryColor" type="ColorPickerButton" parent="Entries/HSplit/EntryEditor/VBox/Panel/Entry Settings/EntrySettings/HBox" unique_id=1631163735]
+[node name="EntryColor" type="ColorPickerButton" parent="Entries/HSplit/EntryEditor/VBox/Panel/Entry Settings/EntrySettings/HBox"]
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 3

@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://gcdn3uq7o8i6"]
 
 [ext_resource type="Texture2D" uid="uid://ccyjlea20nbi2" path="res://assets/icon/Iniciar a Aventura.png" id="1_3fokd"]
-[ext_resource type="Script" path="res://scripts/painel_primeira_vez.gd" id="1_qb84y"]
+[ext_resource type="Script" uid="uid://c8f6egk7yfiql" path="res://scripts/painel_primeira_vez.gd" id="1_qb84y"]
 [ext_resource type="Texture2D" uid="uid://bfopb3qdvg6ma" path="res://assets/icon/Pular Tutorial.png" id="2_asmie"]
 
 [node name="PainelPrimeiraVez" type="Control"]

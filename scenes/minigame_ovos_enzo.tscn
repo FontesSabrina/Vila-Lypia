@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://cxbxkgo8t33d2"]
 
 [ext_resource type="Texture2D" uid="uid://dv4y0r2bj62pm" path="res://assets/backgrounds/cozinha_enzo.jpeg" id="1_i51eg"]
-[ext_resource type="Script" path="res://scripts/minigame_ovos_enzo.gd" id="1_o8kii"]
+[ext_resource type="Script" uid="uid://crije2j8cyioh" path="res://scripts/minigame_ovos_enzo.gd" id="1_o8kii"]
 [ext_resource type="Texture2D" uid="uid://b1yu3glqxspkl" path="res://assets/icon/lupa.png" id="2_fyfur"]
 [ext_resource type="PackedScene" uid="uid://bytn6nfve2q2f" path="res://scenes/barra_ovos.tscn" id="4_e4heu"]
 

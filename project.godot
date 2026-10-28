@@ -12,13 +12,14 @@ config_version=5
 
 config/name="Vila Lypia (beta)"
 run/main_scene="res://scenes/main.tscn"
-config/features=PackedStringArray("4.3", "Forward Plus")
+config/features=PackedStringArray("4.4", "Forward Plus")
 
 [autoload]
 
 GameState="*res://scripts/GameState.gd"
 Salvamento="*res://scripts/Salvamento.gd"
 Dialogic="*res://addons/dialogic/Core/DialogicGameHandler.gd"
+Acessibilidade="*res://scripts/Acessibilidade.gd"
 
 [dialogic]
 
@@ -34,6 +35,7 @@ directories/dch_directory={
 "xerife": "res://assets/characters/xerife/xerife.dch"
 }
 directories/dtl_directory={
+"Enzo_01": "res://scenes/dtl_Dialogic/Enzo_01.dtl",
 "Linna_01": "res://scenes/dtl_Dialogic/Linna_01.dtl",
 "P_Hera_01": "res://scenes/dtl_Dialogic/P_Hera_01.dtl",
 "Pietro_01": "res://scenes/dtl_Dialogic/Pietro_01.dtl",
@@ -69,7 +71,6 @@ directories/dtl_directory={
 "cena_01": "res://scenes/dtl_Dialogic/cena_01.dtl",
 "cena_02": "res://scenes/dtl_Dialogic/cena_02.dtl",
 "cena_03": "res://scenes/dtl_Dialogic/cena_03.dtl",
-"characters/Enzo_01": "res://scenes/dtl_Dialogic/Enzo_01.dtl",
 "conversa_bella_dicas": "res://scenes/dtl_Dialogic/conversa_bella_dicas.dtl",
 "convites_01": "res://scenes/dtl_Dialogic/convites_01.dtl",
 "final_tutorial": "res://scenes/dtl_Dialogic/final_tutorial.dtl",
@@ -82,12 +83,12 @@ layout/style_directory={
 }
 variables={
 "Amizade": {
-"Enzo": 20,
-"Linna": 20,
-"P_Hera": 20,
-"Pietro": 20,
-"Vincent": 20,
-"Xerife": 20
+"Enzo": 0,
+"Linna": 0,
+"P_Hera": 0,
+"Pietro": 0,
+"Vincent": 0,
+"Xerife": 0
 },
 "Bella": {
 "Estado_Bella": 0
@@ -149,7 +150,7 @@ variables={
 "Dica_Pietro": false,
 "Dica_Vincent": false,
 "Enzo_Feito": false,
-"Excelentes": 6,
+"Excelentes": 0,
 "Hera_Feito": false,
 "Intro_Feita": false,
 "Linna_Feita": false,

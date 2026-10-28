@@ -35,7 +35,7 @@ if {Bolo.Enzo.Em_Andamento} == false and {Bolo.Enzo.Secundaria} == false:
 	enzo (bolo_enzo_02/4): Mas eu fiquei com tanto medo de quebrar tudo que escondi a chave da geladeira bem longe... \
 	e agora não me lembro onde deixei!
 	
-	[voice path="res://assets/som/Enzo/bolo_enzo_02/..e-com-todo-esse-nervosismo,-minhas.mp3" volume="0.0"]
+	[voice path="res://assets/som/Enzo/bolo_enzo_02/e-com-todo-esse-nervosismo,-minhas.mp3" volume="0.0"]
 	enzo (bolo_enzo_02/5): ...e com todo esse nervosismo, minhas mãos não param de tremer...\
 	C-Você pode procurar a chave para mim?
 	

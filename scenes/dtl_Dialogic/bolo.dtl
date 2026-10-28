@@ -56,34 +56,34 @@ label menu_bolo_principal
 	[end_timeline]
 
 - Acabei me perdendo… consegue me dizer onde cada morador está?
-	join Bella (sup/2 (resposta Geral Sobre Moradores) left
+	join Bella (sup/2) left
 	[voice path="res://assets/som/Bella/suporte/Acabei me perdendo/Claro! Qual morador você está procurando.mp3" volume="0.0"]
-	Bella (sup/2 (resposta Geral Sobre Moradores)): Claro! Qual morador você está procurando?
+	Bella (sup/2): Claro! Qual morador você está procurando?
 	
 	label menu_moradores_bolo
 	- Onde fica a casa do Vincent?
 		[voice path="res://assets/som/Bella/suporte/Acabei me perdendo/Ah! O Vincent mora na casa amarela do mapa..mp3" volume="0.0"]
-		Bella (sup/3 (sobre O Vincent)): Ah! O Vincent mora na casa amarela do mapa.
+		Bella (sup/3): Ah! O Vincent mora na casa amarela do mapa.
 		jump menu_moradores_bolo
 	- Estou procurando o Xerife Pepper!
 		[voice path="res://assets/som/Bella/suporte/Acabei me perdendo/O Xerife Pepper, na casa rosa com detalhes verdes..mp3" volume="0.0"]
-		Bella (sup/4 (sobre O Xerife Pepper)): O Xerife Pepper, na casa rosa com detalhes verdes.
+		Bella (sup/4): O Xerife Pepper, na casa rosa com detalhes verdes.
 		jump menu_moradores_bolo
 	- Pietro.
 		[voice path="res://assets/som/Bella/suporte/Acabei me perdendo/O Pietro mora na casa azul com janelas redondas..mp3" volume="0.0"]
-		Bella (sup/5 (sobre O Pietro)): O Pietro mora na casa azul com janelas redondas.
+		Bella (sup/5): O Pietro mora na casa azul com janelas redondas.
 		jump menu_moradores_bolo
 	- Onde fica a casa da Linna?
 		[voice path="res://assets/som/Bella/suporte/Acabei me perdendo/A Linna mora na casa branca com detalhes em verde, a casa dela é a loja da cidade!.mp3" volume="0.0"]
-		Bella (sup/6 (sobre A Linna)): A Linna mora na casa branca com detalhes em verde, a casa dela é a loja da cidade!
+		Bella (sup/6): A Linna mora na casa branca com detalhes em verde, a casa dela é a loja da cidade!
 		jump menu_moradores_bolo
 	- Enzo.
 		[voice path="res://assets/som/Bella/suporte/Acabei me perdendo/O Enzo está na casa antiga de tijolos vermelhos e portas e janelas roxas..mp3" volume="0.0"]
-		Bella (sup/7 (sobre O Enzo)): O Enzo está na casa antiga de tijolos vermelhos e portas e janelas roxas.
+		Bella (sup/7): O Enzo está na casa antiga de tijolos vermelhos e portas e janelas roxas.
 		jump menu_moradores_bolo
 	- E a Profª Hera?
 		[voice path="res://assets/som/Bella/suporte/Acabei me perdendo/Ela se encontra  uma casa branca com detalhes em marrom, tem um letreiro escrito “Biblioteca”..mp3" volume="0.0"]
-		Bella (sup/8 (sobre A Profª Hera)): Ela se encontra uma casa branca com detalhes em marrom, tem um letreiro escrito “Biblioteca”.
+		Bella (sup/8): Ela se encontra uma casa branca com detalhes em marrom, tem um letreiro escrito “Biblioteca”.
 		jump menu_moradores_bolo
 	- Voltar ao menu principal
 		leave Bella

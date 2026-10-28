@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://bb4xgtkjowyd4"]
 
-[ext_resource type="Script" path="res://scripts/praca_bela.gd" id="1_bk6fn"]
+[ext_resource type="Script" uid="uid://b1gq08lchf5at" path="res://scripts/praca_bela.gd" id="1_bk6fn"]
 [ext_resource type="Texture2D" uid="uid://ckide8ssda455" path="res://assets/backgrounds/festa2.jpeg" id="1_qgyqe"]
 [ext_resource type="Texture2D" uid="uid://bq2w5wtshv81k" path="res://assets/characters/bella/amigos.png" id="2_v0b8k"]
 [ext_resource type="PackedScene" uid="uid://b4vsaogdwxkno" path="res://scenes/botao_voltar.tscn" id="4_h4u10"]

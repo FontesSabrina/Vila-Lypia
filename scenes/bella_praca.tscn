@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://dvm2e4133u0ye"]
 
-[ext_resource type="Script" path="res://scripts/bella_praca.gd" id="1_q3uhq"]
+[ext_resource type="Script" uid="uid://df2a2cw64rpxf" path="res://scripts/bella_praca.gd" id="1_q3uhq"]
 [ext_resource type="Texture2D" uid="uid://6gua0x2av1d3" path="res://assets/characters/bella/seguir_alt.png" id="1_qpjpi"]
 
 [node name="bella_praca" type="Control"]

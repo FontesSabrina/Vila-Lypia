@@ -1,7 +1,7 @@
 [gd_scene load_steps=7 format=3 uid="uid://dx2n0lct8kid"]
 
 [ext_resource type="Texture2D" uid="uid://bmfgoltdlx7hl" path="res://assets/backgrounds/rua_enzo e Linna.jpeg" id="1_a28vl"]
-[ext_resource type="Script" path="res://scripts/minigame_velas_enzo_casa.gd" id="1_cpiml"]
+[ext_resource type="Script" uid="uid://36jd2c6uu5bj" path="res://scripts/minigame_velas_enzo_casa.gd" id="1_cpiml"]
 [ext_resource type="Texture2D" uid="uid://c50f71pflhnqf" path="res://assets/icon/seta.png" id="2_juq6y"]
 [ext_resource type="Texture2D" uid="uid://cmd6a58x3w31t" path="res://assets/icon/vela_01.png" id="3_jtcrm"]
 [ext_resource type="Texture2D" uid="uid://c5ikwn1ifjej4" path="res://assets/icon/rua_enzo e Linna-Photoroom.png" id="4_0mlb0"]

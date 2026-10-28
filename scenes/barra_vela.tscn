@@ -1,7 +1,7 @@
 [gd_scene load_steps=6 format=3 uid="uid://2xhnao1gxnpf"]
 
 [ext_resource type="Texture2D" uid="uid://cyaikmkq0207s" path="res://assets/icon/barra2.png" id="1_gh26f"]
-[ext_resource type="Script" path="res://scripts/barra_vela.gd" id="2_rec3j"]
+[ext_resource type="Script" uid="uid://b2ojx87sp06cg" path="res://scripts/barra_vela.gd" id="2_rec3j"]
 [ext_resource type="Texture2D" uid="uid://cmd6a58x3w31t" path="res://assets/icon/vela_01.png" id="3_wl2pc"]
 [ext_resource type="Texture2D" uid="uid://ctqdjoas15ydr" path="res://assets/icon/vela_02.png" id="4_5lrht"]
 [ext_resource type="Texture2D" uid="uid://bs1ju2r3pbibm" path="res://assets/icon/vela_03.png" id="5_5yshk"]

@@ -1,6 +1,6 @@
 [gd_scene load_steps=6 format=3 uid="uid://3rtvtj4e1hqy"]
 
-[ext_resource type="Script" path="res://scripts/minigame_ovos_enzo_armario.gd" id="1_cjphf"]
+[ext_resource type="Script" uid="uid://dw3wkl7fdm007" path="res://scripts/minigame_ovos_enzo_armario.gd" id="1_cjphf"]
 [ext_resource type="Texture2D" uid="uid://jrdi24vow0f" path="res://assets/backgrounds/casa_enzo_armario.jpeg" id="1_ki8dn"]
 [ext_resource type="Texture2D" uid="uid://c50f71pflhnqf" path="res://assets/icon/seta.png" id="2_jnxn2"]
 [ext_resource type="Texture2D" uid="uid://ckkyjouct1hue" path="res://assets/icon/chave_geladeira.png" id="4_w3cvh"]

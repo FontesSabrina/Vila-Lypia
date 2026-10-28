@@ -1,22 +1,22 @@
 {
 "@path": "res://addons/dialogic/Resources/character.gd",
 "@subpath": NodePath(""),
-"_translation_id": "",
-"color": Color(1, 1, 1, 1),
-"custom_info": {
+&"_translation_id": "",
+&"color": Color(1, 1, 1, 1),
+&"custom_info": {
 "prefix": "",
 "sound_mood_default": "",
 "sound_moods": {},
 "style": "",
 "suffix": ""
 },
-"default_portrait": "Brava",
-"description": "",
-"display_name": "{NomeBella}",
-"mirror": false,
-"nicknames": [""],
-"offset": Vector2(0, 0),
-"portraits": {
+&"default_portrait": "Brava",
+&"description": "",
+&"display_name": "{NomeBella}",
+&"mirror": false,
+&"nicknames": [""],
+&"offset": Vector2(0, 0),
+&"portraits": {
 "Amigos": {
 "export_overrides": {
 "image": "\"res://assets/characters/bella/amigos.png\""
@@ -343,7 +343,7 @@
 "scale": 0.8,
 "scene": ""
 },
-"Mostrando Sinceridade)": {
+"Mostrando Sinceridade": {
 "export_overrides": {
 "image": "\"res://assets/characters/bella/mostrando sinceridade).png\""
 },
@@ -377,7 +377,7 @@
 },
 "mirror": false,
 "offset": Vector2(0, 0),
-"scale": 1,
+"scale": 1.0,
 "scene": ""
 },
 "Portao 01": {
@@ -385,8 +385,8 @@
 "image": "\"res://assets/characters/bella/portao_01.png\""
 },
 "mirror": false,
-"offset": Vector2(0, 0),
-"scale": 1,
+"offset": Vector2(150, 0),
+"scale": 0.5,
 "scene": ""
 },
 "Portao 02": {
@@ -394,8 +394,8 @@
 "image": "\"res://assets/characters/bella/portao_02.png\""
 },
 "mirror": false,
-"offset": Vector2(0, 0),
-"scale": 1,
+"offset": Vector2(150, 0),
+"scale": 0.5,
 "scene": ""
 },
 "Portao 03": {
@@ -403,8 +403,8 @@
 "image": "\"res://assets/characters/bella/portao_03.png\""
 },
 "mirror": false,
-"offset": Vector2(0, 0),
-"scale": 1,
+"offset": Vector2(150, -100),
+"scale": 0.5,
 "scene": ""
 },
 "Portao 04": {
@@ -412,8 +412,8 @@
 "image": "\"res://assets/characters/bella/portao_04.png\""
 },
 "mirror": false,
-"offset": Vector2(0, 0),
-"scale": 1,
+"offset": Vector2(150, -100),
+"scale": 0.5,
 "scene": ""
 },
 "Portao 05": {
@@ -421,8 +421,8 @@
 "image": "\"res://assets/characters/bella/portao_05.png\""
 },
 "mirror": false,
-"offset": Vector2(0, 0),
-"scale": 1,
+"offset": Vector2(150, -100),
+"scale": 0.5,
 "scene": ""
 },
 "Portao 06": {
@@ -430,8 +430,8 @@
 "image": "\"res://assets/characters/bella/Portao06.png\""
 },
 "mirror": false,
-"offset": Vector2(0, 0),
-"scale": 1,
+"offset": Vector2(150, -100),
+"scale": 0.5,
 "scene": ""
 },
 "Portao 07": {
@@ -439,8 +439,8 @@
 "image": "\"res://assets/characters/bella/portao_07.png\""
 },
 "mirror": false,
-"offset": Vector2(0, 0),
-"scale": 1,
+"offset": Vector2(-100, 0),
+"scale": 0.5,
 "scene": ""
 },
 "Presente": {
@@ -1055,7 +1055,7 @@
 "scale": 1,
 "scene": ""
 },
-"sup/10 (explicação Das Tarefas - Parte 2)": {
+"sup/10": {
 "export_overrides": {
 "image": "\"res://assets/characters/bella/suporte/Frase 10 (Explicação das Tarefas - Parte 2).png\""
 },
@@ -1064,7 +1064,7 @@
 "scale": 1,
 "scene": ""
 },
-"sup/11 (explicação Das Tarefas - Parte 3)": {
+"sup/11": {
 "export_overrides": {
 "image": "\"res://assets/characters/bella/suporte/Frase 11 (Explicação das Tarefas - Parte 3).png\""
 },
@@ -1073,7 +1073,7 @@
 "scale": 1,
 "scene": ""
 },
-"sup/12 (explicação Das Tarefas - Parte 4)": {
+"sup/12": {
 "export_overrides": {
 "image": "\"res://assets/characters/bella/suporte/Frase 12 (Explicação das Tarefas - Parte 4).png\""
 },
@@ -1082,7 +1082,7 @@
 "scale": 1,
 "scene": ""
 },
-"sup/13 (início Da Criação)": {
+"sup/13": {
 "export_overrides": {
 "image": "\"res://assets/characters/bella/suporte/Frase 13 (Início da criação).png\""
 },
@@ -1091,7 +1091,7 @@
 "scale": 1,
 "scene": ""
 },
-"sup/2 (resposta Geral Sobre Moradores)": {
+"sup/2": {
 "export_overrides": {
 "image": "\"res://assets/characters/bella/suporte/Frase 2 (Resposta Geral sobre moradores).png\""
 },
@@ -1100,7 +1100,7 @@
 "scale": 1,
 "scene": ""
 },
-"sup/3 (sobre O Vincent)": {
+"sup/3": {
 "export_overrides": {
 "image": "\"res://assets/characters/bella/suporte/Frase 3 (Sobre o Vincent).png\""
 },
@@ -1109,7 +1109,7 @@
 "scale": 1,
 "scene": ""
 },
-"sup/4 (sobre O Xerife Pepper)": {
+"sup/4": {
 "export_overrides": {
 "image": "\"res://assets/characters/bella/suporte/Frase 4 (Sobre o Xerife Pepper).png\""
 },
@@ -1118,7 +1118,7 @@
 "scale": 1,
 "scene": ""
 },
-"sup/5 (sobre O Pietro)": {
+"sup/5": {
 "export_overrides": {
 "image": "\"res://assets/characters/bella/suporte/Frase 5 (Sobre o Pietro).png\""
 },
@@ -1127,7 +1127,7 @@
 "scale": 1,
 "scene": ""
 },
-"sup/6 (sobre A Linna)": {
+"sup/6": {
 "export_overrides": {
 "image": "\"res://assets/characters/bella/suporte/Frase 6 (Sobre a Linna).png\""
 },
@@ -1136,7 +1136,7 @@
 "scale": 1,
 "scene": ""
 },
-"sup/7 (sobre O Enzo)": {
+"sup/7": {
 "export_overrides": {
 "image": "\"res://assets/characters/bella/suporte/Frase 7 (Sobre o Enzo).png\""
 },
@@ -1145,7 +1145,7 @@
 "scale": 1,
 "scene": ""
 },
-"sup/8 (sobre A Profª Hera)": {
+"sup/8": {
 "export_overrides": {
 "image": "\"res://assets/characters/bella/suporte/Frase 8 (Sobre a Profª Hera).png\""
 },
@@ -1154,7 +1154,7 @@
 "scale": 1,
 "scene": ""
 },
-"sup/9 (explicação Das Tarefas - Parte 1)": {
+"sup/9": {
 "export_overrides": {
 "image": "\"res://assets/characters/bella/suporte/Frase 9 (Explicação das Tarefas - Parte 1).png\""
 },
@@ -1164,5 +1164,5 @@
 "scene": ""
 }
 },
-"scale": 1.0
+&"scale": 1.0
 }

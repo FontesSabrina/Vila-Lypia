@@ -1,6 +1,6 @@
 [gd_scene load_steps=7 format=3 uid="uid://c83bulxegttue"]
 
-[ext_resource type="Script" path="res://scripts/minigame_velas_enzo.gd" id="1_dnhw3"]
+[ext_resource type="Script" uid="uid://b04cbrwhadwe5" path="res://scripts/minigame_velas_enzo.gd" id="1_dnhw3"]
 [ext_resource type="Texture2D" uid="uid://bjnvrq84kvecp" path="res://assets/backgrounds/casaEnzoSalaSegura02.jpeg" id="1_sx3mn"]
 [ext_resource type="Texture2D" uid="uid://c50f71pflhnqf" path="res://assets/icon/seta.png" id="2_f40dw"]
 [ext_resource type="Texture2D" uid="uid://bs1ju2r3pbibm" path="res://assets/icon/vela_03.png" id="3_xu88j"]

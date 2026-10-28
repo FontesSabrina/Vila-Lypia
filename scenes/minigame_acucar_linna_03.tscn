@@ -1,6 +1,6 @@
 [gd_scene load_steps=7 format=3 uid="uid://cmtbf5jeumetc"]
 
-[ext_resource type="Script" path="res://scripts/minigame_acucar_linna_03.gd" id="1_f5ot2"]
+[ext_resource type="Script" uid="uid://cttyrbc7xuosh" path="res://scripts/minigame_acucar_linna_03.gd" id="1_f5ot2"]
 [ext_resource type="Texture2D" uid="uid://mrq8ufh25r4x" path="res://assets/backgrounds/casa_linna_baixa.jpeg" id="1_sr6c0"]
 [ext_resource type="Texture2D" uid="uid://40ekdq72qus4" path="res://assets/icon/caixa_01.png" id="2_gpgre"]
 [ext_resource type="Texture2D" uid="uid://c43k0yj7kn7yf" path="res://assets/icon/pote.png" id="3_m8uih"]

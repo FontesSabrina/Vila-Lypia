@@ -3,14 +3,20 @@ class_name BarraCartao
 
 # Ícones da bandeja. Cada um começa apagado (acinzentado) e "ganha cor"
 # quando a peça correspondente é encaixada corretamente no cartão.
+# Os ícones ficam DENTRO do nó "Barra2", por isso a busca é feita em todos os
+# filhos (antes procurava só direto na raiz e não achava nenhum).
 @onready var _icones: Dictionary = {
-	"sol": get_node_or_null("SolRadiante"),
-	"poema": get_node_or_null("PoemaEmGota"),
-	"escudo": get_node_or_null("EscudoTorto"),
-	"selo": get_node_or_null("SeloDeCeraVermelho"),
-	"dente_leao": get_node_or_null("Dente-de-leão"),
-	"moldura": get_node_or_null("Cartao"),
+	"sol": _achar("SolRadiante"),
+	"poema": _achar("PoemaEmGota"),
+	"escudo": _achar("EscudoTorto"),
+	"selo": _achar("SeloDeCeraVermelho"),
+	"dente_leao": _achar("Dente-de-leão"),
+	"moldura": _achar("Cartao"),
 }
+
+func _achar(nome: String) -> CanvasItem:
+	var no := find_child(nome, true, false)
+	return no as CanvasItem
 
 const COR_APAGADA := Color(0.5, 0.5, 0.5, 1.0)
 const COR_COMPLETA := Color(1, 1, 1, 1)

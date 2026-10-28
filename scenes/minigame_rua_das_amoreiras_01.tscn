@@ -1,6 +1,6 @@
 [gd_scene load_steps=6 format=3 uid="uid://dawv6tfqjwf71"]
 
-[ext_resource type="Script" path="res://scripts/minigame_rua_das_amoreiras_01.gd" id="1_7fb3b"]
+[ext_resource type="Script" uid="uid://oayb22xogsxx" path="res://scripts/minigame_rua_das_amoreiras_01.gd" id="1_7fb3b"]
 [ext_resource type="Texture2D" uid="uid://bnwjgotx1vyre" path="res://assets/backgrounds/rua_das_amoreiras_01.jpeg" id="1_ywpnx"]
 [ext_resource type="Texture2D" uid="uid://c50f71pflhnqf" path="res://assets/icon/seta.png" id="2_ffyvt"]
 [ext_resource type="Texture2D" uid="uid://tqlmylv45it1" path="res://assets/icon/distintivo1.png" id="4_fl0kt"]

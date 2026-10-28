@@ -1,6 +1,6 @@
 [gd_scene load_steps=12 format=3 uid="uid://dpld0jy4v0byf"]
 
-[ext_resource type="Script" path="res://scripts/praca_festa_iv.gd" id="1_5cgmb"]
+[ext_resource type="Script" uid="uid://yhy1mxvhnc0l" path="res://scripts/praca_festa_iv.gd" id="1_5cgmb"]
 [ext_resource type="Texture2D" uid="uid://c2bxjg1mxvfga" path="res://assets/backgrounds/praça_festa_IV.jpeg" id="1_ocvur"]
 [ext_resource type="PackedScene" uid="uid://om5peo7p386m" path="res://scenes/resultadoBolo.tscn" id="3_10itf"]
 [ext_resource type="PackedScene" uid="uid://b4vsaogdwxkno" path="res://scenes/botao_voltar.tscn" id="4_t5qpr"]

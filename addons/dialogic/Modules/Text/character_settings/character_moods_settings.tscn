@@ -1,4 +1,4 @@
-[gd_scene format=3 uid="uid://8ad1pwbjuqpt"]
+[gd_scene load_steps=6 format=3 uid="uid://8ad1pwbjuqpt"]
 
 [ext_resource type="Script" uid="uid://6qkd50m2lqnx" path="res://addons/dialogic/Modules/Text/character_settings/character_moods_settings.gd" id="1_3px07"]
 [ext_resource type="PackedScene" uid="uid://7mvxuaulctcq" path="res://addons/dialogic/Editor/Events/Fields/field_file.tscn" id="2_e1vyd"]
@@ -16,79 +16,79 @@ corner_radius_top_right = 8
 corner_radius_bottom_right = 8
 corner_radius_bottom_left = 8
 
-[node name="Typing Sounds" type="PanelContainer" unique_id=368458129]
-self_modulate = Color(0.38170326, 0.38170323, 0.38170323, 1)
+[node name="Typing Sounds" type="PanelContainer"]
+self_modulate = Color(0.381703, 0.381703, 0.381703, 1)
 offset_right = 443.0
 offset_bottom = 397.0
 theme_override_styles/panel = SubResource("StyleBoxFlat_vv4dt")
 script = ExtResource("1_3px07")
 
-[node name="VBox" type="VBoxContainer" parent="." unique_id=1736388576]
+[node name="VBox" type="VBoxContainer" parent="."]
 layout_mode = 2
 theme_override_constants/separation = 0
 
-[node name="ListPanel" type="PanelContainer" parent="VBox" unique_id=1562827715]
+[node name="ListPanel" type="PanelContainer" parent="VBox"]
 unique_name_in_owner = true
 layout_mode = 2
 
-[node name="Vbox" type="VBoxContainer" parent="VBox/ListPanel" unique_id=1991868687]
+[node name="Vbox" type="VBoxContainer" parent="VBox/ListPanel"]
 layout_mode = 2
 
-[node name="HBoxContainer" type="HBoxContainer" parent="VBox/ListPanel/Vbox" unique_id=232301700]
+[node name="HBoxContainer" type="HBoxContainer" parent="VBox/ListPanel/Vbox"]
 layout_mode = 2
 alignment = 2
 
-[node name="Add" type="Button" parent="VBox/ListPanel/Vbox/HBoxContainer" unique_id=149189447]
+[node name="Add" type="Button" parent="VBox/ListPanel/Vbox/HBoxContainer"]
 unique_name_in_owner = true
 layout_mode = 2
 tooltip_text = "Add Mood"
 theme_type_variation = &"FlatButton"
 
-[node name="Default" type="Button" parent="VBox/ListPanel/Vbox/HBoxContainer" unique_id=1147972556]
+[node name="Default" type="Button" parent="VBox/ListPanel/Vbox/HBoxContainer"]
 unique_name_in_owner = true
 layout_mode = 2
 tooltip_text = "Make Default"
 theme_type_variation = &"FlatButton"
 toggle_mode = true
 
-[node name="Duplicate" type="Button" parent="VBox/ListPanel/Vbox/HBoxContainer" unique_id=1807805409]
+[node name="Duplicate" type="Button" parent="VBox/ListPanel/Vbox/HBoxContainer"]
 unique_name_in_owner = true
 layout_mode = 2
 tooltip_text = "Duplicate Mood"
 theme_type_variation = &"FlatButton"
 
-[node name="Delete" type="Button" parent="VBox/ListPanel/Vbox/HBoxContainer" unique_id=966103407]
+[node name="Delete" type="Button" parent="VBox/ListPanel/Vbox/HBoxContainer"]
 unique_name_in_owner = true
 layout_mode = 2
 tooltip_text = "Delete Mood"
 theme_type_variation = &"FlatButton"
 
-[node name="VSeparator" type="VSeparator" parent="VBox/ListPanel/Vbox/HBoxContainer" unique_id=1375207989]
+[node name="VSeparator" type="VSeparator" parent="VBox/ListPanel/Vbox/HBoxContainer"]
 layout_mode = 2
 
-[node name="Play" type="Button" parent="VBox/ListPanel/Vbox/HBoxContainer" unique_id=361440151]
+[node name="Play" type="Button" parent="VBox/ListPanel/Vbox/HBoxContainer"]
 unique_name_in_owner = true
 layout_mode = 2
 tooltip_text = "Preview"
 
-[node name="MoodList" type="ItemList" parent="VBox/ListPanel/Vbox" unique_id=696500971]
+[node name="MoodList" type="ItemList" parent="VBox/ListPanel/Vbox"]
 unique_name_in_owner = true
 custom_minimum_size = Vector2(0, 100)
 layout_mode = 2
 
-[node name="Settings" type="PanelContainer" parent="VBox" unique_id=44966764]
+[node name="Settings" type="PanelContainer" parent="VBox"]
 unique_name_in_owner = true
 layout_mode = 2
 
-[node name="Grid" type="GridContainer" parent="VBox/Settings" unique_id=1230303108]
+[node name="Grid" type="GridContainer" parent="VBox/Settings"]
 layout_mode = 2
 columns = 2
 
-[node name="Label" type="Label" parent="VBox/Settings/Grid" unique_id=1989017327]
+[node name="Label" type="Label" parent="VBox/Settings/Grid"]
 layout_mode = 2
 text = "Name:"
 
-[node name="Name" type="LineEdit" parent="VBox/Settings/Grid" unique_id=1564051984]
+[node name="Name" type="LineEdit" parent="VBox/Settings/Grid"]
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 3
@@ -97,7 +97,7 @@ text = "New Mood"
 placeholder_text = "Enter Mood Name"
 caret_blink = true
 
-[node name="NameWarning" type="TextureRect" parent="VBox/Settings/Grid/Name" unique_id=1908393613]
+[node name="NameWarning" type="TextureRect" parent="VBox/Settings/Grid/Name"]
 unique_name_in_owner = true
 layout_mode = 1
 anchors_preset = 11
@@ -109,11 +109,11 @@ grow_horizontal = 0
 grow_vertical = 2
 stretch_mode = 3
 
-[node name="Label6" type="Label" parent="VBox/Settings/Grid" unique_id=1843999425]
+[node name="Label6" type="Label" parent="VBox/Settings/Grid"]
 layout_mode = 2
 text = "Mode:"
 
-[node name="Mode" type="OptionButton" parent="VBox/Settings/Grid" unique_id=1911787281]
+[node name="Mode" type="OptionButton" parent="VBox/Settings/Grid"]
 unique_name_in_owner = true
 layout_mode = 2
 tooltip_text = "Interrupt = The next sound will stop the previous
@@ -128,11 +128,11 @@ popup/item_1/id = 1
 popup/item_2/text = "Await"
 popup/item_2/id = 2
 
-[node name="Label4" type="Label" parent="VBox/Settings/Grid" unique_id=26102657]
+[node name="Label4" type="Label" parent="VBox/Settings/Grid"]
 layout_mode = 2
 text = "File/Folder:"
 
-[node name="SoundFolder" parent="VBox/Settings/Grid" unique_id=49354159 instance=ExtResource("2_e1vyd")]
+[node name="SoundFolder" parent="VBox/Settings/Grid" instance=ExtResource("2_e1vyd")]
 unique_name_in_owner = true
 custom_minimum_size = Vector2(100, 0)
 layout_mode = 2
@@ -140,61 +140,61 @@ size_flags_horizontal = 3
 file_filter = "*.ogg, *.mp3, *.wav"
 file_mode = 3
 
-[node name="Label2" type="Label" parent="VBox/Settings/Grid" unique_id=784538409]
+[node name="Label2" type="Label" parent="VBox/Settings/Grid"]
 layout_mode = 2
 text = "Pitch:"
 
-[node name="Pitch" type="HBoxContainer" parent="VBox/Settings/Grid" unique_id=722375208]
+[node name="Pitch" type="HBoxContainer" parent="VBox/Settings/Grid"]
 layout_mode = 2
 theme_override_constants/separation = -6
 alignment = 2
 
-[node name="PitchBase" parent="VBox/Settings/Grid/Pitch" unique_id=380073313 instance=ExtResource("3_yjcns")]
+[node name="PitchBase" parent="VBox/Settings/Grid/Pitch" instance=ExtResource("3_yjcns")]
 unique_name_in_owner = true
 layout_mode = 2
 enforce_step = false
 
-[node name="Label4" type="Label" parent="VBox/Settings/Grid/Pitch" unique_id=1612625108]
+[node name="Label4" type="Label" parent="VBox/Settings/Grid/Pitch"]
 layout_mode = 2
 text = "+/-  "
 
-[node name="PitchVariance" parent="VBox/Settings/Grid/Pitch" unique_id=869874398 instance=ExtResource("3_yjcns")]
+[node name="PitchVariance" parent="VBox/Settings/Grid/Pitch" instance=ExtResource("3_yjcns")]
 unique_name_in_owner = true
 layout_mode = 2
 enforce_step = false
 
-[node name="Label3" type="Label" parent="VBox/Settings/Grid" unique_id=1026921332]
+[node name="Label3" type="Label" parent="VBox/Settings/Grid"]
 layout_mode = 2
 text = "Volume:"
 
-[node name="Volume" type="HBoxContainer" parent="VBox/Settings/Grid" unique_id=2065678471]
+[node name="Volume" type="HBoxContainer" parent="VBox/Settings/Grid"]
 layout_mode = 2
 theme_override_constants/separation = -6
 alignment = 2
 
-[node name="VolumeBase" parent="VBox/Settings/Grid/Volume" unique_id=1752846059 instance=ExtResource("3_yjcns")]
+[node name="VolumeBase" parent="VBox/Settings/Grid/Volume" instance=ExtResource("3_yjcns")]
 unique_name_in_owner = true
 layout_mode = 2
 
-[node name="Label4" type="Label" parent="VBox/Settings/Grid/Volume" unique_id=314895744]
+[node name="Label4" type="Label" parent="VBox/Settings/Grid/Volume"]
 layout_mode = 2
 text = "+/-  "
 
-[node name="VolumeVariance" parent="VBox/Settings/Grid/Volume" unique_id=1389737528 instance=ExtResource("3_yjcns")]
+[node name="VolumeVariance" parent="VBox/Settings/Grid/Volume" instance=ExtResource("3_yjcns")]
 unique_name_in_owner = true
 layout_mode = 2
 
-[node name="Label5" type="Label" parent="VBox/Settings/Grid" unique_id=989596440]
+[node name="Label5" type="Label" parent="VBox/Settings/Grid"]
 layout_mode = 2
 text = "Skip:"
 
-[node name="Skip" parent="VBox/Settings/Grid" unique_id=486018047 instance=ExtResource("3_yjcns")]
+[node name="Skip" parent="VBox/Settings/Grid" instance=ExtResource("3_yjcns")]
 unique_name_in_owner = true
 layout_mode = 2
 alignment = 2
 step = 1.0
 
-[node name="Preview" type="AudioStreamPlayer" parent="." unique_id=1781375955]
+[node name="Preview" type="AudioStreamPlayer" parent="."]
 script = ExtResource("5_yscws")
 play_every_character = 0
 

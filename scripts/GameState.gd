@@ -22,7 +22,7 @@ signal presente_comprado_sinal(presente: String)
 ## SÓ PARA TESTAR: o jogador começa o jogo novo com esta quantidade de moedas.
 ## 7 dá para testar as três compras da loja (1, 3 e 5).
 ## IMPORTANTE: volte para 0 antes de exportar o jogo.
-const MOEDAS_DE_TESTE := 7
+const MOEDAS_DE_TESTE := 0
 
 # === VARIÁVEIS DE ESTADO ===
 var moedas: int = MOEDAS_DE_TESTE

@@ -1,6 +1,6 @@
 [gd_scene load_steps=11 format=3 uid="uid://diinuppvp05vr"]
 
-[ext_resource type="Script" path="res://scripts/iniciar_minigame_marcadores_hera_gaveta_4.gd" id="1_gifut"]
+[ext_resource type="Script" uid="uid://deui7g7m1a2ld" path="res://scripts/iniciar_minigame_marcadores_hera_gaveta_4.gd" id="1_gifut"]
 [ext_resource type="Texture2D" uid="uid://cgol6dkvh3nb4" path="res://assets/backgrounds/casa_hera_ gaveta_4.jpeg" id="1_jxeo7"]
 [ext_resource type="Texture2D" uid="uid://d0tic8jnqyhir" path="res://assets/icon/fita_4.png" id="2_yfsmx"]
 [ext_resource type="Texture2D" uid="uid://bo7n15l6qeamm" path="res://assets/icon/fita_5.png" id="3_rowqt"]

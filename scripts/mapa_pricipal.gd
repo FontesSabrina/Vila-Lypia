@@ -1,8 +1,8 @@
 extends Control
 class_name MapaPricipal
 
-# Mantido preca.tscn pois ele realmente existe no seu FileSystem
-var cena_anterior: String = "res://scenes/preca.tscn"
+# Praça antiga (Capítulos I e II)
+var cena_anterior: String = "res://scenes/praca.tscn"
 
 # As três versões da praça, de acordo com o capítulo.
 const CENA_PRACA_ANTIGA := "res://scenes/praca.tscn"

@@ -1,6 +1,6 @@
 [gd_scene load_steps=7 format=3 uid="uid://q5tlyopbvv6i"]
 
-[ext_resource type="Script" path="res://scripts/minigame_chocolate_pietro_01.gd" id="1_1pcdr"]
+[ext_resource type="Script" uid="uid://dt1x2b2denomm" path="res://scripts/minigame_chocolate_pietro_01.gd" id="1_1pcdr"]
 [ext_resource type="Texture2D" uid="uid://dyfg8sq8dic80" path="res://assets/backgrounds/casa_pietro_cozinha-01.jpeg" id="1_mrjp0"]
 [ext_resource type="Texture2D" uid="uid://7ri8x1yc1jqx" path="res://assets/icon/chocolate.png" id="2_onwed"]
 [ext_resource type="Texture2D" uid="uid://cvatm4ijik0nn" path="res://assets/icon/pote_02.png" id="3_1kmnb"]

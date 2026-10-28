@@ -1,7 +1,7 @@
 [gd_scene load_steps=10 format=3 uid="uid://cktw6e7yee4rl"]
 
 [ext_resource type="Texture2D" uid="uid://dktbpa7dhsrmw" path="res://assets/backgrounds/mesa_artes.jpg" id="1_6gafs"]
-[ext_resource type="Script" path="res://scripts/loja_iv.gd" id="1_pm57n"]
+[ext_resource type="Script" uid="uid://ds5jqmp056sc2" path="res://scripts/loja_iv.gd" id="1_pm57n"]
 [ext_resource type="Texture2D" uid="uid://oge27o1cttu2" path="res://assets/icon/catálogo mágico.png" id="2_4eij1"]
 [ext_resource type="Texture2D" uid="uid://dmek0bggiq0sw" path="res://assets/icon/Caixa de Veludo Protetora.png" id="3_ech1m"]
 [ext_resource type="Texture2D" uid="uid://b10msmsdyk0vx" path="res://assets/icon/Caderno de Esboços Estrelado.png" id="4_sqpe3"]

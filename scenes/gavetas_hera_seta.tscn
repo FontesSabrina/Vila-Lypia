@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://d2xciyaba14pa"]
 
-[ext_resource type="Script" path="res://scripts/gavetas_hera_seta.gd" id="1_cvwfv"]
+[ext_resource type="Script" uid="uid://5nu8sk0h2pg6" path="res://scripts/gavetas_hera_seta.gd" id="1_cvwfv"]
 [ext_resource type="Texture2D" uid="uid://c50f71pflhnqf" path="res://assets/icon/seta.png" id="2_0lyfs"]
 
 [node name="gavetas_hera_seta" type="Node2D"]

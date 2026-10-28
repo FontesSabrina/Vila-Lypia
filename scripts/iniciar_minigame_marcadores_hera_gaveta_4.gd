@@ -13,7 +13,8 @@ var _pegou := false
 
 func _ready() -> void:
 	if fita:
-		fita.pressed.connect(_on_fitas_pressed)
+		if not fita.pressed.is_connected(_on_fitas_pressed):
+			fita.pressed.connect(_on_fitas_pressed)
 		fita.visible = not GameState.fita_pega
 
 

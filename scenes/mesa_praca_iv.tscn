@@ -1,7 +1,7 @@
 [gd_scene load_steps=6 format=3 uid="uid://oavgcrwyk61p"]
 
 [ext_resource type="Texture2D" uid="uid://cet4gbd8n2lb7" path="res://assets/backgrounds/mesa_praça_festa_IV.jpeg" id="1_i3bff"]
-[ext_resource type="Script" path="res://scripts/mesa_praca_iv.gd" id="1_julwl"]
+[ext_resource type="Script" uid="uid://dkcimcdyaafrx" path="res://scripts/mesa_praca_iv.gd" id="1_julwl"]
 [ext_resource type="PackedScene" uid="uid://om5peo7p386m" path="res://scenes/resultadoBolo.tscn" id="3_io3f4"]
 [ext_resource type="PackedScene" uid="uid://b4vsaogdwxkno" path="res://scenes/botao_voltar.tscn" id="4_cdxq6"]
 [ext_resource type="Texture2D" uid="uid://c1bbchnongjqh" path="res://assets/characters/bella/cartao/0.png" id="5_qtyps"]

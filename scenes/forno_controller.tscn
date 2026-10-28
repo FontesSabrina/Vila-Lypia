@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://c7a01ps2fhagc"]
 
-[ext_resource type="Script" path="res://scripts/forno_controller.gd" id="1_odobf"]
+[ext_resource type="Script" uid="uid://ckcjw6p2yj1i7" path="res://scripts/forno_controller.gd" id="1_odobf"]
 [ext_resource type="Texture2D" uid="uid://cc6i3nxgacijv" path="res://assets/icon/formadebolo.png" id="2_ef2yl"]
 [ext_resource type="Texture2D" uid="uid://cmb6p5iywtf0h" path="res://assets/icon/forninhoD.png" id="3_40gfy"]
 [ext_resource type="Texture2D" uid="uid://04l3emghmxfo" path="res://assets/icon/forninhoL.png" id="4_vljxi"]

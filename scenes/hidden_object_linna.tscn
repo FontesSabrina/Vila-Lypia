@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://c3ai5upn408n1"]
 
 [ext_resource type="Texture2D" uid="uid://cr2yyt1rc7vrx" path="res://assets/backgrounds/casa_linna.jpeg" id="1_d5c3l"]
-[ext_resource type="Script" path="res://scripts/hidden_object_linna.gd" id="1_jes06"]
+[ext_resource type="Script" uid="uid://bfrxdbv4sfohj" path="res://scripts/hidden_object_linna.gd" id="1_jes06"]
 [ext_resource type="Texture2D" uid="uid://b7bwh6vrn7k" path="res://assets/icon/mapa.png" id="4_cwfu0"]
 [ext_resource type="PackedScene" uid="uid://c88li7fhrkgmg" path="res://scenes/barra_loja_linna.tscn" id="5_0h02h"]
 

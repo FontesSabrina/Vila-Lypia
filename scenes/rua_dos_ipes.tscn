@@ -1,6 +1,6 @@
 [gd_scene load_steps=6 format=3 uid="uid://clp2ydu1kpi0p"]
 
-[ext_resource type="Script" path="res://scripts/rua_dos_ipes.gd" id="1_d8wf6"]
+[ext_resource type="Script" uid="uid://ctm2rw64qkkem" path="res://scripts/rua_dos_ipes.gd" id="1_d8wf6"]
 [ext_resource type="Texture2D" uid="uid://c81b76ebf5smn" path="res://assets/backgrounds/rua_Ipe.jpeg" id="1_widhy"]
 [ext_resource type="PackedScene" uid="uid://dejr6fahbfv0b" path="res://scenes/barra_La.tscn" id="2_qemqq"]
 [ext_resource type="Texture2D" uid="uid://c54v8mjseyyug" path="res://assets/icon/la_02.png" id="3_0w8qo"]

@@ -124,7 +124,7 @@ elif {Convite.Convite_Linna_entregue} == true:
 		[style name="azulnovo"]
 	else:
 		[style name="verdenovo"]
-	[voice path="res://assets/som/Linna/Final_linna/Confete-para-todo-lado!-[gasping]-Ops...mp3" volume="0.0"]
+	[voice path="res://assets/som/Linna/Final_linna/Confete-[short-pause]-para-[emphasis]-t.mp3" volume="0.0"]
 	linna (Linna Final): Confete para todo lado! Ops... caiu um no bolo!
 	leave linna
 elif {Convite.Convite_pietro_entregue} == true:

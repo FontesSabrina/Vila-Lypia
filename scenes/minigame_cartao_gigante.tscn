@@ -1,6 +1,6 @@
 [gd_scene load_steps=12 format=3 uid="uid://m4kbcc3fwp7w"]
 
-[ext_resource type="Script" path="res://scripts/minigame_cartao_gigante.gd" id="1_t04sr"]
+[ext_resource type="Script" uid="uid://cbksp8yq337rh" path="res://scripts/minigame_cartao_gigante.gd" id="1_t04sr"]
 [ext_resource type="Texture2D" uid="uid://dktbpa7dhsrmw" path="res://assets/backgrounds/mesa_artes.jpg" id="1_x4l3j"]
 [ext_resource type="Texture2D" uid="uid://bsstesq55hn0e" path="res://assets/icon/Sol Radiante.png" id="3_a5x4n"]
 [ext_resource type="Texture2D" uid="uid://cjksdabc5n1sf" path="res://assets/icon/Vila Lipya catao.jpg" id="3_ql4bh"]

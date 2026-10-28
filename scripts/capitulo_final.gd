@@ -278,18 +278,23 @@ func _mostrar_presente() -> void:
 
 ## Clarão branco por cima de tudo (fica acima do Dialogic).
 func _flash() -> void:
+	# Configuração "Sem clarões" (Acessibilidade): troca o clarão branco
+	# por um escurecer-e-voltar bem suave, sem luz forte.
+	var acess := get_node_or_null("/root/Acessibilidade")
+	var sem_claroes: bool = acess != null and bool(acess.get("sem_claroes"))
+
 	var camada := CanvasLayer.new()
 	camada.layer = 128
 	add_child(camada)
 
 	var luz := ColorRect.new()
-	luz.color = Color(1, 1, 1, 0)
+	luz.color = Color(0, 0, 0, 0) if sem_claroes else Color(1, 1, 1, 0)
 	luz.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	luz.set_anchors_preset(Control.PRESET_FULL_RECT)
 	camada.add_child(luz)
 
 	var tween := create_tween()
-	tween.tween_property(luz, "color:a", 0.9, 0.25)
+	tween.tween_property(luz, "color:a", 0.35 if sem_claroes else 0.9, 0.6 if sem_claroes else 0.25)
 	tween.tween_property(luz, "color:a", 0.0, 0.9)
 	tween.tween_callback(camada.queue_free)
 

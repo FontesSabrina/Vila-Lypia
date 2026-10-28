@@ -1,7 +1,7 @@
 [gd_scene load_steps=7 format=3 uid="uid://7wnpccbdsyyq"]
 
 [ext_resource type="Texture2D" uid="uid://c4ji4hjutx83y" path="res://assets/backgrounds/casa_linna_mesa.jpeg" id="1_noa56"]
-[ext_resource type="Script" path="res://scripts/minigame_acucar_linna_02.gd" id="1_o8mjm"]
+[ext_resource type="Script" uid="uid://cvmp15d240mwv" path="res://scripts/minigame_acucar_linna_02.gd" id="1_o8mjm"]
 [ext_resource type="Texture2D" uid="uid://40ekdq72qus4" path="res://assets/icon/caixa_01.png" id="2_3n8to"]
 [ext_resource type="Texture2D" uid="uid://c5r5v44f6m018" path="res://assets/icon/nome.png" id="4_b82uk"]
 [ext_resource type="PackedScene" uid="uid://dtffm271bhv2m" path="res://scenes/barra_acuçar.tscn" id="4_qtbij"]

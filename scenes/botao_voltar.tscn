@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://b4vsaogdwxkno"]
 
-[ext_resource type="Script" path="res://scripts/botao_voltar.gd" id="1_w2t35"]
+[ext_resource type="Script" uid="uid://bg5wusgo248g" path="res://scripts/botao_voltar.gd" id="1_w2t35"]
 [ext_resource type="Texture2D" uid="uid://c50f71pflhnqf" path="res://assets/icon/seta.png" id="2_57kbi"]
 
 [node name="botao_voltar" type="Control"]

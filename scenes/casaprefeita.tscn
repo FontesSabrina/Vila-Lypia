@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://c2pf7j1qdno4e"]
 
 [ext_resource type="Texture2D" uid="uid://bkwy1833obefj" path="res://assets/backgrounds/casaPrefeita.jpeg" id="1_mjq4x"]
-[ext_resource type="PackedScene" uid="uid://b4vsaogdwxkno" path="res://scenes_2/botao_voltar.tscn" id="2_qtjue"]
+[ext_resource type="PackedScene" uid="uid://b4vsaogdwxkno" path="res://scenes/botao_voltar.tscn" id="2_qtjue"]
 
 [node name="casaprefeita" type="Control"]
 layout_mode = 3
