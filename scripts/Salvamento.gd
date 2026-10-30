@@ -25,6 +25,8 @@ const SLOT := "Default"
 const CENAS_SEM_SAVE := [
 	"res://scenes/main.tscn",
 	"res://scenes/menu.tscn",
+	# Créditos: senão o "Continuar" depois do fim abriria os créditos de novo.
+	"res://scenes/creditos.tscn",
 ]
 
 ## Cenas cujo caminho tem uma destas palavras também NÃO são salvas:

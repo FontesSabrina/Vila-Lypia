@@ -62,7 +62,7 @@ const CONVITES := [
 ## SÓ PARA TESTE: 0 = calcula o final normalmente.
 ## 1, 2 ou 3 = força esse final (para testar cada um sem jogar tudo).
 ## IMPORTANTE: volte para 0 antes de exportar.
-const FINAL_DE_TESTE := 3
+const FINAL_DE_TESTE := 0
 
 ## SÓ PARA TESTE: bolo usado quando o Capítulo III ainda não foi jogado (-1).
 const BOLO_DE_TESTE := 6

@@ -6,6 +6,7 @@ class_name Floresta
 ##   - Pietro ativo e pincéis não concluídos  -> mini-jogo dos pincéis
 ##   - Vincent ativo e luvas não concluídas   -> mini-jogo das luvas
 ## Se uma variável do Dialogic não existir, conta como "não" (não trava).
+## No Capítulo IV (Cena > Praca_IV) nenhum mini-jogo abre mais.
 
 const MINIGAME_PINCEIS: String = "res://scenes/minigame_pietro_floresta_pinceis_01.tscn"
 # Caminho corrigido para o arquivo real da cena:
@@ -17,6 +18,12 @@ func _ready() -> void:
 
 
 func _verificar_acesso_floresta() -> void:
+	# Capítulo IV em diante: as missões do bolo acabaram. A floresta só mostra
+	# a imagem (o jogador perdeu a chance dos minigames que não terminou).
+	if _ler("Cena.Praca_IV") == true:
+		print(">>> Floresta: Capítulo IV, missões do bolo encerradas")
+		return
+
 	# 1. Checa Pietro
 	var pietro_ativo := _ler_qualquer([
 		"Bolo.Pietro.Bolo_Pietro_Em_Andamento",

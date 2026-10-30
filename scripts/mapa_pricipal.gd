@@ -83,6 +83,29 @@ func _cena_da_praca() -> String:
 		return CENA_PRACA_BOLO
 	return CENA_PRACA_ANTIGA
 
+# true depois que a Bella encerra os convites (escolha "Acho que já entreguei
+# todos" ou "Não quero entregar os convites"). A partir daí não dá mais para
+# entregar convites nem conversar sobre a Anne.
+func _convites_encerrados() -> bool:
+	return _ler("Cena.Praca_Estado", false) == true or int(_ler("Bella.Estado_Bella", 0)) >= 2
+
+# Escolhe a conversa da casa. O que ficou para trás quando a Bella passou para
+# o próximo capítulo está encerrado: a casa não abre mais aquela conversa.
+#   - Capítulo IV (praça da festa): nada do bolo ou dos convites abre mais.
+#   - Bolo já explicado pela Bella: só as conversas do bolo.
+#   - Convites encerrados: as conversas dos convites não abrem mais.
+func _falar_com_morador(timeline_convites: String, timeline_bolo: String) -> void:
+	if _praca_iv_liberada():
+		print(">>> Mapa: Capítulo IV, missões anteriores encerradas")
+		return
+	if _estado_bolo() == 1:
+		_falar_com(timeline_bolo)
+		return
+	if _convites_encerrados():
+		print(">>> Mapa: convites encerrados pela Bella")
+		return
+	_falar_com(timeline_convites)
+
 func atualizar_estilo_balao_individual(nome_personagem: String) -> void:
 	var pontos_amizade: float = 0.0
 
@@ -182,17 +205,11 @@ func _on_casaprefeita_pressed() -> void:
 		print("Erro ao carregar Casa da Prefeita!")
 
 func _on_casaenzo_pressed() -> void:
-	if _estado_bolo() == 1:
-		_falar_com("bolo_enzo_02")
-	else:
-		# Pelo caminho completo: o Dialogic não estava achando "Enzo_01" pelo nome
-		_falar_com("res://scenes/dtl_Dialogic/Enzo_01.dtl")
+	# Enzo_01 pelo caminho completo: o Dialogic não achava "Enzo_01" pelo nome
+	_falar_com_morador("res://scenes/dtl_Dialogic/Enzo_01.dtl", "bolo_enzo_02")
 
 func _on_casahera_pressed() -> void:
-	if _estado_bolo() == 1:
-		_falar_com("bolo_hera_02")
-	else:
-		_falar_com("P_Hera_01")
+	_falar_com_morador("P_Hera_01", "bolo_hera_02")
 
 func _on_praca_pressed() -> void:
 	var cena_destino: String = _cena_da_praca()
@@ -202,28 +219,16 @@ func _on_praca_pressed() -> void:
 		print("Erro ao carregar a praça! Caminho tentado: ", cena_destino)
 
 func _on_casalinna_pressed() -> void:
-	if _estado_bolo() == 1:
-		_falar_com("bolo_linna_02")
-	else:
-		_falar_com("Linna_01")
+	_falar_com_morador("Linna_01", "bolo_linna_02")
 
 func _on_casapietro_pressed() -> void:
-	if _estado_bolo() == 1:
-		_falar_com("bolo_pietro_02")
-	else:
-		_falar_com("Pietro_01")
+	_falar_com_morador("Pietro_01", "bolo_pietro_02")
 
 func _on_casavincent_pressed() -> void:
-	if _estado_bolo() == 1:
-		_falar_com("bolo_vincent_02")
-	else:
-		_falar_com("Vincent_01")
+	_falar_com_morador("Vincent_01", "bolo_vincent_02")
 
 func _on_casaxerife_pressed() -> void:
-	if _estado_bolo() == 1:
-		_falar_com("bolo_xerife_02")
-	else:
-		_falar_com("XerifeP_01")
+	_falar_com_morador("XerifeP_01", "bolo_xerife_02")
 
 # Rua das Amoreiras: SEMPRE abre a rua (a imagem).
 # O mini-jogo dos distintivos começa pelo diálogo do Xerife

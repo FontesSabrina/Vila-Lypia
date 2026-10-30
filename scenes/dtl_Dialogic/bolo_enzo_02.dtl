@@ -49,7 +49,8 @@ if {Bolo.Enzo.Em_Andamento} == false and {Bolo.Enzo.Secundaria} == false:
 		[end_timeline]
 
 # ESTÁGIO 2A: Já pegou os ovos no minigame, mas ainda NÃO entregou formalmente
-elif {Bolo.Enzo.Ovos_Concluido} == false:
+# (os ovos só contam depois de pegos na geladeira: GameState.ovos_pego)
+elif {Bolo.Enzo.Ovos_Concluido} == false and {GameState.ovos_pego} == true:
 	set {Bolo.Enzo.Ovos_Concluido} = true
 	# A mesa do bolo conta os ovos por esta variável:
 	set {Bolo.Enzo.Ovos_Entregue} = true
@@ -61,6 +62,18 @@ elif {Bolo.Enzo.Ovos_Concluido} == false:
 	Obrigado pelos ovos!
 	[signal arg="voltar_mapa"]
 	[end_timeline]
+
+# ESTÁGIO 2A-2: Aceitou procurar a chave, mas ainda não pegou os ovos
+elif {Bolo.Enzo.Ovos_Concluido} == false:
+	[background arg="res://assets/backgrounds/casaEnzoquintal.jpeg" fade="0.0"]
+	join enzo (bolo_enzo_02/5) leftmost
+	enzo (bolo_enzo_02/5): A-A chave da geladeira ainda está escondida em algum lugar da cozinha...\
+	Você pode procurar para mim?
+	- Vou procurar agora!
+		[signal arg="iniciar_minigame_ovos"]
+		[end_timeline]
+	- Daqui a pouco, Enzo.
+		[end_timeline]
 
 # ESTÁGIO 2B: Pede ajuda para achar as velas na sala segura (Nas conversas seguintes)
 elif {Bolo.Enzo.Velas_Em_Andamento} == false and {Bolo.Enzo.Velas_Concluido} == false and {Bolo.Enzo.Secundaria} == false:

@@ -37,7 +37,7 @@ if {Bolo.Xerife.Xerife_Fase} == 0:
 	xerife (Bolo/Bolo 07): Ache o fermento para mim para não infringirmos o código da vila!
 	
 	- Claro, vou procurar!
-		set {Bolo.Xerife.Xerife_Fase} = 1
+		# A fase só muda quando o fermento é achado (minigame_fermento_xerife.gd)
 		[signal arg="iniciar_minigame_fermento"]
 		[end_timeline]
 	- Agora não posso, Xerife.
@@ -60,6 +60,10 @@ elif {Bolo.Xerife.Xerife_Fase} == 1:
 	[end_timeline]
 
 # === INTERAÇÃO 2: MISSÃO SECUNDÁRIA DE ITENS PERDIDOS ===
+# Já achou os 3 distintivos: vai direto para a recompensa
+elif {Bolo.Xerife.Xerife_Fase} == 2 and {GameState.distintivo1_pego} == true and {GameState.distintivo2_pego} == true and {GameState.distintivo3_pego} == true:
+	jump recompensa_distintivos
+
 elif {Bolo.Xerife.Xerife_Fase} == 2:
 	[background arg="res://assets/backgrounds/sala_xerife_cafe.jpeg" fade="0.0"]
 	join xerife (Bolo/09) center
@@ -73,7 +77,7 @@ elif {Bolo.Xerife.Xerife_Fase} == 2:
 	
 	- Pode deixar, vou encontrar!
 		set {Bolo.Xerife.Xerife_Secundaria} = true
-		set {Bolo.Xerife.Xerife_Fase} = 3
+		# A recompensa só vem depois dos 3 distintivos achados (veja abaixo)
 		[signal arg="iniciar_minigame_distintivos"]
 		[end_timeline]
 	- Agora não posso.
@@ -84,7 +88,9 @@ elif {Bolo.Xerife.Xerife_Fase} == 2:
 		[end_timeline]
 
 # RESULTADO DA INTERAÇÃO 2 (PÓS MINIGAME DOS DISTINTIVOS)
+# (Fase 3 só existe em saves antigos; no jogo novo a recompensa vem pelo jump acima)
 elif {Bolo.Xerife.Xerife_Fase} == 3:
+	label recompensa_distintivos
 	[background arg="res://assets/backgrounds/sala_xerife_cafe.jpeg" fade="0.0"]
 	join xerife (Bolo/13) center
 	[voice path="res://assets/som/Xerife Pepper/bolo_xerife_02/Bom-[emphasis]-trabalho,-recruta.-[shor.mp3" volume="0.0"]
