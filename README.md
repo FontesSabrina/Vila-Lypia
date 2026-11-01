@@ -1,5 +1,9 @@
 # 🧚 Vila Lypia (beta)
 
+### [▶️ JOGAR NO NAVEGADOR (itch.io)](https://fontessabrina.itch.io/vila-lypia)
+
+*Funciona no navegador do computador, sem instalar nada. Na primeira vez o jogo leva um tempinho para carregar.*
+
 Jogo narrativo e educativo feito na **Godot Engine 4.4** com o plugin **Dialogic 2**.
 Ele foi pensado para crianças, inclusive crianças autistas ou com sensibilidade sensorial.
 
@@ -12,7 +16,7 @@ A fada **Bella** e o jogador percorrem a vila, conversam com os moradores e reú
 - **Gênero:** aventura narrativa / visual novel com minigames
 - **Público:** infantil
 - **Idioma:** português (com vozes)
-- **Plataforma:** PC (Windows)
+- **Plataforma:** PC (Windows) e navegador ([jogar no itch.io](https://fontessabrina.itch.io/vila-lypia))
 
 ### Personagens
 | Personagem | Papel |
@@ -67,6 +71,17 @@ O menu **Configurações** foi feito para crianças com sensibilidade sensorial:
 
 > ⚠️ **Use a Godot 4.4.** O Dialogic incluído (2.0-Alpha-19) exige a 4.4 ou mais nova.
 > Não abra o projeto na 4.3, porque isso quebra arquivos.
+
+---
+
+## 🌐 Versão para navegador
+
+A versão web está publicada no **[itch.io](https://fontessabrina.itch.io/vila-lypia)**. Ela é exportada com o preset **Web** da Godot 4.4, com algumas diferenças da versão de PC para ficar mais leve:
+- imagens com compressão *lossy* (WebP, qualidade 0.7), no tamanho original;
+- vozes em mono a 48 kbps e músicas a 96 kbps;
+- scripts exportados como **texto**, porque o Dialogic procura alguns arquivos `.gd` pelo nome.
+
+O arquivo `.pck` final tem cerca de 144 MB. Por isso o jogo fica no itch.io, que aceita arquivos de até 200 MB, e não no GitHub Pages, que aceita no máximo 100 MB por arquivo.
 
 ---
 
