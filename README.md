@@ -1,6 +1,6 @@
 # 🧚 Vila Lypia (beta)
 
-### [▶️ JOGAR NO NAVEGADOR (itch.io)](https://fontessabrina.itch.io/vila-lypia)
+### [▶️ JOGAR NO NAVEGADOR (itch.io)](https://xxsabrinaxx.itch.io/vila-lypia)
 
 *Funciona no navegador do computador, sem instalar nada. Na primeira vez o jogo leva um tempinho para carregar.*
 
@@ -16,7 +16,7 @@ A fada **Bella** e o jogador percorrem a vila, conversam com os moradores e reú
 - **Gênero:** aventura narrativa / visual novel com minigames
 - **Público:** infantil
 - **Idioma:** português (com vozes)
-- **Plataforma:** PC (Windows) e navegador ([jogar no itch.io](https://fontessabrina.itch.io/vila-lypia))
+- **Plataforma:** PC (Windows) e navegador ([jogar no itch.io](https://xxsabrinaxx.itch.io/vila-lypia))
 
 ### Personagens
 | Personagem | Papel |
@@ -76,7 +76,7 @@ O menu **Configurações** foi feito para crianças com sensibilidade sensorial:
 
 ## 🌐 Versão para navegador
 
-A versão web está publicada no **[itch.io](https://fontessabrina.itch.io/vila-lypia)**. Ela é exportada com o preset **Web** da Godot 4.4, com algumas diferenças da versão de PC para ficar mais leve:
+A versão web está publicada no **[itch.io](https://xxsabrinaxx.itch.io/vila-lypia)**. Ela é exportada com o preset **Web** da Godot 4.4, com algumas diferenças da versão de PC para ficar mais leve:
 - imagens com compressão *lossy* (WebP, qualidade 0.7), no tamanho original;
 - vozes em mono a 48 kbps e músicas a 96 kbps;
 - scripts exportados como **texto**, porque o Dialogic procura alguns arquivos `.gd` pelo nome.
