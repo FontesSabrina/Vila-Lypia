@@ -10,6 +10,10 @@
 
 > Na primeira vez, o Windows pode mostrar **"O Windows protegeu o computador"**, porque o jogo não tem assinatura digital. Clique em **Mais informações → Executar assim mesmo**.
 
+### [📖 MANUAL DO JOGO (PDF)](docs/Manual_Vila_Lypia.pdf)
+
+*Documentação completa e ilustrada: o projeto e o público, a história, os personagens, os capítulos, os finais, a acessibilidade, as pastas, o código, as ferramentas e o tamanho de cada versão.*
+
 Jogo narrativo e educativo feito na **Godot Engine 4.4** com o plugin **Dialogic 2**.
 Ele foi pensado para crianças, inclusive crianças autistas ou com sensibilidade sensorial.
 
@@ -20,7 +24,7 @@ A fada **Bella** e o jogador percorrem a vila, conversam com os moradores e reú
 ## 🎮 Sobre o jogo
 
 - **Gênero:** aventura narrativa / visual novel com minigames
-- **Público:** infantil
+- **Público:** crianças de 7 a 12 anos, com foco em crianças com TEA nível 1
 - **Idioma:** português (com vozes)
 - **Plataforma:** PC (Windows) e navegador ([jogar no itch.io](https://xxsabrinaxx.itch.io/vila-lypia))
 
@@ -105,6 +109,7 @@ Vila-Lypia/
 ├── scenes/                 Cenas do jogo (.tscn)
 │   └── dtl_Dialogic/       Linhas do tempo dos diálogos (.dtl)
 ├── scripts/                Scripts GDScript (.gd)
+├── docs/                   Manual do jogo (PDF)
 └── project.godot
 ```
 
