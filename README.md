@@ -4,6 +4,12 @@
 
 *Funciona no navegador do computador, sem instalar nada. Na primeira vez o jogo leva um tempinho para carregar.*
 
+### [💻 BAIXAR PARA WINDOWS](https://github.com/FontesSabrina/Vila-Lypia/releases/latest)
+
+*Baixe o arquivo **VilaLypia.exe** (cerca de 1,2 GB) e dê dois cliques para jogar. Não precisa instalar nada nem ter a Godot.*
+
+> Na primeira vez, o Windows pode mostrar **"O Windows protegeu o computador"**, porque o jogo não tem assinatura digital. Clique em **Mais informações → Executar assim mesmo**.
+
 Jogo narrativo e educativo feito na **Godot Engine 4.4** com o plugin **Dialogic 2**.
 Ele foi pensado para crianças, inclusive crianças autistas ou com sensibilidade sensorial.
 
