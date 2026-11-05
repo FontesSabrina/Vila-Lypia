@@ -6,6 +6,8 @@ class_name PainelConfig
 ##   - palavras simples e botões grandes;
 ##   - tudo muda na hora e mostra um exemplo, sem surpresas;
 ##   - nada pisca, nada se mexe sozinho, sem sons de clique;
+##   - ao mexer no volume, toca um som de exemplo daquele tipo (música,
+##     voz ou efeito), para a criança ouvir o quanto aumentou ou diminuiu;
 ##   - botão "Voltar ao normal" para desfazer tudo de uma vez.
 ##
 ## Monta a tela sozinho: basta um nó Control chamado "PainelConfig"
@@ -29,8 +31,28 @@ var _rotulos := {}        # chave -> Label de %
 var _checks := {}         # chave -> CheckButton
 var _grupos := {}         # chave -> Array[Button]
 
+# ---------------------------------------------------------------- SOM DE EXEMPLO
+## Som que toca ao ajustar cada volume (no canal certo, então já sai
+## no volume escolhido).
+const AMOSTRAS := {
+	"vol_musica": {"som": "res://assets/som/Caminho da Vila.mp3", "canal": "Musica"},
+	"vol_vozes": {"som": "res://assets/som/Bella/cena01/OI.mp3", "canal": "Vozes"},
+	"vol_efeitos": {"som": "res://assets/som/moedas.mp3", "canal": "Efeitos"},
+}
+## Quanto tempo a música de exemplo toca depois do último ajuste (segundos).
+const TEMPO_MUSICA := 4.0
+## Espera depois de mexer, para não tocar várias vezes seguidas.
+const ESPERA_AMOSTRA := 0.3
+
+var _amostra: AudioStreamPlayer
+var _espera_amostra: Timer
+var _fim_musica: Timer
+var _chave_amostra := ""
+var _fade: Tween
+
 
 func _ready() -> void:
+	_criar_amostra()
 	_montar_tela()
 	_atualizar_tudo()
 	_mostrar_aba(0)
@@ -43,6 +65,7 @@ func _unhandled_input(event: InputEvent) -> void:
 
 
 func fechar() -> void:
+	_parar_amostra()
 	visible = false
 
 
@@ -175,6 +198,9 @@ func _linha_slider(nome: String, chave: String, minimo: float, maximo: float) ->
 	s.add_theme_stylebox_override("grabber_area", _estilo(COR_SUAVE, 8, 6))
 	s.add_theme_stylebox_override("grabber_area_highlight", _estilo(COR_TEXTO, 8, 6))
 	s.value_changed.connect(_on_slider.bind(chave))
+	if AMOSTRAS.has(chave):
+		# Soltou o controle: toca o exemplo na hora
+		s.drag_ended.connect(func(_mudou): _tocar_amostra(chave))
 	h.add_child(s)
 	var pct := _rotulo("", 20, COR_TEXTO)
 	pct.custom_minimum_size.x = 64
@@ -267,6 +293,7 @@ func _estilo(cor: Color, raio: int, margem: int, borda := Color.TRANSPARENT) -> 
 # ---------------------------------------------------------------- ATUALIZAR
 
 func _mostrar_aba(i: int) -> void:
+	_parar_amostra()
 	for n in _abas.size():
 		_abas[n].set_pressed_no_signal(n == i)
 		_paginas[n].visible = n == i
@@ -302,6 +329,78 @@ func _on_slider(valor: float, chave: String) -> void:
 	var a := _acess()
 	if a:
 		a.mudar(chave, valor / 100.0)
+	if AMOSTRAS.has(chave):
+		# Clique ou teclado: espera um instante e toca o exemplo
+		_chave_amostra = chave
+		_espera_amostra.start(ESPERA_AMOSTRA)
+		# A música de exemplo continua tocando enquanto a criança ajusta
+		if _amostra.playing and _amostra.bus == AMOSTRAS[chave]["canal"] and chave == "vol_musica":
+			_fim_musica.start(TEMPO_MUSICA)
+
+
+# ---------------------------------------------------------------- SOM DE EXEMPLO
+
+func _criar_amostra() -> void:
+	_amostra = AudioStreamPlayer.new()
+	# Canal já escolhido: o Acessibilidade não troca o canal deste som
+	_amostra.bus = "Efeitos"
+	add_child(_amostra)
+	_espera_amostra = Timer.new()
+	_espera_amostra.one_shot = true
+	_espera_amostra.timeout.connect(func(): _tocar_amostra(_chave_amostra))
+	add_child(_espera_amostra)
+	_fim_musica = Timer.new()
+	_fim_musica.one_shot = true
+	_fim_musica.timeout.connect(_sumir_musica)
+	add_child(_fim_musica)
+
+
+func _tocar_amostra(chave: String) -> void:
+	if not AMOSTRAS.has(chave) or not visible:
+		return
+	_espera_amostra.stop()
+	var info: Dictionary = AMOSTRAS[chave]
+	if not ResourceLoader.exists(info["som"]):
+		return
+	var e_musica := chave == "vol_musica"
+	# Música já tocando: só continua (não recomeça do início)
+	if e_musica and _amostra.playing and _amostra.bus == info["canal"]:
+		_fim_musica.start(TEMPO_MUSICA)
+		return
+	# Voz e efeito: se ainda estiver tocando, deixa terminar
+	if not e_musica and _amostra.playing and _amostra.bus == info["canal"]:
+		return
+	if _fade and _fade.is_valid():
+		_fade.kill()
+	_amostra.stop()
+	_amostra.stream = load(info["som"])
+	_amostra.bus = info["canal"]
+	_amostra.volume_db = 0.0
+	_amostra.play()
+	if e_musica:
+		_fim_musica.start(TEMPO_MUSICA)
+	else:
+		_fim_musica.stop()
+
+
+## A música de exemplo some devagar (sem corte seco).
+func _sumir_musica() -> void:
+	if not _amostra.playing:
+		return
+	if _fade and _fade.is_valid():
+		_fade.kill()
+	_fade = create_tween()
+	_fade.tween_property(_amostra, "volume_db", -40.0, 0.8)
+	_fade.tween_callback(_amostra.stop)
+
+
+func _parar_amostra() -> void:
+	if _espera_amostra:
+		_espera_amostra.stop()
+	if _fim_musica:
+		_fim_musica.stop()
+	if _amostra and _amostra.playing:
+		_sumir_musica()
 
 
 func _on_check(ligado: bool, chave: String) -> void:
