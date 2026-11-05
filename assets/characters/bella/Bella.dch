@@ -32,8 +32,8 @@
 },
 "ignore_char_scale": false,
 "mirror": false,
-"offset": Vector2(-300, -350),
-"scale": 0.5,
+"offset": Vector2(-17, -46),
+"scale": 0.775,
 "scene": ""
 },
 "Animada 01": {
@@ -59,8 +59,8 @@
 "image": "\"res://assets/characters/bella/apresenta.png\""
 },
 "mirror": false,
-"offset": Vector2(0, 0),
-"scale": 0.9,
+"offset": Vector2(-22, 0),
+"scale": 0.865,
 "scene": ""
 },
 "Apresenta 01": {
@@ -77,8 +77,8 @@
 "image": "\"res://assets/characters/bella/apresenta2.png\""
 },
 "mirror": false,
-"offset": Vector2(0, 0),
-"scale": 1,
+"offset": Vector2(-391, 319),
+"scale": 1.494,
 "scene": ""
 },
 "Apresenta 5": {
@@ -95,8 +95,8 @@
 "image": "\"res://assets/characters/bella/apresentar4.png\""
 },
 "mirror": true,
-"offset": Vector2(0, 0),
-"scale": 1,
+"offset": Vector2(40, 356),
+"scale": 1.655,
 "scene": ""
 },
 "Bella Pensativa": {
@@ -104,8 +104,8 @@
 "image": "\"res://assets/characters/bella/bella_pensativa.png\""
 },
 "mirror": false,
-"offset": Vector2(0, 0),
-"scale": 0.9,
+"offset": Vector2(-57, 0),
+"scale": 0.871,
 "scene": ""
 },
 "Bella_final/1": {
@@ -195,8 +195,8 @@
 },
 "ignore_char_scale": false,
 "mirror": true,
-"offset": Vector2(-100, -200),
-"scale": 0.6,
+"offset": Vector2(-13, -34),
+"scale": 0.865,
 "scene": ""
 },
 "Calma": {
@@ -213,8 +213,8 @@
 "image": "\"res://assets/characters/bella/Caminhando.png\""
 },
 "mirror": false,
-"offset": Vector2(-100, -90),
-"scale": 0.6,
+"offset": Vector2(-19, -46),
+"scale": 0.774,
 "scene": ""
 },
 "Curiosa": {
@@ -231,8 +231,8 @@
 "image": "\"res://assets/characters/bella/demostrativa.png\""
 },
 "mirror": false,
-"offset": Vector2(-120, -110),
-"scale": 0.8,
+"offset": Vector2(-24, -3),
+"scale": 0.867,
 "scene": ""
 },
 "Eba": {
@@ -240,8 +240,8 @@
 "image": "\"res://assets/characters/bella/eba.png\""
 },
 "mirror": false,
-"offset": Vector2(-110, -160),
-"scale": 0.8,
+"offset": Vector2(-18, -46),
+"scale": 0.772,
 "scene": ""
 },
 "Engraçada": {
@@ -267,8 +267,8 @@
 "image": "\"res://assets/characters/bella/esqueci.png\""
 },
 "mirror": false,
-"offset": Vector2(-200, -300),
-"scale": 0.6,
+"offset": Vector2(-19, -46),
+"scale": 0.774,
 "scene": ""
 },
 "Explicando": {
@@ -285,8 +285,8 @@
 "image": "\"res://assets/characters/bella/explicativa.png\""
 },
 "mirror": false,
-"offset": Vector2(-100, -90),
-"scale": 0.8,
+"offset": Vector2(-24, -3),
+"scale": 0.867,
 "scene": ""
 },
 "Festa": {
@@ -294,8 +294,8 @@
 "image": "\"res://assets/characters/bella/festa.png\""
 },
 "mirror": false,
-"offset": Vector2(-110, -160),
-"scale": 0.8,
+"offset": Vector2(23, -44),
+"scale": 0.824,
 "scene": ""
 },
 "Grito": {
@@ -312,8 +312,8 @@
 "image": "\"res://assets/characters/bella/lapis.png\""
 },
 "mirror": false,
-"offset": Vector2(0, 0),
-"scale": 1,
+"offset": Vector2(-15, -15),
+"scale": 1.213,
 "scene": ""
 },
 "Legal": {
@@ -357,8 +357,8 @@
 "image": "\"res://assets/characters/bella/oi.png\""
 },
 "mirror": false,
-"offset": Vector2(0, 0),
-"scale": 1,
+"offset": Vector2(40, 356),
+"scale": 1.655,
 "scene": ""
 },
 "Pena": {
@@ -367,8 +367,8 @@
 },
 "ignore_char_scale": false,
 "mirror": true,
-"offset": Vector2(100, -300),
-"scale": 0.5,
+"offset": Vector2(8, -46),
+"scale": 0.775,
 "scene": ""
 },
 "Pensativa": {
@@ -457,8 +457,8 @@
 "image": "\"res://assets/characters/bella/pref.png\""
 },
 "mirror": true,
-"offset": Vector2(-110, -160),
-"scale": 0.7,
+"offset": Vector2(-90, -20),
+"scale": 0.858,
 "scene": ""
 },
 "Prometo": {
@@ -466,8 +466,8 @@
 "image": "\"res://assets/characters/bella/prometo.png\""
 },
 "mirror": false,
-"offset": Vector2(-110, -160),
-"scale": 0.7,
+"offset": Vector2(-18, -46),
+"scale": 0.773,
 "scene": ""
 },
 "Que Bom": {
@@ -475,8 +475,8 @@
 "image": "\"res://assets/characters/bella/que bom.png\""
 },
 "mirror": false,
-"offset": Vector2(0, 0),
-"scale": 1,
+"offset": Vector2(-15, -2),
+"scale": 0.869,
 "scene": ""
 },
 "Realidade": {
@@ -502,8 +502,8 @@
 "image": "\"res://assets/characters/bella/seguir.png\""
 },
 "mirror": false,
-"offset": Vector2(-100, -100),
-"scale": 1,
+"offset": Vector2(-9, 171),
+"scale": 1.551,
 "scene": ""
 },
 "Seguir 02": {
@@ -511,8 +511,8 @@
 "image": "\"res://assets/characters/bella/Seguindo.png\""
 },
 "mirror": false,
-"offset": Vector2(-100, -200),
-"scale": 0.7,
+"offset": Vector2(-14, -28),
+"scale": 0.809,
 "scene": ""
 },
 "Seguir 03": {
@@ -547,8 +547,8 @@
 "image": "\"res://assets/characters/bella/seguir_alt.png\""
 },
 "mirror": false,
-"offset": Vector2(0, 0),
-"scale": 1,
+"offset": Vector2(22, -6),
+"scale": 0.869,
 "scene": ""
 },
 "Segurança": {
@@ -583,8 +583,8 @@
 "image": "\"res://assets/characters/bella/surpresa.png\""
 },
 "mirror": false,
-"offset": Vector2(-200, -300),
-"scale": 0.6,
+"offset": Vector2(3, -27),
+"scale": 0.845,
 "scene": ""
 },
 "Tchau": {
@@ -592,8 +592,8 @@
 "image": "\"res://assets/characters/bella/tchau.png\""
 },
 "mirror": false,
-"offset": Vector2(0, 0),
-"scale": 1,
+"offset": Vector2(-36, 356),
+"scale": 1.655,
 "scene": ""
 },
 "bolo/10": {

@@ -2,7 +2,8 @@ extends Control
 class_name Creditos
 ## Tela de créditos — monta tudo sozinha, não precisa criar nós na cena.
 ## Cena: res://scenes/creditos.tscn (raiz Control com este script).
-## O texto sobe devagar. Clique ou tecla pula. No fim volta para o menu.
+## O texto sobe devagar. Clique ou tecla pula (só depois de alguns segundos,
+## para um clique que sobrou do "Fim" não pular os créditos). No fim volta para o menu.
 
 const CENA_MENU := "res://scenes/menu.tscn"
 const DURACAO := 32.0   # segundos para o texto atravessar a tela
@@ -45,9 +46,13 @@ const TITULO_DO_FINAL := {
 }
 
 var _saindo := false
+## Segundos em que cliques e teclas são ignorados quando os créditos abrem.
+const ESPERA_PARA_PULAR := 3.0
+var _pode_pular := false
 
 
 func _ready() -> void:
+	get_tree().create_timer(ESPERA_PARA_PULAR).timeout.connect(func(): _pode_pular = true)
 	set_anchors_preset(Control.PRESET_FULL_RECT)
 
 	var fundo := ColorRect.new()
@@ -110,7 +115,9 @@ func _tocar_musica() -> void:
 	som.play()
 
 
-func _unhandled_input(event: InputEvent) -> void:
+func _input(event: InputEvent) -> void:
+	if not _pode_pular:
+		return
 	if (event is InputEventMouseButton or event is InputEventKey) and event.pressed:
 		_voltar_ao_menu()
 

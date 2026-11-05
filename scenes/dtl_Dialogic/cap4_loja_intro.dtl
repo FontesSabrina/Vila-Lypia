@@ -80,7 +80,9 @@ update linna (loja/7)
 [voice path="res://assets/som/cap IV/-Boa-[emphasis]-sorte-na-festa!-[short-p.mp3" volume="0.0"]
 linna (loja/7): Boa sorte na festa! Diga à Anne que fui eu que fiz o laço, tá bom?
 leave linna
-[end_timeline]
+# Segue direto para o anoitecer, sem terminar a conversa
+# (senão o fundo de madeira da loja e as moedas aparecem por um instante)
+jump anoitecer
 
 # ======================================================================
 # PARTE 3: EVENTO DE AMIZADE MÁXIMA
@@ -170,7 +172,8 @@ audio "res://assets/som/item_recebido.mp3"
 [style name="cinzanovo"]
 Protagonista: Item obtido\: Kit do Criador de Mundos!\
 E também o selo final\: Coração da Vila!
-[end_timeline]
+# Segue direto para o anoitecer (mesmo motivo da compra normal)
+jump anoitecer
 
 # ======================================================================
 # PARTE 4: CENA 6, O ANOITECER MÁGICO

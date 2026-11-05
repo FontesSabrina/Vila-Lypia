@@ -19,6 +19,7 @@ Bella (Demostrativa): Verde\: Olha só, subimos para o nível Amigo! \
 Que demais! Já sinto que a nossa conversa flui super bem e que temos muuuita história boa para compartilhar!
 [style name="azulnovo"]
 [voice path="res://assets/som/Bella/tutorial/Azul.mp3" volume="0.0"]
+join Bella (Engraçada) left
 Bella (Engraçada): Azul\: Melhor Amigo! Ah, que felicidade! \
 Esse azul mostra que você se tornou alguém essencial no meu dia a dia.
 [style name="cinzanovo"]

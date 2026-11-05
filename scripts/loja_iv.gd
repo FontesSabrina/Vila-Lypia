@@ -11,6 +11,9 @@ class_name LojaIV
 ##    - Normal: aparece a confirmação; ao comprar, a Linna embrulha o presente
 ##      (label "compra_caixinha", "compra_veludo" ou "compra_caderno").
 ## 4. Depois, a Cena 6 (label "anoitecer") e o Capítulo Final.
+##    A compra e o Kit seguem direto para o anoitecer DENTRO da mesma conversa
+##    (jump anoitecer na timeline). Assim o fundo de madeira da loja e o
+##    contador de moedas não aparecem entre uma fala e outra.
 ##
 ## Nada precisa ser conectado pelo editor: o script liga os botões sozinho.
 
@@ -48,6 +51,9 @@ const ITENS := {
 @onready var pergunta: Label = _achar_no_painel("Pergunta") as Label
 @onready var botao_sim: BaseButton = _achar_no_painel("BotaoSim") as BaseButton
 @onready var botao_nao: BaseButton = _achar_no_painel("BotaoNao") as BaseButton
+# Fundo de madeira e contador de moedas: somem depois da compra
+@onready var mesa: CanvasItem = get_node_or_null("MesaArtes") as CanvasItem
+@onready var contador_moedas: CanvasItem = get_node_or_null("moedas") as CanvasItem
 
 var _botoes := {}          # "Caixinha" -> TextureButton
 var _item_escolhido := ""  # item clicado, esperando confirmação
@@ -196,12 +202,11 @@ func _on_sim() -> void:
 	GameState.comprar_presente(ITENS[nome]["codigo"])
 	print(">>> Loja: comprou ", ITENS[nome]["codigo"])
 
-	# A Linna embrulha o presente
-	if catalogo:
-		catalogo.visible = false
+	# A Linna embrulha o presente e a conversa segue sozinha para o anoitecer
+	_esconder_loja()
 	Dialogic.start(TIMELINE_LOJA, "compra_" + str(ITENS[nome]["codigo"]))
 	await Dialogic.timeline_ended
-	_anoitecer()
+	_ir_para_capitulo_final()
 
 
 # ---------------------------------------------------------------- EVENTO ESPECIAL
@@ -217,22 +222,37 @@ func _evento_amizade() -> void:
 	GameState.ganhar_selo_coracao_vila()
 	print(">>> Loja: evento de amizade máxima -> Kit do Criador de Mundos")
 
+	_esconder_loja()
 	Dialogic.start(TIMELINE_LOJA, "amizade")
 	await Dialogic.timeline_ended
-	_anoitecer()
+	_ir_para_capitulo_final()
 
 
 # ---------------------------------------------------------------- CENA 6
 
+# Usado só quando o jogador volta pelo save depois de já ter comprado.
 func _anoitecer() -> void:
 	_ocupado = true
-	if catalogo:
-		catalogo.visible = false
+	_esconder_loja()
 	await get_tree().process_frame
 	if not is_inside_tree():
 		return
 	Dialogic.start(TIMELINE_LOJA, "anoitecer")
 	await Dialogic.timeline_ended
+	_ir_para_capitulo_final()
+
+
+# Esconde o catálogo, a mesa de madeira e as moedas (a compra já foi feita).
+func _esconder_loja() -> void:
+	if catalogo:
+		catalogo.visible = false
+	if mesa:
+		mesa.visible = false
+	if contador_moedas:
+		contador_moedas.visible = false
+
+
+func _ir_para_capitulo_final() -> void:
 	if not is_inside_tree():
 		return
 	if ResourceLoader.exists(CENA_CAPITULO_FINAL):

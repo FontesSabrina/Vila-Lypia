@@ -100,7 +100,7 @@ leave Bella
 label final_2
 audio "res://assets/som/Caminho da Vila.mp3" [volume="-18.0"]
 [style name="cinzanovo"]
-join Bella (Bella_final/6) leftmost
+join Bella (Bella_final/6) left
 [voice path="res://assets/som/Anne/final/Uma-festa-Para-mim-Vocês..mp3" volume="0.0"]
 Anne (8): Uma festa?\
 Para mim? \

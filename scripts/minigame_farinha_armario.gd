@@ -1,8 +1,10 @@
 extends Node2D
 class_name ArmarioFarinha
-## Armário da Hera: aqui está a farinha. Ao pegar, a Hera agradece e o jogo volta ao mapa.
+## Armário da Hera: aqui está a farinha. Ao pegar, aparece um aviso e o jogo volta ao mapa.
+## A entrega é feita clicando na casa da Hera no mapa.
 
 const CENA_MAPA := "res://scenes/mapa_pricipal.tscn"
+const TIMELINE_AVISO := "res://scenes/dtl_Dialogic/aviso_farinha_hera.dtl"
 
 @onready var barra_farinha = get_node_or_null("UI/barra_farinha")
 
@@ -31,7 +33,7 @@ func _on_farinha_pressed() -> void:
 	Dialogic.VAR.set_variable("Bolo.Hera.Farinha_Concluido", true)
 	Dialogic.VAR.set_variable("Bolo.Hera.Em_Andamento", false)
 
-	Dialogic.start("bolo_hera_02")
+	Dialogic.start(TIMELINE_AVISO)
 	await Dialogic.timeline_ended
 	if is_inside_tree():
 		get_tree().change_scene_to_file.call_deferred(CENA_MAPA)

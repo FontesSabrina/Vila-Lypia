@@ -77,8 +77,8 @@ elif {Bolo.Enzo.Ovos_Concluido} == false:
 
 # ESTÁGIO 2B: Pede ajuda para achar as velas na sala segura (Nas conversas seguintes)
 elif {Bolo.Enzo.Velas_Em_Andamento} == false and {Bolo.Enzo.Velas_Concluido} == false and {Bolo.Enzo.Secundaria} == false:
-	join enzo (bolo_enzo_02/9) right
 	[background arg="res://assets/backgrounds/casaEnzoSalaSegura.jpeg" fade="0.0"]
+	join enzo (bolo_enzo_02/9) right
 	Protagonista: Uau, Enzo... Esta sala de segurança máxima é super protegida! Tem tranca para todo lado.
 	
 	[voice path="res://assets/som/Enzo/bolo_enzo_02/S-Sim!-Aqui-dentro-com-os-trincos-fechado.mp3" volume="0.0"]

@@ -18,6 +18,8 @@ extends Node
 ##              o texto rápido não abrir uma casa/praça que está embaixo;
 ##            - durante a conversa, Espaço/Enter só passam o texto e não
 ##              apertam mais o botão do cenário que estava selecionado.
+##   NOME     A caixa "Digite seu nome" do Dialogic aparece mais para baixo,
+##            para não ficar em cima do rosto da Bella.
 ##
 ## Cadastro: Projeto > Configurações do Projeto > Globais > Autoload
 ##   Caminho: res://scripts/Acessibilidade.gd   Nome: Acessibilidade
@@ -216,6 +218,8 @@ func _criar_canais_de_som() -> void:
 func _on_node_added(no: Node) -> void:
 	if no is AudioStreamPlayer:
 		_escolher_canal.call_deferred(no)
+	elif _e_caixa_de_nome(no):
+		_descer_caixa_de_nome.call_deferred(no)
 	elif no is RichTextLabel and no.has_method("set_speed"):
 		# É o texto do balão do Dialogic: espera o estilo carregar e ajusta
 		_ajustar_tamanho_depois(no)
@@ -273,6 +277,33 @@ func _ajustar_tamanho(no) -> void:
 	var fator: float = TAMANHOS[tamanho]["valor"]
 	for n in nomes:
 		c.add_theme_font_size_override(n, int(round(base_salvo[n] * fator)))
+
+
+# ---------------------------------------------------------------- CAIXA DE NOME
+
+## Altura do centro da caixa "Digite seu nome" (0 = topo da tela, 1 = base).
+## O Dialogic deixa no meio (0.5), em cima do rosto da Bella; aqui fica no alto,
+## acima da cabeça dela.
+const ALTURA_CAIXA_DE_NOME := 0.11
+
+func _e_caixa_de_nome(no: Node) -> bool:
+	var s = no.get_script()
+	return s != null and s.get_global_name() == &"DialogicNode_TextInput"
+
+
+func _descer_caixa_de_nome(no) -> void:
+	if not is_instance_valid(no) or not (no is Control):
+		return
+	var c := no as Control
+	var altura := c.offset_bottom - c.offset_top
+	c.anchor_top = ALTURA_CAIXA_DE_NOME
+	c.anchor_bottom = ALTURA_CAIXA_DE_NOME
+	c.offset_top = -altura / 2.0
+	c.offset_bottom = altura / 2.0
+	# O botão do Dialogic vem escrito "Confirm" (inglês)
+	var botao := c.find_child("ConfirmationButton", true, false) as Button
+	if botao:
+		botao.text = "Confirmar"
 
 
 # ---------------------------------------------------------------- CLIQUES
