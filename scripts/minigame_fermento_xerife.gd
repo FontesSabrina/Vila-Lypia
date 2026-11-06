@@ -1,10 +1,11 @@
 extends Node2D
 class_name MiniGameFermento
-## Mesa do Xerife: aqui está o fermento. Ao pegar, aparece um aviso e o jogo volta ao mapa.
-## A entrega é feita clicando na casa do Xerife no mapa.
+## Mesa do Xerife: aqui está o fermento. Ao pegar, o Xerife aparece e agradece
+## (bolo_xerife_02). Só depois que ele termina de falar o jogo volta ao mapa.
+## (Aviso só existe nos minijogos secundários, como os distintivos.)
 
 const CENA_MAPA := "res://scenes/mapa_pricipal.tscn"
-const TIMELINE_AVISO := "res://scenes/dtl_Dialogic/aviso_fermento_xerife.dtl"
+const TIMELINE_AGRADECIMENTO := "bolo_xerife_02"
 
 var _pegou := false
 
@@ -25,7 +26,7 @@ func _on_fermento_pressed() -> void:
 	await get_tree().create_timer(0.3).timeout
 	if not is_inside_tree():
 		return
-	Dialogic.start(TIMELINE_AVISO)
+	Dialogic.start(TIMELINE_AGRADECIMENTO)
 	await Dialogic.timeline_ended
 	if is_inside_tree():
 		get_tree().change_scene_to_file.call_deferred(CENA_MAPA)

@@ -12,6 +12,8 @@ const CENA_PRACA_IV := "res://scenes/praca_festa_iv.tscn"
 # As ruas: o botão do mapa SEMPRE abre a imagem da rua.
 const CENA_RUA_AMOREIRAS := "res://scenes/rua_das_amoreiras.tscn"
 const CENA_RUA_IPES := "res://scenes/rua_das_ipes_principal.tscn"
+## Mini-jogo dos novelos da Linna (as 4 telas da Rua dos Ipês começam aqui).
+const CENA_MINIJOGO_NOVELOS := "res://scenes/rua_dos_ipes.tscn"
 
 # true enquanto uma conversa com um morador, começada aqui no mapa, está tocando.
 # Nessa hora o sinal "ir_para_praca" é ignorado: ao fim da fala, o jogador
@@ -92,17 +94,16 @@ func _convites_encerrados() -> bool:
 # Escolhe a conversa da casa. O que ficou para trás quando a Bella passou para
 # o próximo capítulo está encerrado: a casa não abre mais aquela conversa.
 #   - Capítulo IV (praça da festa): nada do bolo ou dos convites abre mais.
-#   - Bolo já explicado pela Bella: só as conversas do bolo.
-#   - Convites encerrados: as conversas dos convites não abrem mais.
+#   - Bolo já explicado pela Bella ou convites encerrados: só as conversas
+#     do bolo (as dos convites não abrem mais).
 func _falar_com_morador(timeline_convites: String, timeline_bolo: String) -> void:
 	if _praca_iv_liberada():
 		print(">>> Mapa: Capítulo IV, missões anteriores encerradas")
 		return
-	if _estado_bolo() == 1:
+	# Bolo explicado pela Bella OU convites já encerrados: as casas abrem as
+	# conversas do bolo (antes, só abriam depois de falar com a Bella).
+	if _estado_bolo() == 1 or _convites_encerrados():
 		_falar_com(timeline_bolo)
-		return
-	if _convites_encerrados():
-		print(">>> Mapa: convites encerrados pela Bella")
 		return
 	_falar_com(timeline_convites)
 
@@ -118,9 +119,10 @@ func atualizar_estilo_balao_individual(nome_personagem: String) -> void:
 		"Xerife": pontos_amizade = float(_ler("Amizade.Xerife", 0))
 		_: pontos_amizade = 0.0
 
-	if pontos_amizade <= 3.0:
+	# Balão: cinza 0 a 2 | azul 3 a 5 | verde 6 ou mais (a amizade vai até 7)
+	if pontos_amizade <= 2.0:
 		Dialogic.Styles.load_style("cinzanovo")
-	elif pontos_amizade <= 7.0:
+	elif pontos_amizade <= 5.0:
 		Dialogic.Styles.load_style("azulnovo")
 	else:
 		Dialogic.Styles.load_style("verdenovo")
@@ -246,9 +248,20 @@ func _on_botao_fechar_pressed() -> void:
 	else:
 		get_tree().change_scene_to_file.call_deferred(cena_anterior)
 
-# Rua dos Ipês: SEMPRE abre a rua (a imagem).
+# Rua dos Ipês:
+#   - Missão dos novelos da Linna em andamento (o jogador aceitou "Vou encontrar
+#     os novelos!" e ainda não achou os 4): abre o MINI-JOGO dos novelos.
+#   - Fora disso: abre só a rua (a imagem).
 # O mini-jogo das velas começa pelo diálogo do Enzo
 # (sinal "iniciar_minigame_velas_enzo", tratado em _on_dialogic_signal).
 func _on_ruadosipes_pressed() -> void:
+	if _missao_novelos_em_andamento():
+		print(">>> Mapa: abrindo a Rua dos Ipês (mini-jogo dos novelos da Linna)")
+		get_tree().change_scene_to_file.call_deferred(CENA_MINIJOGO_NOVELOS)
+		return
 	print(">>> Mapa: abrindo a Rua dos Ipês")
 	get_tree().change_scene_to_file.call_deferred(CENA_RUA_IPES)
+
+func _missao_novelos_em_andamento() -> bool:
+	return _ler("Bolo.Linna.Bolo_Linna_Novelos_Em_Andamento", false) == true \
+		and _ler("Bolo.Linna.Bolo_Linna_Novelos_Concluido", false) != true

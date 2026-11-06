@@ -80,6 +80,7 @@ directories/dtl_directory={
 "conversa_bella_dicas": "res://scenes/dtl_Dialogic/conversa_bella_dicas.dtl",
 "convites_01": "res://scenes/dtl_Dialogic/convites_01.dtl",
 "final_tutorial": "res://scenes/dtl_Dialogic/final_tutorial.dtl",
+"scripts/bolo": "res://scripts/bolo.dtl",
 "tutorial": "res://scenes/dtl_Dialogic/tutorial.dtl"
 }
 layout/style_directory={

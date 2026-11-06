@@ -27,12 +27,12 @@ scale = Vector2(0.593369, 0.714858)
 texture = ExtResource("2_75dvk")
 
 [node name="Mapa" type="Sprite2D" parent="."]
-position = Vector2(577, 337)
-scale = Vector2(0.432675, 0.443111)
+position = Vector2(581.186, 335.421)
+scale = Vector2(0.492856, 0.508365)
 texture = ExtResource("1_xfa8u")
 
 [node name="moedas" parent="." instance=ExtResource("6_dw3q5")]
-position = Vector2(17.41, 25.9211)
+position = Vector2(49.1575, 1.03687)
 
 [node name="ruadosipes" type="TextureButton" parent="."]
 layout_mode = 0
@@ -116,10 +116,10 @@ scale = Vector2(3.32142, 2.77778)
 
 [node name="botao_fechar" type="TextureButton" parent="."]
 layout_mode = 0
-offset_left = 1029.24
-offset_top = 57.0267
-offset_right = 3429.24
-offset_bottom = 1849.03
+offset_left = 1026.16
+offset_top = 52.8793
+offset_right = 3426.16
+offset_bottom = 1844.88
 scale = Vector2(0.0318025, 0.0345248)
 texture_normal = ExtResource("3_1hnnq")
 

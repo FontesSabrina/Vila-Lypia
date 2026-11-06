@@ -26,7 +26,8 @@ offset_bottom = -2.0
 
 [node name="bella_praca" parent="." instance=ExtResource("3_7l2te")]
 layout_mode = 1
-offset_left = 496.0
-offset_top = 208.0
-offset_right = 496.0
-offset_bottom = 208.0
+offset_left = 539.0
+offset_top = 242.0
+offset_right = -445.0
+offset_bottom = -281.0
+scale = Vector2(0.577084, 0.565342)

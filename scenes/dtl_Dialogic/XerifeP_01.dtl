@@ -30,7 +30,7 @@ if {Convite.fase_entrega} == true and {Convite.Convite_Xerife_entregue} == false
 	Estarei de olho em tudo!
 	set {Convite.Convite_Xerife_entregue} = true
 	set {Convite.pontos_convite} += 1
-	[signal arg="ir_para_praca"]
+	[signal arg="   voltar_mapa"]
 
 elif {Convite.fase_entrega} == true and {Convite.Convite_Xerife_entregue} == true:
 	[background arg="res://assets/backgrounds/xerife_sala.jpeg.jpeg" fade="0.0"]
@@ -38,7 +38,7 @@ elif {Convite.fase_entrega} == true and {Convite.Convite_Xerife_entregue} == tru
 	[voice path="res://assets/som/Xerife Pepper/XerifeP_01/Já-estou-revisando-o-perímetro-da-pra.mp3" volume="0.0"]
 	xerife (XerifeP_01/14): Já estou revisando o perímetro da praça para garantir que o protocolo da festa seja seguido à risca!\
 	Nos vemos lá!
-	[signal arg="ir_para_praca"]
+	[signal arg="   voltar_mapa"]
 
 elif {Convite.sem_ajuda} == true:
 	join xerife (XerifeP_01/10) center

@@ -4,6 +4,8 @@ class_name PainelPrimeiraVez
 ## Cuida dos próprios botões E faz as próprias ações:
 ##   - Iniciar a Aventura -> fecha o menu e começa a timeline cena_01
 ##   - Pular Tutorial     -> vai para o mapa
+## Os dois começam um jogo novo no primeiro espaço livre de "Jogos salvos"
+## (Salvamento.gd), que é o Jogo 1 quando ainda não existe nenhum save.
 ## Os botões são ligados aqui pelo código (no _ready).
 
 # ---------------------------------------------------------------- AJUSTE AQUI
@@ -40,8 +42,11 @@ func _on_iniciar() -> void:
 		return
 	_saindo = true
 	print(">>> Painel primeira vez: Iniciar a Aventura -> ", TIMELINE_INICIO)
+	_comecar_jogo_novo()
 	_fechar_menu()
-	Dialogic.start(TIMELINE_INICIO)
+	# Primeiro a abertura do livro (6 imagens + música de ninar);
+	# no fim ela mesma começa a cena_01 na floresta.
+	AberturaLivro.tocar(get_tree(), TIMELINE_INICIO)
 
 
 func _on_pular_tutorial() -> void:
@@ -49,12 +54,21 @@ func _on_pular_tutorial() -> void:
 		return
 	_saindo = true
 	print(">>> Painel primeira vez: Pular Tutorial -> mapa")
+	_comecar_jogo_novo()
 	if is_instance_valid(GameState):
 		GameState.pegar_mapa()
 	_ir_para(CENA_MAPA)
 
 
 # ---------------------------------------------------------------- AJUDANTES
+
+## Escolhe o espaço de save do jogo novo e zera tudo da partida anterior.
+func _comecar_jogo_novo() -> void:
+	var espaco := Salvamento.primeiro_espaco_livre()
+	if espaco == "":
+		espaco = Salvamento.ESPACOS[0]
+	Salvamento.novo_jogo(espaco)
+
 
 ## Liga ou desliga os botões (usado para evitar clique duplo).
 func travar(sim: bool) -> void:

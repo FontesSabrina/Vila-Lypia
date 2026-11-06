@@ -1,21 +1,22 @@
 extends Node2D
 class_name PietroCozinha
 ## Cozinha do Pietro (mini-jogo do chocolate).
-## Ao voltar com o chocolate, aparece um aviso e o jogo volta ao mapa.
-## A entrega é feita clicando na casa do Pietro no mapa.
+## Ao voltar com o chocolate, o Pietro aparece e agradece (bolo_pietro_02).
+## Só depois que ele termina de falar o jogo volta ao mapa.
+## (Aviso só existe nos minijogos secundários, como os pincéis.)
 
 const CENA_MAPA := "res://scenes/mapa_pricipal.tscn"
-const TIMELINE_AVISO := "res://scenes/dtl_Dialogic/aviso_chocolate_pietro.dtl"
+const TIMELINE_AGRADECIMENTO := "bolo_pietro_02"
 
 
 func _ready() -> void:
-	# Pegou o chocolate e ainda não entregou: aviso e volta ao mapa
+	# Pegou o chocolate e o Pietro ainda não agradeceu: ele agradece e volta ao mapa
 	if GameState.chocolate_pego and not Dialogic.VAR.Bolo.Pietro.Bolo_Pietro_Chocolate_Entregue:
 		# Espera um quadro para a cena terminar de montar antes da fala
 		await get_tree().process_frame
 		if not is_inside_tree() or Dialogic.current_timeline:
 			return
-		Dialogic.start(TIMELINE_AVISO)
+		Dialogic.start(TIMELINE_AGRADECIMENTO)
 		await Dialogic.timeline_ended
 		if is_inside_tree():
 			get_tree().change_scene_to_file.call_deferred(CENA_MAPA)

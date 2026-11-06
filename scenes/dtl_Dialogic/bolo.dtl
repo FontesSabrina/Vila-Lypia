@@ -3,19 +3,20 @@
 label menu_bolo_principal
 
 - Fazer o bolo / Montar na mesa
-	# Conta os ingredientes que o jogador realmente tem (cada um vale 1).
+	# Conta os ingredientes que o jogador já ACHOU (cada um vale 1).
+	# Vale assim que acha no minijogo, mesmo antes de entregar na casa.
 	set {Bolo.Total_Ingredientes} = 0
-	if {Bolo.Enzo.Ovos_Entregue} == true:
+	if {Bolo.Enzo.Ovos_Entregue} == true or {GameState.ovos_pego} == true:
 		set {Bolo.Total_Ingredientes} += 1
-	if {Bolo.Pietro.Bolo_Pietro_Chocolate_Entregue} == true:
+	if {Bolo.Pietro.Bolo_Pietro_Chocolate_Entregue} == true or {Bolo.Pietro.Ingrediente_Pietro} == true or {GameState.chocolate_pego} == true:
 		set {Bolo.Total_Ingredientes} += 1
-	if {Bolo.Hera.Farinha_Concluido} == true:
+	if {Bolo.Hera.Farinha_Concluido} == true or {GameState.farinha_pego} == true:
 		set {Bolo.Total_Ingredientes} += 1
-	if {Bolo.Linna.Bolo_Linna_Acucar_Entregue} == true:
+	if {Bolo.Linna.Bolo_Linna_Acucar_Entregue} == true or {Bolo.Linna.Bolo_Linna_Acucar_Concluido} == true or {GameState.acucar_pego} == true:
 		set {Bolo.Total_Ingredientes} += 1
-	if {Bolo.Vincent.Bolo_Vincent_Geleia_Entregue} == true:
+	if {Bolo.Vincent.Bolo_Vincent_Geleia_Entregue} == true or {Bolo.Vincent.Ingrediente_Vincent} == true or {GameState.geleia_pega} == true:
 		set {Bolo.Total_Ingredientes} += 1
-	if {Bolo.Xerife.Ingrediente_Pepper} == true:
+	if {Bolo.Xerife.Ingrediente_Pepper} == true or {Bolo.Xerife.Xerife_Fase} >= 1:
 		set {Bolo.Total_Ingredientes} += 1
 	
 	if {Bolo.Total_Ingredientes} < 3:
@@ -56,7 +57,7 @@ label menu_bolo_principal
 	[end_timeline]
 
 - Acabei me perdendo… consegue me dizer onde cada morador está?
-	join Bella (sup/2) left
+	join Bella (sup/2) center
 	[voice path="res://assets/som/Bella/suporte/Acabei me perdendo/Claro! Qual morador você está procurando.mp3" volume="0.0"]
 	Bella (sup/2): Claro! Qual morador você está procurando?
 	
@@ -88,3 +89,6 @@ label menu_bolo_principal
 	- Voltar ao menu principal
 		leave Bella
 		jump menu_bolo_principal
+
+- Por enquanto é só, Bella.
+	[end_timeline]

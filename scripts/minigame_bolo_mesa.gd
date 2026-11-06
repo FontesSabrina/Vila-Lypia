@@ -263,6 +263,8 @@ func _dar_pingente() -> void:
 	if pingente_entregue:
 		return
 	pingente_entregue = true
+	# Já tinha o pingente (ex: save carregado depois do bolo)? Não dá a amizade de novo.
+	var ja_tinha: bool = GameState != null and "pingente_pego" in GameState and GameState.pingente_pego
 	if GameState and GameState.has_method("pegar_pingente"):
 		GameState.pegar_pingente()
 	else:
@@ -271,6 +273,29 @@ func _dar_pingente() -> void:
 	# Bolo > Pingente_Coracao_Unido (tipo bool). Se não existir, ignora.
 	if _ler_variavel("Bolo.Pingente_Coracao_Unido") != null:
 		Dialogic.VAR.set_variable("Bolo.Pingente_Coracao_Unido", true)
+	if not ja_tinha:
+		_bonus_amizade_pingente()
+
+# O Pingente do Coração Unido une a vila: +1 de amizade com cada um dos
+# 6 moradores (até o máximo de 7). Ajuda a chegar ao balão verde, que é o
+# que libera o Kit do Criador de Mundos na loja da Linna.
+const BONUS_AMIZADE_PINGENTE := 1
+const AMIZADE_MAXIMA := 7
+const MORADORES_AMIZADE := [
+	"Amizade.Enzo", "Amizade.Linna", "Amizade.P_Hera",
+	"Amizade.Pietro", "Amizade.Vincent", "Amizade.Xerife",
+]
+
+func _bonus_amizade_pingente() -> void:
+	var resumo := []
+	for variavel in MORADORES_AMIZADE:
+		if not Dialogic.VAR.has(variavel):
+			continue
+		var antes := int(Dialogic.VAR.get_variable(variavel, 0))
+		var depois := mini(antes + BONUS_AMIZADE_PINGENTE, AMIZADE_MAXIMA)
+		Dialogic.VAR.set_variable(variavel, depois)
+		resumo.append("%s %d->%d" % [variavel.get_slice(".", 1), antes, depois])
+	print(">>> Pingente: +", BONUS_AMIZADE_PINGENTE, " de amizade | ", ", ".join(resumo))
 
 # ---------------------------------------------------------------------
 # INGREDIENTES
@@ -287,39 +312,56 @@ func _ler_variavel(caminho: String):
 			return null
 	return atual
 
-# Testa vários nomes possíveis para o mesmo ingrediente. Usa o primeiro que
-# existir. Se nenhum existir, avisa no Output quais variáveis a pasta tem.
-func _tem_ingrediente(nome: String, candidatos: Array) -> bool:
+## true se o ingrediente já foi ACHADO (não precisa ter sido entregue).
+## Confere várias variáveis e basta UMA estar true:
+##   - candidatos: variáveis do Dialogic (ex: "Bolo.Enzo.Ovos_Entregue")
+##   - flags_game_state: variáveis do GameState (ex: "ovos_pego")
+func _tem_ingrediente(nome: String, candidatos: Array, flags_game_state: Array = []) -> bool:
+	for flag in flags_game_state:
+		if is_instance_valid(GameState) and flag in GameState and bool(GameState.get(flag)):
+			return true
+	var achou_alguma := false
 	for caminho in candidatos:
 		var valor = _ler_variavel(caminho)
-		if valor != null:
-			return bool(valor)
-
-	var pasta: String = String(candidatos[0]).rsplit(".", true, 1)[0]
-	var conteudo = _ler_variavel(pasta)
-	var nomes_na_pasta = conteudo.keys() if conteudo is Dictionary else "(pasta não encontrada)"
-	print("AVISO: variável do ingrediente '", nome, "' não encontrada. Testei: ", candidatos, " | Variáveis em '", pasta, "': ", nomes_na_pasta)
+		if valor == null:
+			continue
+		achou_alguma = true
+		if bool(valor):
+			return true
+	if not achou_alguma and flags_game_state.is_empty():
+		var pasta: String = String(candidatos[0]).rsplit(".", true, 1)[0]
+		var conteudo = _ler_variavel(pasta)
+		var nomes_na_pasta = conteudo.keys() if conteudo is Dictionary else "(pasta não encontrada)"
+		print("AVISO: variável do ingrediente '", nome, "' não encontrada. Testei: ", candidatos, " | Variáveis em '", pasta, "': ", nomes_na_pasta)
 	return false
 
+## Cada ingrediente aparece na mesa assim que o jogador o ACHA no minijogo
+## (antes, só aparecia depois de entregar na casa do morador).
 func verificar_ingredientes_coletados() -> void:
 	var tem_ovos = _tem_ingrediente("ovos", [
 		"Bolo.Enzo.Ovos_Entregue",
-	])
+		"Bolo.Enzo.Ovos_Concluido",
+	], ["ovos_pego"])
 	var tem_chocolate = _tem_ingrediente("chocolate", [
 		"Bolo.Pietro.Bolo_Pietro_Chocolate_Entregue",
-	])
+		"Bolo.Pietro.Ingrediente_Pietro",
+	], ["chocolate_pego"])
 	var tem_farinha = _tem_ingrediente("farinha", [
 		"Bolo.Hera.Farinha_Concluido",
-	])
+	], ["farinha_pego"])
 	var tem_acucar = _tem_ingrediente("açúcar", [
 		"Bolo.Linna.Bolo_Linna_Acucar_Entregue",
-	])
+		"Bolo.Linna.Bolo_Linna_Acucar_Concluido",
+	], ["acucar_pego"])
 	var tem_geleia = _tem_ingrediente("geleia", [
 		"Bolo.Vincent.Bolo_Vincent_Geleia_Entregue",
-	])
+		"Bolo.Vincent.Ingrediente_Vincent",
+	], ["geleia_pega"])
+	# O fermento não tem variável no GameState: Xerife_Fase 1 ou mais = achado.
+	var fase_xerife = _ler_variavel("Bolo.Xerife.Xerife_Fase")
 	var tem_fermento = _tem_ingrediente("fermento", [
 		"Bolo.Xerife.Ingrediente_Pepper",
-	])
+	]) or (fase_xerife != null and int(fase_xerife) >= 1)
 
 	if sprite_ovos: sprite_ovos.visible = tem_ovos
 	if sprite_chocolate: sprite_chocolate.visible = tem_chocolate
@@ -341,7 +383,7 @@ func verificar_ingredientes_coletados() -> void:
 
 	total_ingredientes_colocados = total
 		
-	print("Tudo certo! Total na mesa: ", total, " | Fermento: ", tem_fermento)
+	print(">>> Mesa do bolo: ", total, " ingredientes | ovos=", tem_ovos, " chocolate=", tem_chocolate, " farinha=", tem_farinha, " açúcar=", tem_acucar, " geleia=", tem_geleia, " fermento=", tem_fermento)
 
 # ---------------------------------------------------------------------
 # MINIGAME (arrastar) — sem alterações

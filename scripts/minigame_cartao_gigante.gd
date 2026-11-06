@@ -131,7 +131,11 @@ func _soltar() -> void:
 		print(">>> Soltou '%s' a %.1f px da sombra (limite %.1f). Peça: %s | Sombra: %s"
 			% [nome, distancia, limite, fantasma.position, centro_sombra])
 
-	if distancia <= limite:
+	# Encaixa se soltou perto do centro da sombra OU em qualquer ponto dentro dela.
+	# A moldura (borda) tem uma sombra do tamanho do cartão inteiro: a criança
+	# costuma soltar perto da borda, longe do centro, e antes a peça voltava.
+	var dentro := _dentro_da_sombra(sombra, fantasma.position)
+	if distancia <= limite or dentro:
 		_encaixar(nome, fantasma, centro_sombra, tamanho_sombra)
 	else:
 		_devolver(nome, fantasma)
@@ -262,3 +266,10 @@ func _centro_sombra_tela(sombra: Sprite2D) -> Vector2:
 
 func _tamanho_sombra_tela(sombra: Sprite2D) -> Vector2:
 	return sombra.get_rect().size * sombra.get_global_transform_with_canvas().get_scale()
+
+
+# true se o ponto (em pixels de tela) está dentro do retângulo da sombra,
+# considerando posição, escala e rotação da sombra.
+func _dentro_da_sombra(sombra: Sprite2D, ponto_tela: Vector2) -> bool:
+	var local := sombra.get_global_transform_with_canvas().affine_inverse() * ponto_tela
+	return sombra.get_rect().has_point(local)

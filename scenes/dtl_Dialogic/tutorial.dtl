@@ -44,7 +44,7 @@ join vincent (Satisfação) leftmost
 join Bella (Tchau) left
 update vincent (Tchau) right
 [voice path="res://assets/som/Bella/tutorial/ate.mp3" volume="0.0"]
-Bella: O dia ficou até mais ensolarado depois dessa conversa, Vincent! \
+Bella (Tchau): O dia ficou até mais ensolarado depois dessa conversa, Vincent! \
 Foi ótimo te ver.\
 Cuida bem de tudo por aí e até mais!
 Protagonista: Até mais Vincent!
@@ -59,7 +59,7 @@ leave Bella
 set {NomeBella} = "Bella"
 join Bella (Seguir Alt) rightmost [animation="Bounce In" length="0.0"]
 [voice path="res://assets/som/Bella/tutorial/Voz-Rarity-2026-05-26-08-58-[gritando]-Vem-logo!-[animado]-Eu-[ênfase]mal-po.mp3" volume="0.0"]
-Bella: Vem logo!\
+Bella (Seguindo): Vem logo!\
 Eu mal posso esperar para te apresentar para toda a turma! \
 Você vai adorar cada um deles!
 [wait time="2.0"]
@@ -70,9 +70,9 @@ join xerife (Cadeira 1) left
 xerife: PARADOS!\
 Nem mais um passo!\
 Quem são vocês e o que pensam que estão fazendo?
-join Bella (Oi) right
+join Bella (Oi 2) right
 [voice path="res://assets/som/Bella/tutorial/Voz-Rarity-2026-05-26-08-58-[gritando]-Xerife-Pepper!-Que-[ênfase]-susto-o-s.mp3" volume="0.0"]
-Bella: Xerife Pepper! \
+Bella (Susto): Xerife Pepper! \
 Que susto o senhor me deu!\
 Calma, sou eu, a Bella!
 set {NomeXerife} = "Xerife Pepper"
@@ -82,7 +82,6 @@ Mas e esse forasteiro aí? \
 Pessoas chegando assim, sem mais nem menos... \
 É assim que a desordem começa!\
 Daqui a pouco a vila vira uma bagunça completa!
-update Bella (Apresenta 2) center
 [voice path="res://assets/som/Bella/tutorial/Voz-Rarity-2026-05-26-09-01-Ah,-[risada-abafada]-relaxa,-Xerife!-Quem-está-c.mp3" volume="0.0"]
 Bella (Apresenta 2): Ah, relaxa, Xerife! \
 Quem está comigo é esse alguém especial. \

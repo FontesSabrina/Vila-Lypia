@@ -34,7 +34,7 @@ if {Convite.fase_entrega} == true and {Convite.Convite_Linna_entregue} == false:
 	ou foi semana passada?
 	set {Convite.Convite_Linna_entregue} = true
 	set {Convite.pontos_convite} += 1
-	[signal arg="ir_para_praca"]
+	[signal arg="voltar_mapa"]
 
 elif {Convite.fase_entrega} == true and {Convite.Convite_Linna_entregue} == true:
 	[background arg="res://assets/backgrounds/cozinha_linna.jpeg.jpeg" fade="0.0"]
@@ -44,7 +44,7 @@ elif {Convite.fase_entrega} == true and {Convite.Convite_Linna_entregue} == true
 	Acho que ela foi passear... Mas não tem problema!\
 	Grudei o convite com o ímã direto na parede vazia onde ela costumava ficar! \
 	Nos vemos na festa!
-	[signal arg="ir_para_praca"]
+	[signal arg="voltar_mapa"]
 
 elif {Convite.sem_ajuda} == true:
 	join linna (Linna_01/11) leftmost

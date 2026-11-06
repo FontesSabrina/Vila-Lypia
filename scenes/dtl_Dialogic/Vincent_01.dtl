@@ -30,7 +30,7 @@ if {Convite.fase_entrega} == true and {Convite.Convite_vincent_entregue} == fals
 	Vou colher as flores mais radiantes do meu estoque para decorar toda a praça. Vai ser um dia inesquecível! Até lá!
 	set {Convite.Convite_vincent_entregue} = true
 	set {Convite.pontos_convite} += 1
-	[signal arg="ir_para_praca"]
+	[signal arg="voltar_mapa"]
 
 elif {Convite.fase_entrega} == true and {Convite.Convite_vincent_entregue} == true:
 	[background arg="res://assets/backgrounds/casaVincent_jardim.jpeg_2K_202608040749.jpeg" fade="0.0"]
@@ -38,7 +38,7 @@ elif {Convite.fase_entrega} == true and {Convite.Convite_vincent_entregue} == tr
 	[voice path="res://assets/som/Vincent/Vincent-01/Já-estou-separando-as-[emphasis]-flores (1).mp3" volume="0.0"]
 	vincent (Vincent_01/14): Já estou separando as flores mais radiantes para decorar toda a praça!\
 	Nos vemos lá na festa!
-	[signal arg="ir_para_praca"]
+	[signal arg="voltar_mapa"]
 
 elif {Convite.sem_ajuda} == true:
 	join vincent (Vincent_01/10) center

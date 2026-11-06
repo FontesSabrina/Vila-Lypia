@@ -1,11 +1,12 @@
 extends Sprite2D
 class_name LinnaAcucar01
-## Canto da loja onde está o açúcar. Ao pegar, aparece um aviso e o jogo volta ao mapa.
-## A entrega é feita clicando na casa da Linna no mapa.
+## Canto da loja onde está o açúcar. Ao pegar, a Linna aparece e agradece
+## (bolo_linna_02). Só depois que ela termina de falar o jogo volta ao mapa.
+## (Aviso só existe nos minijogos secundários, como os novelos.)
 
 const CENA_INICIO := "res://scenes/minigame_acucar_linna.tscn"
 const CENA_MAPA := "res://scenes/mapa_pricipal.tscn"
-const TIMELINE_AVISO := "res://scenes/dtl_Dialogic/aviso_acucar_linna.dtl"
+const TIMELINE_AGRADECIMENTO := "bolo_linna_02"
 
 @onready var seta_voltar: TextureButton = get_node_or_null("seta_voltar")
 @onready var acucar: TextureButton = get_node_or_null("acucar")
@@ -43,7 +44,7 @@ func _on_acucar_pressed() -> void:
 		barra_acucar.atualizar_barra()
 
 	Dialogic.VAR.set_variable("Bolo.Linna.Bolo_Linna_Acucar_Concluido", true)
-	Dialogic.start(TIMELINE_AVISO)
+	Dialogic.start(TIMELINE_AGRADECIMENTO)
 
 	await Dialogic.timeline_ended
 	if is_inside_tree():

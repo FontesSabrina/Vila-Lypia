@@ -21,7 +21,7 @@ texture = ExtResource("2_qeg1k")
 
 [node name="botao_voltar" parent="." instance=ExtResource("3_3iadp")]
 layout_mode = 1
-offset_left = 1.0
+offset_left = 1.00006
 offset_right = 1.0
 
 [node name="Button" type="TextureButton" parent="."]

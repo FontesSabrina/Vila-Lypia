@@ -16,7 +16,7 @@ join Bella (Que Bom) right
 [voice path="res://assets/som/Bella/cena01/bem.mp3" volume="0.0"]
 Bella (Que Bom): Que bom que você está bem!!
 [background arg="res://assets/backgrounds/caminho-02.jpeg" fade="0.0"]
-join Bella (Bella Pensativa) center
+join Bella (Bella Pensativa) left
 [voice path="res://assets/som/Bella/cena01/eu sou a bella.mp3" volume="0.0"]
 Bella (Bella Pensativa): É difícil encontrar pessoas novas por aqui!\
 Eu fico muito feliz com visitas!\
@@ -38,7 +38,7 @@ leave Bella
 Bella: Claro!\
 Escute... você está na região de Vila Lypia!
 [background arg="res://assets/backgrounds/floresta_04.jpeg" fade="0.0"]
-join Bella (Apresenta) center
+join Bella (Apresenta) left
 [voice path="res://assets/som/Bella/cena01/anne.mp3" volume="0.0"]
 Bella (Apresenta): Caso o seu desejo seja voltar para casa...\
 a Prefeita Anne é a única que sabe como criar esse caminho.

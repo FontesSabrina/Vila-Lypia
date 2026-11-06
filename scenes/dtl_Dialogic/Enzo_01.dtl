@@ -30,7 +30,7 @@ if {Convite.fase_entrega} == true and {Convite.Convite_enzo_entregue} == false:
 	Se for uma festa tranquila, eu prometo que faço um esforço e vou!
 	set {Convite.Convite_enzo_entregue} = true
 	set {Convite.pontos_convite} += 1
-	[signal arg="ir_para_praca"]
+	[signal arg="voltar_mapa"]
 
 elif {Convite.fase_entrega} == true and {Convite.Convite_enzo_entregue} == true:
 	[background arg="res://assets/backgrounds/casaEnzo_dentro .jpeg_2K_202608032123.jpeg" fade="0.0"]
@@ -38,7 +38,7 @@ elif {Convite.fase_entrega} == true and {Convite.Convite_enzo_entregue} == true:
 	[voice path="res://assets/som/Enzo/Enzo_01/-Já-estou-preparando-meus-[emphasis]-pr.mp3" volume="0.0"]
 	enzo (Enzo_01/18): Já estou preparando meus protetores auriculares e checando a rota mais segura até a praça!\
 	Espero você lá para me manter a salvo!
-	[signal arg="ir_para_praca"]
+	[signal arg="voltar_mapa"]
 
 elif {Convite.sem_ajuda} == true:
 	join enzo (Enzo_01/13) leftmost

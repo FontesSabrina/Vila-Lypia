@@ -2,23 +2,24 @@ extends Node2D
 class_name CozinhaPrincipalEnzo
 ## Cozinha do Enzo (mini-jogo dos ovos).
 ## Lupa 1 = armário (chave). Lupa 2 = geladeira (só abre com a chave).
-## Ao voltar com os ovos, aparece um aviso e o jogo volta ao mapa.
-## A entrega é feita clicando na casa do Enzo no mapa.
+## Ao voltar com os ovos, o Enzo aparece e agradece (bolo_enzo_02).
+## Só depois que ele termina de falar o jogo volta ao mapa.
+## (Aviso só existe nos minijogos secundários, como as velas.)
 
 const CENA_ARMARIO := "res://scenes/minigame_ovos_enzo_armario.tscn"
 const CENA_GELADEIRA := "res://scenes/minigame_ovos_enzo_geladeira.tscn"
 const CENA_MAPA := "res://scenes/mapa_pricipal.tscn"
-const TIMELINE_AVISO := "res://scenes/dtl_Dialogic/aviso_ovos_enzo.dtl"
+const TIMELINE_AGRADECIMENTO := "bolo_enzo_02"
 
 
 func _ready() -> void:
-	# Pegou os ovos e ainda não entregou: aviso e volta ao mapa
+	# Pegou os ovos e o Enzo ainda não agradeceu: ele agradece e volta ao mapa
 	if is_instance_valid(GameState) and GameState.ovos_pego and not Dialogic.VAR.Bolo.Enzo.Ovos_Concluido:
 		# Pequena pausa para a cena aparecer antes da fala
 		await get_tree().create_timer(0.2).timeout
 		if not is_inside_tree() or Dialogic.current_timeline:
 			return
-		Dialogic.start(TIMELINE_AVISO)
+		Dialogic.start(TIMELINE_AGRADECIMENTO)
 		await Dialogic.timeline_ended
 		if is_inside_tree():
 			get_tree().change_scene_to_file.call_deferred(CENA_MAPA)

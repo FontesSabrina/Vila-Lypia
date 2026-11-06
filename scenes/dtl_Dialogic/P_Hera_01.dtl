@@ -42,7 +42,7 @@ elif {Convite.fase_entrega} == true and {Convite.Convite_P_Hera_entregue} == tru
 	[voice path="res://assets/som/Hera/P_Hera_01/Já-reorganizei-todo-o-meu-[emphasis]cronograma-t.mp3" volume="0.0"]
 	hera (P_Hera_01/14): Já reorganizei todo o meu cronograma três vezes para garantir que não haverá atrasos!\
 	Nos vemos na festa exatamente no horário combinado!
-	[signal arg="ir_para_praca"]
+	[signal arg="   voltar_mapa"]
 
 elif {Convite.sem_ajuda} == true:
 	join hera (P_Hera_01/9) leftmost
