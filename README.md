@@ -1,4 +1,4 @@
-# 🧚 Vila Lypia (beta)
+#  Vila Lypia 
 
 ### [▶️ JOGAR NO NAVEGADOR (itch.io)](https://xxsabrinaxx.itch.io/vila-lypia)
 
