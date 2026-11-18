@@ -2,7 +2,11 @@
 
 ### 🎬 Abertura do jogo
 
-<!-- ARRASTE AQUI o arquivo vila-lypia-abertura.mp4 (o GitHub transforma num player de vídeo) -->
+
+
+https://github.com/user-attachments/assets/df87fd7c-cc77-43dd-9cd2-a36f5ecc91c5
+
+
 
 *A abertura do Vila Lypia: a Anne encontra o livro mágico que dá início à aventura. Ative o som 🔊*
 
