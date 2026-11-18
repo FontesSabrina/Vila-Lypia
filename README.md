@@ -1,5 +1,13 @@
 #  Vila Lypia 
 
+### 🎬 Abertura do jogo
+
+<!-- ARRASTE AQUI o arquivo vila-lypia-abertura.mp4 (o GitHub transforma num player de vídeo) -->
+
+*A abertura do Vila Lypia: a Anne encontra o livro mágico que dá início à aventura. Ative o som 🔊*
+
+---
+
 ### [▶️ JOGAR NO NAVEGADOR (itch.io)](https://xxsabrinaxx.itch.io/vila-lypia)
 
 *Funciona no navegador do computador, sem instalar nada. Na primeira vez o jogo leva um tempinho para carregar.*
