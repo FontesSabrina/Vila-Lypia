@@ -70,7 +70,7 @@ elif {Bolo.Pietro.Bolo_Pietro_Em_Andamento} == false and {Bolo.Pietro.Bolo_Pietr
 elif {Bolo.Pietro.Bolo_Pietro_Pinceis_Concluido} == true and {Bolo.Pietro.Bolo_Pietro_Secundaria_Pietro} == false:
 	[background arg="res://assets/backgrounds/casa_pietro_fundos.jpeg" fade="0.0"]
 	join Pietro (bolo/Bolo 07) center
-	[voice path="res://assets/som/Pietro/bolo_pietro_02/Você-procura-[short-pause]-pra-[emphasis]-mim.mp3" volume="0.0"]
+	[voice path="res://assets/som/Pietro/bolo_pietro_02/Você-é-muito-[emphasis]gentil....mp3" volume="0.0"]
 	Pietro (bolo/Bolo 11): Você é muito gentil... Seus olhos conseguem ver coisas que eu deixo passar. Obrigado.
 	[voice path="res://assets/som/Pietro/bolo_pietro_02/Tome,-leve-isto-com-você.-É-um-[emphasis]pequeno.mp3" volume="0.0"]
 	Pietro (bolo/Bolo 12): Tome, leve isto com você.\
@@ -87,6 +87,7 @@ elif {Bolo.Pietro.Bolo_Pietro_Pinceis_Concluido} == true and {Bolo.Pietro.Bolo_P
 elif {Bolo.Pietro.Bolo_Pietro_Em_Andamento} == true and {Bolo.Pietro.Bolo_Pietro_Pinceis_Concluido} == false:
 	[background arg="res://assets/backgrounds/casa_pietro_atelie.jpeg" fade="0.0"]
 	join Pietro (bolo/Bolo 09) center
+	[voice path="res://assets/som/Pietro/bolo_pietro_02/Os pincéis ainda devem estar perto daquela árvore na floresta mágica....mp3" volume="0.0"]
 	Pietro (bolo/Bolo 09): Os pincéis ainda devem estar perto daquela árvore na floresta mágica...
 	[end_timeline]
 
